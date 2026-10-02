@@ -1,8 +1,8 @@
 {
   "name": "paligame",
   "private": true,
-  "version": "0.1.0",
-  "description": "Traqueur d'eau qui fait gagner des cartes mémo de médicaments de soins palliatifs (fork d'Ura)",
+  "version": "0.2.0",
+  "description": "Traqueur d'eau qui fait gagner des cartes mémo de médicaments, avec quiz de révision (fork d'Ura)",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,11 +2,11 @@ import { Check, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import { Card } from '../../components/Card/Card'
 import { CardViewer } from '../../components/CardViewer/CardViewer'
-import { cardById, getSet, type CardData } from '../../data/sets'
+import type { CardData } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { dayLabel, formatLiters, formatLitersShort, formatTime, lastDays, totalForDay } from '../../lib/day'
 import { rewardLabel } from '../../lib/rewards'
-import { selectDay, selectDays } from '../../state/selectors'
+import { selectCards, selectDay, selectDays } from '../../state/selectors'
 import { useAppState } from '../../state/store'
 import styles from './HistoryScreen.module.css'
 
@@ -17,7 +17,6 @@ const FOLDED_CARDS = 4
 
 export function HistoryScreen() {
   const state = useAppState()
-  const set = getSet(state.settings.setId)
   const goal = state.settings.goalMl
   const [openDay, setOpenDay] = useState<string | null>(null)
   /** Fenêtre de carte : la liste du jour cliqué et la position dedans. */
@@ -60,10 +59,7 @@ export function HistoryScreen() {
           {days.map((day) => {
             const summary = selectDay(state, day)
             const open = openDay === day
-            const cards = summary.rewards
-              .flatMap((r) => r.cardIds)
-              .map((id) => cardById(set, id))
-              .filter((c): c is CardData => c !== undefined)
+            const cards = selectCards(summary.rewards.flatMap((r) => r.cardIds))
             const shown = open ? cards : cards.slice(0, FOLDED_CARDS)
             const folded = cards.length - shown.length
             return (

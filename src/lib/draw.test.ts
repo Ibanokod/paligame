@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { RATES, type RarityTable } from '../data/rates'
-import { drawBooster, drawCard, drawFoils, drawForThreshold, drawRareCard, drawSingleCard, resolveRarity, type DrawableCard, type DrawContext } from './draw'
+import { BOOSTER_SIZE, drawBooster, drawCard, drawFoils, drawForThreshold, drawRareCard, drawSingleCard, resolveRarity, type DrawableCard, type DrawContext } from './draw'
 import { pickWeighted, seededRng } from './random'
 import { RARITIES, type Rarity, isRare } from './rarity'
 
@@ -137,27 +137,26 @@ describe('carte rare garantie', () => {
 })
 
 describe('booster', () => {
-  it('donne 5 cartes distinctes : 3 courantes puis deux cartes des tables 4 et 5', () => {
+  it('donne 3 cartes distinctes : 2 courantes puis une carte surprise', () => {
     const cards = makeCards(30)
     const ctx = context(cards, [], 5)
     let rarePacks = 0
     for (let i = 0; i < 200; i++) {
       const { cardIds, rarePack } = drawBooster(ctx)
-      expect(cardIds).toHaveLength(5)
-      expect(new Set(cardIds).size).toBe(5)
+      expect(cardIds).toHaveLength(BOOSTER_SIZE)
+      expect(new Set(cardIds).size).toBe(BOOSTER_SIZE)
       if (rarePack) {
         rarePacks++
         continue
       }
-      expect(cardIds.slice(0, 3).map((id) => rarityOf(cards, id))).toEqual(['Courant', 'Courant', 'Courant'])
-      expect(rarityOf(cards, cardIds[3])).not.toBe('Courant')
-      expect(rarityOf(cards, cardIds[4])).not.toBe('Courant')
+      expect(cardIds.slice(0, 2).map((id) => rarityOf(cards, id))).toEqual(['Courant', 'Courant'])
+      expect(rarityOf(cards, cardIds[2])).not.toBe('Courant')
     }
     expect(rarePacks).toBeLessThan(20)
   })
 
-  it('ne répète pas une carte même s’il ne reste que 3 courantes', () => {
-    const cards = [...makeCards(3, ['Courant']), ...makeCards(5, ['Fréquent'])]
+  it('ne répète pas une carte même s’il ne reste qu’une courante', () => {
+    const cards = [...makeCards(1, ['Courant']), ...makeCards(5, ['Fréquent'])]
     const ctx = context(cards)
     const { cardIds } = drawBooster(ctx)
     expect(new Set(cardIds).size).toBe(cardIds.length)
@@ -169,7 +168,7 @@ describe('booster', () => {
     const rng = () => (calls++ === 0 ? 0.001 : 0.5)
     const { cardIds, rarePack } = drawBooster({ cards, owned: new Set(), rates: RATES, rng })
     expect(rarePack).toBe(true)
-    expect(cardIds).toHaveLength(5)
+    expect(cardIds).toHaveLength(BOOSTER_SIZE)
     for (const id of cardIds) expect(isRare(rarityOf(cards, id))).toBe(true)
   })
 
@@ -199,7 +198,7 @@ describe('tirage par seuil', () => {
     expect(drawForThreshold(500, ctx).cardIds).toHaveLength(1)
     const booster = drawForThreshold(1500, ctx)
     expect(booster.kind).toBe('booster')
-    expect(booster.cardIds).toHaveLength(5)
+    expect(booster.cardIds).toHaveLength(BOOSTER_SIZE)
     expect(drawForThreshold(2000, ctx)).toMatchObject({ kind: 'rare-card' })
   })
 })

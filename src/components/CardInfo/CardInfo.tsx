@@ -1,4 +1,4 @@
-import { useState, type CSSProperties, type ReactNode } from 'react'
+import { useEffect, useState, type CSSProperties, type ReactNode } from 'react'
 import { FUN_LABELS, ROUTES, type CardData } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { FAMILIES } from '../../lib/families'
@@ -10,17 +10,27 @@ type Props = {
   compact?: boolean
   /** Mode révision : les réponses sont masquées jusqu'à ce qu'on les touche. */
   quiz?: boolean
+  /** Prévient quand toutes les réponses sont dévoilées (la carte peut alors montrer les siennes). */
+  onAllShown?: () => void
 }
 
 type SectionId = 'what' | 'action' | 'side' | 'ci'
+
+const SECTIONS: SectionId[] = ['what', 'action', 'side', 'ci']
 
 /**
  * Fiche mémo sous la carte : les cinq rubriques demandées (qu'est-ce que c'est, effets
  * indésirables, contre-indications, mode d'action, et le mot pour retenir), dans l'ordre
  * du cours : on comprend ce que c'est et comment ça agit avant ce qu'il faut surveiller.
  */
-export function CardInfo({ card, compact = false, quiz = false }: Props) {
+export function CardInfo({ card, compact = false, quiz = false, onAllShown }: Props) {
   const [shown, setShown] = useState<Set<SectionId>>(new Set())
+  const allShown = SECTIONS.every((id) => shown.has(id))
+  // Nouvelle carte : tout se recache.
+  useEffect(() => setShown(new Set()), [card.id])
+  useEffect(() => {
+    if (quiz && allShown) onAllShown?.()
+  }, [quiz, allShown, onAllShown])
   const family = FAMILIES[card.family]
   const palette = cardPalette(card)
   const reveal = (id: SectionId) => setShown((s) => new Set(s).add(id))
@@ -40,6 +50,12 @@ export function CardInfo({ card, compact = false, quiz = false }: Props) {
           {card.brands.length > 0 && <span className={styles.brands}>{card.brands.join(', ')}</span>}
         </div>
       </header>
+
+      {quiz && !allShown && (
+        <button type="button" className={styles.revealAll} onClick={() => setShown(new Set(SECTIONS))}>
+          Tout dévoiler
+        </button>
+      )}
 
       <Section n={1} title="Qu'est-ce que c'est" hidden={isHidden('what')} onReveal={() => reveal('what')}>
         <p>{card.what}</p>

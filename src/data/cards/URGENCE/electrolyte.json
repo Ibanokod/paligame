@@ -1,0 +1,247 @@
+[
+  {
+    "dci": "Chlorure de sodium 0,9 %",
+    "family": "electrolyte",
+    "rarity": "Courant",
+    "classe": "Soluté cristalloïde isotonique",
+    "brands": [],
+    "forms": [
+      "poche",
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "SC"
+    ],
+    "tagline": "Le sérum physiologique, soluté de base du remplissage",
+    "what": "Cristalloïde isotonique, dit sérum physiologique : remplissage vasculaire (hypovolémie, choc), garde-veine, dilution des médicaments injectables, rinçage des tubulures.",
+    "action": "Apporte eau et sodium à une concentration proche de celle du plasma : il se répartit hors des cellules et augmente la volémie. Environ un quart seulement reste dans les vaisseaux.",
+    "sideEffects": [
+      "Surcharge hydrique, OAP : surveiller FR, SpO2, œdèmes",
+      "Acidose hyperchlorémique si gros volumes",
+      "Hypernatrémie, HTA (apport de sel)",
+      "Veinite, diffusion au point de ponction"
+    ],
+    "contraindications": [
+      "Hyperhydratation, surcharge hydrosodée",
+      "Hypernatrémie, hyperchlorémie",
+      "Prudence : insuffisance cardiaque, rénale, cirrhose (œdèmes)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Physiologique, pas tant que ça : 154 mmol/L de sodium et autant de chlore, contre environ 140 et 100 dans le plasma. Retiens « 154 = trop de chlore », d'où l'acidose des gros remplissages."
+    }
+  },
+  {
+    "dci": "Ringer lactate",
+    "family": "electrolyte",
+    "rarity": "Courant",
+    "classe": "Soluté cristalloïde balancé",
+    "brands": [],
+    "forms": [
+      "poche"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le soluté de remplissage le plus proche du plasma",
+    "what": "Cristalloïde balancé, de composition proche du plasma : remplissage vasculaire de première intention (choc hémorragique ou septique, brûlés, déshydratation), apports au bloc opératoire.",
+    "action": "Apporte sodium, potassium, calcium et chlore à des taux proches du plasma. Le lactate, transformé en bicarbonate par le foie, limite l'acidose des gros volumes.",
+    "sideEffects": [
+      "Surcharge hydrique, OAP : surveiller FR, SpO2, œdèmes",
+      "Alcalose métabolique si apports excessifs",
+      "Hyponatrémie (soluté légèrement hypotonique)",
+      "Veinite, diffusion au point de ponction"
+    ],
+    "contraindications": [
+      "Hyperhydratation, surcharge hydrosodée",
+      "Traumatisme crânien grave, œdème cérébral : préférer NaCl 0,9 %",
+      "Pas dans la tubulure du sang ni de la ceftriaxone (calcium)",
+      "Prudence : insuffisance rénale sévère, hyperkaliémie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Vers 1882 à Londres, le cœur de grenouille de Sydney Ringer battait longtemps dans sa solution saline : son assistant avait pris l'eau du robinet, riche en calcium. Hartmann y ajoutera le lactate en 1932."
+    }
+  },
+  {
+    "dci": "Glucose 30 %",
+    "family": "electrolyte",
+    "rarity": "Courant",
+    "classe": "Soluté glucosé hypertonique",
+    "brands": [],
+    "forms": [
+      "injectable",
+      "poche"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le resucrage IV de l'hypoglycémie sévère",
+    "what": "Soluté glucosé hypertonique : hypoglycémie sévère ou patient incapable d'avaler (trouble de conscience, convulsions). Aussi associé à l'insuline pour faire baisser une hyperkaliémie.",
+    "action": "Apporte du glucose directement dans le sang : la glycémie remonte et la conscience revient en quelques minutes. Très concentré, il irrite fortement les veines.",
+    "sideEffects": [
+      "Nécrose cutanée si extravasation : vérifier le reflux",
+      "Veinite, douleur au point d'injection",
+      "Rechute de l'hypoglycémie : sucres lents au réveil",
+      "Hyperglycémie : glycémie capillaire de contrôle"
+    ],
+    "contraindications": [
+      "Hyperglycémie, coma hyperosmolaire",
+      "Jamais en SC ni en IM : nécrose",
+      "Prudence : patient alcoolique ou dénutri, vitamine B1 associée",
+      "Prudence : AVC, traumatisme crânien (éviter l'hyperglycémie)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Resucrage en deux temps : du sucre rapide pour remonter (glucose IV), puis du sucre lent pour tenir (pain, repas) dès que le patient peut avaler. Et toujours une glycémie de contrôle."
+    }
+  },
+  {
+    "dci": "Chlorure de potassium",
+    "family": "electrolyte",
+    "rarity": "Fréquent",
+    "classe": "Sel de potassium (électrolyte)",
+    "brands": [
+      "Diffu-K",
+      "Kaleorid"
+    ],
+    "forms": [
+      "injectable",
+      "gelule",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "Le potassium : toujours dilué, jamais en IV directe",
+    "what": "Sel de potassium : traitement et prévention de l'hypokaliémie (diurétiques, vomissements, diarrhée, acidocétose sous insuline). Per os si possible, en perfusion diluée sinon.",
+    "action": "Remplace le potassium manquant, indispensable à l'activité électrique du cœur et des muscles. Une hausse trop brutale de la kaliémie peut provoquer un arrêt cardiaque.",
+    "sideEffects": [
+      "Arrêt cardiaque si IV directe : dilué, débit contrôlé",
+      "Hyperkaliémie, troubles du rythme : kaliémie, scope",
+      "Douleur, veinite sur voie veineuse périphérique",
+      "Nécrose cutanée si extravasation",
+      "Per os : irritation digestive, à prendre au repas"
+    ],
+    "contraindications": [
+      "Hyperkaliémie, insuffisance rénale sévère, anurie",
+      "Jamais en IV directe ni non dilué : never event ANSM",
+      "Médicament à haut risque : ampoules à part, double contrôle",
+      "Prudence : IEC, sartans, épargneurs de potassium"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "K vient de kalium, nom latin tiré de l'arabe al-qali, les cendres de plantes : d'où la kaliémie. Règle d'or du K injectable : jamais poussé, toujours dilué, débit contrôlé."
+    }
+  },
+  {
+    "dci": "Gluconate de calcium",
+    "family": "electrolyte",
+    "rarity": "Occasionnel",
+    "classe": "Sel de calcium (électrolyte)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le calcium IV qui protège le cœur de l'hyperkaliémie",
+    "what": "Sel de calcium injectable : hyperkaliémie menaçante avec signes à l'ECG, hypocalcémie symptomatique (tétanie, convulsions), surdosage en inhibiteurs calciques ou en magnésium.",
+    "action": "Apporte du calcium, utile au cœur, aux muscles et à la coagulation. En hyperkaliémie, il stabilise en quelques minutes la membrane des cellules cardiaques, sans baisser la kaliémie.",
+    "sideEffects": [
+      "Nécrose, calcifications si extravasation : veine sûre",
+      "Bradycardie, troubles du rythme si injection rapide",
+      "Sensation de chaleur, bouffées, goût de craie",
+      "Hypotension, malaise",
+      "Hypercalcémie si surdosage"
+    ],
+    "contraindications": [
+      "Hypercalcémie, hypercalciurie, lithiase calcique",
+      "Patient sous digoxine (troubles du rythme graves)",
+      "Ne pas mélanger au bicarbonate ni aux phosphates (précipité)",
+      "Prudence : injection IV lente, sous scope"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Hyperkaliémie : le calcium est un bouclier, pas un aspirateur. Il protège le cœur en quelques minutes mais laisse le potassium en place : il faut ensuite insuline-glucose, puis éliminer."
+    }
+  },
+  {
+    "dci": "Albumine humaine",
+    "family": "electrolyte",
+    "rarity": "Occasionnel",
+    "classe": "Colloïde naturel, médicament dérivé du sang",
+    "brands": [
+      "Vialebex",
+      "Ydralbum"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le colloïde issu du plasma de donneurs, à tracer",
+    "what": "Colloïde préparé à partir de plasma de donneurs : remplissage en deuxième intention (choc, brûlés graves), cirrhose (après ponction d'ascite abondante, infection du liquide d'ascite).",
+    "action": "Principale protéine du plasma, elle retient l'eau dans les vaisseaux (pression oncotique). Son effet de remplissage dure plus qu'un cristalloïde ; à 20 %, elle attire l'eau des tissus.",
+    "sideEffects": [
+      "Surcharge, OAP (surtout à 20 %) : surveiller FR, SpO2",
+      "Fièvre, frissons, urticaire (réaction allergique)",
+      "Hypotension, rare choc anaphylactique",
+      "Risque viral théorique : tracer le numéro de lot"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'albumine ou à un excipient",
+      "Surcharge vasculaire, insuffisance cardiaque décompensée",
+      "Prudence : HTA, anémie sévère, troubles de la coagulation",
+      "Prudence : refus des dérivés du sang, recueillir l'accord"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Isolée du plasma par Edwin Cohn à Harvard au début des années 1940, l'albumine en flacon a servi à grande échelle pour la première fois chez les blessés et brûlés de Pearl Harbor, en décembre 1941."
+    }
+  },
+  {
+    "dci": "Bicarbonate de sodium 8,4 %",
+    "family": "electrolyte",
+    "rarity": "Rare",
+    "classe": "Alcalinisant hypertonique (molaire)",
+    "brands": [],
+    "forms": [
+      "injectable",
+      "poche"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le bicarbonate molaire, contre l'acidose et les QRS larges",
+    "what": "Alcalinisant hypertonique : intoxication aux stabilisants de membrane (tricycliques) avec QRS élargi, acidose métabolique sévère, hyperkaliémie avec acidose, alcalinisation des urines.",
+    "action": "Apporte des bicarbonates, tampon de l'acidité du sang : le pH remonte. Face aux tricycliques, l'apport de sodium et l'alcalinisation lèvent le blocage des canaux sodium du cœur.",
+    "sideEffects": [
+      "Nécrose cutanée si extravasation : veine sûre",
+      "Hypokaliémie : surveiller kaliémie et scope",
+      "Hypernatrémie, surcharge (apport de sodium)",
+      "Alcalose métabolique, baisse du calcium ionisé"
+    ],
+    "contraindications": [
+      "Alcalose métabolique ou respiratoire",
+      "Hypernatrémie, rétention hydrosodée",
+      "Prudence : hypokaliémie, hypocalcémie (corriger avant)",
+      "Voie à part : précipite avec le calcium, inactive les amines"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "8,4 % n'est pas un hasard : une mole de bicarbonate de sodium pèse 84 g. Une solution à 84 g par litre est donc molaire : chaque millilitre apporte une millimole de bicarbonate."
+    }
+  }
+]

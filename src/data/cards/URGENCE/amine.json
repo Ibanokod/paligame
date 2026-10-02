@@ -1,0 +1,284 @@
+[
+  {
+    "dci": "Adrénaline",
+    "family": "amine",
+    "rarity": "Courant",
+    "classe": "Catécholamine (agoniste alpha et bêta)",
+    "brands": [
+      "Anapen",
+      "Epipen",
+      "Jext"
+    ],
+    "forms": [
+      "injectable",
+      "stylo"
+    ],
+    "routes": [
+      "IV",
+      "IM",
+      "Inhalée"
+    ],
+    "tagline": "L'amine de l'arrêt cardiaque et de l'anaphylaxie",
+    "what": "Catécholamine de l'urgence vitale : arrêt cardiaque, choc anaphylactique (IM d'emblée, stylo auto-injecteur), choc réfractaire au pousse-seringue. En nébulisation : œdème laryngé.",
+    "action": "Stimule les récepteurs alpha (vasoconstriction, hausse de la pression artérielle) et bêta (cœur plus rapide et plus puissant, bronches dilatées). Effet immédiat et bref.",
+    "sideEffects": [
+      "Tachycardie, troubles du rythme : scope continu",
+      "Poussée d'HTA, ischémie myocardique",
+      "Nécrose si extravasation : voie veineuse dédiée",
+      "Hyperglycémie, hyperlactatémie, hypokaliémie",
+      "Tremblements, anxiété, pâleur, céphalées"
+    ],
+    "contraindications": [
+      "Aucune contre-indication absolue en urgence vitale",
+      "Plusieurs concentrations d'ampoules : double contrôle",
+      "PSE : voie dédiée, relais de seringue sans interruption",
+      "Prudence : coronaropathie, troubles du rythme, hyperthyroïdie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Isolée en 1901 par le chimiste japonais Jokichi Takamine, l'adrénaline est la première hormone purifiée. Son nom vient du latin ad renes, « près des reins » : elle est fabriquée par les surrénales."
+    }
+  },
+  {
+    "dci": "Noradrénaline",
+    "family": "amine",
+    "rarity": "Courant",
+    "classe": "Catécholamine vasopressive (agoniste alpha)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le vasopresseur de référence du choc septique",
+    "what": "Vasopresseur de première intention du choc septique et des chocs avec vasoplégie (vaisseaux trop dilatés). Toujours au pousse-seringue électrique, idéalement sur voie veineuse centrale.",
+    "action": "Stimule surtout les récepteurs alpha des vaisseaux : vasoconstriction qui remonte la pression artérielle. Faible effet bêta-1 sur le cœur, le rythme s'accélère peu.",
+    "sideEffects": [
+      "Arrêt ou à-coup du PSE = chute brutale de la PA",
+      "Nécrose cutanée si extravasation : voie centrale",
+      "Ischémie des extrémités et du tube digestif",
+      "Poussée d'HTA, bradycardie réflexe",
+      "Troubles du rythme : scope et PA en continu"
+    ],
+    "contraindications": [
+      "Hypovolémie non corrigée : remplissage d'abord ou associé",
+      "Voie dédiée : aucun autre produit ni bolus sur la même ligne",
+      "Prudence : coronaropathie, troubles du rythme"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Relais de nora comme un relais d'athlétisme : la nouvelle seringue part avant que l'ancienne s'arrête, deux PSE en parallèle le temps du passage de témoin. Jamais de seringue vide sur une amine."
+    }
+  },
+  {
+    "dci": "Dobutamine",
+    "family": "amine",
+    "rarity": "Fréquent",
+    "classe": "Catécholamine inotrope (agoniste bêta-1)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'inotrope qui renforce le cœur défaillant",
+    "what": "Inotrope du choc cardiogénique et de l'insuffisance cardiaque aiguë à bas débit, souvent associé à la noradrénaline. Aussi utilisée en échographie de stress. Toujours au pousse-seringue.",
+    "action": "Stimule surtout les récepteurs bêta-1 du cœur : contraction plus puissante, débit cardiaque augmenté. Peu d'effet sur les vaisseaux : la pression artérielle peut même baisser.",
+    "sideEffects": [
+      "Tachycardie, troubles du rythme : scope continu",
+      "Angor, ischémie myocardique",
+      "Hypotension, surtout si hypovolémie",
+      "PSE sur voie dédiée, relais sans interruption",
+      "Nausées, céphalées, palpitations"
+    ],
+    "contraindications": [
+      "Obstacle à l'éjection : rétrécissement aortique serré, CMH obstructive",
+      "Tamponnade, obstacle au remplissage du ventricule",
+      "Hypovolémie non corrigée",
+      "Prudence : troubles du rythme, infarctus récent"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Dobu la pompe, Nora les tuyaux : la dobutamine renforce la pompe cardiaque (inotrope), la noradrénaline resserre les tuyaux (vasopresseur). Dans le choc cardiogénique, on les associe souvent."
+    }
+  },
+  {
+    "dci": "Éphédrine",
+    "family": "amine",
+    "rarity": "Fréquent",
+    "classe": "Sympathomimétique vasopresseur",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le vasopresseur des hypotensions d'anesthésie",
+    "what": "Vasopresseur des hypotensions de l'anesthésie générale ou locorégionale (rachianesthésie, péridurale). Injectée en petits bolus IV, souvent en seringue préremplie prête à l'emploi.",
+    "action": "Agit directement sur les récepteurs alpha et bêta, et indirectement en libérant la noradrénaline des terminaisons nerveuses : hausse de la PA et de la fréquence cardiaque.",
+    "sideEffects": [
+      "Tachycardie, palpitations",
+      "Poussée d'HTA si bolus trop rapprochés",
+      "Tachyphylaxie : moins efficace au fil des doses",
+      "Troubles du rythme, nausées",
+      "Anxiété, tremblements"
+    ],
+    "contraindications": [
+      "Association aux IMAO (crise hypertensive)",
+      "Hypersensibilité à l'éphédrine",
+      "Ampoule à diluer : seringue étiquetée, double contrôle",
+      "Prudence : coronaropathie, HTA sévère, hyperthyroïdie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "L'éphédrine vient du ma huang (Ephedra), plante de la médecine chinoise depuis des millénaires. Le chimiste japonais Nagai Nagayoshi l'en a isolée en 1885."
+    }
+  },
+  {
+    "dci": "Phényléphrine",
+    "family": "amine",
+    "rarity": "Occasionnel",
+    "classe": "Vasopresseur agoniste alpha-1 pur",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le vasopresseur pur, qui ralentit un peu le cœur",
+    "what": "Vasopresseur des hypotensions de l'anesthésie, notamment en rachianesthésie pour césarienne, ou quand le cœur est déjà rapide. En bolus IV ou au pousse-seringue.",
+    "action": "Stimule uniquement les récepteurs alpha-1 des vaisseaux : vasoconstriction et hausse de la PA. Aucun effet bêta : la fréquence cardiaque baisse par réflexe.",
+    "sideEffects": [
+      "Bradycardie réflexe : surveiller la fréquence",
+      "Poussée hypertensive",
+      "Baisse du débit cardiaque si cœur défaillant",
+      "Nécrose si extravasation, ischémie des extrémités",
+      "Céphalées, nausées"
+    ],
+    "contraindications": [
+      "HTA sévère, artériopathie périphérique sévère",
+      "Association aux IMAO (crise hypertensive)",
+      "Hyperthyroïdie sévère",
+      "Prudence : bradycardie, insuffisance cardiaque"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Phényléphrine, la pure alpha : elle serre les vaisseaux sans fouetter le cœur, que l'éphédrine accélère. Hypotension avec cœur rapide : phényléphrine ; avec cœur lent : éphédrine."
+    }
+  },
+  {
+    "dci": "Adénosine",
+    "family": "amine",
+    "rarity": "Occasionnel",
+    "classe": "Antiarythmique d'action ultracourte",
+    "brands": [
+      "Krenosin"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le bolus éclair qui stoppe la tachycardie jonctionnelle",
+    "what": "Antiarythmique de la tachycardie jonctionnelle (maladie de Bouveret) : réduit la crise en quelques secondes, ou démasque un flutter. Aussi utilisée en imagerie cardiaque de stress.",
+    "action": "Bloque quelques secondes la conduction dans le nœud auriculo-ventriculaire : le circuit de la tachycardie est interrompu. Détruite en quelques secondes dans le sang.",
+    "sideEffects": [
+      "Pause ou asystolie de quelques secondes : scope",
+      "Sensation de malaise intense : prévenir le patient",
+      "Flush, chaleur au visage",
+      "Oppression thoracique, dyspnée, bronchospasme",
+      "Bolus IV flash puis rinçage immédiat"
+    ],
+    "contraindications": [
+      "Asthme, BPCO avec bronchospasme",
+      "BAV 2e ou 3e degré, maladie du sinus sans pacemaker",
+      "QT long, hypotension sévère",
+      "Prudence : dipyridamole (effet renforcé), théophylline (diminué)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "L'adénosine, championne de la discrétion : demi-vie de moins de dix secondes. Si le bolus traîne dans la tubulure, elle disparaît avant d'arriver au cœur. D'où le rinçage flash."
+    }
+  },
+  {
+    "dci": "Terlipressine",
+    "family": "amine",
+    "rarity": "Rare",
+    "classe": "Analogue de la vasopressine",
+    "brands": [
+      "Glypressine"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le vasoconstricteur des varices œsophagiennes",
+    "what": "Vasoconstricteur de l'hémorragie digestive par rupture de varices œsophagiennes (cirrhose), dès la prise en charge, avant l'endoscopie. Aussi utilisée dans le syndrome hépatorénal.",
+    "action": "Transformée dans le corps en lypressine, qui agit sur les récepteurs V1 des vaisseaux : les vaisseaux digestifs se contractent, la pression baisse dans la veine porte et les varices.",
+    "sideEffects": [
+      "Ischémie digestive, des extrémités : douleur, pâleur",
+      "Ischémie myocardique, troubles du rythme : scope",
+      "HTA, bradycardie",
+      "Détresse respiratoire, surcharge : surveiller la SpO2",
+      "Hyponatrémie"
+    ],
+    "contraindications": [
+      "Grossesse",
+      "Choc septique avec bas débit cardiaque",
+      "Prudence : coronaropathie, troubles du rythme, artériopathie",
+      "Prudence : asthme, insuffisance respiratoire, sujet âgé"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Rupture de varices, le trio gagnant : terlipressine pour serrer les vaisseaux, antibiotique pour prévenir l'infection, endoscopie pour ligaturer. Le médicament ne remplace jamais l'endoscopie."
+    }
+  },
+  {
+    "dci": "Lévosimendan",
+    "family": "amine",
+    "rarity": "Exceptionnel",
+    "classe": "Inotrope sensibilisateur au calcium",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'inotrope qui sensibilise le cœur au calcium",
+    "what": "Inotrope de recours en réanimation et en chirurgie cardiaque : insuffisance cardiaque aiguë sévère à bas débit, notamment chez le patient sous bêtabloquant. En perfusion continue.",
+    "action": "Rend la troponine C du muscle cardiaque plus sensible au calcium : contraction plus forte sans passer par les récepteurs bêta. Ouvre aussi des canaux potassiques : vasodilatation.",
+    "sideEffects": [
+      "Hypotension (vasodilatation) : PA continue",
+      "Tachycardie, fibrillation atriale",
+      "Hypokaliémie : ionogramme, corriger avant",
+      "Céphalées",
+      "Effet prolongé plusieurs jours (métabolite actif)"
+    ],
+    "contraindications": [
+      "Obstacle mécanique au remplissage ou à l'éjection du ventricule",
+      "Hypotension sévère, tachycardie, antécédent de torsades de pointes",
+      "Insuffisance rénale ou hépatique sévère",
+      "Prudence : hypokaliémie, hypovolémie à corriger d'abord"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "LÉVOsimendan, il LÈVE le cœur sans le fouetter : au lieu de stimuler les récepteurs bêta, il rend les fibres plus sensibles au calcium. Et son métabolite actif fait durer l'effet des jours."
+    }
+  }
+]

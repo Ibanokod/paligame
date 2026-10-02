@@ -1,0 +1,224 @@
+[
+  {
+    "dci": "Salbutamol",
+    "family": "respiratoire",
+    "rarity": "Courant",
+    "classe": "Bêta-2 mimétique de courte durée d'action",
+    "brands": [
+      "Ventoline",
+      "Airomir"
+    ],
+    "forms": [
+      "solution",
+      "spray",
+      "injectable"
+    ],
+    "routes": [
+      "Inhalée",
+      "IV"
+    ],
+    "tagline": "Le bronchodilatateur de la crise d'asthme",
+    "what": "Bronchodilatateur d'action rapide : crise d'asthme, exacerbation de BPCO. Aux urgences, en nébulisation (sous oxygène, ou sous air si BPCO hypercapnique) ; en IV au PSE en réanimation.",
+    "action": "Stimule les récepteurs bêta-2 des bronches : le muscle bronchique se relâche en quelques minutes, pour quelques heures. Aucune action sur l'inflammation.",
+    "sideEffects": [
+      "Tachycardie, palpitations",
+      "Tremblements des extrémités",
+      "Hypokaliémie (fortes doses, IV) : ionogramme",
+      "Hyperglycémie, hyperlactatémie en IV",
+      "Céphalées, crampes, nervosité"
+    ],
+    "contraindications": [
+      "Hypersensibilité au salbutamol",
+      "Prudence : coronaropathie, troubles du rythme, hyperthyroïdie",
+      "Prudence : diabète (glycémies capillaires en IV)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Ventoline, comme vent : elle rouvre les bronches pour laisser passer l'air en quelques minutes. Son aérosol bleu est celui de la crise, pas du traitement de fond."
+    }
+  },
+  {
+    "dci": "Ipratropium",
+    "family": "respiratoire",
+    "rarity": "Fréquent",
+    "classe": "Bronchodilatateur anticholinergique",
+    "brands": [
+      "Atrovent"
+    ],
+    "forms": [
+      "solution",
+      "spray"
+    ],
+    "routes": [
+      "Inhalée"
+    ],
+    "tagline": "L'anticholinergique qui accompagne le salbutamol",
+    "what": "Bronchodilatateur de l'asthme aigu grave et des exacerbations de BPCO, associé au salbutamol dans la même nébulisation aux urgences. Seul, il agit moins vite.",
+    "action": "Bloque les récepteurs muscariniques de l'acétylcholine dans les bronches : le muscle bronchique se relâche et les sécrétions diminuent. Plus lent que le salbutamol, effet plus durable.",
+    "sideEffects": [
+      "Bouche sèche",
+      "Glaucome aigu si le nuage atteint les yeux",
+      "Rétention urinaire, constipation",
+      "Tachycardie, palpitations",
+      "Toux, irritation de la gorge"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'atropine ou à ses dérivés",
+      "Prudence : glaucome à angle fermé (masque bien ajusté)",
+      "Prudence : adénome de prostate, rétention urinaire"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "IPRAtropium, cousin inhalé de l'aTROPIne : mêmes effets anticholinergiques, mais surtout dans les bronches. Bouche sèche à prévoir, et yeux à protéger du nuage de nébulisation."
+    }
+  },
+  {
+    "dci": "Hydrocortisone",
+    "family": "respiratoire",
+    "rarity": "Fréquent",
+    "classe": "Corticoïde (glucocorticoïde naturel)",
+    "brands": [
+      "Hydrocortisone Upjohn"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "IM",
+      "PO"
+    ],
+    "tagline": "Le corticoïde de l'insuffisance surrénale aiguë",
+    "what": "Hémisuccinate d'hydrocortisone injectable : insuffisance surrénale aiguë (urgence absolue), choc septique résistant aux amines, et en complément de l'adrénaline dans l'anaphylaxie.",
+    "action": "Copie du cortisol, l'hormone des surrénales : effets anti-inflammatoire et antiallergique, et, à forte dose, assez d'effet sur le sel (minéralocorticoïde) pour compenser en urgence une surrénale défaillante.",
+    "sideEffects": [
+      "Hyperglycémie : glycémies capillaires",
+      "Rétention hydrosodée, HTA, hypokaliémie",
+      "Agitation, insomnie, troubles psychiques",
+      "Risque infectieux accru",
+      "Jamais d'arrêt brutal après plusieurs jours"
+    ],
+    "contraindications": [
+      "Aucune en insuffisance surrénale aiguë (urgence vitale)",
+      "Infection non contrôlée sans traitement anti-infectieux",
+      "Prudence : diabète, HTA, ulcère gastroduodénal"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Insuffisant surrénalien en malaise : l'hydrocortisone ne se discute pas et ne se retarde pas. On prélève le cortisol si possible, puis on injecte sans attendre le résultat."
+    }
+  },
+  {
+    "dci": "Dexchlorphéniramine",
+    "family": "respiratoire",
+    "rarity": "Fréquent",
+    "classe": "Antihistaminique H1 de 1re génération",
+    "brands": [
+      "Polaramine"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "IM",
+      "PO"
+    ],
+    "tagline": "L'antihistaminique injectable des réactions allergiques",
+    "what": "Antihistaminique sédatif des réactions allergiques : urticaire, prurit, œdème de Quincke sans signe de gravité, réaction transfusionnelle mineure. Ne remplace jamais l'adrénaline.",
+    "action": "Bloque les récepteurs H1 de l'histamine : moins de démangeaisons, de rougeurs et d'œdème. Passe dans le cerveau, d'où la somnolence, et a un effet anticholinergique.",
+    "sideEffects": [
+      "Somnolence : prudence au lever, pas de conduite",
+      "Bouche sèche, constipation, vision floue",
+      "Rétention urinaire, confusion chez le sujet âgé",
+      "Hypotension si injection IV trop rapide",
+      "Excitation paradoxale chez l'enfant"
+    ],
+    "contraindications": [
+      "Glaucome à angle fermé",
+      "Rétention urinaire, adénome de prostate",
+      "Prudence : sujet âgé (chutes, confusion)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Polaramine, un nom polaire : elle refroidit le feu de l'allergie, mais endort comme une marmotte en hiver. Après l'injection : barrières, sonnette à portée de main, lever accompagné."
+    }
+  },
+  {
+    "dci": "Terbutaline",
+    "family": "respiratoire",
+    "rarity": "Occasionnel",
+    "classe": "Bêta-2 mimétique de courte durée d'action",
+    "brands": [
+      "Bricanyl"
+    ],
+    "forms": [
+      "injectable",
+      "solution"
+    ],
+    "routes": [
+      "SC",
+      "IV",
+      "Inhalée"
+    ],
+    "tagline": "Le bêta-2 mimétique sous-cutané de l'asthme grave",
+    "what": "Bronchodilatateur de l'asthme aigu grave : en sous-cutané quand l'inhalation est impossible ou insuffisante (SMUR, patient épuisé), en nébulisation, ou au PSE IV en réanimation.",
+    "action": "Stimule les récepteurs bêta-2 des bronches : relâchement du muscle bronchique. Par voie SC ou IV, il atteint les bronches par le sang, même trop fermées pour l'aérosol.",
+    "sideEffects": [
+      "Tachycardie, palpitations : scope",
+      "Tremblements, nervosité",
+      "Hypokaliémie : surveiller le ionogramme",
+      "Hyperglycémie",
+      "Céphalées, crampes"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la terbutaline",
+      "Prudence : coronaropathie, troubles du rythme, hyperthyroïdie",
+      "Prudence : diabète, hypokaliémie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les 3 T des bêta-2 mimétiques : Tachycardie, Tremblements, et le potassium qui Tombe. Valable pour la terbutaline comme pour le salbutamol, surtout en SC ou en IV."
+    }
+  },
+  {
+    "dci": "Sulfate de magnésium",
+    "family": "respiratoire",
+    "rarity": "Occasionnel",
+    "classe": "Sel de magnésium injectable",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le magnésium IV de l'asthme grave et des torsades",
+    "what": "Magnésium IV en urgence : asthme aigu grave résistant aux bêta-2, torsades de pointes, prévention et traitement de l'éclampsie, hypomagnésémie. Toujours en injection IV lente.",
+    "action": "Freine l'entrée du calcium dans les cellules : relâche le muscle bronchique, stabilise le rythme cardiaque et calme l'excitabilité du cerveau et des muscles.",
+    "sideEffects": [
+      "Bouffées de chaleur, flush pendant la perfusion",
+      "Hypotension, bradycardie si injection rapide",
+      "Surdosage : réflexes rotuliens abolis, à surveiller",
+      "Dépression respiratoire si surdosage : surveiller la FR",
+      "Somnolence, faiblesse musculaire"
+    ],
+    "contraindications": [
+      "Insuffisance rénale sévère (accumulation)",
+      "Myasthénie (aggrave la faiblesse musculaire)",
+      "Prudence : BAV, association aux curares (bloc prolongé)"
+    ],
+    "antidote": "Gluconate de calcium",
+    "fun": {
+      "kind": "culture",
+      "text": "On l'appelle aussi sel d'Epsom, du nom d'une ville anglaise où l'on découvrit au XVIIe siècle une source d'eau amère riche en sulfate de magnésium, réputée purgative."
+    }
+  }
+]

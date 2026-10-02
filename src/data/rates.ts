@@ -1,7 +1,7 @@
-// Tables de probabilités des boosters, en pourcentages. Même mécanique que le jeu d'origine
-// (3 cartes courantes, une 4e et une 5e carte tirées dans des tables, paquet rare possible),
-// avec des chiffres adaptés à un jeu de 74 cartes : les rares peuvent tomber au hasard dès
-// la première carte, et au-delà de 1,5 L on ne tire plus que des rares.
+// Tables de probabilités, en pourcentages. Même mécanique que le jeu d'origine, resserrée :
+// un booster de 3 cartes (2 courantes, puis une carte « surprise »), paquet rare possible ;
+// les rares peuvent tomber au hasard dès la carte seule de 0,5 L, et au-delà de 1,5 L on ne
+// tire plus que des rares.
 // Les poids sont normalisés au tirage : une somme à 99,99 ne pose aucun problème.
 
 import type { Rarity } from '../lib/rarity'
@@ -9,11 +9,11 @@ import type { Rarity } from '../lib/rarity'
 export type RarityTable = Partial<Record<Rarity, number>>
 
 export type RateSet = {
-  /** Cartes 1 à 3 d'un booster. */
+  /** Cartes 1 et 2 d'un booster. */
   common: RarityTable
-  /** 4e carte d'un booster (sert aussi à la carte seule des 0,5 L et 1 L). */
+  /** Carte seule des 0,5 L et 1 L (jamais courante). */
   slot4: RarityTable
-  /** 5e carte d'un booster. */
+  /** 3e carte d'un booster, la « surprise ». */
   slot5: RarityTable
   /** Chaque carte d'un paquet rare (sert aussi aux cartes garanties au-delà de 1,5 L). */
   rarePack: RarityTable

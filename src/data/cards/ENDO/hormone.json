@@ -1,0 +1,264 @@
+[
+  {
+    "dci": "Lévothyroxine",
+    "family": "hormone",
+    "rarity": "Courant",
+    "classe": "Hormone thyroïdienne de synthèse",
+    "brands": [
+      "Levothyrox",
+      "L-Thyroxin Henning",
+      "L-Thyroxine Serb"
+    ],
+    "forms": [
+      "comprime",
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'hormone thyroïdienne, à jeun et à heure fixe",
+    "what": "Hormone thyroïdienne de synthèse : hypothyroïdie (Hashimoto, après thyroïdectomie ou iode radioactif), le plus souvent à vie. La dose s'adapte sur la TSH.",
+    "action": "Copie la thyroxine (T4) fabriquée par la thyroïde : transformée en T3 dans les tissus, elle règle le métabolisme, la température, le rythme cardiaque et l'énergie.",
+    "sideEffects": [
+      "Surdosage : palpitations, tachycardie, tremblements",
+      "Insomnie, nervosité, sueurs, amaigrissement",
+      "Angor ou trouble du rythme chez le cardiaque",
+      "Diarrhée",
+      "Changement de marque ou de formule : contrôler la TSH"
+    ],
+    "contraindications": [
+      "Hyperthyroïdie non traitée",
+      "Infarctus du myocarde aigu, myocardite aiguë",
+      "Insuffisance surrénale non traitée",
+      "Prudence : sujet âgé, coronarien (augmentation très progressive)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Levothyrox, LE matin : à jeun, avec un verre d'eau, une demi-heure avant le petit-déjeuner, et à distance du calcium, du fer et des pansements gastriques qui gênent son absorption."
+    }
+  },
+  {
+    "dci": "Glucagon",
+    "family": "hormone",
+    "rarity": "Fréquent",
+    "classe": "Hormone hyperglycémiante",
+    "brands": [
+      "GlucaGen",
+      "Baqsimi"
+    ],
+    "forms": [
+      "injectable",
+      "spray"
+    ],
+    "routes": [
+      "IM",
+      "SC",
+      "IV",
+      "IN"
+    ],
+    "tagline": "Le secours de l'hypoglycémie sévère, sans voie veineuse",
+    "what": "Hormone de secours de l'hypoglycémie sévère du diabétique traité par insuline, quand le resucrage par la bouche est impossible (trouble de conscience, convulsions). Kit injectable ou poudre nasale.",
+    "action": "Hormone du pancréas opposée à l'insuline : pousse le foie à libérer son stock de sucre (le glycogène) dans le sang. La glycémie remonte en une dizaine de minutes.",
+    "sideEffects": [
+      "Nausées, vomissements : position latérale de sécurité",
+      "Rechute possible : sucres lents dès le réveil",
+      "Tachycardie, hausse transitoire de la tension",
+      "Céphalées, gêne nasale (forme nasale)"
+    ],
+    "contraindications": [
+      "Phéochromocytome (poussée hypertensive)",
+      "Prudence : insulinome (hypoglycémie rebond)",
+      "Prudence : jeûne, alcool, dénutrition (foie vide, inefficace)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient de glucose agonist : en 1923, Kimball et Murlin baptisent ainsi la substance des extraits de pancréas qui faisait monter la glycémie au lieu de la faire baisser comme l'insuline."
+    }
+  },
+  {
+    "dci": "Desmopressine",
+    "family": "hormone",
+    "rarity": "Occasionnel",
+    "classe": "Analogue de l'hormone antidiurétique",
+    "brands": [
+      "Minirin",
+      "Octim"
+    ],
+    "forms": [
+      "comprime",
+      "spray",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "SL",
+      "IN",
+      "IV"
+    ],
+    "tagline": "L'hormone antidiurétique de synthèse : moins d'urines",
+    "what": "Analogue de l'hormone antidiurétique : diabète insipide central, énurésie nocturne. En IV ou spray nasal : hémophilie A mineure et maladie de Willebrand (libère les facteurs).",
+    "action": "Copie la vasopressine sur le rein : l'eau est réabsorbée, les urines diminuent et se concentrent. Presque sans effet sur les vaisseaux, elle libère aussi le facteur Willebrand.",
+    "sideEffects": [
+      "Hyponatrémie, intoxication par l'eau : ionogramme",
+      "Céphalées, nausées : penser à l'hyponatrémie",
+      "Prise de poids, œdèmes : peser le patient",
+      "Convulsions si hyponatrémie sévère"
+    ],
+    "contraindications": [
+      "Hyponatrémie",
+      "Polydipsie primaire ou psychogène",
+      "Insuffisance cardiaque, traitement par diurétiques",
+      "Insuffisance rénale modérée à sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son surnom DDAVP résume sa chimie : 1-désamino-8-D-arginine vasopressine. Deux retouches de l'hormone naturelle suffisent à gommer l'effet sur la tension et à allonger l'action."
+    }
+  },
+  {
+    "dci": "Thiamazole",
+    "family": "hormone",
+    "rarity": "Rare",
+    "classe": "Antithyroïdien de synthèse",
+    "brands": [
+      "Thyrozol"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antithyroïdien de référence, sous l'œil de la NFS",
+    "what": "Antithyroïdien de synthèse de première intention : hyperthyroïdie (maladie de Basedow, nodule toxique), préparation à la chirurgie ou à l'iode radioactif.",
+    "action": "Bloque la thyroperoxydase, l'enzyme qui fixe l'iode pour fabriquer les hormones thyroïdiennes. Effet retardé de quelques semaines : la thyroïde doit d'abord vider son stock.",
+    "sideEffects": [
+      "Agranulocytose : fièvre ou angine = NFS en urgence",
+      "Éruption cutanée, prurit, urticaire",
+      "Douleurs articulaires",
+      "Atteinte hépatique (cholestase)",
+      "Troubles du goût, nausées"
+    ],
+    "contraindications": [
+      "Antécédent d'agranulocytose sous antithyroïdien",
+      "Cholestase préexistante",
+      "Pancréatite aiguë sous thiamazole ou carbimazole",
+      "Prudence : 1er trimestre de grossesse (malformations)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Antithyroïdien + fièvre ou mal de gorge = NFS le jour même. Le patient le sait, l'IDE le rappelle : l'agranulocytose survient surtout dans les premiers mois de traitement."
+    }
+  },
+  {
+    "dci": "Fludrocortisone",
+    "family": "hormone",
+    "rarity": "Rare",
+    "classe": "Minéralocorticoïde de synthèse",
+    "brands": [
+      "Flucortac"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le remplaçant de l'aldostérone dans la maladie d'Addison",
+    "what": "Minéralocorticoïde de synthèse : insuffisance surrénale primaire (maladie d'Addison), toujours associé à l'hydrocortisone. Parfois, hypotension orthostatique sévère.",
+    "action": "Mime l'aldostérone sur le rein : retient le sodium et l'eau, élimine le potassium. Le volume sanguin et la tension remontent. Effet anti-inflammatoire négligeable.",
+    "sideEffects": [
+      "Rétention d'eau et de sel : œdèmes, prise de poids",
+      "HTA : surveiller la tension couché et debout",
+      "Hypokaliémie : surveiller le ionogramme",
+      "Céphalées",
+      "Insuffisance cardiaque si surdosage"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la fludrocortisone",
+      "Prudence : HTA, insuffisance cardiaque, œdèmes",
+      "Prudence : hypokaliémie, diurétiques hypokaliémiants"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Addison, deux hormones à remplacer : l'hydrocortisone pour le cortisol, la fludrocortisone pour l'aldostérone. Hydro pour le stress, Fludro pour le sel."
+    }
+  },
+  {
+    "dci": "Propylthiouracile",
+    "family": "hormone",
+    "rarity": "Très rare",
+    "classe": "Antithyroïdien de synthèse",
+    "brands": [],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antithyroïdien du 1er trimestre de grossesse",
+    "what": "Antithyroïdien de synthèse de seconde ligne : hyperthyroïdie au 1er trimestre de grossesse, intolérance au thiamazole, crise aiguë thyréotoxique.",
+    "action": "Bloque la thyroperoxydase qui fabrique les hormones thyroïdiennes, et freine aussi la transformation de T4 en T3 active dans les tissus : utile dans la crise thyréotoxique.",
+    "sideEffects": [
+      "Hépatite grave, parfois fulminante : bilan hépatique",
+      "Agranulocytose : fièvre ou angine = NFS en urgence",
+      "Éruption cutanée, prurit",
+      "Vascularite, douleurs articulaires",
+      "Nausées, troubles du goût"
+    ],
+    "contraindications": [
+      "Insuffisance hépatique, antécédent d'hépatite sous PTU",
+      "Antécédent d'agranulocytose sous antithyroïdien",
+      "Prudence : enfant (toxicité hépatique)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "PTU, deux P : Premier trimestre de grossesse, où on le préfère au thiamazole, et Péril hépatique, qui pousse souvent à revenir au thiamazole ensuite."
+    }
+  },
+  {
+    "dci": "Somatropine",
+    "family": "hormone",
+    "rarity": "Exceptionnel",
+    "classe": "Hormone de croissance recombinante",
+    "brands": [
+      "Genotonorm",
+      "Norditropine",
+      "Omnitrope"
+    ],
+    "forms": [
+      "stylo",
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "L'hormone de croissance, en stylo SC le soir",
+    "what": "Hormone de croissance de synthèse : retard de croissance de l'enfant par déficit en hormone de croissance, syndrome de Turner, déficit de l'adulte. Prescription initiale hospitalière.",
+    "action": "Copie l'hormone de croissance de l'hypophyse : stimule la croissance des os et des muscles, en partie via l'IGF-1 produit par le foie. Agit aussi sur les graisses et le sucre.",
+    "sideEffects": [
+      "Réaction au point d'injection : varier les sites",
+      "Hyperglycémie, baisse de la sensibilité à l'insuline",
+      "Céphalées ; rare hypertension intracrânienne bénigne",
+      "Douleurs articulaires, œdèmes (surtout chez l'adulte)",
+      "Boiterie de l'enfant : penser à la hanche (épiphysiolyse)"
+    ],
+    "contraindications": [
+      "Tumeur active ou évolutive",
+      "Cartilages de croissance soudés (si but : la croissance)",
+      "Phase aiguë grave : chirurgie lourde, polytraumatisme",
+      "Prudence : diabète (surveiller la glycémie)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Jusqu'en 1985, on l'extrayait d'hypophyses humaines, et il en fallait beaucoup pour peu d'hormone. Depuis, des bactéries modifiées la fabriquent à la demande : c'est le génie génétique."
+    }
+  }
+]

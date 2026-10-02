@@ -1,0 +1,141 @@
+[
+  {
+    "dci": "Vitamine K (phytoménadione)",
+    "family": "hemostase",
+    "rarity": "Fréquent",
+    "classe": "Vitamine K1, antidote des AVK",
+    "brands": [],
+    "forms": ["injectable"],
+    "routes": ["PO", "IV"],
+    "tagline": "La vitamine K1, antidote des AVK, per os ou IV lente",
+    "what": "Vitamine K1 : antidote des AVK (INR trop haut, hémorragie, avec le CCP si grave) et prévention du saignement du nouveau-né. Sans effet sur les héparines et les AOD.",
+    "action": "Rend au foie la vitamine K que l'AVK empêche de recycler : il refabrique les facteurs II, VII, IX et X. Effet en quelques heures, trop lent seul si l'hémorragie est grave.",
+    "sideEffects": [
+      "Réaction allergique, rare choc en IV : injecter lentement",
+      "Hématome si IM : voie à éviter sous anticoagulant",
+      "Résistance passagère aux AVK après une forte dose"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la phytoménadione ou aux excipients",
+      "Voie IM chez un patient sous anticoagulant"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Le K vient de Koagulation : le Danois Henrik Dam l'a découverte vers 1929 chez des poussins carencés qui saignaient. Prix Nobel de médecine 1943, partagé avec l'Américain Edward Doisy."
+    }
+  },
+  {
+    "dci": "Sulfate de protamine",
+    "family": "hemostase",
+    "rarity": "Rare",
+    "classe": "Antidote de l'héparine",
+    "brands": [],
+    "forms": ["injectable"],
+    "routes": ["IV"],
+    "tagline": "L'antidote de l'héparine, injecté lentement en IV",
+    "what": "Antidote de l'héparine : surdosage ou hémorragie sous HNF, neutralisation de l'héparine en fin de circulation extracorporelle. Effet partiel sur les HBPM, nul sur le fondaparinux et les AOD.",
+    "action": "Protéine très chargée positivement, extraite de laitance de poisson : elle s'accroche à l'héparine, chargée négativement, et forme un complexe inactif. Effet immédiat en IV.",
+    "sideEffects": [
+      "Hypotension, bradycardie si injection trop rapide",
+      "Allergie, choc : insuline NPH, allergie au poisson",
+      "Hypertension pulmonaire aiguë (rare, grave)",
+      "Excès de protamine : effet anticoagulant propre",
+      "Rebond de l'héparine quelques heures après : TCA"
+    ],
+    "contraindications": [
+      "Hypersensibilité connue à la protamine",
+      "Prudence : diabétique sous insuline NPH, allergie au poisson"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Protamine, le « plus » qui annule le « moins » : chargée positivement, elle neutralise l'héparine chargée négativement. Totale sur l'HNF, partielle sur les HBPM, nulle sur le fondaparinux."
+    }
+  },
+  {
+    "dci": "Concentré de complexe prothrombinique",
+    "family": "hemostase",
+    "rarity": "Rare",
+    "classe": "Facteurs de coagulation (dérivé du sang)",
+    "brands": ["Kanokad", "Confidex", "Octaplex"],
+    "forms": ["injectable"],
+    "routes": ["IV"],
+    "tagline": "Les facteurs de coagulation prêts à l'emploi, en urgence",
+    "what": "Médicament dérivé du sang : hémorragie grave ou chirurgie urgente sous AVK, avec la vitamine K. Aussi utilisé, hors AMM, dans les hémorragies graves sous anti-Xa oral.",
+    "action": "Apporte d'emblée les facteurs II, VII, IX et X, issus de plasma humain : la coagulation se corrige en quelques minutes, sans attendre que le foie les refabrique.",
+    "sideEffects": [
+      "Thrombose : phlébite, embolie, infarctus",
+      "Réaction allergique, fièvre, frissons",
+      "Dérivé du sang : traçabilité obligatoire des lots",
+      "Risque infectieux résiduel (très faible)",
+      "CIVD (rare)"
+    ],
+    "contraindications": [
+      "Hypersensibilité au produit",
+      "Antécédent de TIH (contient de l'héparine)",
+      "Prudence : CIVD, risque thrombotique élevé"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Son ancien nom, PPSB, donne son contenu : Prothrombine (II), Proconvertine (VII), facteur Stuart (X) et facteur antihémophilique B (IX). Les quatre que l'AVK fait chuter."
+    }
+  },
+  {
+    "dci": "Idarucizumab",
+    "family": "hemostase",
+    "rarity": "Très rare",
+    "classe": "Anticorps monoclonal, antidote du dabigatran",
+    "brands": ["Praxbind"],
+    "forms": ["injectable"],
+    "routes": ["IV"],
+    "tagline": "L'antidote spécifique du dabigatran, en quelques minutes",
+    "what": "Antidote spécifique du dabigatran (Pradaxa) : hémorragie grave ou chirurgie urgente. Neutralise son effet en quelques minutes. Sans effet sur les autres anticoagulants.",
+    "action": "Fragment d'anticorps monoclonal humanisé : capte le dabigatran avec une affinité bien supérieure à celle de la thrombine et le neutralise. Éliminé par le rein.",
+    "sideEffects": [
+      "Retour du risque de thrombose : relancer l'anticoagulation",
+      "Rebond possible du dabigatran : surveiller le saignement",
+      "Réaction allergique (rare)",
+      "Contient du sorbitol : intolérance au fructose"
+    ],
+    "contraindications": [
+      "Pas de contre-indication absolue en urgence",
+      "Prudence : intolérance héréditaire au fructose (sorbitol)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Approuvé en 2015, c'est le premier antidote spécifique d'un anticoagulant oral direct. Il a été conçu par Boehringer Ingelheim, le laboratoire qui commercialise aussi le dabigatran."
+    }
+  },
+  {
+    "dci": "Andexanet alfa",
+    "family": "hemostase",
+    "rarity": "Exceptionnel",
+    "classe": "Antidote des anti-Xa oraux (protéine recombinante)",
+    "brands": ["Ondexxya"],
+    "forms": ["injectable"],
+    "routes": ["IV"],
+    "tagline": "Le leurre du facteur Xa, antidote d'apixaban et rivaroxaban",
+    "what": "Antidote de l'apixaban et du rivaroxaban, réservé aux hémorragies graves menaçant la vie. Peu disponible et coûteux : beaucoup d'hôpitaux utilisent le CCP à la place.",
+    "action": "Protéine recombinante qui imite le facteur Xa sans en avoir l'activité : elle sert de leurre, capte l'anti-Xa et libère le facteur Xa du patient. Effet rapide mais bref.",
+    "sideEffects": [
+      "Thrombose, AVC, infarctus : relancer l'anticoagulation",
+      "Réaction à la perfusion : fièvre, frissons, rougeur",
+      "Rebond de l'anti-Xa après la fin de la perfusion",
+      "Résistance à l'héparine ensuite (chirurgie, CEC)",
+      "Arrêt cardiaque (rare)"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux protéines de hamster",
+      "Prudence : héparine prévue ensuite (chirurgie cardiaque)",
+      "Prudence : thrombose ou accident ischémique récent"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "AndeXAnet contient « xa », comme apiXAban et rivaroXAban : il neutralise les anti-Xa. Le dabigatran, anti-thrombine, a son propre antidote : l'idarucizumab."
+    }
+  }
+]

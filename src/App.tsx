@@ -4,7 +4,7 @@ import { RevealOverlay } from './components/Reveal/RevealOverlay'
 import { TabBar, type Tab } from './components/TabBar/TabBar'
 import { DexScreen } from './screens/Dex/DexScreen'
 import { HistoryScreen } from './screens/History/HistoryScreen'
-import { PreviewScreen } from './screens/Preview/PreviewScreen'
+import { QuizScreen } from './screens/Quiz/QuizScreen'
 import { TodayScreen } from './screens/Today/TodayScreen'
 import { StoreProvider } from './state/store'
 
@@ -15,46 +15,21 @@ import { StoreProvider } from './state/store'
 export default function App() {
   const [tab, setTab] = useState<Tab>('today')
   const mainRef = useRef<HTMLElement>(null)
-  // Page de démo « #apercu » (toutes les cartes dans les trois styles), hors des onglets.
-  const [preview, setPreview] = useState(() => window.location.hash === '#apercu')
-
-  useEffect(() => {
-    const onHash = () => setPreview(window.location.hash === '#apercu')
-    window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
-  }, [])
-
   // Chaque onglet s'ouvre en haut de page.
   useEffect(() => {
     mainRef.current?.scrollTo({ top: 0 })
-  }, [tab, preview])
-
-  const leavePreview = () => {
-    history.replaceState(null, '', window.location.pathname + window.location.search)
-    setPreview(false)
-  }
+  }, [tab])
 
   return (
     <StoreProvider>
       <div className={styles.app}>
         <main ref={mainRef} className={styles.main}>
-          {preview ? (
-            <PreviewScreen onBack={leavePreview} />
-          ) : (
-            <>
-              {tab === 'today' && <TodayScreen />}
-              {tab === 'dex' && <DexScreen />}
-              {tab === 'history' && <HistoryScreen />}
-            </>
-          )}
+          {tab === 'today' && <TodayScreen />}
+          {tab === 'dex' && <DexScreen />}
+          {tab === 'quiz' && <QuizScreen />}
+          {tab === 'history' && <HistoryScreen />}
         </main>
-        <TabBar
-          active={tab}
-          onChange={(t) => {
-            if (preview) leavePreview()
-            setTab(t)
-          }}
-        />
+        <TabBar active={tab} onChange={setTab} />
         <RevealOverlay />
       </div>
     </StoreProvider>

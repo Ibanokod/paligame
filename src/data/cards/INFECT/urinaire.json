@@ -1,0 +1,187 @@
+[
+  {
+    "dci": "Ciprofloxacine",
+    "family": "urinaire",
+    "rarity": "Fréquent",
+    "classe": "Antibiotique de la famille des fluoroquinolones",
+    "brands": [
+      "Ciflox"
+    ],
+    "forms": [
+      "comprime",
+      "poche"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "La quinolone des pyélonéphrites et du pyocyanique",
+    "what": "Fluoroquinolone des pyélonéphrites, des infections urinaires masculines et des infections à bacille pyocyanique. À réserver : jamais en première intention dans la cystite simple.",
+    "action": "Bloque les enzymes qui déroulent et recopient l'ADN bactérien (ADN gyrase) : bactéricide. Si bien absorbée par la bouche que la forme orale vaut presque la forme IV.",
+    "sideEffects": [
+      "Tendinite, rupture du tendon d'Achille : alerter",
+      "Photosensibilisation : éviter soleil et UV",
+      "Confusion, convulsions (sujet âgé)",
+      "Allongement du QT, hypo ou hyperglycémie",
+      "Nausées, diarrhée"
+    ],
+    "contraindications": [
+      "Allergie aux quinolones",
+      "Antécédent de tendinopathie sous fluoroquinolone",
+      "Association à la tizanidine",
+      "Prudence : sujet âgé, corticoïdes, greffe (risque tendineux)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2001, après l'envoi aux États-Unis de lettres contaminées par la bactérie du charbon, la ciprofloxacine est devenue si demandée que le gouvernement américain a négocié son prix avec Bayer."
+    }
+  },
+  {
+    "dci": "Fosfomycine-trométamol",
+    "family": "urinaire",
+    "rarity": "Fréquent",
+    "classe": "Antibiotique urinaire en dose unique",
+    "brands": [
+      "Monuril",
+      "Uridoz"
+    ],
+    "forms": [
+      "sachet"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La cystite simple traitée en un seul sachet",
+    "what": "Antibiotique de première intention de la cystite aiguë simple de la femme, en prise unique. Aussi utilisé dans la cystite de la femme enceinte.",
+    "action": "Bloque la toute première étape de fabrication de la paroi bactérienne : bactéricide. Éliminée sous forme active dans les urines, où elle reste concentrée longtemps après la prise.",
+    "sideEffects": [
+      "Diarrhée, nausées, douleurs abdominales",
+      "Céphalées, vertiges",
+      "Mycose vaginale",
+      "Réaction allergique, rare"
+    ],
+    "contraindications": [
+      "Allergie à la fosfomycine",
+      "Insuffisance rénale sévère",
+      "Pas d'indication si fièvre ou pyélonéphrite (cystite seule)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Un sachet, un soir, une vessie vide : à jeun, de préférence au coucher après avoir uriné. Le médicament reste ainsi toute la nuit dans la vessie."
+    }
+  },
+  {
+    "dci": "Ofloxacine",
+    "family": "urinaire",
+    "rarity": "Occasionnel",
+    "classe": "Antibiotique de la famille des fluoroquinolones",
+    "brands": [
+      "Oflocet"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "La quinolone de la prostate et des os",
+    "what": "Fluoroquinolone des pyélonéphrites, des infections urinaires masculines (prostatite) et de certaines infections ostéoarticulaires, souvent associée à la rifampicine.",
+    "action": "Bloque les enzymes qui recopient l'ADN bactérien : bactéricide. Diffuse très bien dans les tissus, notamment la prostate et l'os, et s'élimine surtout par le rein.",
+    "sideEffects": [
+      "Tendinopathie, rupture tendineuse : arrêter et alerter",
+      "Photosensibilisation : se protéger du soleil",
+      "Insomnie, vertiges, confusion du sujet âgé",
+      "Hypoglycémie chez le diabétique, allongement du QT",
+      "Troubles digestifs"
+    ],
+    "contraindications": [
+      "Allergie aux quinolones, épilepsie",
+      "Antécédent de tendinopathie sous fluoroquinolone",
+      "Enfant en croissance, grossesse, allaitement",
+      "Prudence : insuffisance rénale (adapter la dose)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Quinolone, pense « talon et soleil » : toute douleur du tendon d'Achille impose l'arrêt et l'appel au médecin, et la peau reste protégée du soleil et des UV pendant le traitement."
+    }
+  },
+  {
+    "dci": "Lévofloxacine",
+    "family": "urinaire",
+    "rarity": "Occasionnel",
+    "classe": "Fluoroquinolone active sur le pneumocoque",
+    "brands": [
+      "Tavanic"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "La quinolone respiratoire, aussi utile en urinaire",
+    "what": "Fluoroquinolone active sur le pneumocoque : pneumopathies (allergie aux bêtalactamines, légionellose), mais aussi pyélonéphrites et infections urinaires masculines.",
+    "action": "Bloque les enzymes qui recopient l'ADN bactérien : bactéricide. Plus active que la ciprofloxacine sur le pneumocoque, avec une absorption orale excellente.",
+    "sideEffects": [
+      "Tendinopathie, rupture tendineuse : alerter",
+      "Photosensibilisation : protéger du soleil",
+      "Allongement du QT : ECG si terrain à risque",
+      "Hypo ou hyperglycémie : surveiller si diabète",
+      "Confusion, hallucinations (sujet âgé)"
+    ],
+    "contraindications": [
+      "Allergie aux quinolones, épilepsie",
+      "Antécédent de tendinopathie sous fluoroquinolone",
+      "Enfant, adolescent, grossesse, allaitement",
+      "Prudence : fer, calcium, antiacides à prendre à distance"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "La lévofloxacine est la moitié « gauche » de l'ofloxacine : celle-ci mélange deux formes en miroir, et la forme lévogyre (« lévo », gauche) porte presque toute l'activité."
+    }
+  },
+  {
+    "dci": "Nitrofurantoïne",
+    "family": "urinaire",
+    "rarity": "Occasionnel",
+    "classe": "Antibiotique urinaire (nitrofurane)",
+    "brands": [
+      "Furadantine"
+    ],
+    "forms": [
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Cystite à risque de complication, en cure courte",
+    "what": "Antibiotique urinaire de la cystite, notamment à risque de complication. Cure courte uniquement : interdite en traitement prolongé ou en prévention des récidives (ANSM).",
+    "action": "Transformée par les enzymes de la bactérie en dérivés toxiques qui abîment son ADN et ses protéines. Se concentre dans les urines, sans taux utiles dans le sang.",
+    "sideEffects": [
+      "Nausées, vomissements : prendre au cours du repas",
+      "Atteinte pulmonaire (toux, dyspnée, fièvre) : alerter",
+      "Hépatite, surtout en traitement prolongé",
+      "Neuropathie périphérique (fourmillements)",
+      "Urines colorées en jaune foncé ou brun"
+    ],
+    "contraindications": [
+      "Allergie aux nitrofuranes",
+      "Insuffisance rénale (efficacité réduite, toxicité accrue)",
+      "Traitement prolongé ou préventif (foie, poumon)",
+      "Prudence : déficit en G6PD (risque d'hémolyse)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Furadantine, fini vite : cure courte seulement. Au long cours, elle peut léser foie et poumons, d'où l'interdiction de l'usage préventif par l'ANSM en 2012."
+    }
+  }
+]

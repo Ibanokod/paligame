@@ -1,12 +1,13 @@
-import { Droplets, History, LayoutGrid, type LucideIcon } from 'lucide-react'
+import { BookOpenCheck, Droplets, History, LayoutGrid, type LucideIcon } from 'lucide-react'
 import { cx } from '../../lib/cx'
 import styles from './TabBar.module.css'
 
-export type Tab = 'today' | 'dex' | 'history'
+export type Tab = 'today' | 'dex' | 'quiz' | 'history'
 
 const TABS: { id: Tab; label: string; Icon: LucideIcon }[] = [
   { id: 'today', label: "Aujourd'hui", Icon: Droplets },
   { id: 'dex', label: 'Pharmacodex', Icon: LayoutGrid },
+  { id: 'quiz', label: 'Quiz', Icon: BookOpenCheck },
   { id: 'history', label: 'Historique', Icon: History },
 ]
 

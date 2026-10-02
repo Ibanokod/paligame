@@ -1,0 +1,249 @@
+[
+  {
+    "dci": "Étomidate",
+    "family": "anesthesie",
+    "rarity": "Fréquent",
+    "classe": "Hypnotique intraveineux d'induction",
+    "brands": [
+      "Etomidate Lipuro"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'hypnotique d'induction qui ménage la tension",
+    "what": "Hypnotique d'induction de l'anesthésie, notamment pour l'intubation en séquence rapide aux urgences et en SMUR. Choisi chez le patient instable : il fait peu baisser la pression artérielle.",
+    "action": "Renforce l'effet du GABA, frein naturel du cerveau : perte de conscience en moins d'une minute, pour quelques minutes. Aucun effet antalgique.",
+    "sideEffects": [
+      "Apnée : ventilation et intubation prêtes avant",
+      "Blocage transitoire des surrénales (cortisol)",
+      "Myoclonies à l'induction",
+      "Douleur au point d'injection",
+      "Nausées, vomissements au réveil"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'étomidate",
+      "Pas de perfusion continue ni de réinjections (surrénales)",
+      "Prudence : insuffisance surrénale, choc septique"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "ÉTOmidate, l'ÉTOile des patients instables : il endort sans faire chuter la tension. Revers à retenir : il freine les surrénales, donc une injection unique, jamais en continu."
+    }
+  },
+  {
+    "dci": "Suxaméthonium",
+    "family": "anesthesie",
+    "rarity": "Fréquent",
+    "classe": "Curare dépolarisant",
+    "brands": [
+      "Célocurine"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le curare le plus rapide et le plus bref",
+    "what": "Curare d'action très rapide et très brève, de référence pour l'intubation en séquence rapide : estomac plein, urgences, SMUR, césarienne. Ampoules conservées au réfrigérateur.",
+    "action": "Se fixe sur les récepteurs à l'acétylcholine du muscle et les active durablement : fasciculations, puis paralysie. Détruit en quelques minutes par les pseudocholinestérases du sang.",
+    "sideEffects": [
+      "Hyperkaliémie : risque d'arrêt cardiaque",
+      "Bradycardie, surtout à la réinjection et chez l'enfant",
+      "Hyperthermie maligne chez les sujets prédisposés",
+      "Anaphylaxie, comme tous les curares",
+      "Fasciculations, courbatures au réveil"
+    ],
+    "contraindications": [
+      "Antécédent personnel ou familial d'hyperthermie maligne",
+      "Hyperkaliémie, brûlures étendues, immobilisation prolongée",
+      "Myopathies, lésion médullaire, maladies neuromusculaires",
+      "Déficit en pseudocholinestérases (paralysie prolongée)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Célocurine, comme célérité : le curare le plus rapide et le plus bref. Ses deux pièges : hyperkaliémie et hyperthermie maligne. Et il aime le froid : au réfrigérateur."
+    }
+  },
+  {
+    "dci": "Rocuronium",
+    "family": "anesthesie",
+    "rarity": "Fréquent",
+    "classe": "Curare non dépolarisant (aminostéroïde)",
+    "brands": [
+      "Esmeron"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le curare d'intubation, réversible par le sugammadex",
+    "what": "Curare non dépolarisant pour l'intubation et la chirurgie, et en séquence rapide si le suxaméthonium est contre-indiqué. Réversible vite par le sugammadex. Flacons conservés au froid.",
+    "action": "Bloque les récepteurs à l'acétylcholine de la jonction neuromusculaire, sans les activer : paralysie des muscles, sans fasciculations. Ni sédatif, ni antalgique.",
+    "sideEffects": [
+      "Paralysie respiratoire : ventilation obligatoire",
+      "Anaphylaxie : curares, 1re cause d'allergie au bloc",
+      "Curarisation résiduelle au réveil : monitorage (TOF)",
+      "Douleur à l'injection",
+      "Tachycardie modérée"
+    ],
+    "contraindications": [
+      "Hypersensibilité au rocuronium",
+      "Jamais chez un patient non endormi (paralysie consciente)",
+      "Prudence : myasthénie (sensibilité très accrue)",
+      "Prudence : insuffisance hépatique (élimination ralentie)"
+    ],
+    "antidote": "Sugammadex",
+    "fun": {
+      "kind": "culture",
+      "text": "Le curare est d'abord un poison de flèche amazonien. Au XIXe siècle, Claude Bernard montre qu'il agit entre le nerf et le muscle : la conscience reste intacte, d'où l'hypnotique obligatoire."
+    }
+  },
+  {
+    "dci": "Sugammadex",
+    "family": "anesthesie",
+    "rarity": "Occasionnel",
+    "classe": "Antagoniste des curares aminostéroïdes",
+    "brands": [
+      "Bridion"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote qui met le rocuronium en cage",
+    "what": "Antagoniste de la curarisation par rocuronium ou vécuronium : en fin d'intervention, même sur un bloc profond, ou en urgence si l'intubation est impossible après curarisation.",
+    "action": "Molécule en anneau qui enferme le rocuronium circulant comme dans une cage : le curare quitte la jonction neuromusculaire et la force revient en quelques minutes.",
+    "sideEffects": [
+      "Réaction allergique, anaphylaxie",
+      "Bradycardie parfois sévère : scope",
+      "Toux, mouvements si anesthésie trop légère",
+      "Nausées, vomissements",
+      "Pilule moins efficace 7 jours : prévenir la patiente"
+    ],
+    "contraindications": [
+      "Hypersensibilité au sugammadex",
+      "Inefficace sur les autres curares (atracurium, suxaméthonium)",
+      "Prudence : insuffisance rénale sévère (non recommandé)",
+      "Prudence : troubles de la coagulation"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom dit sa structure : su pour sugar (sucre), gammadex pour gamma-cyclodextrine, un anneau de sucres. Une cage moléculaire taillée sur mesure pour le rocuronium."
+    }
+  },
+  {
+    "dci": "Néostigmine",
+    "family": "anesthesie",
+    "rarity": "Occasionnel",
+    "classe": "Anticholinestérasique (décurarisant)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le décurarisant classique, toujours avec l'atropine",
+    "what": "Décurarisant des curares non dépolarisants (atracurium, rocuronium...) en fin d'anesthésie ou en SSPI, quand le bloc a déjà commencé à régresser. Injecté avec l'atropine.",
+    "action": "Bloque l'enzyme qui détruit l'acétylcholine : celle-ci s'accumule et déplace le curare de ses récepteurs musculaires. Stimule aussi le système parasympathique.",
+    "sideEffects": [
+      "Bradycardie : toujours associée à l'atropine",
+      "Hypersécrétion salivaire et bronchique",
+      "Bronchospasme",
+      "Nausées, vomissements, coliques",
+      "Inefficace sur un bloc profond : vérifier le TOF"
+    ],
+    "contraindications": [
+      "Obstacle mécanique digestif ou urinaire",
+      "Après suxaméthonium : aggrave et prolonge le bloc",
+      "Prudence : asthme, bradycardie, troubles de conduction"
+    ],
+    "antidote": "Atropine",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Néostigmine et atropine, duo inséparable : la première relance les muscles mais ralentit le cœur et fait saliver, la seconde corrige ces effets. On les injecte ensemble."
+    }
+  },
+  {
+    "dci": "Rémifentanil",
+    "family": "anesthesie",
+    "rarity": "Rare",
+    "classe": "Morphinique de très courte durée d'action",
+    "brands": [
+      "Ultiva"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le morphinique qui s'éteint en quelques minutes",
+    "what": "Morphinique puissant en perfusion continue : anesthésie, sédation-analgésie en réanimation. Son effet disparaît quelques minutes après l'arrêt : l'antalgie du réveil s'anticipe.",
+    "action": "Agoniste des récepteurs opioïdes mu, détruit par des estérases du sang et des tissus : sa durée d'action ne dépend ni du foie, ni du rein, ni de la durée de perfusion.",
+    "sideEffects": [
+      "Apnée, dépression respiratoire : ventilation prête",
+      "Rigidité thoracique si bolus : ne pas rincer la ligne",
+      "Bradycardie, hypotension",
+      "Douleur au réveil : relais antalgique avant l'arrêt",
+      "Nausées, vomissements, prurit"
+    ],
+    "contraindications": [
+      "Voie péridurale ou intrathécale (contient de la glycine)",
+      "Utilisation seule pour l'induction de l'anesthésie",
+      "Hypersensibilité aux dérivés du fentanyl",
+      "Prudence : sujet âgé, hypovolémie"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "RÉMIfentanil, RÉMIssion éclair : il s'éteint en quelques minutes, quelle que soit la durée de perfusion. Un vrai interrupteur : l'antalgie du réveil se prépare avant de couper."
+    }
+  },
+  {
+    "dci": "Dantrolène",
+    "family": "anesthesie",
+    "rarity": "Exceptionnel",
+    "classe": "Myorelaxant à action musculaire directe",
+    "brands": [
+      "Dantrium"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote de l'hyperthermie maligne",
+    "what": "Seul traitement spécifique de la crise d'hyperthermie maligne, au bloc ou en SSPI, déclenchée par les halogénés ou le suxaméthonium. Un stock doit être disponible sur chaque site d'anesthésie.",
+    "action": "Agit directement dans le muscle : bloque la libération du calcium stocké dans la fibre musculaire (récepteur RyR1). Contractures et emballement métabolique s'arrêtent.",
+    "sideEffects": [
+      "Faiblesse musculaire : surveiller la ventilation",
+      "Veinite, nécrose si extravasation (très basique)",
+      "Reconstitution lente : mobiliser plusieurs soignants",
+      "Somnolence, vertiges",
+      "Atteinte hépatique en traitement prolongé"
+    ],
+    "contraindications": [
+      "Aucune en crise d'hyperthermie maligne (urgence vitale)",
+      "Inhibiteurs calciques IV associés (hyperkaliémie, collapsus)",
+      "Prudence : insuffisance hépatique"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "L'hyperthermie maligne est décrite en 1960 en Australie : un jeune patient avait perdu dix proches lors d'anesthésies. Avec le dantrolène, disponible à partir de 1979, la mortalité s'est effondrée."
+    }
+  }
+]

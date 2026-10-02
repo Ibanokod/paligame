@@ -2,11 +2,11 @@
 // rend mal les SVG et les animations). Usage : npm run dev, puis
 //   node scripts/capture.mjs <dossier de sortie> [adresse, par défaut http://localhost:5174/]
 // Le scénario ci-dessous remplit une partie de la collection (localStorage), puis capture
-// l'aperçu des trois styles, l'accueil, l'historique, le Pharmacodex, une fiche et
-// l'ouverture d'un booster. Variable STYLE=classique|memo|galerie pour le style des cartes.
+// l'accueil, les réglages, le Pharmacodex et ses extensions, une fiche en mode révision, le
+// quiz (question, correction, résultat) et l'ouverture d'un booster de l'extension Cardio.
 import { spawn } from 'node:child_process'
-import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 const EDGE = ['C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe'].find(existsSync)
 const outDir = process.argv[2] ?? '.'
@@ -64,79 +64,86 @@ await send('Emulation.setDeviceMetricsOverride', { width: 412, height: 915, devi
 await send('Page.enable')
 await go()
 
-// Collection de démonstration : 30 cartes dont quelques rares et deux brillantes, 1,2 L bu aujourd'hui.
+// Collection de démonstration : 30 cartes palliatives (deux brillantes) et 12 de cardio,
+// quelques résultats de quiz, 1,2 L bu aujourd'hui.
 await evaluate(`(() => {
   const now = new Date(); const day = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0');
-  const ids = [1,2,3,4,7,10,12,13,15,16,20,23,24,25,30,34,35,36,38,41,45,46,50,51,55,57,60,63,67,70].map(n => 'PAL1-' + String(n).padStart(3,'0'));
-  const collection = {}; ids.forEach((id, i) => collection[id] = { at: new Date(now - (30 - i) * 3600e3).toISOString(), ...(i === 5 || i === 21 ? { foil: true } : {}) });
+  const pad = (n) => String(n).padStart(3, '0');
+  const ids = [1,2,3,4,7,10,12,13,15,16,20,23,24,25,30,34,35,36,38,41,45,46,50,51,55,57,60,63,67,70].map(n => 'PAL1-' + pad(n));
+  const cardio = [1,2,3,5,9,13,14,18,22,26,30,36].map(n => 'CARDIO-' + pad(n));
+  const collection = {};
+  ids.forEach((id, i) => collection[id] = { at: new Date(now - (40 - i) * 3600e3).toISOString(), ...(i === 5 || i === 21 ? { foil: true } : {}) });
+  cardio.forEach((id, i) => collection[id] = { at: new Date(now - (12 - i) * 3600e3).toISOString() });
+  const stats = {}; ids.slice(0, 6).forEach((id) => stats[id] = { ok: 3, ko: 0, streak: 3, at: now.toISOString() });
   const t = (h) => { const d = new Date(now); d.setHours(h, 10, 0, 0); return d.toISOString() };
-  const s = { version: 1, settings: { goalMl: 1500, quickAddMl: 150, setId: 'PAL1', backdropCardId: null, cardStyle: '${process.env.STYLE ?? 'classique'}' },
+  const s = { version: 1, settings: { goalMl: 1500, quickAddMl: 150, setId: 'PAL1', backdropCardId: null, hideAnswers: true },
     entries: [{ id: 'e1', at: t(8), ml: 300 }, { id: 'e2', at: t(10), ml: 450 }, { id: 'e3', at: t(12), ml: 450 }],
     rewards: [{ id: 'r1', at: t(10), day, kind: 'card', thresholdMl: 500, cardIds: [ids[28]], revealed: 1, seen: true }, { id: 'r2', at: t(12), day, kind: 'card', thresholdMl: 1000, cardIds: [ids[29]], revealed: 1, seen: true }],
-    collection };
+    collection, quiz: { stats, best: 7, sessions: 3 } };
   localStorage.setItem('paligame.v1', JSON.stringify(s)); return 'seeded' })()`)
 
-await go('#apercu')
-await shot('01-apercu-trois.png')
-for (const [label, file] of [['Classique', '02-apercu-classique.png'], ['Mémo', '03-apercu-memo.png'], ['Galerie', '04-apercu-galerie.png']]) {
-  await click(label)
-  await sleep(800)
-  await shot(file)
-}
-await click('Voir en version brillante')
-await sleep(600)
-await shot('05-apercu-galerie-brillante.png')
-
-await evaluate(`history.replaceState(null, '', location.pathname)`)
 await go()
 await shot('10-accueil.png')
 await evaluate(`document.querySelector('[aria-label="Réglages"]').click()`)
 await sleep(800)
-await shot('16-reglages-styles.png')
+await shot('11-reglages.png')
 await evaluate(`document.querySelector('[role=dialog] [aria-label="Fermer"]').click()`)
 await sleep(400)
-await click('Historique')
-await sleep(800)
-await shot('15-historique.png')
+
 await click('Pharmacodex')
 await sleep(800)
-await shot('11-pharmacodex.png')
-await evaluate(`document.querySelector('main ul:last-of-type li button').click()`)
+await shot('20-pharmacodex.png')
+await evaluate(`document.querySelector('main ul[class*=grid] li button').click()`)
 await sleep(1200)
-await shot('12-fiche-haut.png')
-await evaluate(`document.querySelector('[role=dialog] div[class*=body]').scrollTo({ top: 520 })`)
-await sleep(500)
-await shot('13-fiche-bas.png')
-await click('Mode révision', `document.querySelector('[role=dialog]')`)
+await shot('21-fiche-revision.png')
+await evaluate(`document.querySelector('[role=dialog] div[class*=body]').scrollTo({ top: 640 })`)
 await sleep(400)
-await shot('14-fiche-revision.png')
+await shot('22-fiche-revision-bas.png')
+await click('Tout dévoiler', `document.querySelector('[role=dialog]')`)
+await sleep(500)
+await evaluate(`document.querySelector('[role=dialog] div[class*=body]').scrollTo({ top: 0 })`)
+await sleep(400)
+await shot('23-fiche-devoilee.png')
+await evaluate(`document.querySelector('[role=dialog] [aria-label="Fermer"]').click()`)
+await sleep(400)
+await click('Soins palliatifs')
+await sleep(300)
+await shot('25-pharmacodex-extensions.png')
+await click('Cardiologie')
+await sleep(800)
+await shot('24-pharmacodex-cardio.png')
 
-// Booster : 1,5 L atteint, le paquet apparaît.
-await evaluate(`(() => { const s = JSON.parse(localStorage.getItem('paligame.v1')); s.entries.push({ id: 'e4', at: new Date().toISOString(), ml: 300 }); localStorage.setItem('paligame.v1', JSON.stringify(s)); return 'ok' })()`)
+await click('Quiz')
+await sleep(800)
+await shot('30-quiz-accueil.png')
+await click('Toutes mes cartes')
+await click('Lancer une série')
+await sleep(600)
+await shot('31-quiz-question.png')
+// Réponse fausse exprès, pour voir la correction.
+await evaluate(`(() => { const opts = [...document.querySelectorAll('main ol li button')]; opts[opts.length - 1].click(); return opts.length })()`)
+await sleep(500)
+await shot('32-quiz-correction.png')
+// On termine la série en répondant au hasard.
+await evaluate(`(async () => { const sleep = ms => new Promise(r => setTimeout(r, ms)); for (let i = 0; i < 12; i++) { const next = [...document.querySelectorAll('main button')].find(b => /Question suivante|Voir le résultat/.test(b.textContent)); if (next) { next.click(); await sleep(150) } const opts = [...document.querySelectorAll('main ol li button:not(:disabled)')]; if (opts.length) { opts[0].click(); await sleep(150) } } return 'ok' })()`)
+await sleep(300)
+await click('Voir le résultat')
+await sleep(600)
+await shot('33-quiz-resultat.png')
+
+// Booster de l'extension Cardio : on la choisit, puis on atteint 1,5 L.
+await evaluate(`(() => { const s = JSON.parse(localStorage.getItem('paligame.v1')); s.settings.setId = 'CARDIO'; s.entries.push({ id: 'e4', at: new Date().toISOString(), ml: 300 }); localStorage.setItem('paligame.v1', JSON.stringify(s)); return 'ok' })()`)
 await go()
 await sleep(800)
-await shot('20-booster-paquet.png')
+await shot('40-booster-paquet.png')
 await click('Ouvrir le booster', `document.querySelector('[role=dialog]')`)
 await sleep(2200)
-await shot('21-booster-pile.png')
 await evaluate(`(async () => { const top = document.querySelector('[role=dialog] [role=button][tabindex="0"]'); const fire = (type) => top.dispatchEvent(new PointerEvent(type, { bubbles: true, clientX: 200, clientY: 400, pointerId: 1, pointerType: 'touch', isPrimary: true })); fire('pointerdown'); fire('pointerup'); await new Promise(r => setTimeout(r, 1400)); return 'flipped' })()`)
-await shot('22-booster-retournee.png')
+await shot('41-booster-carte-revision.png')
 await click('Tout révéler', `document.querySelector('[role=dialog]')`)
 await sleep(900)
-await shot('23-booster-bilan.png')
-
-// Carte exceptionnelle (au-delà de 1,5 L) en version brillante : Propofol, PAL1-033.
-await click('Terminer', `document.querySelector('[role=dialog]')`)
-await sleep(600)
-await evaluate(`(() => { const s = JSON.parse(localStorage.getItem('paligame.v1')); const now = new Date().toISOString(); const day = s.rewards[0].day; delete s.collection['PAL1-033']; s.entries.push({ id: 'e5', at: now, ml: 500 }); s.rewards.push({ id: 'r9', at: now, day, kind: 'rare-card', thresholdMl: 2000, cardIds: ['PAL1-033'], foilIds: ['PAL1-033'], revealed: 0, seen: false }); s.collection['PAL1-033'] = { at: now, foil: true }; localStorage.setItem('paligame.v1', JSON.stringify(s)); return 'ok' })()`)
-await go()
-await sleep(800)
-await shot('30-rare-dos.png')
-await evaluate(`(async () => { const top = document.querySelector('[role=dialog] [role=button][tabindex="0"]'); const fire = (type) => top.dispatchEvent(new PointerEvent(type, { bubbles: true, clientX: 200, clientY: 400, pointerId: 1, pointerType: 'touch', isPrimary: true })); fire('pointerdown'); fire('pointerup'); await new Promise(r => setTimeout(r, 1600)); return 'flipped' })()`)
-await shot('31-rare-revelee.png')
+await shot('42-booster-bilan.png')
 
 ws.close()
 proc.kill()
-// Page de comparaison des trois styles, posée à côté des dossiers de captures.
-copyFileSync(new URL('./comparatif.html', import.meta.url), join(dirname(outDir), 'comparatif.html'))
 console.log('fini')

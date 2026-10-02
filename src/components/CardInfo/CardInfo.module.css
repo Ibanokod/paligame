@@ -177,3 +177,19 @@
 .fun p {
   font-style: italic;
 }
+
+.revealAll {
+  align-self: flex-end;
+  min-height: 32px;
+  padding: 0 var(--sp-3);
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border-strong);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.revealAll:active {
+  background: var(--surface-2);
+  color: var(--text);
+}

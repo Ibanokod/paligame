@@ -162,3 +162,93 @@
 .slotRarity {
   font-size: 11px;
 }
+
+/* Choix de l'extension : une ligne par extension, la teinte de son paquet en pastille. */
+.sets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  margin-top: var(--sp-3);
+}
+
+.setBtn {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  align-items: center;
+  gap: var(--sp-3);
+  width: 100%;
+  min-height: var(--touch);
+  padding: 0 var(--sp-4);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  text-align: left;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.setActive {
+  border-color: hsl(var(--h) 70% 62%);
+  background: color-mix(in srgb, hsl(var(--h) 60% 40%) 18%, var(--surface));
+  color: var(--text);
+}
+
+.setDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: hsl(var(--h) 70% 60%);
+}
+
+.setLabel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.setCount {
+  font-weight: 800;
+}
+
+.cell {
+  position: relative;
+}
+
+/* Carte maîtrisée au quiz : pastille verte dans le coin, hors de la zone de tap de la carte. */
+.mastered {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--success);
+  pointer-events: none;
+}
+
+.setCurrent {
+  margin-top: var(--sp-3);
+}
+
+.setSwitch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.chevron {
+  transition: transform var(--dur) var(--ease);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}

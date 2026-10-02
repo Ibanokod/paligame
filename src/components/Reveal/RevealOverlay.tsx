@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent } from 'react'
-import { cardById, getSet, type CardData, type SetData } from '../../data/sets'
+import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent } from 'react'
+import { findCard, getSet, type CardData, type SetData } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { formatLitersShort } from '../../lib/day'
 import { selectPendingReward } from '../../state/selectors'
@@ -26,17 +26,18 @@ export function RevealOverlay() {
 function Reveal({ reward }: { reward: Reward }) {
   const state = useAppState()
   const actions = useActions()
-  const set = getSet(state.settings.setId)
-  const cards = useMemo(
-    () => reward.cardIds.map((id) => cardById(set, id)).filter((c): c is CardData => c !== undefined),
-    [reward.cardIds, set],
-  )
+  // Les cartes se retrouvent par leur id : changer d'extension après coup ne casse rien.
+  const cards = useMemo(() => reward.cardIds.map((id) => findCard(id)).filter((c): c is CardData => c !== undefined), [reward.cardIds])
+  const set = getSet(reward.setId ?? (cards[0] ? cards[0].id.slice(0, cards[0].id.lastIndexOf('-')) : state.settings.setId))
   const total = cards.length
   const isBooster = reward.kind === 'booster'
   const remaining = total - reward.revealed
 
   const [opened, setOpened] = useState(!isBooster || reward.revealed > 0)
   const [flipped, setFlipped] = useState(reward.revealed > 0)
+  // Mode révision : la carte montre ses réponses une fois la fiche entièrement dévoilée.
+  const [revealedId, setRevealedId] = useState<string | null>(null)
+  const onAllShown = useCallback(() => setRevealedId(cards[reward.revealed]?.id ?? null), [cards, reward.revealed])
 
   const title = isBooster ? (reward.rarePack ? 'Paquet rare !' : 'Booster !') : reward.kind === 'rare-card' ? 'Carte rare !' : 'Carte gagnée !'
   const foils = new Set(reward.foilIds ?? [])
@@ -50,7 +51,7 @@ function Reveal({ reward }: { reward: Reward }) {
         <div className={styles.stage}>
           <div className={styles.stageInner}>
             <p className={styles.complete}>
-              Collection complète ! Les {set.cards.length} cartes de {set.name} sont dans ton Pharmacodex. Bravo, et bonne révision.
+              Collection complète ! Les {set.cards.length} cartes de {set.name} sont dans ton Pharmacodex. Choisis une autre extension dans le Pharmacodex pour continuer à collectionner.
             </p>
           </div>
         </div>
@@ -95,6 +96,7 @@ function Reveal({ reward }: { reward: Reward }) {
         <div className={styles.stage}>
           <div className={styles.stageInner}>
             <Stack
+              masked={state.settings.hideAnswers && revealedId !== current.id}
               cards={cards}
               revealed={reward.revealed}
               flipped={flipped}
@@ -122,7 +124,7 @@ function Reveal({ reward }: { reward: Reward }) {
             )}
             {flipped && (
               <div className={styles.details}>
-                <CardInfo card={current} compact />
+                <CardInfo card={current} compact quiz={state.settings.hideAnswers} onAllShown={onAllShown} />
               </div>
             )}
           </div>
@@ -167,6 +169,8 @@ const SWIPE_MIN = 70
 const LEAVE_MS = 280
 
 type StackProps = {
+  /** Mode révision : la carte du dessus garde ses réponses cachées. */
+  masked: boolean
   cards: CardData[]
   /** Cartes déjà glissées : la carte du dessus est `cards[revealed]`. */
   revealed: number
@@ -180,7 +184,7 @@ type StackProps = {
  * La pile : jusqu'à trois cartes visibles, légèrement décalées. Face cachée, un tap retourne
  * tout ; face visible, on glisse la carte du dessus (doigt, souris, ou touches ← →).
  */
-function Stack({ cards, revealed, flipped, swipeable, onFlip, onSwipe }: StackProps) {
+function Stack({ masked, cards, revealed, flipped, swipeable, onFlip, onSwipe }: StackProps) {
   const [drag, setDrag] = useState<{ dx: number; dy: number } | null>(null)
   const [leaving, setLeaving] = useState<-1 | 0 | 1>(0)
   const start = useRef<{ x: number; y: number; moved: boolean } | null>(null)
@@ -264,7 +268,7 @@ function Stack({ cards, revealed, flipped, swipeable, onFlip, onSwipe }: StackPr
             onPointerCancel={isTop ? onPointerCancel : undefined}
             onKeyDown={isTop ? onKeyDown : undefined}
           >
-            <Card card={card} faceUp={flipped} glow={isTop && flipped} eager />
+            <Card card={card} faceUp={flipped} glow={isTop && flipped} masked={isTop && masked} eager />
           </div>
         )
       })}
@@ -276,7 +280,7 @@ function Stack({ cards, revealed, flipped, swipeable, onFlip, onSwipe }: StackPr
  * Bande scellée du paquet : bord cranté, stries de soudure, cadre dans la continuité du corps,
  * ligne de déchirure dorée. La variante « flap » (le morceau arraché) a le bas déchiqueté.
  */
-function PackTopArt({ variant }: { variant: 'base' | 'flap' }) {
+function PackTopArt({ variant, hue }: { variant: 'base' | 'flap'; hue: number }) {
   const crimp: string[] = []
   for (let x = 0; x <= 630; x += 12) crimp.push(`${x} ${x % 24 === 0 ? 10 : 0}`)
   const ragged: string[] = []
@@ -287,9 +291,9 @@ function PackTopArt({ variant }: { variant: 'base' | 'flap' }) {
     <svg className={styles.packArt} viewBox="0 0 630 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#2c63ad" />
-          <stop offset="0.4" stopColor="#1c4d8f" />
-          <stop offset="1" stopColor="#153a72" />
+          <stop offset="0" stopColor={`hsl(${hue} 59% 43%)`} />
+          <stop offset="0.4" stopColor={`hsl(${hue} 67% 33%)`} />
+          <stop offset="1" stopColor={`hsl(${hue} 69% 27%)`} />
         </linearGradient>
         <clipPath id={`${gradientId}-clip`}>
           <path d={outline} />
@@ -314,7 +318,7 @@ function PackTopArt({ variant }: { variant: 'base' | 'flap' }) {
 }
 
 /** Corps du paquet : même vocabulaire que le dos de carte, une gélule dans la pastille centrale. */
-function PackBodyArt({ name }: { name: string }) {
+function PackBodyArt({ name, hue }: { name: string; hue: number }) {
   const dots = Array.from({ length: 20 }, (_, i) => {
     const angle = (i / 20) * Math.PI * 2
     return { x: 315 + Math.cos(angle) * 190, y: 330 + Math.sin(angle) * 190 }
@@ -323,9 +327,9 @@ function PackBodyArt({ name }: { name: string }) {
     <svg className={styles.packArt} viewBox="0 0 630 850" preserveAspectRatio="none" aria-hidden="true" focusable="false">
       <defs>
         <radialGradient id="pali-pack-bg" cx="50%" cy="40%" r="75%">
-          <stop offset="0" stopColor="#1c4d8f" />
-          <stop offset="0.55" stopColor="#0f2a57" />
-          <stop offset="1" stopColor="#061127" />
+          <stop offset="0" stopColor={`hsl(${hue} 67% 33%)`} />
+          <stop offset="0.55" stopColor={`hsl(${hue} 71% 20%)`} />
+          <stop offset="1" stopColor={`hsl(${hue} 73% 9%)`} />
         </radialGradient>
         <linearGradient id="pali-pack-water" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#3ec1f3" />
@@ -381,13 +385,13 @@ function PackBodyArt({ name }: { name: string }) {
       </g>
 
       <text x="315" y="560" textAnchor="middle" fontFamily="'Manrope Variable', system-ui, sans-serif" fontWeight="700" fontSize="18" letterSpacing="6" fill="#3ec1f3" fillOpacity="0.85">
-        PHARMACOPÉE PALLIATIVE
+        BOOSTER DE RÉVISION
       </text>
       <text x="315" y="620" textAnchor="middle" fontFamily="'Manrope Variable', system-ui, sans-serif" fontWeight="800" fontSize="42" fill="#e9eef7">
         {name}
       </text>
       <text x="315" y="680" textAnchor="middle" fontFamily="'Manrope Variable', system-ui, sans-serif" fontWeight="700" fontSize="20" letterSpacing="3" fill="#f2c14e" fillOpacity="0.85">
-        5 CARTES · 1,5 L
+        3 CARTES · 1,5 L
       </text>
       <text x="315" y="760" textAnchor="middle" fontFamily="'Manrope Variable', system-ui, sans-serif" fontWeight="800" fontSize="26" letterSpacing="10" fill="#e9eef7" fillOpacity="0.6">
         PALIGAME
@@ -522,15 +526,15 @@ function Pack({ set, onOpen }: { set: SetData; onOpen: () => void }) {
           >
             <span className={styles.packTop} aria-hidden="true">
               <span className={cx(styles.packLayer, styles.packBase)} style={baseStyle}>
-                <PackTopArt variant="base" />
+                <PackTopArt variant="base" hue={set.hue} />
               </span>
               <span className={cx(styles.packLayer, styles.packFlap)} style={flapStyle}>
-                <PackTopArt variant="flap" />
+                <PackTopArt variant="flap" hue={set.hue} />
               </span>
               <span className={cx(styles.tearCursor, dragging && tear > 0 && tear < 1 && styles.tearCursorOn)} style={{ left: `${tear * 100}%` }} />
             </span>
             <span className={styles.packBody} aria-hidden="true">
-              <PackBodyArt name={set.name} />
+              <PackBodyArt name={set.name} hue={set.hue} />
             </span>
           </div>
           <p className={styles.caption}>Glisse ton doigt le long du haut pour déchirer le paquet</p>

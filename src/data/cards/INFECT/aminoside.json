@@ -1,0 +1,250 @@
+[
+  {
+    "dci": "Gentamicine",
+    "family": "aminoside",
+    "rarity": "Fréquent",
+    "classe": "Aminoside",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "L'aminoside de renfort, à surveiller : rein et oreille",
+    "what": "Aminoside utilisé en association et en cure courte dans les infections graves : sepsis, endocardite, pyélonéphrite grave. Renforce l'effet bactéricide des bêtalactamines (synergie).",
+    "action": "Se fixe sur les ribosomes bactériens et fausse la fabrication des protéines : effet bactéricide rapide, d'autant plus fort que le pic sanguin est élevé.",
+    "sideEffects": [
+      "Néphrotoxicité : surveiller créatinine et diurèse",
+      "Ototoxicité (surdité, vertiges), souvent irréversible",
+      "Pic et résiduelle : prélever aux horaires exacts prescrits",
+      "Blocage neuromusculaire (rare, majoré par les curares)"
+    ],
+    "contraindications": [
+      "Allergie aux aminosides",
+      "Myasthénie",
+      "Prudence : insuffisance rénale, sujet âgé, grossesse",
+      "Prudence : autres néphro ou ototoxiques (vancomycine, furosémide)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Gentamicine avec un i, tobramycine avec un y : le i signale une bactérie productrice du genre Micromonospora, le y un Streptomyces. « Genta » évoque le violet gentiane de ses colonies."
+    }
+  },
+  {
+    "dci": "Vancomycine",
+    "family": "aminoside",
+    "rarity": "Fréquent",
+    "classe": "Glycopeptide",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'anti-SARM de référence, à perfuser lentement",
+    "what": "Glycopeptide des infections à Gram positif résistants : staphylocoque doré résistant à la méticilline (SARM), infections sur cathéter ou prothèse. Par voie orale : colite à Clostridioides difficile.",
+    "action": "Se fixe sur les briques de la paroi bactérienne et empêche leur assemblage : la bactérie ne peut plus construire sa paroi. Trop grosse pour traverser celle des Gram négatif.",
+    "sideEffects": [
+      "Red man syndrome si perfusion trop rapide : ralentir",
+      "Néphrotoxicité, majorée par aminosides et pip-taz",
+      "Dosage de la résiduelle (ou du plateau si PSE) prescrit",
+      "Phlébite fréquente : surveiller le point de perfusion",
+      "Ototoxicité, neutropénie (rares, traitement long)"
+    ],
+    "contraindications": [
+      "Allergie vraie à la vancomycine (à distinguer du red man syndrome)",
+      "Prudence : insuffisance rénale (adapter selon les dosages)",
+      "Prudence : autres néphrotoxiques (aminosides, pip-taz)",
+      "Prudence : surdité ou troubles auditifs préexistants"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Issue d'une terre de Bornéo envoyée au laboratoire Eli Lilly par un missionnaire dans les années 1950, elle tire son nom de l'anglais « to vanquish », vaincre."
+    }
+  },
+  {
+    "dci": "Amikacine",
+    "family": "aminoside",
+    "rarity": "Occasionnel",
+    "classe": "Aminoside",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'aminoside de réanimation contre les bacilles résistants",
+    "what": "Aminoside des infections graves à bacilles Gram négatif résistants (pyocyanique, entérobactéries BLSE) : choc septique, neutropénie fébrile. Toujours en association et en cure courte.",
+    "action": "Se fixe sur les ribosomes bactériens et bloque la fabrication des protéines : bactéricide rapide. Résiste mieux que la gentamicine aux enzymes bactériennes qui inactivent les aminosides.",
+    "sideEffects": [
+      "Néphrotoxicité : surveiller créatinine et diurèse",
+      "Ototoxicité (surdité, vertiges), souvent irréversible",
+      "Pic et résiduelle : prélever aux horaires exacts prescrits",
+      "Blocage neuromusculaire (rare, majoré par les curares)"
+    ],
+    "contraindications": [
+      "Allergie aux aminosides",
+      "Myasthénie",
+      "Prudence : insuffisance rénale, sujet âgé, grossesse",
+      "Prudence : autres néphro ou ototoxiques (vancomycine, furosémide)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le PIC dit si l'antibiotique PIQUE assez fort la bactérie (efficacité), la résiduelle dit ce qui RESTE dans le sang avant la dose suivante (toxicité pour le rein et l'oreille)."
+    }
+  },
+  {
+    "dci": "Teicoplanine",
+    "family": "aminoside",
+    "rarity": "Rare",
+    "classe": "Glycopeptide",
+    "brands": [
+      "Targocid"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "Le cousin de la vancomycine, une injection par jour",
+    "what": "Glycopeptide des infections à Gram positif résistants (SARM), notamment osseuses et sur prothèse. Longue demi-vie : une injection par jour après des doses de charge.",
+    "action": "Comme la vancomycine, se fixe sur les briques de la paroi bactérienne et bloque leur assemblage. Active uniquement sur les bactéries à Gram positif.",
+    "sideEffects": [
+      "Éruption cutanée, fièvre, réaction au point d'injection",
+      "Néphrotoxicité, moindre qu'avec la vancomycine",
+      "Dosage de la résiduelle selon la prescription",
+      "Red man syndrome, plus rare qu'avec la vancomycine",
+      "Thrombopénie, ototoxicité (rares)"
+    ],
+    "contraindications": [
+      "Allergie à la teicoplanine",
+      "Prudence : allergie à la vancomycine (réaction croisée possible)",
+      "Prudence : insuffisance rénale, autres néphrotoxiques"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Vanco se perfuse lentement, Teico peut se presser : la teicoplanine s'injecte en IV directe lente ou en IM, la vancomycine jamais en bolus."
+    }
+  },
+  {
+    "dci": "Linézolide",
+    "family": "aminoside",
+    "rarity": "Rare",
+    "classe": "Oxazolidinone",
+    "brands": [
+      "Zyvoxid"
+    ],
+    "forms": [
+      "comprime",
+      "poche"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "L'anti-SARM aussi efficace en comprimé qu'en perfusion",
+    "what": "Antibiotique de réserve des infections à Gram positif résistants (SARM, entérocoque résistant à la vancomycine) : pneumonies, infections de la peau. Aussi efficace par voie orale qu'en IV.",
+    "action": "Bloque le démarrage de la fabrication des protéines sur le ribosome bactérien, à un site qui lui est propre : pas de résistance croisée avec les autres familles.",
+    "sideEffects": [
+      "Thrombopénie, anémie : NFS chaque semaine",
+      "Syndrome sérotoninergique avec certains antidépresseurs",
+      "Neuropathie périphérique et optique si traitement long",
+      "Acidose lactique (nausées, vomissements répétés)",
+      "Diarrhée, céphalées, candidose"
+    ],
+    "contraindications": [
+      "Association aux IMAO, ou moins de 2 semaines après leur arrêt",
+      "Prudence : antidépresseurs sérotoninergiques, triptans",
+      "Prudence : HTA non contrôlée, phéochromocytome, hyperthyroïdie",
+      "Éviter l'excès d'aliments riches en tyramine (fromages affinés)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le linézolide n'aime pas le plateau de fromages : c'est aussi un IMAO faible. Excès de tyramine : poussée de tension. Antidépresseur sérotoninergique : syndrome sérotoninergique."
+    }
+  },
+  {
+    "dci": "Daptomycine",
+    "family": "aminoside",
+    "rarity": "Très rare",
+    "classe": "Lipopeptide cyclique",
+    "brands": [
+      "Cubicin"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le recours contre le SARM, un œil sur les CPK",
+    "what": "Antibiotique de réserve des infections graves à Gram positif résistants : bactériémie et endocardite à SARM, infections compliquées de la peau. Inactivée par le surfactant : pas pour une pneumonie.",
+    "action": "S'insère dans la membrane des bactéries à Gram positif, en présence de calcium, et la dépolarise : la bactérie meurt rapidement (bactéricide).",
+    "sideEffects": [
+      "Atteinte musculaire : CPK chaque semaine, signaler myalgies",
+      "Pneumopathie à éosinophiles (toux, fièvre, dyspnée)",
+      "Troubles digestifs, céphalées",
+      "Réaction au point de perfusion, éruption",
+      "Neuropathie périphérique (rare)"
+    ],
+    "contraindications": [
+      "Allergie à la daptomycine",
+      "Pneumonie : inefficace (inactivée par le surfactant)",
+      "Incompatible avec le glucose : diluer au NaCl 0,9 % uniquement",
+      "Prudence : statines (risque musculaire), insuffisance rénale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Elle vient d'une bactérie du sol, Streptomyces roseosporus, trouvée dans un échantillon de terre du mont Ararat, en Turquie. Abandonnée par Lilly, elle a été relancée par Cubist."
+    }
+  },
+  {
+    "dci": "Colistine",
+    "family": "aminoside",
+    "rarity": "Exceptionnel",
+    "classe": "Polymyxine",
+    "brands": [
+      "Colimycine"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "Inhalée"
+    ],
+    "tagline": "Le vieux dernier recours contre les bacilles multirésistants",
+    "what": "Polymyxine ancienne, ressortie en dernier recours contre les bacilles Gram négatif multirésistants (Acinetobacter, pyocyanique, entérobactéries résistantes aux carbapénèmes). Aussi en nébulisation.",
+    "action": "Molécule chargée qui se fixe sur la membrane externe des bacilles Gram négatif et la perce comme un détergent : le contenu de la bactérie fuit, elle meurt.",
+    "sideEffects": [
+      "Néphrotoxicité fréquente : surveiller créatinine et diurèse",
+      "Neurotoxicité : paresthésies, vertiges, confusion",
+      "Blocage neuromusculaire, apnée (rare, avec curares)",
+      "Bronchospasme en nébulisation"
+    ],
+    "contraindications": [
+      "Allergie aux polymyxines",
+      "Myasthénie",
+      "Prudence : insuffisance rénale (adapter la dose)",
+      "Prudence : autres néphrotoxiques, curares"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Découverte au Japon à la fin des années 1940, délaissée pour sa toxicité rénale, la colistine est revenue en dernier recours. En 2015, un gène de résistance transmissible, mcr-1, a été identifié en Chine."
+    }
+  }
+]

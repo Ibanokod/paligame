@@ -1,4 +1,4 @@
-import { Download, LayoutGrid, Upload } from 'lucide-react'
+import { Download, Upload } from 'lucide-react'
 import { useRef, useState, type ChangeEvent } from 'react'
 import { Card } from '../../components/Card/Card'
 import { RarityBadge } from '../../components/RarityBadge/RarityBadge'
@@ -7,27 +7,18 @@ import { getSet } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { formatLitersShort, todayKey } from '../../lib/day'
 import { exportJson, parseImport } from '../../state/persistence'
-import { CARD_STYLES, type CardStyle } from '../../state/types'
 import { selectBackdropCard } from '../../state/selectors'
 import { useActions, useAppState } from '../../state/store'
 import styles from './SettingsSheet.module.css'
 
 type Props = { open: boolean; onClose: () => void }
 
-const STYLE_LABELS: Record<CardStyle, { name: string; hint: string }> = {
-  classique: { name: 'Classique', hint: 'Carte de jeu : illustration et l’essentiel' },
-  memo: { name: 'Mémo', hint: 'Fiche de révision : les 5 points sur la carte' },
-  galerie: { name: 'Galerie', hint: 'Illustration pleine carte, texte dans la fiche' },
-}
-
-/** Réglages réduits au strict nécessaire : style des cartes, fond, exporter, importer, réinitialiser. */
+/** Réglages réduits au strict nécessaire : révision, fond, exporter, importer, réinitialiser. */
 export function SettingsSheet({ open, onClose }: Props) {
   const state = useAppState()
   const actions = useActions()
   const set = getSet(state.settings.setId)
-  const backdrop = selectBackdropCard(state, set)
-  // Carte d'exemple du comparateur : le fond d'écran s'il existe, sinon la première carte.
-  const sample = backdrop ?? set.cards[0]
+  const backdrop = selectBackdropCard(state)
   const fixedBackdrop = state.settings.backdropCardId !== null
   const fileRef = useRef<HTMLInputElement>(null)
   const [confirmReset, setConfirmReset] = useState(false)
@@ -93,26 +84,30 @@ export function SettingsSheet({ open, onClose }: Props) {
       </dl>
 
       <section className={styles.block}>
-        <h3 className={styles.blockTitle}>Style des cartes</h3>
-        <ul className={styles.styles} role="group" aria-label="Style des cartes">
-          {CARD_STYLES.map((style) => (
-            <li key={style}>
-              <button
-                type="button"
-                className={cx(styles.styleOption, state.settings.cardStyle === style && styles.styleActive)}
-                aria-pressed={state.settings.cardStyle === style}
-                onClick={() => actions.setCardStyle(style)}
-              >
-                {sample && <Card card={sample} faceUp cardStyle={style} />}
-                <span className={styles.styleName}>{STYLE_LABELS[style].name}</span>
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className={styles.hint}>{STYLE_LABELS[state.settings.cardStyle].hint}</p>
-        <a className="btn btn-secondary btn-block" href="#apercu" onClick={close}>
-          <LayoutGrid size={18} aria-hidden="true" /> Voir les 74 cartes dans les trois styles
-        </a>
+        <h3 className={styles.blockTitle}>Révision</h3>
+        <div className={styles.segmented} role="group" aria-label="Affichage des réponses">
+          <button
+            type="button"
+            className={cx(styles.segment, state.settings.hideAnswers && styles.segmentActive)}
+            aria-pressed={state.settings.hideAnswers}
+            onClick={() => actions.setHideAnswers(true)}
+          >
+            Réponses cachées
+          </button>
+          <button
+            type="button"
+            className={cx(styles.segment, !state.settings.hideAnswers && styles.segmentActive)}
+            aria-pressed={!state.settings.hideAnswers}
+            onClick={() => actions.setHideAnswers(false)}
+          >
+            Réponses visibles
+          </button>
+        </div>
+        <p className={styles.hint}>
+          {state.settings.hideAnswers
+            ? 'Mode révision : sur la carte et dans sa fiche, chaque réponse se dévoile d’un tap. Essaie de répondre avant.'
+            : 'Les fiches s’affichent en entier, pour relire sans se tester.'}
+        </p>
       </section>
 
       <section className={styles.block}>

@@ -1,0 +1,238 @@
+[
+  {
+    "dci": "Héparine sodique",
+    "family": "anticoagulant",
+    "rarity": "Courant",
+    "classe": "Héparine non fractionnée (HNF)",
+    "brands": [],
+    "forms": ["injectable"],
+    "routes": ["IV"],
+    "tagline": "L'héparine IV au PSE, ajustée sur le TCA ou l'anti-Xa",
+    "what": "Héparine non fractionnée en IV continue au PSE : traitement des thromboses et embolies, SCA, chirurgie cardiaque. Choisie si insuffisance rénale sévère ou besoin d'un arrêt rapide.",
+    "action": "Active l'antithrombine, frein naturel de la coagulation, qui bloque la thrombine (IIa) et le facteur Xa. Effet immédiat en IV, dissipé quelques heures après l'arrêt.",
+    "sideEffects": [
+      "Hémorragie : TCA ou anti-Xa, surveiller les saignements",
+      "TIH : plaquettes avant, puis 2 fois par semaine",
+      "Erreur de dilution ou de débit : double contrôle du PSE",
+      "Hyperkaliémie, hausse des transaminases",
+      "Ostéoporose si traitement prolongé"
+    ],
+    "contraindications": [
+      "Antécédent de thrombopénie induite par l'héparine (TIH)",
+      "Saignement actif, lésion à haut risque de saigner",
+      "Hémorragie intracérébrale récente",
+      "Prudence : AINS, aspirine, antiagrégants (saignements)"
+    ],
+    "antidote": "Sulfate de protamine",
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient du grec hêpar, le foie : elle fut d'abord extraite du foie de chien, à l'université Johns Hopkins, vers 1916. Aujourd'hui, on la tire de la muqueuse intestinale du porc."
+    }
+  },
+  {
+    "dci": "Énoxaparine",
+    "family": "anticoagulant",
+    "rarity": "Courant",
+    "classe": "Héparine de bas poids moléculaire (HBPM)",
+    "brands": ["Lovenox"],
+    "forms": ["injectable"],
+    "routes": ["SC", "IV"],
+    "tagline": "La HBPM du quotidien, en préventif comme en curatif",
+    "what": "Héparine de bas poids moléculaire en seringue préremplie : prévention des thromboses (chirurgie, alitement), traitement des phlébites et embolies pulmonaires, SCA.",
+    "action": "Active l'antithrombine, qui bloque surtout le facteur Xa. Effet plus prévisible que l'HNF : pas de TCA, une activité anti-Xa se dose si besoin (rein, poids extrême).",
+    "sideEffects": [
+      "Saignements : gencives, urines, hématomes, selles noires",
+      "Hématome au point d'injection : ne pas masser",
+      "TIH (rare) : plaquettes avant, et suivies si chirurgie",
+      "Accumulation si insuffisance rénale : saignements",
+      "Hyperkaliémie, hausse des transaminases"
+    ],
+    "contraindications": [
+      "Antécédent de thrombopénie induite par l'héparine (TIH)",
+      "Saignement actif, lésion à haut risque de saigner",
+      "Péridurale ou rachianesthésie sous dose curative récente",
+      "Prudence : insuffisance rénale sévère (l'HNF est préférée)"
+    ],
+    "antidote": "Protamine (partielle)",
+    "fun": {
+      "kind": "mnemo",
+      "text": "HBPM en 4 gestes : bulle d'air gardée (on ne purge pas), pli de peau pincé tout du long, aiguille piquée droite, pas de massage. La bulle évite de perdre une partie de la dose."
+    }
+  },
+  {
+    "dci": "Apixaban",
+    "family": "anticoagulant",
+    "rarity": "Courant",
+    "classe": "Anticoagulant oral direct (AOD), anti-Xa",
+    "brands": ["Eliquis"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'AOD anti-Xa, en deux prises par jour",
+    "what": "Anticoagulant oral direct : prévention de l'AVC dans la fibrillation atriale, traitement et prévention des phlébites et embolies pulmonaires. Pas d'INR à surveiller.",
+    "action": "Bloque directement le facteur Xa, sans passer par l'antithrombine : la thrombine n'est plus produite, le caillot ne se forme pas. Effet en quelques heures.",
+    "sideEffects": [
+      "Saignements : nez, gencives, urines, selles noires",
+      "Anémie : surveiller l'hémoglobine",
+      "Hématomes, ecchymoses",
+      "Nausées"
+    ],
+    "contraindications": [
+      "Saignement actif cliniquement significatif",
+      "Valve cardiaque mécanique : AVK, jamais d'AOD",
+      "Atteinte hépatique avec trouble de la coagulation",
+      "Prudence : insuffisance rénale, AINS, antiagrégants"
+    ],
+    "antidote": "Andexanet alfa",
+    "fun": {
+      "kind": "mnemo",
+      "text": "ApiXAban : le « xa » du nom signale un anti-Xa, comme rivaroXAban et edoXAban. Et Eliquis compte deux « i », comme ses deux prises par jour."
+    }
+  },
+  {
+    "dci": "Rivaroxaban",
+    "family": "anticoagulant",
+    "rarity": "Fréquent",
+    "classe": "Anticoagulant oral direct (AOD), anti-Xa",
+    "brands": ["Xarelto"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'AOD anti-Xa en une prise, pendant le repas",
+    "what": "Anticoagulant oral direct : prévention de l'AVC dans la fibrillation atriale, traitement des phlébites et embolies pulmonaires, prévention après prothèse de hanche ou de genou.",
+    "action": "Bloque directement le facteur Xa : la production de thrombine chute et le caillot ne se forme pas. Une prise par jour le plus souvent, au cours d'un repas pour les doses fortes.",
+    "sideEffects": [
+      "Saignements : nez, gencives, urines, selles noires",
+      "Anémie : surveiller l'hémoglobine",
+      "Règles plus abondantes",
+      "Nausées, troubles digestifs",
+      "Hausse des transaminases"
+    ],
+    "contraindications": [
+      "Saignement actif cliniquement significatif",
+      "Valve cardiaque mécanique : AVK, jamais d'AOD",
+      "Grossesse, allaitement",
+      "Prudence : insuffisance rénale, AINS, antiagrégants"
+    ],
+    "antidote": "Andexanet alfa",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Riva va au resto : le Xarelto à dose forte se prend pendant un repas, sinon il est moins bien absorbé. Une prise par jour, à la même heure."
+    }
+  },
+  {
+    "dci": "Fondaparinux",
+    "family": "anticoagulant",
+    "rarity": "Occasionnel",
+    "classe": "Anticoagulant injectable de synthèse, anti-Xa",
+    "brands": ["Arixtra"],
+    "forms": ["injectable"],
+    "routes": ["SC"],
+    "tagline": "L'anti-Xa de synthèse, une injection SC par jour",
+    "what": "Anticoagulant injectable de synthèse : prévention des thromboses (chirurgie, alitement), traitement des phlébites et embolies, SCA. Option utile si antécédent de TIH.",
+    "action": "Copie de synthèse des cinq sucres de l'héparine qui activent l'antithrombine : bloque le facteur Xa, pas la thrombine. Action longue, une injection par jour.",
+    "sideEffects": [
+      "Saignements : surveiller les signes hémorragiques",
+      "Anémie : surveiller l'hémoglobine",
+      "Hématome au point d'injection : ne pas masser",
+      "Accumulation si insuffisance rénale"
+    ],
+    "contraindications": [
+      "Saignement actif cliniquement significatif",
+      "Endocardite bactérienne aiguë",
+      "Insuffisance rénale sévère",
+      "Prudence : sujet âgé, faible poids, péridurale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Fondaparinux, le « fond » de l'héparine : juste les cinq sucres utiles, sans le reste. Revers de la médaille : pas d'antidote, la protamine n'a aucune prise sur lui."
+    }
+  },
+  {
+    "dci": "Warfarine",
+    "family": "anticoagulant",
+    "rarity": "Occasionnel",
+    "classe": "Antivitamine K (AVK) coumarinique",
+    "brands": ["Coumadine"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'AVK de référence, piloté par l'INR",
+    "what": "Antivitamine K : fibrillation atriale, valve cardiaque mécanique, phlébite et embolie pulmonaire. AVK à privilégier en France depuis la restriction de la fluindione (2018).",
+    "action": "Bloque le recyclage de la vitamine K dans le foie : moins de facteurs de coagulation II, VII, IX et X. Effet retardé de plusieurs jours, d'où un relais par héparine au début.",
+    "sideEffects": [
+      "Hémorragie : INR régulier (cible souvent entre 2 et 3)",
+      "INR instable : interactions, alimentation, carnet AVK",
+      "Ecchymoses, saignement des gencives ou du nez",
+      "Nécrose cutanée (rare, en début de traitement)",
+      "Troubles digestifs, chute de cheveux"
+    ],
+    "contraindications": [
+      "Saignement actif, lésion à haut risque de saigner",
+      "Insuffisance hépatique sévère",
+      "Association au miconazole (même en gel buccal), au millepertuis",
+      "Grossesse (tératogène), sauf avis spécialisé"
+    ],
+    "antidote": "Vitamine K",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Son nom vient de WARF, la fondation de l'université du Wisconsin qui l'a brevetée. D'abord vendue comme mort-aux-rats, elle a soigné le président Eisenhower après son infarctus de 1955."
+    }
+  },
+  {
+    "dci": "Dabigatran",
+    "family": "anticoagulant",
+    "rarity": "Occasionnel",
+    "classe": "AOD, inhibiteur direct de la thrombine",
+    "brands": ["Pradaxa"],
+    "forms": ["gelule"],
+    "routes": ["PO"],
+    "tagline": "L'AOD anti-thrombine, qui a son antidote dédié",
+    "what": "Anticoagulant oral direct : prévention de l'AVC dans la fibrillation atriale, traitement des phlébites et embolies pulmonaires, prévention après prothèse de hanche ou de genou.",
+    "action": "Bloque directement la thrombine (facteur IIa), l'enzyme qui transforme le fibrinogène en fibrine. Éliminé surtout par le rein : la fonction rénale guide le traitement.",
+    "sideEffects": [
+      "Saignements, surtout digestifs : selles noires",
+      "Brûlures d'estomac, douleurs abdominales",
+      "Anémie : surveiller l'hémoglobine",
+      "Accumulation si la fonction rénale baisse"
+    ],
+    "contraindications": [
+      "Insuffisance rénale sévère",
+      "Saignement actif cliniquement significatif",
+      "Valve cardiaque mécanique",
+      "Kétoconazole, ciclosporine, dronédarone (interactions)"
+    ],
+    "antidote": "Idarucizumab",
+    "fun": {
+      "kind": "mnemo",
+      "text": "DabiGATRAN : le « gatran » signe un anti-thrombine. Et la gélule s'avale entière, jamais ouverte : ouverte, elle passe bien plus dans le sang et fait saigner."
+    }
+  },
+  {
+    "dci": "Fluindione",
+    "family": "anticoagulant",
+    "rarity": "Rare",
+    "classe": "Antivitamine K (AVK) indanedione",
+    "brands": ["Préviscan"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'AVK historique français, qu'on n'initie plus",
+    "what": "Antivitamine K longtemps la plus prescrite en France. Depuis 2018, plus de nouvelle mise en route (risque immunoallergique) : on la croise chez des patients déjà traités et stables.",
+    "action": "Comme tout AVK, freine le recyclage de la vitamine K par le foie : moins de facteurs II, VII, IX et X. Effet retardé de plusieurs jours, suivi par l'INR.",
+    "sideEffects": [
+      "Hémorragie : INR régulier, signes de saignement",
+      "Allergie : fièvre, éruption, atteinte du rein ou du foie",
+      "Insuffisance rénale (néphropathie immunoallergique)",
+      "INR instable : nombreuses interactions"
+    ],
+    "contraindications": [
+      "Antécédent d'allergie à la fluindione",
+      "Saignement actif, lésion à haut risque de saigner",
+      "Insuffisance hépatique sévère",
+      "Association au miconazole (même en gel buccal), au millepertuis"
+    ],
+    "antidote": "Vitamine K",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Facteurs freinés par les AVK : pense « 1972 », soit X, IX, VII et II. Et l'AVK se prend le soir : l'INR du matin permet d'ajuster la dose le jour même."
+    }
+  }
+]

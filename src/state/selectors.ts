@@ -2,7 +2,7 @@
 // de l'état brut (total du jour, prochaine récompense, statistiques du Pharmacodex...).
 // Rien n'est stocké en double : tout se recalcule.
 
-import { cardById, type CardData, type SetData } from '../data/sets'
+import { findCard, type CardData, type SetData } from '../data/sets'
 import { dayKeyOf, entriesForDay, todayKey, totalForDay } from '../lib/day'
 import { FAMILY_IDS, type FamilyId } from '../lib/families'
 import { RARITIES, type Rarity } from '../lib/rarity'
@@ -44,21 +44,26 @@ export function selectDays(state: State): string[] {
 }
 
 /** Carte affichée en fond de l'accueil : celle choisie, sinon la dernière obtenue, sinon aucune. */
-export function selectBackdropCard(state: State, set: SetData): CardData | null {
+export function selectBackdropCard(state: State): CardData | null {
   const chosen = state.settings.backdropCardId
   if (chosen && state.collection[chosen]) {
-    const card = cardById(set, chosen)
+    const card = findCard(chosen)
     if (card) return card
   }
   let latestId: string | null = null
   let latestAt = ''
   for (const [id, { at }] of Object.entries(state.collection)) {
-    if (at > latestAt && cardById(set, id)) {
+    if (at > latestAt && findCard(id)) {
       latestAt = at
       latestId = id
     }
   }
-  return latestId ? (cardById(set, latestId) ?? null) : null
+  return latestId ? (findCard(latestId) ?? null) : null
+}
+
+/** Cartes d'une liste d'ids, dans l'ordre, en ignorant les ids inconnus. */
+export function selectCards(ids: readonly string[]): CardData[] {
+  return ids.map((id) => findCard(id)).filter((c): c is CardData => c !== undefined)
 }
 
 export type DexStats = {

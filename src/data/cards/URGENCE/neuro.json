@@ -1,0 +1,181 @@
+[
+  {
+    "dci": "Lévétiracétam",
+    "family": "neuro",
+    "rarity": "Fréquent",
+    "classe": "Antiépileptique",
+    "brands": [
+      "Keppra"
+    ],
+    "forms": [
+      "injectable",
+      "comprime",
+      "solution"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'antiépileptique simple à manier, en IV comme per os",
+    "what": "Antiépileptique à large spectre : état de mal épileptique en deuxième ligne après les benzodiazépines, puis traitement de fond des épilepsies. Peu d'interactions, relais per os facile.",
+    "action": "Se fixe sur une protéine des vésicules synaptiques (SV2A) et freine la libération excessive de neurotransmetteurs : les décharges anormales se propagent moins.",
+    "sideEffects": [
+      "Somnolence, fatigue, vertiges",
+      "Irritabilité, agressivité, troubles de l'humeur",
+      "Idées suicidaires (rares) : signaler tout changement",
+      "Céphalées, rhinopharyngite"
+    ],
+    "contraindications": [
+      "Hypersensibilité au lévétiracétam ou aux pyrrolidones",
+      "Prudence : insuffisance rénale (dose adaptée)",
+      "Prudence : antécédent de dépression ou trouble psychiatrique",
+      "Jamais d'arrêt brutal : risque de crises de sevrage"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Règle des 5 minutes : une crise qui dure plus de 5 minutes est un état de mal. Benzodiazépine d'abord, puis antiépileptique IV, comme le lévétiracétam, si les crises persistent."
+    }
+  },
+  {
+    "dci": "Mannitol",
+    "family": "neuro",
+    "rarity": "Occasionnel",
+    "classe": "Diurétique osmotique",
+    "brands": [],
+    "forms": [
+      "poche"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'osmotique qui fait dégonfler le cerveau",
+    "what": "Diurétique osmotique de l'hypertension intracrânienne (traumatisme crânien grave, signes d'engagement cérébral), en attendant le geste neurochirurgical. Alternative : sérum salé hypertonique.",
+    "action": "Reste dans les vaisseaux et attire par osmose l'eau des tissus, dont le cerveau œdématié. Filtré par le rein sans être réabsorbé, il entraîne une diurèse abondante.",
+    "sideEffects": [
+      "Diurèse massive : sonde urinaire, bilan entrées-sorties",
+      "Déshydratation, hypovolémie, hypotension",
+      "Troubles de la natrémie et de la kaliémie : ionogramme",
+      "OAP en début de perfusion chez l'insuffisant cardiaque",
+      "Insuffisance rénale aiguë si doses répétées"
+    ],
+    "contraindications": [
+      "Déshydratation sévère, hypovolémie non corrigée",
+      "Anurie, insuffisance rénale sévère",
+      "Insuffisance cardiaque décompensée, OAP",
+      "Cristaux visibles : réchauffer, perfuser avec un filtre"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient de la manne, la sève sucrée du frêne à manne, dont le chimiste français Joseph Proust l'a isolé en 1806. Un sucre qui ne nourrit guère, mais qui fait beaucoup uriner."
+    }
+  },
+  {
+    "dci": "Fosphénytoïne",
+    "family": "neuro",
+    "rarity": "Rare",
+    "classe": "Antiépileptique (prodrogue de la phénytoïne)",
+    "brands": [
+      "Prodilantin"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "L'antiépileptique IV de l'état de mal, sous scope",
+    "what": "Prodrogue injectable de la phénytoïne : état de mal épileptique qui persiste malgré les benzodiazépines (deuxième ligne). Perfusion lente sous scope et surveillance de la pression artérielle.",
+    "action": "Transformée dans le sang en phénytoïne, qui bloque les canaux sodium des neurones et empêche les décharges répétées de se propager. Mieux tolérée par les veines que la phénytoïne IV.",
+    "sideEffects": [
+      "Bradycardie, troubles du rythme : scope, débit lent",
+      "Hypotension pendant la perfusion : surveiller la PA",
+      "Prurit, picotements (aine, visage) à la perfusion",
+      "Vertiges, nystagmus, ataxie, somnolence",
+      "Éruption cutanée, rare toxidermie grave"
+    ],
+    "contraindications": [
+      "Bradycardie sinusale, blocs auriculo-ventriculaires",
+      "Hypersensibilité aux hydantoïnes (phénytoïne)",
+      "Prudence : sujet âgé, insuffisance cardiaque, hypotension",
+      "Doses en équivalent phénytoïne (EP) : risque d'erreur"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisée en 1908 en Allemagne, la phénytoïne a dormi trente ans sur une étagère. En 1938, à Boston, Merritt et Putnam découvrent son effet antiépileptique, sans la somnolence du phénobarbital."
+    }
+  },
+  {
+    "dci": "Altéplase",
+    "family": "neuro",
+    "rarity": "Rare",
+    "classe": "Thrombolytique (activateur du plasminogène)",
+    "brands": [
+      "Actilyse"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "La thrombolyse de l'AVC ischémique : chaque minute compte",
+    "what": "Thrombolytique de l'AVC ischémique, dans les 4 h 30 suivant le début des symptômes, après imagerie cérébrale (filière AVC). Aussi embolie pulmonaire grave avec choc.",
+    "action": "Transforme le plasminogène en plasmine, l'enzyme qui découpe la fibrine du caillot : l'artère bouchée se reperméabilise. Agit surtout au niveau du caillot.",
+    "sideEffects": [
+      "Hémorragie intracrânienne : surveillance neuro rapprochée",
+      "Saignements : points de ponction, gencives, digestifs",
+      "Angio-œdème de la langue, surtout sous IEC",
+      "Hypotension, nausées, réaction allergique"
+    ],
+    "contraindications": [
+      "Hémorragie active ou récente, hémorragie intracrânienne",
+      "HTA sévère non contrôlée, anticoagulation efficace",
+      "Chirurgie, traumatisme grave ou ponction artérielle récents",
+      "Pas d'antithrombotique ni de geste invasif pendant 24 h"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Time is brain : chaque minute d'AVC non traité détruit près de deux millions de neurones. Noter l'heure du début des symptômes (ou du dernier moment vu normal), c'est le premier geste."
+    }
+  },
+  {
+    "dci": "Ténectéplase",
+    "family": "neuro",
+    "rarity": "Très rare",
+    "classe": "Thrombolytique en bolus unique",
+    "brands": [
+      "Metalyse"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le thrombolytique en un seul bolus, de l'infarctus à l'AVC",
+    "what": "Thrombolytique en bolus IV unique : infarctus avec sus-décalage du ST quand l'angioplastie ne peut pas être faite à temps (souvent en SMUR). Aussi utilisé dans l'AVC ischémique.",
+    "action": "Altéplase modifiée, plus spécifique de la fibrine et éliminée plus lentement : une seule injection suffit. Comme elle, elle active la plasmine qui dissout le caillot.",
+    "sideEffects": [
+      "Hémorragie, dont intracrânienne : surveillance neuro",
+      "Saignements aux points de ponction : compression",
+      "Troubles du rythme à la reperfusion : scope",
+      "Hypotension, nausées, réaction allergique"
+    ],
+    "contraindications": [
+      "Hémorragie active, antécédent d'AVC hémorragique",
+      "Chirurgie ou traumatisme grave récent",
+      "HTA sévère non contrôlée",
+      "Incompatible avec le glucose : rincer au NaCl 0,9 %"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient de TNK-tPA : trois retouches de l'altéplase, aux sites T, N et K de la molécule, qui la font durer plus longtemps. D'où un seul bolus au lieu d'une perfusion."
+    }
+  }
+]

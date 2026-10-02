@@ -135,32 +135,3 @@
   font-size: var(--fs-xs);
   line-height: 1.5;
 }
-
-/* Comparateur de styles : la même carte dessinée trois fois, un tap choisit. */
-.styles {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--sp-2);
-}
-
-.styleOption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--sp-2);
-  width: 100%;
-  padding: var(--sp-2);
-  border-radius: var(--r-md);
-  border: 1px solid var(--border);
-  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
-}
-
-.styleActive {
-  border-color: var(--water);
-  background: var(--surface);
-}
-
-.styleName {
-  font-size: var(--fs-sm);
-  font-weight: 700;
-}

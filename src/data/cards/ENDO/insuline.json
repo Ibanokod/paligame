@@ -1,0 +1,256 @@
+[
+  {
+    "dci": "Insuline asparte",
+    "family": "insuline",
+    "rarity": "Courant",
+    "classe": "Insuline analogue rapide",
+    "brands": [
+      "NovoRapid",
+      "Fiasp"
+    ],
+    "forms": [
+      "stylo",
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "L'insuline du repas, à injecter juste avant de manger",
+    "what": "Analogue rapide de l'insuline : couvre les repas (bolus du schéma basal-bolus) et corrige les hyperglycémies selon la glycémie capillaire et le protocole. Utilisée aussi en pompe.",
+    "action": "Insuline modifiée qui passe très vite dans le sang : début en 10 à 20 min, pic vers 1 à 3 h, durée 3 à 5 h. Fait entrer le glucose dans les cellules.",
+    "sideEffects": [
+      "Hypoglycémie : sueurs, tremblements, faim, confusion",
+      "Hypo : resucrer si conscient, sinon glucosé IV ou glucagon",
+      "Repas non pris après l'injection : hypoglycémie",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Réaction au point d'injection, prise de poids"
+    ],
+    "contraindications": [
+      "Hypoglycémie : resucrer d'abord, ne pas injecter",
+      "Hypersensibilité à l'insuline asparte",
+      "Prudence : repas incertain (jeûne, nausées) : avis médical",
+      "Prudence : hypokaliémie (l'insuline fait entrer le potassium)"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "mnemo",
+      "text": "R comme Rapide, R comme Repas : elle s'injecte quand le plateau arrive, pas avant. Le patient ne mange pas ou vomit ? On prévient le médecin avant d'injecter."
+    }
+  },
+  {
+    "dci": "Insuline glargine",
+    "family": "insuline",
+    "rarity": "Courant",
+    "classe": "Insuline analogue lente (basale)",
+    "brands": [
+      "Lantus",
+      "Abasaglar",
+      "Toujeo"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "L'insuline basale, une injection par jour à heure fixe",
+    "what": "Analogue lent, insuline basale du diabète de type 1 (avec une rapide aux repas) et du type 2. Une injection par jour, toujours à la même heure, sans lien avec les repas.",
+    "action": "Précipite sous la peau en microdépôts qui libèrent l'insuline lentement : action en 1 à 2 h, quasi sans pic, sur environ 24 h (plus avec Toujeo). Couvre les besoins hors repas.",
+    "sideEffects": [
+      "Hypoglycémie, surtout la nuit ou au réveil",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Douleur ou réaction au point d'injection",
+      "Prise de poids"
+    ],
+    "contraindications": [
+      "Jamais en IV, jamais mélangée à une autre insuline",
+      "Type 1 : basale jamais arrêtée, même à jeun (acidocétose)",
+      "Toujeo concentré : jamais prélevé à la seringue dans le stylo",
+      "Prudence : Lantus et Toujeo ne sont pas interchangeables"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "culture",
+      "text": "Glargine, c'est GLycine plus ARGinine : un acide aminé changé, deux ajoutés. Limpide dans le stylo et pourtant lente : une insuline claire n'est pas forcément rapide."
+    }
+  },
+  {
+    "dci": "Insuline humaine rapide",
+    "family": "insuline",
+    "rarity": "Courant",
+    "classe": "Insuline humaine d'action rapide",
+    "brands": [
+      "Actrapid"
+    ],
+    "forms": [
+      "injectable",
+      "stylo"
+    ],
+    "routes": [
+      "IV",
+      "SC"
+    ],
+    "tagline": "L'insuline du PSE en IV, et du repas en SC",
+    "what": "Insuline identique à l'humaine, référence du PSE IV : acidocétose, réanimation, périopératoire, hyperglycémie sévère. En SC, couvre les repas : injecter environ 30 min avant.",
+    "action": "Fait entrer glucose et potassium dans les cellules. En SC : début en 30 min, pic entre 1 h 30 et 3 h 30, durée 7 à 8 h. En IV : effet immédiat, qui s'estompe dans l'heure à l'arrêt.",
+    "sideEffects": [
+      "Hypoglycémie : glycémie capillaire rapprochée sous PSE",
+      "Hypokaliémie : surveiller la kaliémie sous PSE",
+      "Arrêt du PSE : effet fini vite, relais SC à anticiper",
+      "Erreur de dose : seringue à insuline, double contrôle",
+      "Lipodystrophies en SC : tourner les sites"
+    ],
+    "contraindications": [
+      "Hypoglycémie",
+      "IV : seulement une insuline rapide, jamais une lente",
+      "Prudence : patient à jeun, sans apport de glucose (hypoglycémie)",
+      "Prudence : hypokaliémie, à corriger avant ou avec l'insuline"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Janvier 1922, Toronto : Leonard Thompson, 14 ans, reçoit la première injection d'insuline, un extrait de pancréas. En 1982, l'insuline humaine devient le premier médicament du génie génétique."
+    }
+  },
+  {
+    "dci": "Insuline lispro",
+    "family": "insuline",
+    "rarity": "Fréquent",
+    "classe": "Insuline analogue rapide",
+    "brands": [
+      "Humalog"
+    ],
+    "forms": [
+      "stylo",
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "Analogue rapide : on l'injecte, on passe à table",
+    "what": "Analogue rapide de l'insuline : couvre les repas dans le schéma basal-bolus (type 1 et type 2) et corrige les hyperglycémies selon protocole. Fréquente en pompe à insuline.",
+    "action": "Deux acides aminés inversés la font passer plus vite dans le sang : début vers 15 min, pic vers 1 h, durée 2 à 5 h. Fait entrer le glucose dans les cellules.",
+    "sideEffects": [
+      "Hypoglycémie : sueurs, tremblements, faim, malaise",
+      "Repas sauté ou vomi après l'injection : hypoglycémie",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Réaction au point d'injection, prise de poids"
+    ],
+    "contraindications": [
+      "Hypoglycémie",
+      "Hypersensibilité à l'insuline lispro",
+      "Prudence : repas incertain (jeûne, nausées) : avis médical",
+      "Prudence : ne pas confondre Humalog et Humalog Mix"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "culture",
+      "text": "Lispro, c'est LYSine-PROline : ces deux acides aminés ont été inversés en bout de chaîne. Ce petit échange l'empêche de s'agglutiner sous la peau, donc elle agit plus vite."
+    }
+  },
+  {
+    "dci": "Insuline NPH",
+    "family": "insuline",
+    "rarity": "Occasionnel",
+    "classe": "Insuline humaine d'action intermédiaire",
+    "brands": [
+      "Insulatard"
+    ],
+    "forms": [
+      "stylo",
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "L'insuline trouble, à rouler avant d'injecter",
+    "what": "Insuline humaine intermédiaire, en une ou deux injections par jour comme insuline basale. Encore utilisée dans le diabète de type 2, pendant la grossesse ou sous corticoïdes.",
+    "action": "Insuline humaine liée à la protamine, qui ralentit son passage dans le sang : début vers 1 h 30, pic entre 4 et 12 h, durée environ 24 h. Pic marqué : hypoglycémie à distance.",
+    "sideEffects": [
+      "Hypoglycémie au moment du pic, souvent la nuit",
+      "Dose inégale si mal remise en suspension : rouler",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Prise de poids, réaction au point d'injection"
+    ],
+    "contraindications": [
+      "Jamais en IV ni en pompe : suspension, uniquement SC",
+      "Hypoglycémie",
+      "Hypersensibilité à l'insuline ou à la protamine"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "mnemo",
+      "text": "NPH : Neutre, Protamine, Hagedorn, du nom de son inventeur danois. Au lit du patient : trouble = à rouler entre les mains puis retourner doucement, jamais secouer."
+    }
+  },
+  {
+    "dci": "Insuline dégludec",
+    "family": "insuline",
+    "rarity": "Occasionnel",
+    "classe": "Insuline analogue ultra-lente (basale)",
+    "brands": [
+      "Tresiba"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "La basale la plus longue : plus de 42 h d'action",
+    "what": "Analogue ultra-lent, insuline basale du diabète de type 1 et 2. Une injection par jour, de préférence à la même heure, avec une souplesse d'horaire si besoin.",
+    "action": "Forme sous la peau de longues chaînes d'insuline qui se défont très lentement : action stable, sans pic, pendant plus de 42 h. Effet régulier atteint en 2 à 3 jours.",
+    "sideEffects": [
+      "Hypoglycémie, parfois prolongée (action longue)",
+      "Changement de dose : effet visible après 2 à 3 jours",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Réaction au point d'injection, prise de poids"
+    ],
+    "contraindications": [
+      "Jamais en IV : uniquement SC",
+      "Jamais mélangée à une autre insuline",
+      "Hypersensibilité à l'insuline dégludec",
+      "Prudence : sujet âgé, insuffisant rénal (hypoglycémies)"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Plus de 42 heures d'action, comme les 42 km du marathon : la dégludec est la marathonienne des insulines. Injection oubliée : la faire dès que possible, puis reprendre l'horaire."
+    }
+  },
+  {
+    "dci": "Insuline asparte biphasique",
+    "family": "insuline",
+    "rarity": "Occasionnel",
+    "classe": "Insuline prémélangée (rapide + intermédiaire)",
+    "brands": [
+      "NovoMix 30"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "Rapide et intermédiaire dans un seul stylo, à rouler",
+    "what": "Mélange fixe d'asparte rapide et d'asparte intermédiaire : une à trois injections par jour, juste avant les repas, surtout dans le diabète de type 2. Moins souple que le basal-bolus.",
+    "action": "La part d'asparte libre agit vite (début en 10 à 20 min) sur le repas, la part liée à la protamine prend le relais : pic entre 1 et 4 h, durée jusqu'à 24 h.",
+    "sideEffects": [
+      "Hypoglycémie : repas obligatoire après l'injection",
+      "Dose inégale si mal remise en suspension : rouler",
+      "Lipodystrophies : tourner les sites d'injection",
+      "Prise de poids, réaction au point d'injection"
+    ],
+    "contraindications": [
+      "Jamais en IV ni en pompe : suspension, uniquement SC",
+      "Hypoglycémie",
+      "Prudence : repas sauté, jeûne avant le bloc : avis médical",
+      "Prudence : ne pas confondre NovoMix et NovoRapid"
+    ],
+    "antidote": "Glucose (resucrage), glucagon",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le chiffre du nom donne la part de rapide : NovoMix 30, c'est 30 % d'asparte rapide et 70 % d'intermédiaire. Laiteuse : on la roule et la retourne avant chaque injection."
+    }
+  }
+]

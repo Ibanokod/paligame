@@ -1,0 +1,119 @@
+[
+  {
+    "dci": "Acide acétylsalicylique",
+    "family": "antiagregant",
+    "rarity": "Courant",
+    "classe": "Antiagrégant plaquettaire (aspirine faible dose)",
+    "brands": ["Kardégic", "Aspirine Protect"],
+    "forms": ["sachet", "comprime", "injectable"],
+    "routes": ["PO", "IV"],
+    "tagline": "L'antiagrégant de base, au long cours après un infarctus",
+    "what": "Antiagrégant à faible dose : prévention après infarctus, SCA, pose de stent, AVC ischémique, artériopathie des membres. Dose de charge PO ou IV dès le diagnostic de SCA.",
+    "action": "Bloque de façon irréversible la cyclo-oxygénase (COX-1) des plaquettes : sans thromboxane A2, elles s'agrègent moins. Effet sur toute leur durée de vie, 7 à 10 jours.",
+    "sideEffects": [
+      "Saignements : gencives, nez, hématomes",
+      "Douleurs gastriques, ulcère, saignement digestif",
+      "Allergie, asthme induit (syndrome de Widal)",
+      "Effet durable : à signaler avant tout geste invasif"
+    ],
+    "contraindications": [
+      "Ulcère gastroduodénal évolutif",
+      "Allergie à l'aspirine ou aux AINS",
+      "Maladie hémorragique constitutionnelle ou acquise",
+      "Prudence : AINS, anticoagulants (saignements)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Vendue dès 1899 par Bayer, l'aspirine n'a livré son secret qu'en 1971 : John Vane a montré qu'elle bloque la fabrication des prostaglandines. Prix Nobel de médecine en 1982."
+    }
+  },
+  {
+    "dci": "Clopidogrel",
+    "family": "antiagregant",
+    "rarity": "Courant",
+    "classe": "Antiagrégant plaquettaire, anti-P2Y12",
+    "brands": ["Plavix"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'anti-P2Y12 classique de la double antiagrégation",
+    "what": "Antiagrégant : après infarctus, SCA ou pose de stent (double antiagrégation avec l'aspirine), AVC ischémique, artériopathie. Alternative si l'aspirine n'est pas tolérée.",
+    "action": "Prodrogue activée par le foie : bloque de façon irréversible le récepteur P2Y12 des plaquettes, qui ne répondent plus à l'ADP. Effet sur toute leur durée de vie (7 à 10 jours).",
+    "sideEffects": [
+      "Saignements : hématomes, nez, digestif",
+      "Diarrhée, douleurs abdominales",
+      "Éruption cutanée, prurit",
+      "Rare : purpura thrombotique thrombocytopénique"
+    ],
+    "contraindications": [
+      "Saignement évolutif (ulcère, hémorragie cérébrale)",
+      "Insuffisance hépatique sévère",
+      "Prudence : oméprazole, ésoméprazole (efficacité réduite)",
+      "Prudence : anticoagulant, AINS (saignements)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Stent = deux antiagrégants : aspirine + clopidogrel (ou ticagrélor, prasugrel) pendant des mois. Jamais d'arrêt sans l'avis du cardiologue : risque de thrombose du stent."
+    }
+  },
+  {
+    "dci": "Ticagrélor",
+    "family": "antiagregant",
+    "rarity": "Fréquent",
+    "classe": "Antiagrégant plaquettaire, anti-P2Y12",
+    "brands": ["Brilique"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'anti-P2Y12 réversible du SCA, en deux prises par jour",
+    "what": "Antiagrégant du syndrome coronarien aigu, associé à l'aspirine à faible dose : plus puissant et plus rapide que le clopidogrel. Deux prises par jour, à heure fixe.",
+    "action": "Bloque directement le récepteur P2Y12 des plaquettes, sans activation par le foie. Liaison réversible : effet rapide, qui s'estompe en quelques jours à l'arrêt.",
+    "sideEffects": [
+      "Saignements : hématomes, nez, digestif",
+      "Dyspnée fréquente, souvent bénigne : la signaler",
+      "Bradycardie, pauses cardiaques",
+      "Hyperuricémie, crise de goutte",
+      "Vertiges, troubles digestifs"
+    ],
+    "contraindications": [
+      "Saignement évolutif",
+      "Antécédent d'hémorragie intracrânienne",
+      "Insuffisance hépatique sévère",
+      "Inhibiteurs puissants du CYP3A4 (clarithromycine...)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Tica, « tic-tac » : deux prises par jour à heure fixe. Et si le patient se plaint d'essoufflement, pense à lui : effet fréquent, souvent bénin, mais toujours à signaler."
+    }
+  },
+  {
+    "dci": "Prasugrel",
+    "family": "antiagregant",
+    "rarity": "Rare",
+    "classe": "Antiagrégant plaquettaire, anti-P2Y12",
+    "brands": ["Efient"],
+    "forms": ["comprime"],
+    "routes": ["PO"],
+    "tagline": "L'anti-P2Y12 puissant de l'angioplastie coronaire",
+    "what": "Antiagrégant du syndrome coronarien aigu traité par angioplastie (stent), associé à l'aspirine. Plus puissant que le clopidogrel, mais plus hémorragique.",
+    "action": "Prodrogue activée par le foie, plus vite et plus régulièrement que le clopidogrel : bloque de façon irréversible le récepteur P2Y12 des plaquettes.",
+    "sideEffects": [
+      "Saignements, plus fréquents que sous clopidogrel",
+      "Hématome au point de ponction artérielle",
+      "Anémie : surveiller l'hémoglobine",
+      "Éruption cutanée"
+    ],
+    "contraindications": [
+      "Antécédent d'AVC ou d'accident ischémique transitoire",
+      "Saignement évolutif",
+      "Insuffisance hépatique sévère",
+      "Prudence : 75 ans et plus, poids inférieur à 60 kg"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les trois « pas » du prasugrel : pas d'antécédent d'AVC, pas après 75 ans (en général), pas la dose pleine sous 60 kg. Sinon, trop de saignements."
+    }
+  }
+]

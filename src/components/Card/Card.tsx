@@ -1,11 +1,10 @@
 import type { CSSProperties } from 'react'
-import { FUN_LABELS, type CardData } from '../../data/sets'
+import type { CardData } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { FAMILIES } from '../../lib/families'
 import { rarityFamily, raritySymbol } from '../../lib/rarity'
 import { useAppState } from '../../state/store'
-import type { CardStyle } from '../../state/types'
-import { CardArt, cardPalette, FormGlyph } from './CardArt'
+import { CardArt, cardPalette } from './CardArt'
 import styles from './Card.module.css'
 
 type Props = {
@@ -13,8 +12,8 @@ type Props = {
   faceUp: boolean
   /** Halo de la couleur de la rareté (révélation, détail). */
   glow?: boolean
-  /** Style imposé (comparateur) ; sinon celui des réglages. */
-  cardStyle?: CardStyle
+  /** Mode révision : les réponses imprimées sur la carte (vigilance, CI, antidote) sont cachées. */
+  masked?: boolean
   /** Finition brillante imposée ; sinon celle de la collection. */
   foil?: boolean
   /** Conservé pour la compatibilité des écrans (les cartes sont dessinées, rien à charger). */
@@ -37,9 +36,8 @@ const RARITY_CLASS: Record<ReturnType<typeof rarityFamily>, string> = {
 }
 
 /** Une carte à deux faces : dos maison, recto dessiné en SVG et CSS, retournement 3D. */
-export function Card({ card, faceUp, glow = false, cardStyle, foil, onClick, className }: Props) {
+export function Card({ card, faceUp, glow = false, masked = false, foil, onClick, className }: Props) {
   const state = useAppState()
-  const style = cardStyle ?? state.settings.cardStyle
   const isFoil = foil ?? state.collection[card.id]?.foil === true
   const family = rarityFamily(card.rarity)
   const sweep = glow && faceUp && (family !== 'diamond' || isFoil)
@@ -47,7 +45,7 @@ export function Card({ card, faceUp, glow = false, cardStyle, foil, onClick, cla
   const inner = (
     <div className={cx(styles.inner, faceUp && styles.faceUp)}>
       <div className={cx(styles.face, styles.front, RARITY_CLASS[family], sweep && styles.sweep)} style={paletteVars(card)}>
-        {style === 'memo' ? <MemoFace card={card} /> : style === 'galerie' ? <GalleryFace card={card} /> : <ClassicFace card={card} />}
+        <ClassicFace card={card} masked={masked} />
         {isFoil && <span className={styles.foil} aria-hidden="true" />}
       </div>
       <div className={cx(styles.face, styles.back)} aria-hidden="true">
@@ -83,10 +81,12 @@ function paletteVars(card: CardData): CSSProperties {
 }
 
 /**
- * Style « Classique » : la carte de jeu. Cadre à la couleur de la famille, nom et rareté,
- * fenêtre d'illustration, puis l'essentiel en trois lignes et l'anecdote en bas.
+ * La carte de jeu (style « Classique », retenu le 02/10/2026). Cadre à la couleur de la
+ * famille, nom et rareté, fenêtre d'illustration, puis l'essentiel en trois lignes et
+ * l'anecdote en bas. En mode révision, les trois lignes de réponse sont cachées.
  */
-function ClassicFace({ card }: { card: CardData }) {
+function ClassicFace({ card, masked }: { card: CardData; masked: boolean }) {
+  const answer = (text: string) => (masked ? <span className={styles.cMask} aria-label="Réponse cachée">?</span> : text)
   return (
     <div className={styles.classic}>
       <div className={styles.cHead}>
@@ -108,16 +108,16 @@ function ClassicFace({ card }: { card: CardData }) {
         <dl className={styles.cStats}>
           <div>
             <dt>Vigilance</dt>
-            <dd>{card.sideEffects[0]}</dd>
+            <dd>{answer(card.sideEffects[0])}</dd>
           </div>
           <div>
             <dt>CI</dt>
-            <dd>{card.contraindications[0]}</dd>
+            <dd>{answer(card.contraindications[0])}</dd>
           </div>
           {card.antidote && (
             <div>
               <dt>Antidote</dt>
-              <dd>{card.antidote}</dd>
+              <dd>{answer(card.antidote)}</dd>
             </div>
           )}
         </dl>
@@ -126,87 +126,6 @@ function ClassicFace({ card }: { card: CardData }) {
       <div className={styles.cFoot}>
         <span className="tabular">n° {card.localId}</span>
         <span>Paligame</span>
-      </div>
-    </div>
-  )
-}
-
-/**
- * Style « Mémo » : la fiche de révision. Papier clair, bandeau de famille, les quatre
- * questions du cours numérotées, l'astuce dans un encart en bas.
- */
-function MemoFace({ card }: { card: CardData }) {
-  const p = cardPalette(card)
-  return (
-    <div className={styles.memo}>
-      <div className={styles.mBand}>
-        <span>{FAMILIES[card.family].short}</span>
-        <span className="tabular">
-          n° {card.localId} <span className={styles.mRarity}>{raritySymbol(card.rarity)}</span>
-        </span>
-      </div>
-      <div className={styles.mTitle}>
-        <div>
-          <span className={styles.mName} data-len={nameLength(card)}>
-            {card.dci}
-          </span>
-          <span className={styles.mClass}>{card.classe}</span>
-        </div>
-        <svg className={styles.mGlyph} viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-          <FormGlyph form={card.forms[0]} light={p.light} accent={p.glyph} edge={p.edge} />
-        </svg>
-      </div>
-      <ol className={styles.mList}>
-        <li>
-          <b>1</b>
-          <span>
-            <em>C'est quoi</em> {card.tagline}
-          </span>
-        </li>
-        <li>
-          <b>2</b>
-          <span>
-            <em>Action</em> {card.action}
-          </span>
-        </li>
-        <li>
-          <b>3</b>
-          <span>
-            <em>Effets indésirables</em> {card.sideEffects.slice(0, 3).join(' · ')}
-          </span>
-        </li>
-        <li>
-          <b>4</b>
-          <span>
-            <em>Contre-indications</em> {card.contraindications.slice(0, 2).join(' · ')}
-          </span>
-        </li>
-      </ol>
-      <div className={styles.mFun}>
-        <b>5</b>
-        <em>{FUN_LABELS[card.fun.kind]}</em> {card.fun.text}
-      </div>
-    </div>
-  )
-}
-
-/** Style « Galerie » : l'illustration en pleine carte, le nom posé dessus. Tout le texte est dans la fiche. */
-function GalleryFace({ card }: { card: CardData }) {
-  return (
-    <div className={styles.gallery}>
-      <div className={styles.gArt}>
-        <CardArt card={card} variant="full" />
-      </div>
-      <div className={styles.gTop}>
-        <span className={styles.gRarity}>{raritySymbol(card.rarity)}</span>
-        <span className="tabular">{card.localId}</span>
-      </div>
-      <div className={styles.gBottom}>
-        <span className={styles.gFamily}>{FAMILIES[card.family].short}</span>
-        <span className={styles.gName} data-len={nameLength(card)}>
-          {card.dci}
-        </span>
-        <span className={styles.gClass}>{card.classe}</span>
       </div>
     </div>
   )
@@ -290,7 +209,7 @@ export function CardBack() {
         PALIGAME
       </text>
       <text x="315" y="786" textAnchor="middle" fontFamily="'Manrope Variable', system-ui, sans-serif" fontWeight="700" fontSize="16" letterSpacing="6" fill="#3ec1f3" fillOpacity="0.85">
-        PHARMACOPÉE PALLIATIVE
+        CARTES MÉMO MÉDICAMENTS
       </text>
 
       <rect width="630" height="880" rx="30" fill="url(#pali-back-sheen)" />

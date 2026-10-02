@@ -1,0 +1,304 @@
+[
+  {
+    "dci": "Bisoprolol",
+    "family": "rythme",
+    "rarity": "Courant",
+    "classe": "Bêtabloquant cardiosélectif",
+    "brands": [
+      "Cardensiel",
+      "Detensiel"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le bêtabloquant du quotidien : cœur ralenti, protégé",
+    "what": "Bêtabloquant cardiosélectif : insuffisance cardiaque chronique, angor, HTA, suites d'infarctus, ralentissement de la fibrillation atriale. Introduit à petite dose, augmenté par paliers.",
+    "action": "Bloque les récepteurs bêta-1 du cœur, sensibles à l'adrénaline : le cœur bat moins vite et moins fort, consomme moins d'oxygène, la tension baisse. Peu d'effet sur les bronches.",
+    "sideEffects": [
+      "Bradycardie : pouls avant chaque prise",
+      "Hypotension, vertiges, fatigue",
+      "Décompensation cardiaque au début : poids, œdèmes",
+      "Extrémités froides, syndrome de Raynaud",
+      "Masque les signes d'hypoglycémie chez le diabétique"
+    ],
+    "contraindications": [
+      "BAV de haut degré ou maladie du sinus non appareillés",
+      "Insuffisance cardiaque décompensée, choc cardiogénique",
+      "Asthme sévère, bradycardie ou hypotension symptomatique",
+      "Prudence : jamais d'arrêt brutal (effet rebond, angor)"
+    ],
+    "antidote": "Glucagon",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les bêtabloquants finissent en -OLOL : bisoprOLOL, propranOLOL, aténOLOL. Avant chaque -olol, le réflexe : pouls et tension, et on alerte si le pouls est trop lent."
+    }
+  },
+  {
+    "dci": "Amiodarone",
+    "family": "rythme",
+    "rarity": "Fréquent",
+    "classe": "Antiarythmique de classe III",
+    "brands": [
+      "Cordarone"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "L'antiarythmique puissant, riche en iode",
+    "what": "Antiarythmique de référence : fibrillation atriale (réduction, prévention des récidives), tachycardies ventriculaires. En IV aussi dans l'arrêt cardiaque sur FV résistante aux chocs.",
+    "action": "Ralentit la recharge électrique des cellules du cœur (surtout en bloquant les canaux potassiques) : elles restent plus longtemps inexcitables, ce qui casse les arythmies. Ralentit aussi le pouls.",
+    "sideEffects": [
+      "Photosensibilité, teint gris-bleu : protection solaire",
+      "Hypo- ou hyperthyroïdie : surveiller la TSH",
+      "Bradycardie, QT allongé : surveiller l'ECG",
+      "Veinite en IV : voie centrale si possible, G5 % seul",
+      "Atteinte pulmonaire ou hépatique au long cours"
+    ],
+    "contraindications": [
+      "Bradycardie, bloc sinusal ou BAV non appareillé",
+      "Hyperthyroïdie, allergie à l'iode",
+      "Association aux médicaments donnant des torsades de pointes",
+      "Prudence : AVK et digoxine (effets renforcés)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "AmIODarone : l'IODE est dans son nom et dans sa molécule, plus d'un tiers de son poids. La thyroïde, grande consommatrice d'iode, se dérègle : TSH à surveiller."
+    }
+  },
+  {
+    "dci": "Propranolol",
+    "family": "rythme",
+    "rarity": "Occasionnel",
+    "classe": "Bêtabloquant non cardiosélectif",
+    "brands": [
+      "Avlocardyl"
+    ],
+    "forms": [
+      "comprime",
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le bêtabloquant non sélectif aux multiples usages",
+    "what": "Bêtabloquant non cardiosélectif : HTA, angor, troubles du rythme, prévention des hémorragies par hypertension portale (cirrhose), signes cardiaques de l'hyperthyroïdie, migraine.",
+    "action": "Bloque les récepteurs bêta-1 du cœur et bêta-2 des bronches et des vaisseaux : pouls et tension baissent, la pression dans la veine porte aussi. Très liposoluble, il passe dans le cerveau.",
+    "sideEffects": [
+      "Bradycardie, hypotension : pouls et PA avant la prise",
+      "Bronchospasme, surtout chez l'asthmatique",
+      "Fatigue, cauchemars, troubles du sommeil",
+      "Masque les signes d'hypoglycémie",
+      "Extrémités froides, syndrome de Raynaud"
+    ],
+    "contraindications": [
+      "Asthme, BPCO sévère",
+      "BAV de haut degré non appareillé, bradycardie sévère",
+      "Insuffisance cardiaque non contrôlée, choc cardiogénique",
+      "Prudence : arrêt progressif seulement (risque d'angor)"
+    ],
+    "antidote": "Glucagon",
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2008 à Bordeaux, l'équipe de la dermatologue Christine Léauté-Labrèze voit fondre l'angiome d'un bébé traité par propranolol pour son cœur. Il est devenu le traitement des hémangiomes du nourrisson."
+    }
+  },
+  {
+    "dci": "Diltiazem",
+    "family": "rythme",
+    "rarity": "Occasionnel",
+    "classe": "Inhibiteur calcique bradycardisant",
+    "brands": [
+      "Tildiem",
+      "Mono-Tildiem"
+    ],
+    "forms": [
+      "comprime",
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'inhibiteur calcique qui ralentit aussi le cœur",
+    "what": "Inhibiteur calcique bradycardisant : angor (dont l'angor spastique), HTA en forme LP. En pratique, ralentit aussi la FA quand un bêtabloquant ne convient pas.",
+    "action": "Freine l'entrée du calcium dans le cœur et les artères : le pouls ralentit, la conduction auriculoventriculaire aussi, les coronaires se dilatent. Le cœur consomme moins d'oxygène.",
+    "sideEffects": [
+      "Bradycardie, bloc auriculoventriculaire : pouls, ECG",
+      "Œdèmes des chevilles",
+      "Céphalées, vertiges, hypotension",
+      "Nausées, troubles digestifs",
+      "Éruption cutanée : la signaler au médecin"
+    ],
+    "contraindications": [
+      "BAV 2e ou 3e degré, maladie du sinus non appareillés",
+      "Insuffisance ventriculaire gauche avec stase pulmonaire",
+      "Association à l'ivabradine, au dantrolène IV",
+      "Prudence : bêtabloquant associé (bradycardie, BAV)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Diltiazem et vérapamil ralentissent le cœur ; les -dipine (amlodipine, nicardipine) dilatent surtout les artères. Pour retenir : les -Dipine Dilatent, les deux autres freinent."
+    }
+  },
+  {
+    "dci": "Digoxine",
+    "family": "rythme",
+    "rarity": "Rare",
+    "classe": "Digitalique (tonicardiaque)",
+    "brands": [
+      "Digoxine Nativelle",
+      "Hémigoxine Nativelle"
+    ],
+    "forms": [
+      "comprime",
+      "injectable",
+      "solution"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Le ralentisseur de la FA, à marge thérapeutique étroite",
+    "what": "Digitalique utilisé pour ralentir la fréquence cardiaque dans la fibrillation atriale, surtout en cas d'insuffisance cardiaque associée. Marge étroite : digoxinémie, kaliémie, ECG.",
+    "action": "Bloque la pompe sodium-potassium des cellules cardiaques : le calcium s'accumule et la contraction se renforce. Ralentit aussi la conduction dans le nœud auriculoventriculaire.",
+    "sideEffects": [
+      "Surdosage : nausées, vomissements, perte d'appétit",
+      "Vision jaune ou verte, troubles visuels : surdosage",
+      "Bradycardie, troubles du rythme : pouls et ECG",
+      "Confusion, fatigue, surtout chez la personne âgée",
+      "Toxicité accrue si hypokaliémie : ionogramme"
+    ],
+    "contraindications": [
+      "BAV de haut degré non appareillé",
+      "Tachycardie ou fibrillation ventriculaire",
+      "Wolff-Parkinson-White, cardiomyopathie obstructive",
+      "Prudence : hypokaliémie, insuffisance rénale, sujet âgé"
+    ],
+    "antidote": "Fragments d'anticorps antidigoxine (Fab)",
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 1785, le médecin anglais William Withering publie ses observations sur la digitale pourpre contre l'hydropisie. La digoxine, elle, est extraite d'une cousine : la digitale laineuse."
+    }
+  },
+  {
+    "dci": "Flécaïnide",
+    "family": "rythme",
+    "rarity": "Rare",
+    "classe": "Antiarythmique de classe Ic",
+    "brands": [
+      "Flécaïne"
+    ],
+    "forms": [
+      "comprime",
+      "gelule",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "L'antiarythmique de la FA, réservé au cœur sain",
+    "what": "Antiarythmique de classe Ic : réduction et prévention des récidives de fibrillation atriale et de certaines tachycardies, uniquement si le cœur est sain (ni cardiopathie, ni infarctus).",
+    "action": "Bloque les canaux sodiques des cellules cardiaques : l'influx électrique se propage plus lentement, ce qui interrompt les circuits d'arythmie et prévient leur retour.",
+    "sideEffects": [
+      "Effet proarythmique : troubles du rythme graves",
+      "Flutter rapide : souvent associée à un bêtabloquant",
+      "QRS élargi : surveiller l'ECG",
+      "Vertiges, vision floue",
+      "Aggravation d'une insuffisance cardiaque"
+    ],
+    "contraindications": [
+      "Insuffisance cardiaque, antécédent d'infarctus",
+      "BAV ou bloc de branche non appareillé",
+      "Syndrome de Brugada",
+      "Prudence : insuffisance rénale, sujet âgé"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 1989, l'essai américain CAST est interrompu : après un infarctus, la flécaïnide supprimait bien les extrasystoles, mais augmentait la mortalité. D'où la règle du cœur sain."
+    }
+  },
+  {
+    "dci": "Vérapamil",
+    "family": "rythme",
+    "rarity": "Rare",
+    "classe": "Inhibiteur calcique bradycardisant",
+    "brands": [
+      "Isoptine"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Le plus bradycardisant des inhibiteurs calciques",
+    "what": "Inhibiteur calcique bradycardisant : angor, HTA, ralentissement de la FA. En IV, réduction des tachycardies jonctionnelles (maladie de Bouveret), sous scope.",
+    "action": "Freine l'entrée du calcium surtout dans le cœur : le nœud auriculoventriculaire conduit plus lentement, le pouls ralentit, la contraction faiblit un peu. Dilate aussi les artères.",
+    "sideEffects": [
+      "Constipation, très fréquente : la prévenir",
+      "Bradycardie, BAV : pouls et ECG",
+      "Hypotension, vertiges",
+      "Œdèmes des chevilles, céphalées",
+      "Aggravation d'une insuffisance cardiaque"
+    ],
+    "contraindications": [
+      "BAV 2e ou 3e degré, maladie du sinus non appareillés",
+      "Insuffisance cardiaque non contrôlée, choc cardiogénique",
+      "FA ou flutter avec voie accessoire (Wolff-Parkinson-White)",
+      "Association à l'ivabradine ; prudence : bêtabloquants"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Le vérapamil ralentit le cœur et, par solidarité, l'intestin : c'est l'inhibiteur calcique qui constipe le plus. On pense à l'hydratation et aux fibres."
+    }
+  },
+  {
+    "dci": "Ivabradine",
+    "family": "rythme",
+    "rarity": "Rare",
+    "classe": "Bradycardisant pur (inhibiteur du courant If)",
+    "brands": [
+      "Procoralan"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Ralentit le cœur sans toucher à la tension",
+    "what": "Bradycardisant pur : insuffisance cardiaque chronique avec un pouls resté rapide malgré le bêtabloquant, angor stable si le bêtabloquant ne convient pas. Uniquement en rythme sinusal.",
+    "action": "Freine le courant If du nœud sinusal, le pacemaker naturel du cœur : la fréquence cardiaque baisse, sans effet sur la force de contraction ni sur la tension artérielle.",
+    "sideEffects": [
+      "Phosphènes (halos lumineux), surtout au début",
+      "Bradycardie : pouls avant administration",
+      "Fibrillation atriale : surveiller l'ECG",
+      "Céphalées, vertiges, vision floue"
+    ],
+    "contraindications": [
+      "Bradycardie de repos avant traitement, maladie du sinus",
+      "Choc cardiogénique, infarctus aigu, angor instable",
+      "Association au diltiazem, au vérapamil, à la clarithromycine",
+      "Grossesse, allaitement, absence de contraception"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "IvaBRADine : BRADYcardisant jusque dans le nom. Ses phosphènes, ces éclairs lumineux typiques, viennent de la rétine, qui possède un courant très proche du courant If."
+    }
+  }
+]

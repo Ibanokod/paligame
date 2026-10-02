@@ -1,13 +1,15 @@
+import { BadgeCheck, ChevronDown } from 'lucide-react'
 import { useState, type CSSProperties } from 'react'
 import { Card } from '../../components/Card/Card'
 import { CardViewer } from '../../components/CardViewer/CardViewer'
 import { RarityBadge } from '../../components/RarityBadge/RarityBadge'
-import { getSet } from '../../data/sets'
+import { getSet, listSets } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { FAMILIES, type FamilyId } from '../../lib/families'
+import { isMastered } from '../../lib/quiz'
 import { type Rarity } from '../../lib/rarity'
 import { selectDexStats } from '../../state/selectors'
-import { useAppState } from '../../state/store'
+import { useActions, useAppState } from '../../state/store'
 import styles from './DexScreen.module.css'
 
 type Status = 'all' | 'owned' | 'missing'
@@ -17,12 +19,15 @@ const STATUS_LABELS: Record<Status, string> = { all: 'Toutes', owned: 'Possédé
 /** Le Pharmacodex : la collection, classée par famille, filtrable pour réviser une famille à la fois. */
 export function DexScreen() {
   const state = useAppState()
+  const actions = useActions()
   const set = getSet(state.settings.setId)
+  const sets = listSets()
   const stats = selectDexStats(state, set)
   const [status, setStatus] = useState<Status>('all')
   const [rarity, setRarity] = useState<Rarity | null>(null)
   const [family, setFamily] = useState<FamilyId | null>(null)
   const [viewerIndex, setViewerIndex] = useState<number | null>(null)
+  const [showSets, setShowSets] = useState(false)
 
   const cards = set.cards.filter((card) => {
     const owned = card.id in state.collection
@@ -35,11 +40,58 @@ export function DexScreen() {
 
   const percent = stats.total === 0 ? 0 : (stats.owned / stats.total) * 100
 
+  const chooseSet = (setId: string) => {
+    setShowSets(false)
+    if (setId === set.id) return
+    actions.setSet(setId)
+    setFamily(null)
+    setRarity(null)
+  }
+
   return (
     <div className={styles.screen}>
       <header className={styles.header}>
         <h1 className={styles.title}>Pharmacodex</h1>
-        <p className={styles.setName}>{set.name}</p>
+        <button
+          type="button"
+          className={cx(styles.setBtn, styles.setActive, styles.setCurrent)}
+          style={{ '--h': set.hue } as CSSProperties}
+          aria-expanded={showSets}
+          onClick={() => setShowSets((v) => !v)}
+        >
+          <span className={styles.setDot} aria-hidden="true" />
+          <span className={styles.setLabel}>{set.name}</span>
+          <span className={styles.setSwitch}>
+            {showSets ? 'Fermer' : 'Changer'}
+            <ChevronDown size={16} aria-hidden="true" className={cx(styles.chevron, showSets && styles.chevronOpen)} />
+          </span>
+        </button>
+        {showSets && (
+        <ul className={styles.sets} aria-label="Extension">
+          {sets.map((s) => {
+            const st = selectDexStats(state, s)
+            const active = s.id === set.id
+            return (
+              <li key={s.id}>
+                <button
+                  type="button"
+                  className={cx(styles.setBtn, active && styles.setActive)}
+                  style={{ '--h': s.hue } as CSSProperties}
+                  aria-pressed={active}
+                  onClick={() => chooseSet(s.id)}
+                >
+                  <span className={styles.setDot} aria-hidden="true" />
+                  <span className={styles.setLabel}>{s.name}</span>
+                  <span className={cx(styles.setCount, 'tabular')}>
+                    {st.owned}/{st.total}
+                  </span>
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+        )}
+        {showSets && <p className={styles.setName}>Les prochaines cartes gagnées viendront de l'extension choisie.</p>}
         <div className={styles.progress}>
           <div className={styles.progressBar} role="progressbar" aria-valuemin={0} aria-valuemax={stats.total} aria-valuenow={stats.owned}>
             <div className={styles.progressFill} style={{ width: `${percent}%` }} />
@@ -104,7 +156,7 @@ export function DexScreen() {
           {cards.map((card, i) => {
             const owned = card.id in state.collection
             return (
-              <li key={card.id}>
+              <li key={card.id} className={styles.cell}>
                 {owned ? (
                   <Card card={card} faceUp onClick={() => setViewerIndex(i)} />
                 ) : (
@@ -118,6 +170,11 @@ export function DexScreen() {
                     <span className={cx(styles.slotNumber, 'tabular')}>{card.localId}</span>
                     <RarityBadge rarity={card.rarity} className={styles.slotRarity} />
                   </button>
+                )}
+                {owned && isMastered(state.quiz.stats[card.id]) && (
+                  <span className={styles.mastered} title="Maîtrisée au quiz">
+                    <BadgeCheck size={16} aria-label="Maîtrisée au quiz" />
+                  </span>
                 )}
               </li>
             )

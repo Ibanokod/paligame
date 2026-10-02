@@ -1,0 +1,258 @@
+[
+  {
+    "dci": "Ramipril",
+    "family": "antihypertenseur",
+    "rarity": "Courant",
+    "classe": "Inhibiteur de l'enzyme de conversion (IEC)",
+    "brands": [
+      "Triatec"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'IEC du quotidien : tension, cœur et reins",
+    "what": "Inhibiteur de l'enzyme de conversion (IEC) : HTA, insuffisance cardiaque, suites d'infarctus, prévention cardiovasculaire du patient à haut risque, néphropathie. Introduit à petite dose.",
+    "action": "Bloque l'enzyme qui fabrique l'angiotensine II, hormone qui resserre les artères et fait retenir le sel : les vaisseaux se relâchent, la tension baisse, le cœur et les reins sont soulagés.",
+    "sideEffects": [
+      "Toux sèche fréquente : la signaler, ne pas la banaliser",
+      "Hypotension à la première prise : lever progressif",
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Insuffisance rénale : surveiller la créatinine",
+      "Angio-œdème (lèvres, langue, gorge) : urgence vitale"
+    ],
+    "contraindications": [
+      "Antécédent d'angio-œdème (sous IEC ou héréditaire)",
+      "Grossesse aux 2e et 3e trimestres",
+      "Sténose bilatérale des artères rénales",
+      "Prudence : potassium, épargneurs potassiques, AINS"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Les IEC viennent du venin d'une vipère brésilienne, le jararaca : dans les années 1960, Sérgio Ferreira y découvre des peptides qui font chuter la tension. Le premier IEC, le captopril, en dérive."
+    }
+  },
+  {
+    "dci": "Amlodipine",
+    "family": "antihypertenseur",
+    "rarity": "Courant",
+    "classe": "Inhibiteur calcique (dihydropyridine)",
+    "brands": [
+      "Amlor"
+    ],
+    "forms": [
+      "gelule",
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'inhibiteur calcique de l'HTA, une prise par jour",
+    "what": "Inhibiteur calcique de la famille des dihydropyridines : HTA et angor stable. Longue durée d'action, une prise par jour. Souvent associé à un IEC ou à un sartan.",
+    "action": "Bloque l'entrée du calcium dans les cellules musculaires des artères : elles se relâchent, les artères se dilatent et la tension baisse. Peu d'effet direct sur le rythme cardiaque.",
+    "sideEffects": [
+      "Œdèmes des chevilles, très fréquents",
+      "Céphalées, bouffées de chaleur, rougeur du visage",
+      "Vertiges, hypotension : se lever lentement",
+      "Palpitations, fatigue",
+      "Hypertrophie des gencives (rare) : hygiène dentaire"
+    ],
+    "contraindications": [
+      "Hypotension sévère, choc (dont choc cardiogénique)",
+      "Rétrécissement aortique serré",
+      "Insuffisance cardiaque instable après un infarctus",
+      "Prudence : insuffisance hépatique, jus de pamplemousse"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "L'effet pamplemousse a été découvert par hasard à la fin des années 1980 : un chercheur canadien en avait mis dans un essai pour masquer le goût de l'alcool. Les taux d'un inhibiteur calcique ont bondi."
+    }
+  },
+  {
+    "dci": "Périndopril",
+    "family": "antihypertenseur",
+    "rarity": "Fréquent",
+    "classe": "Inhibiteur de l'enzyme de conversion (IEC)",
+    "brands": [
+      "Coversyl"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'autre IEC phare, seul ou en association fixe",
+    "what": "IEC de l'HTA, de l'insuffisance cardiaque et de la maladie coronaire stable (après infarctus ou revascularisation). Existe en associations fixes avec l'indapamide ou l'amlodipine.",
+    "action": "Empêche la fabrication d'angiotensine II : les artères se relâchent et le rein élimine plus de sel et d'eau. La bradykinine, qui n'est plus dégradée, s'accumule : d'où la toux.",
+    "sideEffects": [
+      "Toux sèche, cause fréquente d'arrêt du traitement",
+      "Hypotension orthostatique, vertiges : lever en deux temps",
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Créatinine en hausse : bilan rénal en début de traitement",
+      "Angio-œdème : rare, urgence vitale"
+    ],
+    "contraindications": [
+      "Antécédent d'angio-œdème",
+      "Grossesse aux 2e et 3e trimestres",
+      "Association au sacubitril/valsartan (Entresto)",
+      "Prudence : sténose de l'artère rénale, déshydratation"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Tous les IEC finissent en -PRIL : ramiPRIL, périndoPRIL, énalaPRIL. Les sartans, eux, finissent en -SARTAN. Même voie bloquée, mais c'est surtout le -pril qui fait tousser."
+    }
+  },
+  {
+    "dci": "Losartan",
+    "family": "antihypertenseur",
+    "rarity": "Fréquent",
+    "classe": "Antagoniste de l'angiotensine II (sartan, ARA2)",
+    "brands": [
+      "Cozaar",
+      "Hyzaar"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le sartan : l'effet d'un IEC, sans la toux",
+    "what": "Antagoniste des récepteurs de l'angiotensine II (ARA2) : HTA, insuffisance cardiaque, néphropathie du diabétique de type 2. Souvent proposé quand un IEC fait tousser.",
+    "action": "Bloque le récepteur sur lequel agit l'angiotensine II : les artères se relâchent et la tension baisse, comme avec un IEC. La bradykinine ne s'accumule pas : pas de toux.",
+    "sideEffects": [
+      "Vertiges, hypotension orthostatique : lever lent",
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Insuffisance rénale : surveiller la créatinine",
+      "Fatigue, céphalées",
+      "Angio-œdème : très rare"
+    ],
+    "contraindications": [
+      "Grossesse aux 2e et 3e trimestres",
+      "Insuffisance hépatique sévère",
+      "Association à l'aliskiren si diabète ou insuffisance rénale",
+      "Prudence : association à un IEC (double blocage)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Le losartan est le premier sartan commercialisé, en 1995 aux États-Unis. Depuis, toute la famille porte le même suffixe : valsartan, irbésartan, candésartan, olmésartan."
+    }
+  },
+  {
+    "dci": "Nicardipine",
+    "family": "antihypertenseur",
+    "rarity": "Fréquent",
+    "classe": "Inhibiteur calcique (dihydropyridine) injectable",
+    "brands": [
+      "Loxen"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antihypertenseur IV des urgences, au PSE",
+    "what": "Inhibiteur calcique en IV continue au PSE : urgences hypertensives, HTA sévère de la grossesse (pré-éclampsie), contrôle tensionnel de l'AVC à la phase aiguë. Débit adapté à la PA.",
+    "action": "Bloque l'entrée du calcium dans les muscles des artères : vasodilatation rapide, la tension baisse en quelques minutes. Action réglable : le débit s'ajuste sur la PA, selon la prescription.",
+    "sideEffects": [
+      "Hypotension brutale : PA rapprochée, scope",
+      "Tachycardie réflexe, palpitations",
+      "Céphalées, bouffées de chaleur",
+      "Veinite au point de perfusion : surveiller la voie",
+      "Nausées, œdèmes"
+    ],
+    "contraindications": [
+      "Rétrécissement aortique serré",
+      "Angor instable, infarctus récent",
+      "Choc cardiogénique",
+      "Prudence : AVC, éviter une baisse trop brutale de la PA"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les 3 P de la nicardipine : PSE, Pression artérielle rapprochée, Point de perfusion surveillé, car elle irrite les veines."
+    }
+  },
+  {
+    "dci": "Hydrochlorothiazide",
+    "family": "antihypertenseur",
+    "rarity": "Occasionnel",
+    "classe": "Diurétique thiazidique",
+    "brands": [
+      "Esidrex"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le diurétique de l'HTA, caché dans les associations",
+    "what": "Diurétique thiazidique de l'HTA, rarement seul : on le trouve surtout en association fixe avec un IEC ou un sartan (noms souvent en Co-, comme Cotareg ou Coaprovel).",
+    "action": "Bloque la réabsorption du sodium dans le tube contourné distal du rein : diurèse modérée, puis relâchement progressif des artères. Effet plus doux et plus long que le furosémide.",
+    "sideEffects": [
+      "Hypokaliémie : surveiller le ionogramme",
+      "Hyponatrémie, surtout chez la personne âgée",
+      "Déshydratation, hypotension orthostatique",
+      "Hyperuricémie (goutte), hyperglycémie",
+      "Photosensibilité, cancers cutanés : protéger du soleil"
+    ],
+    "contraindications": [
+      "Allergie aux sulfamides",
+      "Insuffisance rénale ou hépatique sévère",
+      "Hypokaliémie ou hyponatrémie non corrigée",
+      "Prudence : lithium, goutte, diabète"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le thiazidique fait tout à l'envers : il fait perdre ce qu'on voudrait garder (potassium, sodium) et monter ce qu'on voudrait voir baisser (acide urique, glycémie, calcémie)."
+    }
+  },
+  {
+    "dci": "Urapidil",
+    "family": "antihypertenseur",
+    "rarity": "Occasionnel",
+    "classe": "Alphabloquant à action périphérique et centrale",
+    "brands": [
+      "Eupressyl",
+      "Médiatensyl"
+    ],
+    "forms": [
+      "injectable",
+      "gelule"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'antihypertenseur IV qui n'accélère pas le cœur",
+    "what": "Antihypertenseur des urgences hypertensives (dont l'AVC, selon protocole) et de l'HTA périopératoire, en IV lente puis au PSE. Existe aussi en gélules LP pour l'HTA au long cours.",
+    "action": "Bloque les récepteurs alpha-1 qui resserrent les artères : vasodilatation, la tension baisse. Agit aussi dans le cerveau (récepteurs de la sérotonine), ce qui limite l'accélération du cœur.",
+    "sideEffects": [
+      "Hypotension, surtout orthostatique : rester allongé",
+      "Vertiges, céphalées",
+      "Nausées, fatigue",
+      "Palpitations, rarement tachycardie"
+    ],
+    "contraindications": [
+      "Coarctation (sténose isthmique) de l'aorte",
+      "Shunt artérioveineux (sauf fistule de dialyse)",
+      "Prudence : sujet âgé, hypovolémie (chute brutale de PA)",
+      "Prudence : autres antihypertenseurs associés"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "L'urapidil, c'est le collègue zen du service : il fait baisser la pression sans faire monter le pouls. Le genre qu'on aimerait croiser un soir de garde chargée."
+    }
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "dci": "Amoxicilline",
+    "family": "betalactamine",
+    "rarity": "Courant",
+    "classe": "Pénicilline A (aminopénicilline)",
+    "brands": [
+      "Clamoxyl"
+    ],
+    "forms": [
+      "gelule",
+      "injectable",
+      "solution"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "La pénicilline de base des infections courantes",
+    "what": "Pénicilline A très utilisée : pneumonie, infections ORL et urinaires à germe sensible, endocardite à streptocoque ou entérocoque, listériose. Relais oral fréquent après la voie IV.",
+    "action": "Se fixe sur les enzymes qui construisent la paroi bactérienne : la bactérie, fragilisée, éclate (bactéricide). Détruite par les bêtalactamases de certaines bactéries.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Diarrhée, nausées",
+      "Éruption cutanée (très fréquente en cas de mononucléose)",
+      "Candidose buccale ou vaginale",
+      "Colite à Clostridioides difficile (rare)"
+    ],
+    "contraindications": [
+      "Allergie aux pénicillines",
+      "Antécédent de réaction allergique grave à une bêtalactamine",
+      "Prudence : mononucléose infectieuse (éruption cutanée)",
+      "Prudence : insuffisance rénale sévère (adapter la dose)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Commercialisée en 1972 par le laboratoire britannique Beecham, l'amoxicilline est aujourd'hui l'antibiotique le plus consommé en France."
+    }
+  },
+  {
+    "dci": "Amoxicilline-acide clavulanique",
+    "family": "betalactamine",
+    "rarity": "Courant",
+    "classe": "Pénicilline A + inhibiteur de bêtalactamases",
+    "brands": [
+      "Augmentin"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'amoxicilline protégée, pour un spectre élargi",
+    "what": "Association d'usage très large : infections abdominales, pneumonies d'inhalation, morsures, infections ORL et cutanées. Active sur les germes producteurs de bêtalactamases et les anaérobies.",
+    "action": "L'acide clavulanique neutralise les bêtalactamases, enzymes par lesquelles des bactéries détruisent l'amoxicilline : celle-ci peut alors bloquer la construction de leur paroi.",
+    "sideEffects": [
+      "Diarrhée fréquente : donner en début de repas (voie orale)",
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Nausées, vomissements, candidose",
+      "Hépatite cholestatique (homme âgé, traitement prolongé)",
+      "Colite à Clostridioides difficile"
+    ],
+    "contraindications": [
+      "Allergie aux pénicillines ou réaction grave à une bêtalactamine",
+      "Antécédent d'atteinte hépatique sous cette association",
+      "Prudence : insuffisance hépatique ou rénale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "AUGMENTin, c'est l'amoxicilline AUGMENTÉE d'un garde du corps, l'acide clavulanique. Mais la diarrhée augmente aussi : à donner en début de repas."
+    }
+  },
+  {
+    "dci": "Ceftriaxone",
+    "family": "betalactamine",
+    "rarity": "Courant",
+    "classe": "Céphalosporine de 3e génération (C3G)",
+    "brands": [
+      "Rocéphine"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM",
+      "SC"
+    ],
+    "tagline": "La C3G injectable du quotidien, souvent une fois par jour",
+    "what": "C3G injectable très utilisée en probabiliste : pneumonie, pyélonéphrite, méningite, sepsis. Longue durée d'action : le plus souvent une injection par jour, en IV, IM ou SC.",
+    "action": "Bloque la construction de la paroi bactérienne : la bactérie éclate (bactéricide). Résiste à de nombreuses bêtalactamases et diffuse bien, y compris dans les méninges.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Diarrhée, colite à Clostridioides difficile",
+      "Douleur au point d'injection IM ou SC",
+      "Boue biliaire, lithiase (précipités de ceftriaxone)",
+      "Éruption cutanée, hausse des enzymes hépatiques"
+    ],
+    "contraindications": [
+      "Allergie aux céphalosporines ou réaction grave à une bêtalactamine",
+      "Calcium IV (Ringer lactate) : jamais mélangés ni simultanés",
+      "Nouveau-né avec ictère ou recevant du calcium IV, prématuré",
+      "Prudence : solvant IM à la lidocaïne, jamais en IV"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Ceftriaxone et calcium : couple interdit, ensemble ils cristallisent. Réflexe : jamais en même temps que le Ringer lactate ou le calcium IV, et rincer la tubulure entre les deux."
+    }
+  },
+  {
+    "dci": "Pipéracilline-tazobactam",
+    "family": "betalactamine",
+    "rarity": "Courant",
+    "classe": "Uréidopénicilline + inhibiteur de bêtalactamases",
+    "brands": [
+      "Tazocilline"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le large spectre de l'hôpital, actif sur le pyocyanique",
+    "what": "Pénicilline à large spectre réservée à l'hôpital : infections nosocomiales et abdominales, pneumonies sous ventilation, neutropénie fébrile. Active sur le pyocyanique (Pseudomonas aeruginosa).",
+    "action": "La pipéracilline bloque la construction de la paroi bactérienne, le tazobactam neutralise les bêtalactamases qui la détruiraient. Spectre large, anaérobies compris.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Diarrhée, colite à Clostridioides difficile",
+      "Insuffisance rénale aiguë, surtout avec la vancomycine",
+      "Hypokaliémie, thrombopénie, neutropénie (traitement long)",
+      "Phlébite au point de perfusion"
+    ],
+    "contraindications": [
+      "Allergie aux pénicillines ou réaction grave à une bêtalactamine",
+      "Ne pas mélanger aux aminosides (inactivation) : perfuser à part",
+      "Prudence : insuffisance rénale (adapter la dose)",
+      "Prudence : apport en sodium (insuffisance cardiaque)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Pyocyanique vient du grec « pyon », le pus, et « kuanos », le bleu sombre : ce bacille colore les pansements en bleu-vert. Les microbiologistes lui trouvent une odeur de fleur de seringa."
+    }
+  },
+  {
+    "dci": "Céfazoline",
+    "family": "betalactamine",
+    "rarity": "Courant",
+    "classe": "Céphalosporine de 1re génération (C1G)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "L'antibioprophylaxie de référence au bloc opératoire",
+    "what": "Céphalosporine de 1re génération, référence de l'antibioprophylaxie chirurgicale (SFAR), injectée avant l'incision. Aussi traitement des infections à staphylocoque doré sensible (SAMS).",
+    "action": "Bloque la construction de la paroi bactérienne : bactéricide. Très active sur les staphylocoques sensibles à la méticilline et les streptocoques, peu sur les bacilles Gram négatif.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant l'injection",
+      "Diarrhée, colite à Clostridioides difficile",
+      "Douleur ou phlébite au point d'injection",
+      "Éruption cutanée, prurit"
+    ],
+    "contraindications": [
+      "Allergie aux céphalosporines",
+      "Antécédent de réaction allergique grave à une bêtalactamine",
+      "Prudence : insuffisance rénale (adapter la dose)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Les céphalosporines viennent d'un champignon isolé en 1945 par l'Italien Giuseppe Brotzu dans l'eau de mer, près d'une sortie d'égout de Cagliari, en Sardaigne."
+    }
+  },
+  {
+    "dci": "Céfotaxime",
+    "family": "betalactamine",
+    "rarity": "Occasionnel",
+    "classe": "Céphalosporine de 3e génération (C3G)",
+    "brands": [
+      "Claforan"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "La C3G des méningites, en plusieurs injections par jour",
+    "what": "C3G injectable, alternative à la ceftriaxone : méningite bactérienne, infections graves, et nouveau-né (pas de précipité avec le calcium). Demi-vie courte : plusieurs injections par jour.",
+    "action": "Bloque la construction de la paroi bactérienne : bactéricide. Large spectre (bacilles Gram négatif, pneumocoque, méningocoque) et bonne diffusion dans les méninges.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Diarrhée, colite à Clostridioides difficile",
+      "Douleur ou phlébite au point d'injection",
+      "Arythmie si bolus trop rapide sur voie veineuse centrale",
+      "Éruption cutanée, neutropénie (traitement prolongé)"
+    ],
+    "contraindications": [
+      "Allergie aux céphalosporines",
+      "Antécédent de réaction allergique grave à une bêtalactamine",
+      "Prudence : solvant IM à la lidocaïne, jamais en IV",
+      "Prudence : insuffisance rénale sévère (adapter la dose)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "CeftriaxONE : ONE, une injection par jour le plus souvent. CéfotaXIME : demi-vie courte, à répéter plusieurs fois par jour. Même famille, pas le même rythme."
+    }
+  },
+  {
+    "dci": "Cloxacilline",
+    "family": "betalactamine",
+    "rarity": "Occasionnel",
+    "classe": "Pénicilline M (antistaphylococcique)",
+    "brands": [
+      "Orbénine"
+    ],
+    "forms": [
+      "injectable",
+      "gelule"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "La pénicilline du staphylocoque doré sensible",
+    "what": "Pénicilline M, référence des infections graves à staphylocoque doré sensible à la méticilline (SAMS) : bactériémie, endocardite, infections osseuses, articulaires et cutanées.",
+    "action": "Résiste à la pénicillinase, enzyme par laquelle le staphylocoque détruit les autres pénicillines : elle bloque la construction de sa paroi. Inactive sur le SARM.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Phlébite fréquente : surveiller le point de perfusion",
+      "Troubles digestifs, colite à Clostridioides difficile",
+      "Atteinte rénale ou hépatique (fortes doses prolongées)",
+      "Neutropénie si traitement prolongé"
+    ],
+    "contraindications": [
+      "Allergie aux pénicillines",
+      "Antécédent de réaction allergique grave à une bêtalactamine",
+      "Prudence : insuffisance hépatique ou rénale sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Pénicilline M comme Méticilline : elle traite le staphylocoque Sensible à la Méticilline (SAMS), pas le Résistant (SARM), qui relève de la vancomycine."
+    }
+  },
+  {
+    "dci": "Méropénem",
+    "family": "betalactamine",
+    "rarity": "Rare",
+    "classe": "Carbapénème",
+    "brands": [
+      "Meronem"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le carbapénème de réserve contre les bactéries résistantes",
+    "what": "Carbapénème à très large spectre, réservé aux infections graves à bactéries multirésistantes (entérobactéries productrices de BLSE) ou nosocomiales. Antibiotique à épargner, sur avis infectiologue.",
+    "action": "Bloque la construction de la paroi bactérienne : bactéricide. Résiste à presque toutes les bêtalactamases, y compris les BLSE, d'où son très large spectre.",
+    "sideEffects": [
+      "Allergie : vérifier l'absence d'allergie avant la 1re dose",
+      "Diarrhée, colite à Clostridioides difficile",
+      "Céphalées, nausées, réaction au point d'injection",
+      "Convulsions (rares, moins qu'avec l'imipénème)",
+      "Sélection de bactéries résistantes aux carbapénèmes"
+    ],
+    "contraindications": [
+      "Allergie aux carbapénèmes",
+      "Réaction allergique grave à une autre bêtalactamine",
+      "Acide valproïque : déconseillé (taux effondré, convulsions)",
+      "Prudence : insuffisance rénale, antécédent d'épilepsie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Le méropénem, c'est le joker du jeu : à force de le jouer, les bactéries apprennent à le contrer. D'où sa place en réserve, pour la partie où il compte vraiment."
+    }
+  },
+  {
+    "dci": "Benzathine benzylpénicilline",
+    "family": "betalactamine",
+    "rarity": "Très rare",
+    "classe": "Pénicilline G à libération prolongée",
+    "brands": [
+      "Extencilline"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IM"
+    ],
+    "tagline": "Une injection IM qui dure des semaines : la syphilis",
+    "what": "Pénicilline G retard, traitement de référence de la syphilis ; aussi prévention des rechutes de rhumatisme articulaire aigu et de l'érysipèle récidivant. Injection IM profonde stricte.",
+    "action": "Sel peu soluble qui libère lentement la pénicilline G depuis le muscle : des taux faibles mais prolongés, suffisants contre le tréponème de la syphilis, très sensible.",
+    "sideEffects": [
+      "Douleur importante au point d'injection",
+      "Allergie : vérifier avant, surveiller après l'injection",
+      "Jarisch-Herxheimer : fièvre, frissons dans les heures",
+      "Accident grave si injection dans un vaisseau"
+    ],
+    "contraindications": [
+      "Allergie aux pénicillines",
+      "Voie IV ou intra-artérielle : IM profonde stricte, aspirer avant",
+      "Prudence : troubles de la coagulation, anticoagulants (voie IM)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "La benzylpénicilline, ou pénicilline G, descend de la découverte de Fleming : en 1928, une moisissure envahit ses boîtes de culture de staphylocoques. Prix Nobel 1945, avec Florey et Chain."
+    }
+  }
+]

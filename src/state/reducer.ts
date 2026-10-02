@@ -2,7 +2,8 @@
 // nouvel état. Il ne tire jamais au hasard et ne lit jamais l'heure : ce qui dépend du
 // monde extérieur (id, date, cartes tirées) arrive déjà calculé dans l'action.
 
-import { CARD_STYLES, initialState, type CardStyle, type Reward, type State } from './types'
+import { nextStat } from '../lib/quiz'
+import { initialState, type Reward, type State } from './types'
 
 export type Action =
   | { type: 'addIntake'; id: string; at: string; ml: number }
@@ -12,7 +13,10 @@ export type Action =
   | { type: 'revealAll'; rewardId: string }
   | { type: 'closeReward'; rewardId: string }
   | { type: 'setBackdrop'; cardId: string | null }
-  | { type: 'setCardStyle'; style: CardStyle }
+  | { type: 'setHideAnswers'; hide: boolean }
+  | { type: 'setSet'; setId: string }
+  | { type: 'quizAnswer'; cardId: string; correct: boolean; at: string }
+  | { type: 'quizDone'; score: number }
   | { type: 'importState'; state: State }
   | { type: 'reset' }
 
@@ -53,9 +57,20 @@ export function reducer(state: State, action: Action): State {
       if (action.cardId !== null && !state.collection[action.cardId]) return state
       return { ...state, settings: { ...state.settings, backdropCardId: action.cardId } }
 
-    case 'setCardStyle':
-      if (!CARD_STYLES.includes(action.style)) return state
-      return { ...state, settings: { ...state.settings, cardStyle: action.style } }
+    case 'setHideAnswers':
+      return { ...state, settings: { ...state.settings, hideAnswers: action.hide } }
+
+    case 'setSet':
+      if (!action.setId) return state
+      return { ...state, settings: { ...state.settings, setId: action.setId } }
+
+    case 'quizAnswer': {
+      const stats = { ...state.quiz.stats, [action.cardId]: nextStat(state.quiz.stats[action.cardId], action.correct, action.at) }
+      return { ...state, quiz: { ...state.quiz, stats } }
+    }
+
+    case 'quizDone':
+      return { ...state, quiz: { ...state.quiz, best: Math.max(state.quiz.best, action.score), sessions: state.quiz.sessions + 1 } }
 
     case 'importState':
       return action.state

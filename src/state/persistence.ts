@@ -1,7 +1,7 @@
 // Lecture et écriture de l'état dans localStorage, export et import JSON.
 // Tout est défensif : une donnée corrompue redonne un état vide plutôt qu'un plantage.
 
-import { DEFAULT_SETTINGS, initialState, type State } from './types'
+import { DEFAULT_SETTINGS, EMPTY_QUIZ, initialState, type State } from './types'
 
 export const STORAGE_KEY = 'paligame.v1'
 
@@ -21,9 +21,10 @@ export function loadState(): State {
   }
 }
 
-/** Complète les réglages ajoutés depuis la sauvegarde (nouveaux champs optionnels). */
+/** Complète les réglages et le quiz ajoutés depuis la sauvegarde (nouveaux champs). */
 export function withDefaults(state: State): State {
-  return { ...state, settings: { ...DEFAULT_SETTINGS, ...state.settings } }
+  const quiz = state.quiz && typeof state.quiz === 'object' ? { ...EMPTY_QUIZ, ...state.quiz } : { ...EMPTY_QUIZ, stats: {} }
+  return { ...state, settings: { ...DEFAULT_SETTINGS, ...state.settings }, quiz }
 }
 
 export function saveState(state: State): void {

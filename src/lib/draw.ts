@@ -59,12 +59,15 @@ export function drawRareCard(ctx: DrawContext): string[] {
 
 export type BoosterResult = { cardIds: string[]; rarePack: boolean }
 
-/** Booster de 5 cartes distinctes : 3 courantes, 4e carte, 5e carte ; ou paquet rare (5 × table rare). */
+/** Cartes par booster (5 dans Ura, 3 ici : décision du 02/10/2026, voir PRODUCT.md). */
+export const BOOSTER_SIZE = 3
+
+/** Booster de 3 cartes distinctes : 2 courantes et une carte surprise ; ou paquet rare (3 × table rare). */
 export function drawBooster(ctx: DrawContext): BoosterResult {
   const rarePack = ctx.rng() * 100 < ctx.rates.rarePackChance
   const tables: RarityTable[] = rarePack
-    ? [ctx.rates.rarePack, ctx.rates.rarePack, ctx.rates.rarePack, ctx.rates.rarePack, ctx.rates.rarePack]
-    : [ctx.rates.common, ctx.rates.common, ctx.rates.common, ctx.rates.slot4, ctx.rates.slot5]
+    ? [ctx.rates.rarePack, ctx.rates.rarePack, ctx.rates.rarePack]
+    : [ctx.rates.common, ctx.rates.common, ctx.rates.slot5]
   const picked = new Set<string>()
   const cardIds: string[] = []
   for (const table of tables) {

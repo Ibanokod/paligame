@@ -2,6 +2,7 @@
 // nouvelle version et une migration dans persistence.ts, sauf ajout d'un réglage optionnel
 // (complété par sa valeur par défaut au chargement).
 
+import type { QuizStats } from '../lib/quiz'
 import type { RewardKind } from '../lib/rewards'
 
 export type Entry = {
@@ -18,9 +19,11 @@ export type Reward = {
   day: string
   kind: RewardKind
   thresholdMl: number
-  /** 1 carte, 5 cartes, ou aucune si la collection est complète (ids « PAL1-012 »). */
+  /** 1 carte, 3 cartes (booster), ou aucune si la collection est complète (ids « PAL1-012 »). */
   cardIds: string[]
   rarePack?: boolean
+  /** Extension tirée (le paquet en prend la couleur et le nom). */
+  setId?: string
   /** Cartes de la récompense sorties en version brillante. */
   foilIds?: string[]
   /** Nombre de cartes déjà retournées (reprise si l'appli est fermée en cours). */
@@ -35,14 +38,20 @@ export type Settings = {
   setId: string
   /** Carte choisie comme fond d'écran de l'accueil ; null = la dernière carte obtenue. */
   backdropCardId: string | null
-  /** Style de dessin des cartes (trois propositions à départager). */
-  cardStyle: CardStyle
+  /** Mode révision : les réponses des fiches sont cachées jusqu'au tap (par défaut). */
+  hideAnswers: boolean
 }
 
-export const CARD_STYLES = ['classique', 'memo', 'galerie'] as const
-export type CardStyle = (typeof CARD_STYLES)[number]
-
 export type Owned = { at: string; foil?: boolean }
+
+/** Quiz : résultats par carte, et meilleur score d'une série (sur 10). */
+export type QuizState = {
+  stats: QuizStats
+  best: number
+  sessions: number
+}
+
+export const EMPTY_QUIZ: QuizState = { stats: {}, best: 0, sessions: 0 }
 
 export type State = {
   version: 1
@@ -51,10 +60,11 @@ export type State = {
   rewards: Reward[]
   /** Carte possédée -> date d'obtention, et finition brillante si elle est sortie ainsi. */
   collection: Record<string, Owned>
+  quiz: QuizState
 }
 
-export const DEFAULT_SETTINGS: Settings = { goalMl: 1500, quickAddMl: 150, setId: 'PAL1', backdropCardId: null, cardStyle: 'classique' }
+export const DEFAULT_SETTINGS: Settings = { goalMl: 1500, quickAddMl: 150, setId: 'PAL1', backdropCardId: null, hideAnswers: true }
 
 export function initialState(): State {
-  return { version: 1, settings: { ...DEFAULT_SETTINGS }, entries: [], rewards: [], collection: {} }
+  return { version: 1, settings: { ...DEFAULT_SETTINGS }, entries: [], rewards: [], collection: {}, quiz: { ...EMPTY_QUIZ, stats: {} } }
 }

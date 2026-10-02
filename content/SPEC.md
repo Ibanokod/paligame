@@ -1,11 +1,21 @@
 # Spécification du contenu des cartes Paligame
 
-Paligame est un jeu de cartes à collectionner pour une **étudiante infirmière de 3e année en
-stage de soins palliatifs** (milieu hospitalier français). Chaque carte est un **mémo** sur un
-médicament utilisé en soins palliatifs. Elle sert à réviser de façon ludique : chaque champ
-est **court**, précis, conforme à ce qu'on enseigne en IFSI et à la pratique hospitalière
-française (recommandations HAS, ANSM, SFAP). On ne s'étale pas : c'est une carte de rappel,
-pas un Vidal.
+Paligame est un jeu de cartes à collectionner pour une **étudiante infirmière de 3e année**
+(milieu hospitalier français), d'abord en stage de soins palliatifs. Chaque carte est un
+**mémo** sur un médicament. Elle sert à réviser de façon ludique : chaque champ est
+**court**, précis, conforme à ce qu'on enseigne en IFSI et à la pratique hospitalière
+française (recommandations HAS, ANSM, sociétés savantes). On ne s'étale pas : c'est une
+carte de rappel, pas un Vidal.
+
+## Extensions
+
+Les cartes sont groupées en extensions, une par dossier de `src/data/cards/` :
+`PAL1` (Soins palliatifs), `CARDIO` (Cardiologie et coagulation), `INFECT`
+(Anti-infectieux), `URGENCE` (Urgences et réanimation), `ENDO` (Diabète et endocrinologie).
+Une DCI n'apparaît que dans une seule extension. Les indications (`what`) et les réflexes
+infirmiers se placent dans le contexte de l'extension (service de cardiologie, urgences,
+réanimation...). La rareté reflète la fréquence d'utilisation à l'hôpital dans ce
+contexte : `Courant` = vu tous les jours en stage, `Exceptionnel` = presque jamais.
 
 ## Format de sortie
 
@@ -55,10 +65,10 @@ de la liste fournie. Guillemets droits, apostrophe droite `'`. JSON strictement 
 | `rarity` | Imposé par la liste fournie (ne pas changer). |
 | `classe` | Classe pharmacologique ou thérapeutique, 50 caractères max. |
 | `brands` | 1 à 3 noms commerciaux **commercialisés en France** (exemples parlants pour le stage). Si incertain, n'en mettre qu'un sûr, ou `[]` pour un générique pur. |
-| `forms` | 1 à 3 valeurs parmi : `comprime`, `gelule`, `solution`, `injectable`, `patch`, `spray`, `gaz`, `suppositoire`, `creme`, `collyre`, `sachet`, `bain-de-bouche`. La première sert à l'illustration : mettre la forme la plus typique en soins palliatifs. |
+| `forms` | 1 à 3 valeurs parmi : `comprime`, `gelule`, `solution`, `injectable`, `patch`, `spray`, `gaz`, `suppositoire`, `creme`, `collyre`, `sachet`, `bain-de-bouche`, `stylo` (stylo injecteur, insulines...), `poche` (poche de perfusion, solutés). La première sert à l'illustration : mettre la forme la plus typique à l'hôpital. |
 | `routes` | Voies d'administration usuelles parmi : `PO`, `SL`, `SC`, `IV`, `IM`, `TD` (transdermique), `IN` (intranasale), `TM` (transmuqueuse buccale), `IR` (intrarectale), `Inhalée`, `Locale`. |
 | `tagline` | Ce que c'est en une ligne, **60 caractères max** (affiché sur la carte). |
-| `what` | « Qu'est-ce que c'est » : classe + indications en soins palliatifs. 1 à 2 phrases, **220 caractères max**. |
+| `what` | « Qu'est-ce que c'est » : classe + indications principales (dans le contexte de l'extension). 1 à 2 phrases, **220 caractères max**. |
 | `action` | Mode d'action, compréhensible par une étudiante IDE. 1 à 2 phrases, **220 caractères max**. Pas de lettres grecques : écrire « mu », « kappa ». |
 | `sideEffects` | 3 à 5 effets indésirables, **du plus fréquent ou plus important au moins important**, 60 caractères max chacun. Ajouter un réflexe infirmier quand c'est le point clé (ex. « laxatif d'emblée »). |
 | `contraindications` | 2 à 4 contre-indications (absolues d'abord), 70 caractères max chacune. On peut finir par une « Prudence : ... » si c'est classique. |
@@ -71,8 +81,12 @@ de la liste fournie. Guillemets droits, apostrophe droite `'`. JSON strictement 
 - **Exactitude avant tout** : c'est du matériel de révision pour une future infirmière. Pas
   de posologie chiffrée (doses, débits), pas de conseil de prescription.
 - Contexte **français** : noms commerciaux, pratiques et vocabulaire des services français
-  (USP, EMSP, LISP, IDE, PCA, interdoses, LP / LI, palier OMS, sédation proportionnée, loi
+  (IDE, PSE, PCA, interdoses, LP / LI, INR, TCA, anti-Xa, glycémie capillaire, protocoles de
+  service ; pour les soins palliatifs : USP, EMSP, sédation proportionnée, loi
   Claeys-Leonetti si pertinent).
+- Médicaments à haut risque (anticoagulants, insulines, potassium, amines, curares...) :
+  le réflexe de sécurité infirmier attendu figure dans les effets indésirables ou les
+  contre-indications (double contrôle, dilution obligatoire, surveillance biologique).
 - Ton : clair, direct, pédagogique. Phrases courtes. Pas d'emoji.
 - Relire chaque carte une fois écrite : exactitude pharmacologique, longueurs maximales
   respectées, JSON valide.

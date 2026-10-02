@@ -309,6 +309,109 @@ export function MotifGlyph({ motif, color }: { motif: Motif; color: string }) {
       )
     case 'pouls':
       return <path d="M4 56H28L36 32L46 76L58 22L66 56H96" {...stroke} />
+    case 'goutte':
+      return (
+        <g>
+          <path d="M50 8C64 30 78 46 78 62a28 28 0 0 1-56 0C22 46 36 30 50 8Z" fill={color} />
+          <path d="M36 62a14 14 0 0 0 10 14" {...stroke} stroke="#ffffff" strokeOpacity="0.35" strokeWidth={4} />
+        </g>
+      )
+    case 'disques':
+      // Plaquettes : petits disques aplatis.
+      return (
+        <g fill={color}>
+          <ellipse cx="36" cy="38" rx="22" ry="11" transform="rotate(-18 36 38)" />
+          <ellipse cx="64" cy="68" rx="20" ry="10" transform="rotate(12 64 68)" />
+          <ellipse cx="74" cy="28" rx="12" ry="6" transform="rotate(30 74 28)" />
+          <ellipse cx="36" cy="38" rx="10" ry="4" transform="rotate(-18 36 38)" fill="#000" fillOpacity="0.2" />
+          <ellipse cx="64" cy="68" rx="9" ry="3.5" transform="rotate(12 64 68)" fill="#000" fillOpacity="0.2" />
+        </g>
+      )
+    case 'filet':
+      // Réseau de fibrine : le caillot.
+      return (
+        <g {...stroke} strokeWidth={4}>
+          <path d="M8 30L92 58M10 70L90 22M30 8L58 92M70 8L42 92" />
+          <circle cx="50" cy="50" r="7" fill={color} stroke="none" />
+        </g>
+      )
+    case 'coeur':
+      return <path d="M50 88C20 66 8 48 8 32a20 20 0 0 1 42-12a20 20 0 0 1 42 12c0 16-12 34-42 56Z" fill={color} />
+    case 'lactame':
+      // Cycle bêtalactame : un carré à quatre atomes, son azote et son oxygène.
+      return (
+        <g {...stroke} strokeWidth={5}>
+          <rect x="22" y="30" width="40" height="40" />
+          <path d="M62 30L80 14M58 26L76 10" strokeWidth={4} />
+          <circle cx="22" cy="70" r="7" fill={color} stroke="none" />
+          <path d="M22 70L8 88M62 70L82 82" />
+        </g>
+      )
+    case 'bacterie':
+      return (
+        <g>
+          <rect x="14" y="36" width="58" height="28" rx="14" fill={color} transform="rotate(-20 43 50)" />
+          <path d="M70 40q6-10 12-2t12-4M72 56q8-2 10 8t10 8" {...stroke} strokeWidth={3.5} transform="rotate(-20 43 50)" />
+          <circle cx="34" cy="54" r="4" fill="#000" fillOpacity="0.22" />
+          <circle cx="50" cy="44" r="3" fill="#000" fillOpacity="0.22" />
+        </g>
+      )
+    case 'virus':
+      return (
+        <g>
+          {Array.from({ length: 8 }, (_, i) => {
+            const a = (i * Math.PI) / 4
+            return (
+              <g key={i}>
+                <line x1={50 + Math.cos(a) * 22} y1={50 + Math.sin(a) * 22} x2={50 + Math.cos(a) * 38} y2={50 + Math.sin(a) * 38} {...stroke} strokeWidth={4} />
+                <circle cx={50 + Math.cos(a) * 40} cy={50 + Math.sin(a) * 40} r="6" fill={color} />
+              </g>
+            )
+          })}
+          <circle cx="50" cy="50" r="24" fill={color} />
+          <circle cx="44" cy="46" r="4" fill="#000" fillOpacity="0.22" />
+          <circle cx="56" cy="56" r="3" fill="#000" fillOpacity="0.22" />
+        </g>
+      )
+    case 'champignon':
+      return (
+        <g>
+          <path d="M14 54a36 32 0 0 1 72 0Z" fill={color} />
+          <rect x="40" y="52" width="20" height="34" rx="8" fill={color} />
+          <circle cx="36" cy="40" r="5" fill="#000" fillOpacity="0.22" />
+          <circle cx="58" cy="32" r="4" fill="#000" fillOpacity="0.22" />
+          <circle cx="68" cy="46" r="3" fill="#000" fillOpacity="0.22" />
+        </g>
+      )
+    case 'eclair':
+      return <path d="M58 6L20 56h24l-10 38 44-56H52Z" fill={color} />
+    case 'bouclier':
+      return (
+        <g>
+          <path d="M50 8L84 20V46c0 22-14 38-34 46C30 84 16 68 16 46V20Z" fill={color} />
+          <path d="M34 48l12 12 22-24" {...stroke} stroke="#000" strokeOpacity="0.28" strokeWidth={6} />
+        </g>
+      )
+    case 'sucre':
+      // Morceau de sucre : un cube vu de trois quarts.
+      return (
+        <g fill={color}>
+          <path d="M50 14L84 32L50 50L16 32Z" />
+          <path d="M16 32L50 50V88L16 70Z" fillOpacity="0.7" />
+          <path d="M84 32L50 50V88L84 70Z" fillOpacity="0.45" />
+        </g>
+      )
+    case 'papillon':
+      // La thyroïde a la forme d'un papillon.
+      return (
+        <g fill={color}>
+          <path d="M48 46C34 16 8 18 10 40c2 16 22 20 38 6Z" />
+          <path d="M52 46C66 16 92 18 90 40c-2 16-22 20-38 6Z" />
+          <path d="M47 52C36 62 22 80 34 86c10 4 14-14 13-34Z" fillOpacity="0.8" />
+          <path d="M53 52C64 62 78 80 66 86c-10 4-14-14-13-34Z" fillOpacity="0.8" />
+          <rect x="47" y="34" width="6" height="40" rx="3" />
+        </g>
+      )
   }
 }
 
@@ -448,6 +551,35 @@ export function FormGlyph({ form, light, accent, edge }: GlyphProps) {
       )
       break
     }
+    case 'stylo':
+      // Stylo injecteur (insulines) : capuchon, fenêtre de dose, molette, aiguille.
+      body = (
+        <g transform="rotate(-40 50 50)">
+          <rect x="44" y="2" width="12" height="8" rx="3" fill={edge} />
+          <rect x="39" y="9" width="22" height="16" rx="5" fill={accent} {...line} />
+          <rect x="39" y="24" width="22" height="58" rx="7" fill={light} {...line} />
+          <rect x="44" y="40" width="12" height="16" rx="2" fill={accent} fillOpacity="0.55" />
+          <path d="M44 62h12M44 67h12M44 72h12" stroke={edge} strokeOpacity="0.35" strokeWidth="1.5" />
+          <rect x="46" y="82" width="8" height="6" fill={light} {...line} />
+          <path d="M50 88V98" stroke={edge} strokeWidth="2" strokeLinecap="round" />
+          <path d="M43 28V52" {...shine} strokeOpacity={0.55} />
+        </g>
+      )
+      break
+    case 'poche':
+      // Poche de perfusion : œillet, graduations, liquide, tubulure.
+      body = (
+        <>
+          <path d="M28 14h44a6 6 0 0 1 6 6v50c0 8-6 14-14 14H36c-8 0-14-6-14-14V20a6 6 0 0 1 6-6Z" fill={light} fillOpacity="0.92" {...line} />
+          <circle cx="50" cy="20" r="3.5" fill="none" stroke={edge} strokeWidth="2" />
+          <path d="M22.3 42H77.7V70c0 7.5-6 13-13 13H35.3c-7 0-13-5.5-13-13Z" fill={accent} fillOpacity="0.8" />
+          <path d="M30 32h10M30 42h14M30 52h10M30 62h14" stroke={edge} strokeOpacity="0.4" strokeWidth="1.5" />
+          <rect x="45" y="84" width="10" height="7" rx="2" fill={light} {...line} />
+          <path d="M50 91V99" stroke={edge} strokeWidth="2.5" strokeLinecap="round" />
+          <path d="M70 24V40" {...shine} strokeOpacity={0.5} />
+        </>
+      )
+      break
     case 'bain-de-bouche':
       body = (
         <>

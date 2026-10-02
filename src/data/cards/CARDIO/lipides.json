@@ -1,0 +1,144 @@
+[
+  {
+    "dci": "Atorvastatine",
+    "family": "lipides",
+    "rarity": "Courant",
+    "classe": "Hypolipémiant (statine)",
+    "brands": [
+      "Tahor"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La statine reine de l'après-infarctus",
+    "what": "Statine puissante : baisse du LDL-cholestérol en prévention cardiovasculaire, notamment après un infarctus, un syndrome coronarien aigu ou un AVC ischémique. Débutée dès l'hospitalisation.",
+    "action": "Bloque l'HMG-CoA réductase, l'enzyme du foie qui fabrique le cholestérol : le foie capte alors plus de LDL dans le sang. Stabilise aussi la plaque d'athérome.",
+    "sideEffects": [
+      "Douleurs musculaires : à signaler, dosage des CPK",
+      "Troubles digestifs : nausées, diarrhée, constipation",
+      "Hausse des transaminases : bilan hépatique",
+      "Légère hausse du risque de diabète",
+      "Rhabdomyolyse (rare, grave) : urines foncées, faiblesse"
+    ],
+    "contraindications": [
+      "Maladie hépatique évolutive, transaminases élevées inexpliquées",
+      "Grossesse, allaitement, absence de contraception efficace",
+      "Prudence : clarithromycine, ciclosporine, fibrates (risque musculaire)",
+      "Prudence : jus de pamplemousse en grande quantité"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Les statines descendent d'une moisissure : en 1973, le Japonais Akira Endo, admirateur de Fleming, isole la première (la compactine) d'un Penicillium après avoir testé des milliers de champignons."
+    }
+  },
+  {
+    "dci": "Rosuvastatine",
+    "family": "lipides",
+    "rarity": "Fréquent",
+    "classe": "Hypolipémiant (statine)",
+    "brands": [
+      "Crestor"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La statine très puissante, avec peu d'interactions",
+    "what": "Statine très puissante : baisse du LDL-cholestérol en prévention cardiovasculaire (après infarctus, AVC, artériopathie) et dans les hypercholestérolémies.",
+    "action": "Bloque l'HMG-CoA réductase, l'enzyme du foie qui fabrique le cholestérol : le foie retire plus de LDL du sang. Peu transformée par le CYP3A4, d'où moins d'interactions.",
+    "sideEffects": [
+      "Douleurs musculaires : à signaler, dosage des CPK",
+      "Céphalées, vertiges",
+      "Troubles digestifs, douleurs abdominales",
+      "Protéinurie à forte dose",
+      "Rhabdomyolyse (rare, grave) : urines foncées, faiblesse"
+    ],
+    "contraindications": [
+      "Maladie hépatique évolutive, transaminases élevées inexpliquées",
+      "Insuffisance rénale sévère",
+      "Association à la ciclosporine",
+      "Grossesse, allaitement, absence de contraception efficace"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "ROSUvastatine, R comme Rein : contre-indiquée dans l'insuffisance rénale sévère, avec une protéinurie possible à forte dose. Créatinine à surveiller, comme les muscles."
+    }
+  },
+  {
+    "dci": "Ézétimibe",
+    "family": "lipides",
+    "rarity": "Occasionnel",
+    "classe": "Hypolipémiant (inhibiteur d'absorption)",
+    "brands": [
+      "Ezetrol"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Bloque le cholestérol à l'entrée de l'intestin",
+    "what": "Hypolipémiant ajouté à une statine quand le LDL-cholestérol reste trop haut, notamment après un syndrome coronarien aigu, ou seul si les statines ne sont pas tolérées.",
+    "action": "Bloque la protéine NPC1L1 qui fait entrer le cholestérol dans les cellules de l'intestin : moins de cholestérol alimentaire et biliaire absorbé. Complète l'effet de la statine.",
+    "sideEffects": [
+      "Troubles digestifs : douleurs, diarrhée, flatulences",
+      "Céphalées, fatigue",
+      "Douleurs musculaires, surtout avec une statine",
+      "Hausse des transaminases avec une statine : bilan"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'ézétimibe",
+      "Avec une statine : maladie hépatique évolutive",
+      "Avec une statine : grossesse, allaitement",
+      "Prudence : ciclosporine, fibrates"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Deux portes pour le cholestérol : la statine ferme l'usine du foie, l'ézétimibe ferme la porte de l'intestin. Ensemble, ils font baisser le LDL plus qu'une statine seule."
+    }
+  },
+  {
+    "dci": "Évolocumab",
+    "family": "lipides",
+    "rarity": "Exceptionnel",
+    "classe": "Anticorps anti-PCSK9 (hypolipémiant)",
+    "brands": [
+      "Repatha"
+    ],
+    "forms": [
+      "stylo",
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "L'anticorps qui fait fondre le LDL, en stylo SC",
+    "what": "Anticorps monoclonal en stylo SC, que le patient s'injecte lui-même : LDL-cholestérol trop haut malgré statine et ézétimibe, hypercholestérolémie familiale.",
+    "action": "Neutralise PCSK9, une protéine qui détruit les récepteurs du LDL du foie. Plus de récepteurs restent en surface et retirent le LDL du sang : baisse d'environ 60 %.",
+    "sideEffects": [
+      "Réaction au point d'injection : rougeur, douleur",
+      "Rhinopharyngite, syndrome grippal",
+      "Douleurs dorsales ou articulaires",
+      "Réactions allergiques : éruption, urticaire"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'évolocumab",
+      "Prudence : insuffisance hépatique sévère",
+      "Prudence : grossesse (données limitées)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Une piste française : en 2003, l'équipe de Catherine Boileau à l'hôpital Necker relie le gène PCSK9 à une hypercholestérolémie familiale. Douze ans plus tard, les anti-PCSK9 arrivent."
+    }
+  }
+]

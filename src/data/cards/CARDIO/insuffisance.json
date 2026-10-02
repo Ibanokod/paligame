@@ -1,0 +1,196 @@
+[
+  {
+    "dci": "Trinitrine",
+    "family": "insuffisance",
+    "rarity": "Fréquent",
+    "classe": "Dérivé nitré (vasodilatateur)",
+    "brands": [
+      "Natispray",
+      "Lenitral",
+      "Nitriderm TTS"
+    ],
+    "forms": [
+      "spray",
+      "injectable",
+      "patch"
+    ],
+    "routes": [
+      "SL",
+      "IV",
+      "TD"
+    ],
+    "tagline": "La bouffée sous la langue de la crise d'angor",
+    "what": "Dérivé nitré d'action rapide : crise d'angor (spray sublingual), OAP et poussée hypertensive en IV au PSE, prévention des crises d'angor en patch.",
+    "action": "Libère du monoxyde d'azote qui relâche les veines et les artères coronaires : moins de sang revient au cœur, qui travaille moins, et le muscle cardiaque est mieux irrigué.",
+    "sideEffects": [
+      "Céphalées, surtout en début de traitement",
+      "Hypotension, malaise : patient assis, contrôler la PA",
+      "Bouffées de chaleur, rougeur du visage",
+      "Tachycardie réflexe",
+      "Patch porté jour et nuit : échappement (tolérance)"
+    ],
+    "contraindications": [
+      "Association aux IPDE5 (sildénafil, tadalafil) : hypotension grave",
+      "Hypotension, choc, hypovolémie",
+      "Rétrécissement aortique serré, cardiomyopathie obstructive",
+      "Hypertension intracrânienne"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Ironie relevée par Alfred Nobel lui-même : l'inventeur de la dynamite, faite de nitroglycérine, s'est vu prescrire cette même substance contre son angor à la fin de sa vie."
+    }
+  },
+  {
+    "dci": "Isosorbide dinitrate",
+    "family": "insuffisance",
+    "rarity": "Occasionnel",
+    "classe": "Dérivé nitré (vasodilatateur)",
+    "brands": [
+      "Risordan",
+      "Isocard"
+    ],
+    "forms": [
+      "injectable",
+      "comprime",
+      "spray"
+    ],
+    "routes": [
+      "IV",
+      "PO",
+      "SL"
+    ],
+    "tagline": "Le nitré de l'OAP en IV et de l'angor au long cours",
+    "what": "Dérivé nitré : OAP et angor instable en IV au PSE, crise d'angor en spray buccal, prévention de l'angor stable en comprimés.",
+    "action": "Transformé en monoxyde d'azote, il dilate surtout les veines (moins de sang revient au cœur, qui se décharge) et les artères coronaires. Action plus longue que la trinitrine.",
+    "sideEffects": [
+      "Céphalées, surtout en début de traitement",
+      "Hypotension : surveiller la PA sous PSE",
+      "Bouffées de chaleur, vertiges",
+      "Tachycardie réflexe",
+      "Tolérance si prises continues : respecter les horaires"
+    ],
+    "contraindications": [
+      "Association aux IPDE5 (sildénafil, tadalafil) : hypotension grave",
+      "Hypotension, choc, hypovolémie",
+      "Rétrécissement aortique serré, cardiomyopathie obstructive",
+      "Prudence : hypertension intracrânienne"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Nitré, pas d'IPDE5 : avant tout dérivé nitré, l'IDE demande si le patient a pris du sildénafil (24 h avant) ou du tadalafil (48 h). Ensemble, ils effondrent la tension."
+    }
+  },
+  {
+    "dci": "Sacubitril-valsartan",
+    "family": "insuffisance",
+    "rarity": "Occasionnel",
+    "classe": "Sartan + inhibiteur de la néprilysine",
+    "brands": [
+      "Entresto"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le duo qui remplace l'IEC dans l'insuffisance cardiaque",
+    "what": "Association d'un sartan et d'un inhibiteur de la néprilysine : insuffisance cardiaque chronique à fraction d'éjection réduite, en remplacement d'un IEC ou d'un sartan.",
+    "action": "Le valsartan bloque l'angiotensine II (vasoconstriction, rétention de sel). Le sacubitril protège les peptides natriurétiques, hormones du cœur qui dilatent et font uriner.",
+    "sideEffects": [
+      "Hypotension, vertiges : lever progressif",
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Insuffisance rénale : surveiller la créatinine",
+      "Toux (moins qu'avec un IEC)",
+      "Angiœdème : rare mais grave"
+    ],
+    "contraindications": [
+      "IEC pris dans les 36 heures précédentes (angiœdème)",
+      "Antécédent d'angiœdème",
+      "Grossesse (2e et 3e trimestres)",
+      "Insuffisance hépatique sévère, cholestase"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2014, l'essai PARADIGM-HF, qui le comparait à un IEC (l'énalapril), a été arrêté plus tôt que prévu : la baisse de la mortalité était si nette qu'il n'y avait plus de raison d'attendre."
+    }
+  },
+  {
+    "dci": "Éplérénone",
+    "family": "insuffisance",
+    "rarity": "Rare",
+    "classe": "Antialdostérone (épargneur de potassium)",
+    "brands": [
+      "Inspra"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La cousine sélective de la spironolactone",
+    "what": "Antialdostérone sélectif : insuffisance cardiaque à fraction d'éjection réduite, notamment après un infarctus, en plus du traitement standard. Alternative si gynécomastie sous spironolactone.",
+    "action": "Bloque le récepteur de l'aldostérone, hormone qui retient le sel et l'eau et fait vieillir le muscle cardiaque (fibrose). Plus sélective que la spironolactone : peu d'effets hormonaux.",
+    "sideEffects": [
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Insuffisance rénale : surveiller la créatinine",
+      "Hypotension, vertiges",
+      "Diarrhée, nausées",
+      "Gynécomastie rare (moins qu'avec la spironolactone)"
+    ],
+    "contraindications": [
+      "Hyperkaliémie à l'instauration",
+      "Insuffisance rénale sévère",
+      "Association au potassium ou à un autre épargneur potassique",
+      "Inhibiteurs puissants du CYP3A4 (kétoconazole, clarithromycine)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Éplérénone l'élégante : le même travail que la spironolactone, sans toucher aux hormones sexuelles. Mais elle garde aussi le potassium : la kaliémie reste à surveiller."
+    }
+  },
+  {
+    "dci": "Bumétanide",
+    "family": "insuffisance",
+    "rarity": "Très rare",
+    "classe": "Diurétique de l'anse",
+    "brands": [
+      "Burinex"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IM"
+    ],
+    "tagline": "L'autre diurétique de l'anse, puissant à petite dose",
+    "what": "Diurétique de l'anse très puissant : œdèmes de l'insuffisance cardiaque, rénale ou hépatique, OAP. Alternative au furosémide en cas de résistance ou d'intolérance.",
+    "action": "Comme le furosémide, bloque la réabsorption du sodium dans l'anse de Henlé du rein : l'eau suit, d'où une diurèse rapide et abondante. Mieux absorbé par voie orale.",
+    "sideEffects": [
+      "Hypokaliémie : surveiller le ionogramme",
+      "Déshydratation, hypotension, risque de chute",
+      "Crampes et douleurs musculaires",
+      "Hyponatrémie, insuffisance rénale fonctionnelle",
+      "Ototoxicité, surtout à forte dose IV"
+    ],
+    "contraindications": [
+      "Hypovolémie, déshydratation",
+      "Obstacle sur les voies urinaires, anurie",
+      "Encéphalopathie hépatique",
+      "Prudence : hypokaliémie, association au lithium"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "À poids égal, environ 40 fois plus puissant que le furosémide : même famille, mais pas les mêmes milligrammes. Au relais de l'un vers l'autre, on vérifie deux fois la prescription."
+    }
+  }
+]

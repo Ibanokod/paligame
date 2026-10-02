@@ -4,10 +4,10 @@ import { Card } from '../../components/Card/Card'
 import { CardArt } from '../../components/Card/CardArt'
 import { CardViewer } from '../../components/CardViewer/CardViewer'
 import { Gauge } from '../../components/Gauge/Gauge'
-import { cardById, getSet, type CardData } from '../../data/sets'
+import { getSet } from '../../data/sets'
 import { cx } from '../../lib/cx'
 import { formatLitersShort, formatTime } from '../../lib/day'
-import { selectBackdropCard, selectDexStats, selectToday } from '../../state/selectors'
+import { selectBackdropCard, selectCards, selectDexStats, selectToday } from '../../state/selectors'
 import { useActions, useAppState } from '../../state/store'
 import { SettingsSheet } from './SettingsSheet'
 import styles from './TodayScreen.module.css'
@@ -22,7 +22,7 @@ export function TodayScreen() {
   const set = getSet(state.settings.setId)
   const dex = selectDexStats(state, set)
   const complete = dex.owned >= dex.total
-  const backdrop = selectBackdropCard(state, set)
+  const backdrop = selectBackdropCard(state)
 
   const [showOther, setShowOther] = useState(false)
   const [other, setOther] = useState('')
@@ -40,10 +40,7 @@ export function TodayScreen() {
     setShowOther(false)
   }
 
-  const wonToday = today.rewards
-    .flatMap((r) => r.cardIds)
-    .map((id) => cardById(set, id))
-    .filter((c): c is CardData => c !== undefined)
+  const wonToday = selectCards(today.rewards.flatMap((r) => r.cardIds))
   const hiddenEntries = Math.max(0, today.entries.length - VISIBLE_ENTRIES)
   const entries = showAllEntries ? today.entries : today.entries.slice(0, VISIBLE_ENTRIES)
 
@@ -109,6 +106,9 @@ export function TodayScreen() {
       <p className={styles.next}>
         <NextIcon kind={complete ? 'complete' : today.next.kind} />
         <span>{nextLabel(complete, today.next.kind, today.next.remainingMl)}</span>
+      </p>
+      <p className={styles.setLine}>
+        Extension : <strong>{set.name}</strong> · <span className="tabular">{dex.owned} / {dex.total}</span>
       </p>
       </div>
 
@@ -184,7 +184,7 @@ function todayLabel(): string {
 }
 
 function nextLabel(complete: boolean, kind: 'card' | 'booster' | 'rare-card', remainingMl: number): string {
-  if (complete) return 'Collection complète : plus rien à gagner pour le moment'
+  if (complete) return 'Extension complète : choisis-en une autre dans le Pharmacodex'
   const remaining = formatLitersShort(remainingMl)
   if (kind === 'booster') return `Booster dans ${remaining}`
   if (kind === 'rare-card') return `Carte rare dans ${remaining}`

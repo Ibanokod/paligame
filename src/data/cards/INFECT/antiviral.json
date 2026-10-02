@@ -1,0 +1,180 @@
+[
+  {
+    "dci": "Valaciclovir",
+    "family": "antiviral",
+    "rarity": "Fréquent",
+    "classe": "Antiviral anti-herpès (prodrogue de l'aciclovir)",
+    "brands": [
+      "Zelitrex"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'aciclovir en comprimé, bien mieux absorbé",
+    "what": "Antiviral du zona et de l'herpès, en traitement et en prévention des récurrences, et en prévention de l'infection à CMV après greffe rénale.",
+    "action": "Transformé en aciclovir dans l'organisme. Activé seulement dans les cellules infectées, il bloque la copie de l'ADN viral (ADN polymérase) : le virus ne se multiplie plus.",
+    "sideEffects": [
+      "Céphalées, nausées",
+      "Confusion, hallucinations si insuffisance rénale",
+      "Insuffisance rénale aiguë : bien hydrater",
+      "Éruption cutanée, prurit"
+    ],
+    "contraindications": [
+      "Allergie au valaciclovir ou à l'aciclovir",
+      "Prudence : insuffisance rénale (adapter, risque neurologique)",
+      "Prudence : sujet âgé, déshydratation"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "VALaciclovir = aciclovir + VALine : cet acide aminé sert de passeport pour franchir l'intestin. Bien mieux absorbé, il permet moins de prises par jour."
+    }
+  },
+  {
+    "dci": "Aciclovir",
+    "family": "antiviral",
+    "rarity": "Fréquent",
+    "classe": "Antiviral anti-herpès",
+    "brands": [
+      "Zovirax"
+    ],
+    "forms": [
+      "injectable",
+      "comprime",
+      "creme"
+    ],
+    "routes": [
+      "IV",
+      "PO",
+      "Locale"
+    ],
+    "tagline": "L'urgence IV de l'encéphalite herpétique",
+    "what": "Antiviral des infections graves à herpès et à varicelle-zona : encéphalite herpétique (IV dès la suspicion, sans attendre la PCR), zona de l'immunodéprimé, herpès néonatal.",
+    "action": "Activé uniquement dans les cellules infectées, grâce à une enzyme du virus (thymidine kinase) : il bloque alors la copie de l'ADN viral. Peu toxique pour les cellules saines.",
+    "sideEffects": [
+      "Toxicité rénale (cristaux) : hydrater, perfuser lentement",
+      "Confusion, tremblements, hallucinations",
+      "Veinite, nécrose si extravasation (très basique)",
+      "Nausées, vomissements",
+      "Éruption cutanée"
+    ],
+    "contraindications": [
+      "Allergie à l'aciclovir ou au valaciclovir",
+      "Prudence : insuffisance rénale (adapter la dose)",
+      "Prudence : déshydratation, autres néphrotoxiques"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Gertrude Elion, dont l'équipe a mis au point l'aciclovir, a reçu le prix Nobel de médecine en 1988 sans avoir jamais obtenu de doctorat."
+    }
+  },
+  {
+    "dci": "Oseltamivir",
+    "family": "antiviral",
+    "rarity": "Occasionnel",
+    "classe": "Antigrippal (inhibiteur de la neuraminidase)",
+    "brands": [
+      "Tamiflu"
+    ],
+    "forms": [
+      "gelule",
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antigrippal, à débuter le plus tôt possible",
+    "what": "Antiviral de la grippe A et B : traitement des patients à risque ou hospitalisés, et prévention autour d'un cas en collectivité ou en service. D'autant plus efficace que débuté tôt.",
+    "action": "Bloque la neuraminidase, enzyme qui permet aux nouveaux virus de se détacher de la cellule infectée : le virus ne peut plus se propager dans les voies respiratoires.",
+    "sideEffects": [
+      "Nausées, vomissements : prendre au cours du repas",
+      "Céphalées",
+      "Douleurs abdominales, diarrhée",
+      "Troubles du comportement (enfant, adolescent), rares"
+    ],
+    "contraindications": [
+      "Allergie à l'oseltamivir",
+      "Prudence : insuffisance rénale (adapter la dose)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Sa synthèse industrielle part de l'acide shikimique, longtemps extrait de la badiane (anis étoilé), une épice des cuisines asiatiques."
+    }
+  },
+  {
+    "dci": "Ganciclovir",
+    "family": "antiviral",
+    "rarity": "Rare",
+    "classe": "Antiviral anti-cytomégalovirus (CMV)",
+    "brands": [
+      "Cymevan"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antiviral IV du CMV chez l'immunodéprimé",
+    "what": "Antiviral des infections graves à cytomégalovirus (CMV) chez l'immunodéprimé : greffe d'organe ou de moelle, VIH (rétinite). Relais oral possible par le valganciclovir.",
+    "action": "Activé dans les cellules infectées par une enzyme du virus, il bloque la copie de l'ADN viral. Moins sélectif que l'aciclovir, il freine aussi la moelle osseuse.",
+    "sideEffects": [
+      "Neutropénie, thrombopénie, anémie : NFS régulière",
+      "Produit cytotoxique : gants, préparation protégée",
+      "Créatinine augmentée : dose adaptée au rein",
+      "Fièvre, nausées, diarrhée",
+      "Veinite : perfusion lente, veine de bon calibre"
+    ],
+    "contraindications": [
+      "Allergie au ganciclovir, valganciclovir ou aciclovir",
+      "Grossesse, allaitement : contraception efficace (tératogène)",
+      "Prudence : cytopénie sévère, insuffisance rénale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "GANciclovir comme GANTS : produit cytotoxique, on le prépare et on le manipule protégé, et on surveille la NFS car il freine la moelle osseuse."
+    }
+  },
+  {
+    "dci": "Nirmatrelvir-ritonavir",
+    "family": "antiviral",
+    "rarity": "Rare",
+    "classe": "Antiviral anti-Covid (inhibiteur de protéase)",
+    "brands": [
+      "Paxlovid"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antiviral oral du Covid à risque de forme grave",
+    "what": "Antiviral oral du Covid-19 chez l'adulte à risque de forme grave, à débuter tôt après les premiers symptômes. Son usage est limité par de très nombreuses interactions.",
+    "action": "Le nirmatrelvir bloque une enzyme indispensable à la multiplication du virus (protéase). Le ritonavir freine sa dégradation par le foie (CYP3A4) pour garder des taux efficaces.",
+    "sideEffects": [
+      "Goût altéré dans la bouche (dysgueusie)",
+      "Diarrhée, nausées",
+      "Surdosage des traitements associés (CYP3A4)",
+      "Céphalées, hypertension artérielle",
+      "Élévation des transaminases, rare"
+    ],
+    "contraindications": [
+      "Association à l'amiodarone, la colchicine, la simvastatine",
+      "Association à la rifampicine, la carbamazépine, au millepertuis",
+      "Insuffisance hépatique sévère",
+      "Prudence : immunosuppresseurs, AOD (avis pharmacien)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le ritonavir est un « booster » : il ne combat pas le virus, il freine le foie pour que le nirmatrelvir reste actif. Mais il booste aussi les autres médicaments : vérifier l'ordonnance."
+    }
+  }
+]

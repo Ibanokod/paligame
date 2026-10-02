@@ -1,18 +1,23 @@
 # Paligame
 
-Traqueur d'eau qui fait gagner des cartes mémo de médicaments de soins palliatifs. Même
-moteur qu'Ura : un verre noté, une jauge qui monte, une carte tous les 0,5 L, un booster de
-cinq cartes à 1,5 L, puis des cartes rares garanties au-delà. Les 74 cartes remplissent un
-Pharmacodex, jamais de doublon.
+Traqueur d'eau qui fait gagner des cartes mémo de médicaments, pour réviser en s'amusant.
+Même moteur qu'Ura : un verre noté, une jauge qui monte, une carte tous les 0,5 L, un booster
+de trois cartes à 1,5 L, puis des cartes rares garanties au-delà. Jamais de doublon.
 
-Chaque carte présente un médicament utilisé en soins palliatifs (contexte hospitalier
-français) en cinq points courts : ce que c'est, le mode d'action, les effets indésirables,
-les contre-indications, et une anecdote ou un moyen mnémotechnique pour le retenir. La
-rareté d'une carte reflète la fréquence d'utilisation du médicament en service.
+Chaque carte présente un médicament utilisé à l'hôpital (contexte français) en cinq points
+courts : ce que c'est, le mode d'action, les effets indésirables, les contre-indications, et
+une anecdote ou un moyen mnémotechnique. La rareté reflète la fréquence d'utilisation en
+service. 214 cartes en cinq extensions : soins palliatifs, cardiologie et coagulation,
+anti-infectieux, urgences et réanimation, diabète et endocrinologie.
+
+Pour réviser : les réponses sont cachées par défaut et se dévoilent d'un tap, et un quiz
+pose des séries de dix questions tirées des fiches des cartes gagnées. Les cartes ratées
+reviennent plus souvent ; trois bonnes réponses d'affilée et la carte est maîtrisée.
 
 Projet personnel, sans compte ni serveur : **toutes les données restent dans le navigateur
 de l'appareil** (export et import JSON depuis les réglages). Les cartes sont dessinées par
-l'appli elle-même : aucune image externe, fonctionne hors ligne.
+l'appli elle-même : aucune image externe, fonctionne hors ligne. Appli web installable
+(PWA).
 
 ## Lancer en local
 
@@ -22,8 +27,6 @@ npm run dev        # http://localhost:5174
 npm test           # tests Vitest
 npm run build      # build statique dans dist/
 ```
-
-Démo de tous les styles de carte : `http://localhost:5174/#apercu`.
 
 ## Avertissement
 

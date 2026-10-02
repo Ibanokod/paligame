@@ -1,8 +1,9 @@
-// Accès aux extensions embarquées. Le contenu des cartes est écrit à la main, une famille par
-// fichier, dans src/data/cards/*.json (voir content/SPEC.md) ; on l'assemble ici dans l'ordre
-// des familles, on numérote, et on fournit une validation utilisée par les tests.
+// Accès aux extensions embarquées. Le contenu des cartes est écrit à la main, un dossier par
+// extension et un fichier par famille, dans src/data/cards/<extension>/<famille>.json (voir
+// content/SPEC.md) ; on l'assemble ici dans l'ordre des familles de chaque extension, on
+// numérote, et on fournit une validation utilisée par les tests.
 
-import { FAMILY_IDS, isFamilyId, type FamilyId } from '../../lib/families'
+import { isFamilyId, type FamilyId } from '../../lib/families'
 import { isRarity, type Rarity } from '../../lib/rarity'
 
 export const FORMS = [
@@ -18,6 +19,8 @@ export const FORMS = [
   'collyre',
   'sachet',
   'bain-de-bouche',
+  'stylo',
+  'poche',
 ] as const
 
 export type Form = (typeof FORMS)[number]
@@ -77,6 +80,9 @@ export type CardData = CardContent & {
 export type SetData = {
   id: string
   name: string
+  /** Teinte du paquet (booster) de l'extension. */
+  hue: number
+  families: FamilyId[]
   cards: CardData[]
 }
 
@@ -91,40 +97,76 @@ export const LIMITS = {
   fun: 220,
 } as const
 
-const files = import.meta.glob<CardContent[]>('../cards/*.json', { eager: true, import: 'default' })
+const files = import.meta.glob<CardContent[]>('../cards/*/*.json', { eager: true, import: 'default' })
 
-function contentFor(family: FamilyId): CardContent[] {
-  return files[`../cards/${family}.json`] ?? []
-}
+type SetDef = Omit<SetData, 'cards'>
 
-function buildSet(id: string, name: string): SetData {
+/** Les extensions, dans l'ordre d'affichage. Les ids des cartes sont préfixés par l'id de l'extension. */
+const SET_DEFS: SetDef[] = [
+  {
+    id: 'PAL1',
+    name: 'Soins palliatifs',
+    hue: 213,
+    families: ['opioide', 'antalgique', 'sedatif', 'neuroleptique', 'secretions', 'cortico', 'digestif', 'soins', 'urgence'],
+  },
+  {
+    id: 'CARDIO',
+    name: 'Cardiologie et coagulation',
+    hue: 352,
+    families: ['anticoagulant', 'antiagregant', 'hemostase', 'antihypertenseur', 'rythme', 'insuffisance', 'lipides'],
+  },
+  {
+    id: 'INFECT',
+    name: 'Anti-infectieux',
+    hue: 150,
+    families: ['betalactamine', 'aminoside', 'autreatb', 'urinaire', 'antiviral', 'antifongique'],
+  },
+  {
+    id: 'URGENCE',
+    name: 'Urgences et réanimation',
+    hue: 22,
+    families: ['amine', 'anesthesie', 'respiratoire', 'electrolyte', 'antidote', 'neuro'],
+  },
+  {
+    id: 'ENDO',
+    name: 'Diabète et endocrinologie',
+    hue: 268,
+    families: ['insuline', 'antidiabetique', 'hormone'],
+  },
+]
+
+export const DEFAULT_SET_ID = 'PAL1'
+
+function buildSet(def: SetDef): SetData {
   const cards: CardData[] = []
-  for (const family of FAMILY_IDS) {
-    for (const content of contentFor(family)) {
+  for (const family of def.families) {
+    for (const content of files[`../cards/${def.id}/${family}.json`] ?? []) {
       const localId = String(cards.length + 1).padStart(3, '0')
-      cards.push({ ...content, id: `${id}-${localId}`, localId, name: content.dci })
+      cards.push({ ...content, id: `${def.id}-${localId}`, localId, name: content.dci })
     }
   }
-  return { id, name, cards }
+  return { ...def, cards }
 }
 
-const SETS: Record<string, SetData> = {
-  PAL1: buildSet('PAL1', 'Soins palliatifs'),
-}
+const SETS: Record<string, SetData> = Object.fromEntries(SET_DEFS.map((def) => [def.id, buildSet(def)]))
 
+/** Extension par id ; une extension inconnue (ancienne sauvegarde) retombe sur Soins palliatifs. */
 export function getSet(setId: string): SetData {
-  const set = SETS[setId]
-  if (!set) throw new Error(`Extension inconnue : ${setId}`)
-  return set
+  return SETS[setId] ?? SETS[DEFAULT_SET_ID]
 }
 
+export function isSetId(setId: string): boolean {
+  return setId in SETS
+}
+
+/** Extensions qui ont des cartes, dans l'ordre d'affichage. */
 export function listSets(): SetData[] {
-  return Object.values(SETS)
+  return SET_DEFS.map((def) => SETS[def.id]).filter((set) => set.cards.length > 0)
 }
 
 const indexCache = new WeakMap<SetData, Map<string, CardData>>()
 
-/** Carte par id, avec un index construit une seule fois par extension. */
+/** Carte par id dans une extension, avec un index construit une seule fois par extension. */
 export function cardById(set: SetData, id: string): CardData | undefined {
   let index = indexCache.get(set)
   if (!index) {
@@ -132,6 +174,17 @@ export function cardById(set: SetData, id: string): CardData | undefined {
     indexCache.set(set, index)
   }
   return index.get(id)
+}
+
+/** Carte par id, quelle que soit son extension (l'id commence par celui de l'extension). */
+export function findCard(id: string): CardData | undefined {
+  const set = SETS[id.slice(0, id.lastIndexOf('-'))]
+  return set ? cardById(set, id) : undefined
+}
+
+/** Toutes les cartes de toutes les extensions (quiz : réponses fausses plausibles). */
+export function allCards(): CardData[] {
+  return listSets().flatMap((set) => set.cards)
 }
 
 /** Liste les problèmes d'un jeu de données (vide = tout va bien). */

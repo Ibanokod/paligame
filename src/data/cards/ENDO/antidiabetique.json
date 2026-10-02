@@ -1,0 +1,362 @@
+[
+  {
+    "dci": "Metformine",
+    "family": "antidiabetique",
+    "rarity": "Courant",
+    "classe": "Antidiabétique oral (biguanide)",
+    "brands": [
+      "Glucophage",
+      "Stagid"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le socle du diabète de type 2, à stopper avant l'iode",
+    "what": "Antidiabétique oral de première intention du diabète de type 2, seul ou associé. À l'hôpital, souvent suspendue : injection d'iode, chirurgie, insuffisance rénale aiguë, déshydratation.",
+    "action": "Diminue la production de glucose par le foie et améliore l'action de l'insuline sur les muscles. Ne stimule pas la sécrétion d'insuline : pas d'hypoglycémie quand elle est seule.",
+    "sideEffects": [
+      "Troubles digestifs (diarrhée, nausées) : prise au repas",
+      "Acidose lactique, rare mais grave (rein, hypoxie)",
+      "Goût métallique dans la bouche",
+      "Carence en vitamine B12 au long cours"
+    ],
+    "contraindications": [
+      "Insuffisance rénale sévère, insuffisance hépatique",
+      "Hypoxie, choc, déshydratation, sepsis : risque d'acidose",
+      "Iode IV : arrêt avant ou à l'examen, reprise 48 h après si rein stable",
+      "Chirurgie sous anesthésie : suspendre, reprise sur prescription"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Elle descend du galéga, plante utilisée autrefois contre les urines abondantes. Le Français Jean Sterne la lance en 1957 sous le nom de Glucophage : le mangeur de glucose."
+    }
+  },
+  {
+    "dci": "Gliclazide",
+    "family": "antidiabetique",
+    "rarity": "Fréquent",
+    "classe": "Sulfamide hypoglycémiant",
+    "brands": [
+      "Diamicron"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Fait sécréter l'insuline : gare aux hypoglycémies",
+    "what": "Sulfamide hypoglycémiant du diabète de type 2, souvent en une prise le matin (forme LM). À l'hôpital : à suspendre si le patient ne mange pas, risque d'hypoglycémie prolongée.",
+    "action": "Stimule les cellules bêta du pancréas pour qu'elles libèrent de l'insuline, quel que soit le niveau de glucose : d'où un risque d'hypoglycémie, même à distance des repas.",
+    "sideEffects": [
+      "Hypoglycémie parfois sévère et prolongée",
+      "Repas sauté ou jeûne : hypoglycémie",
+      "Sujet âgé, insuffisant rénal : hypoglycémies",
+      "Prise de poids",
+      "Troubles digestifs, réactions cutanées"
+    ],
+    "contraindications": [
+      "Diabète de type 1, acidocétose",
+      "Insuffisance rénale ou hépatique sévère",
+      "Allergie aux sulfamides",
+      "Association au miconazole (hypoglycémie grave)"
+    ],
+    "antidote": "Glucose (resucrage prolongé)",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Montpellier, 1942 : Marcel Janbon soigne la typhoïde avec un sulfamide antibiotique et voit ses patients faire des hypoglycémies. Auguste Loubatières montre qu'il agit sur le pancréas."
+    }
+  },
+  {
+    "dci": "Sitagliptine",
+    "family": "antidiabetique",
+    "rarity": "Fréquent",
+    "classe": "Inhibiteur de la DPP-4 (gliptine)",
+    "brands": [
+      "Januvia",
+      "Xelevia",
+      "Janumet"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La gliptine bien tolérée, qui fait peu d'hypoglycémies",
+    "what": "Gliptine du diabète de type 2, le plus souvent en association (metformine, sulfamide, insuline). Bien tolérée, pratique chez le sujet âgé ; dose adaptée à la fonction rénale.",
+    "action": "Bloque la DPP-4, l'enzyme qui détruit les incrétines (GLP-1) : ces hormones digestives restent actives et augmentent l'insuline seulement quand la glycémie est élevée.",
+    "sideEffects": [
+      "Hypoglycémie si associée à un sulfamide ou une insuline",
+      "Céphalées, rhinopharyngite",
+      "Pancréatite aiguë : douleur abdominale, arrêt",
+      "Douleurs articulaires, pemphigoïde bulleuse (rare)"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la sitagliptine",
+      "Diabète de type 1, acidocétose",
+      "Prudence : antécédent de pancréatite",
+      "Prudence : insuffisance rénale (dose à adapter)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les suffixes trient la famille : -gliptine bloque la DPP-4 (comprimé), -glutide imite le GLP-1 (injection), -gliflozine fait passer le sucre dans les urines (comprimé)."
+    }
+  },
+  {
+    "dci": "Dapagliflozine",
+    "family": "antidiabetique",
+    "rarity": "Fréquent",
+    "classe": "Inhibiteur de SGLT2 (gliflozine)",
+    "brands": [
+      "Forxiga"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Fait uriner le sucre, protège le cœur et les reins",
+    "what": "Gliflozine du diabète de type 2, prescrite aussi dans l'insuffisance cardiaque et la maladie rénale chronique, même sans diabète. À suspendre avant une chirurgie ou en cas de jeûne.",
+    "action": "Bloque SGLT2, le transporteur qui récupère le glucose dans le rein : le sucre en trop part dans les urines, avec un peu de sel et d'eau. Agit sans passer par l'insuline.",
+    "sideEffects": [
+      "Mycoses génitales : hygiène intime",
+      "Acidocétose euglycémique : cétonémie si nausées, malaise",
+      "Déshydratation, hypotension, surtout sujet âgé",
+      "Infections urinaires",
+      "Glycosurie : bandelette urinaire toujours positive"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la dapagliflozine",
+      "Acidocétose, diabète de type 1 (hors indication)",
+      "Chirurgie, jeûne, maladie aiguë : suspendre (acidocétose)",
+      "Prudence : sujet âgé, diurétiques (déshydratation)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Gliflozine, le sucre file dans l'urine. Les pièges suivent le flot : mycoses génitales, déshydratation, et acidocétose avec une glycémie presque normale, donc on dose la cétonémie."
+    }
+  },
+  {
+    "dci": "Empagliflozine",
+    "family": "antidiabetique",
+    "rarity": "Occasionnel",
+    "classe": "Inhibiteur de SGLT2 (gliflozine)",
+    "brands": [
+      "Jardiance"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'autre gliflozine : diabète, cœur et reins",
+    "what": "Gliflozine du diabète de type 2, aussi prescrite dans l'insuffisance cardiaque et la maladie rénale chronique. Même surveillance que la dapagliflozine : hydratation, mycoses, acidocétose.",
+    "action": "Bloque le transporteur SGLT2 du rein, qui réabsorbe le glucose filtré : sucre éliminé dans les urines, légère perte de sel, d'eau et de poids. Peu d'hypoglycémie quand elle est seule.",
+    "sideEffects": [
+      "Mycoses génitales, infections urinaires",
+      "Acidocétose euglycémique : cétonémie si nausées, malaise",
+      "Déshydratation, hypotension orthostatique : chutes",
+      "Hypoglycémie si associée à un sulfamide ou une insuline",
+      "Glycosurie : bandelette urinaire toujours positive"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'empagliflozine",
+      "Acidocétose, diabète de type 1 (hors indication)",
+      "Chirurgie, jeûne, maladie aiguë : suspendre (acidocétose)",
+      "Prudence : sujet âgé, diurétiques (déshydratation)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Les gliflozines descendent de la phlorizine, tirée de l'écorce du pommier en 1835. En 1886, von Mering remarque qu'elle fait passer le sucre dans les urines : l'idée a mis un siècle à mûrir."
+    }
+  },
+  {
+    "dci": "Sémaglutide",
+    "family": "antidiabetique",
+    "rarity": "Occasionnel",
+    "classe": "Agoniste des récepteurs du GLP-1",
+    "brands": [
+      "Ozempic",
+      "Wegovy"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "Le GLP-1 hebdomadaire : sucre, appétit et poids en baisse",
+    "what": "Analogue du GLP-1 du diabète de type 2 (Ozempic), aussi indiqué dans l'obésité (Wegovy). Une injection SC par semaine, le même jour, à n'importe quelle heure, avec ou sans repas.",
+    "action": "Imite le GLP-1, hormone digestive : augmente l'insuline seulement si la glycémie est haute, freine le glucagon, ralentit la vidange de l'estomac et coupe l'appétit.",
+    "sideEffects": [
+      "Nausées, vomissements, diarrhée en début de traitement",
+      "Vomissements : déshydratation, insuffisance rénale",
+      "Hypoglycémie si associé à un sulfamide ou une insuline",
+      "Pancréatite aiguë : douleur abdominale, arrêt",
+      "Lithiase biliaire, aggravation d'une rétinopathie"
+    ],
+    "contraindications": [
+      "Hypersensibilité au sémaglutide",
+      "Diabète de type 1, acidocétose (ne remplace pas l'insuline)",
+      "Prudence : antécédent de pancréatite",
+      "Prudence : anesthésie, estomac plein possible (inhalation)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "SEMAglutide, une injection par SEMAine : le même jour chaque semaine, à toute heure, avec ou sans repas. Le calendrier du patient est son meilleur allié."
+    }
+  },
+  {
+    "dci": "Dulaglutide",
+    "family": "antidiabetique",
+    "rarity": "Occasionnel",
+    "classe": "Agoniste des récepteurs du GLP-1",
+    "brands": [
+      "Trulicity"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "GLP-1 hebdomadaire, stylo unidose à aiguille cachée",
+    "what": "Analogue du GLP-1 du diabète de type 2, le plus souvent en association. Une injection SC par semaine, le même jour, à toute heure. Stylo unidose prêt à l'emploi, simple pour le sujet âgé.",
+    "action": "Imite le GLP-1 : stimule l'insuline selon la glycémie, freine le glucagon, ralentit la vidange gastrique et donne une satiété précoce. Lié à un fragment d'anticorps, il dure une semaine.",
+    "sideEffects": [
+      "Nausées, vomissements, diarrhée, surtout au début",
+      "Déshydratation si vomissements : surveiller le rein",
+      "Hypoglycémie si associé à un sulfamide ou une insuline",
+      "Pancréatite aiguë : douleur abdominale, arrêt",
+      "Perte d'appétit, perte de poids"
+    ],
+    "contraindications": [
+      "Hypersensibilité au dulaglutide",
+      "Diabète de type 1, acidocétose (ne remplace pas l'insuline)",
+      "Prudence : antécédent de pancréatite",
+      "Prudence : anesthésie, estomac plein possible (inhalation)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Règle des 3 jours en cas d'oubli : s'il reste au moins 3 jours avant la prochaine injection, on la fait tout de suite ; sinon, on attend le jour habituel."
+    }
+  },
+  {
+    "dci": "Répaglinide",
+    "family": "antidiabetique",
+    "rarity": "Rare",
+    "classe": "Glinide (insulinosécréteur rapide)",
+    "brands": [
+      "NovoNorm"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Un repas, un comprimé ; pas de repas, pas de comprimé",
+    "what": "Glinide du diabète de type 2, pris juste avant chaque repas principal. Action courte : souple si les repas sont irréguliers, utilisable avec prudence en insuffisance rénale.",
+    "action": "Comme les sulfamides, stimule la libération d'insuline par le pancréas, mais vite et brièvement : effet calé sur le repas, à prendre dans le quart d'heure qui le précède.",
+    "sideEffects": [
+      "Hypoglycémie, surtout si repas sauté après la prise",
+      "Douleurs abdominales, diarrhée",
+      "Prise de poids modérée",
+      "Troubles visuels transitoires en début de traitement"
+    ],
+    "contraindications": [
+      "Diabète de type 1, acidocétose",
+      "Insuffisance hépatique sévère",
+      "Association au gemfibrozil (hypoglycémie grave)",
+      "Prudence : clopidogrel (risque d'hypoglycémie)"
+    ],
+    "antidote": "Glucose (resucrage)",
+    "fun": {
+      "kind": "humour",
+      "text": "Le répaglinide a le sens du timing : il arrive juste avant le repas, fait le service et repart avant le café. Pas de repas ? Il ne se déplace pas."
+    }
+  },
+  {
+    "dci": "Liraglutide",
+    "family": "antidiabetique",
+    "rarity": "Rare",
+    "classe": "Agoniste des récepteurs du GLP-1",
+    "brands": [
+      "Victoza",
+      "Saxenda"
+    ],
+    "forms": [
+      "stylo"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "Le GLP-1 en injection quotidienne, à heure fixe",
+    "what": "Analogue du GLP-1 du diabète de type 2 (Victoza), aussi indiqué dans l'obésité (Saxenda). Une injection SC par jour, à n'importe quel moment, de préférence à la même heure.",
+    "action": "Imite le GLP-1 : plus d'insuline seulement si la glycémie est haute, moins de glucagon, estomac vidé plus lentement, satiété. Un acide gras accroché le fait durer une journée.",
+    "sideEffects": [
+      "Nausées, vomissements, diarrhée, surtout au début",
+      "Déshydratation si vomissements : surveiller le rein",
+      "Hypoglycémie si associé à un sulfamide ou une insuline",
+      "Pancréatite aiguë : douleur abdominale, arrêt",
+      "Lithiase biliaire, réaction au point d'injection"
+    ],
+    "contraindications": [
+      "Hypersensibilité au liraglutide",
+      "Diabète de type 1, acidocétose (ne remplace pas l'insuline)",
+      "Prudence : antécédent de pancréatite",
+      "Prudence : anesthésie, estomac plein possible (inhalation)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Le premier mime du GLP-1 a été trouvé dans la salive du monstre de Gila, un lézard venimeux d'Amérique du Nord qui ne mange que quelques fois par an. Le liraglutide, lui, copie l'hormone humaine."
+    }
+  },
+  {
+    "dci": "Acarbose",
+    "family": "antidiabetique",
+    "rarity": "Très rare",
+    "classe": "Inhibiteur des alpha-glucosidases intestinales",
+    "brands": [
+      "Glucor"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Ralentit la digestion des sucres, au début du repas",
+    "what": "Antidiabétique oral du diabète de type 2, peu prescrit, pris en début de repas. Limite les pics de glycémie après le repas en ralentissant la digestion des sucres complexes.",
+    "action": "Bloque les alpha-glucosidases de l'intestin, enzymes qui découpent l'amidon et le saccharose en glucose : les sucres passent plus lentement dans le sang, le pic après le repas baisse.",
+    "sideEffects": [
+      "Ballonnements, flatulences, très fréquents",
+      "Diarrhée, douleurs abdominales",
+      "Hypoglycémie (si associé) : resucrer au glucose pur",
+      "Hausse des transaminases (rare)"
+    ],
+    "contraindications": [
+      "Maladie chronique de l'intestin (MICI, malabsorption)",
+      "Occlusion, grosse hernie : les gaz aggravent",
+      "Insuffisance rénale sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "ACARBOSE, les CARBOhydrates au ralenti : les sucres digérés tard fermentent, d'où les gaz. Hypoglycémie : du glucose pur, car le sucre de table est lui aussi freiné."
+    }
+  }
+]

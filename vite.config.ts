@@ -45,6 +45,9 @@ export default defineConfig({
   build: {
     // Aucune ressource inlinée en data: (polices, images) : la CSP reste stricte.
     assetsInlineLimit: 0,
+    // Les 214 fiches sont embarquées dans le JavaScript (environ 180 Ko compressés) : un seul
+    // fichier, mis en cache par le service worker, plutôt qu'un découpage sans gain réel.
+    chunkSizeWarningLimit: 900,
   },
   plugins: [
     react(),
@@ -55,7 +58,7 @@ export default defineConfig({
       manifest: {
         name: 'Paligame',
         short_name: 'Paligame',
-        description: "Traqueur d'eau qui fait gagner des cartes mémo de médicaments de soins palliatifs",
+        description: "Traqueur d'eau qui fait gagner des cartes mémo de médicaments, avec quiz de révision",
         lang: 'fr',
         theme_color: '#0b1220',
         background_color: '#0b1220',

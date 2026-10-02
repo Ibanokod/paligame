@@ -1,0 +1,226 @@
+[
+  {
+    "dci": "Clarithromycine",
+    "family": "autreatb",
+    "rarity": "Fréquent",
+    "classe": "Antibiotique macrolide",
+    "brands": [
+      "Zeclar"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le macrolide des pneumopathies atypiques et d'H. pylori",
+    "what": "Macrolide des pneumopathies atypiques, des infections ORL et bronchiques, et de l'éradication d'Helicobacter pylori selon l'antibiogramme. Alternative en cas d'allergie aux pénicillines.",
+    "action": "Se fixe sur le ribosome de la bactérie (sous-unité 50S) et bloque la fabrication de ses protéines : bactériostatique. Pénètre dans les cellules, d'où son action sur les germes intracellulaires.",
+    "sideEffects": [
+      "Nausées, diarrhée, douleurs abdominales",
+      "Goût métallique ou amer dans la bouche",
+      "Allongement du QT : ECG si terrain à risque",
+      "Potentialise les AVK : contrôler l'INR",
+      "Diarrhée à Clostridioides difficile"
+    ],
+    "contraindications": [
+      "Allergie aux macrolides",
+      "QT long, hypokaliémie non corrigée",
+      "Association à la colchicine, simvastatine, ergotamine, ticagrélor",
+      "Prudence : inhibiteur puissant du CYP3A4, vérifier le traitement"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "CLARIthromycine : CLARIfier l'ordonnance avant de la donner. Elle bloque le CYP3A4 et fait grimper colchicine, statines ou anticoagulants : risque de surdosage."
+    }
+  },
+  {
+    "dci": "Azithromycine",
+    "family": "autreatb",
+    "rarity": "Fréquent",
+    "classe": "Antibiotique macrolide (azalide)",
+    "brands": [
+      "Zithromax"
+    ],
+    "forms": [
+      "comprime",
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le macrolide en cure courte, grâce à sa longue demi-vie",
+    "what": "Macrolide des pneumopathies atypiques, des infections ORL et bronchiques, de la coqueluche et de certaines IST. Sa très longue demi-vie permet des cures très courtes.",
+    "action": "Bloque la fabrication des protéines bactériennes au niveau du ribosome. Se concentre dans les tissus et les globules blancs, puis s'en libère lentement : l'effet dure après la dernière prise.",
+    "sideEffects": [
+      "Diarrhée, nausées, douleurs abdominales",
+      "Allongement du QT : prudence si cardiopathie",
+      "Élévation des transaminases, hépatite rare",
+      "Baisse de l'audition, acouphènes (rares)",
+      "Diarrhée à Clostridioides difficile"
+    ],
+    "contraindications": [
+      "Allergie aux macrolides (érythromycine, clarithromycine...)",
+      "Prudence : QT long, hypokaliémie, médicaments torsadogènes",
+      "Prudence : insuffisance hépatique sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Découverte en 1980 à Zagreb par le laboratoire croate Pliva, l'azithromycine a ensuite été vendue dans le monde entier par l'américain Pfizer, sous le nom de Zithromax."
+    }
+  },
+  {
+    "dci": "Cotrimoxazole",
+    "family": "autreatb",
+    "rarity": "Fréquent",
+    "classe": "Sulfaméthoxazole + triméthoprime (sulfamide)",
+    "brands": [
+      "Bactrim"
+    ],
+    "forms": [
+      "comprime",
+      "injectable",
+      "solution"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Contre la pneumocystose, en traitement et en prévention",
+    "what": "Antibiotique de traitement et de prévention de la pneumocystose et de la toxoplasmose chez l'immunodéprimé, et de certaines infections urinaires ou cutanées selon l'antibiogramme.",
+    "action": "Deux molécules qui bloquent deux étapes successives de la fabrication de l'acide folique par la bactérie : privée de folates, elle ne peut plus fabriquer son ADN. Association bactéricide.",
+    "sideEffects": [
+      "Éruption cutanée, rarement grave (Lyell) : alerter",
+      "Hyperkaliémie : surveiller le ionogramme",
+      "Anémie, leucopénie, thrombopénie : NFS",
+      "Nausées, vomissements",
+      "Cristaux urinaires : bien hydrater"
+    ],
+    "contraindications": [
+      "Allergie aux sulfamides",
+      "Déficit en G6PD (risque d'hémolyse)",
+      "Association au méthotrexate (toxicité sanguine)",
+      "Prudence : sujet âgé, insuffisance rénale (hyperkaliémie)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Bactrim et méthotrexate, jamais en duo : deux anti-folates ensemble, et c'est la moelle osseuse qui trinque (anémie, leucopénie, thrombopénie)."
+    }
+  },
+  {
+    "dci": "Doxycycline",
+    "family": "autreatb",
+    "rarity": "Occasionnel",
+    "classe": "Antibiotique de la famille des cyclines",
+    "brands": [
+      "Doxypalu",
+      "Tolexine"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La cycline des IST, de Lyme et de la prévention du palu",
+    "what": "Cycline des IST (chlamydia), de la maladie de Lyme, des infections à bactéries intracellulaires (rickettsies, mycoplasme) et de la prévention du paludisme en voyage.",
+    "action": "Se fixe sur le ribosome bactérien (sous-unité 30S) et empêche la fabrication des protéines : la bactérie ne se multiplie plus (bactériostatique).",
+    "sideEffects": [
+      "Œsophagite : avaler debout, avec un grand verre d'eau",
+      "Photosensibilisation : éviter le soleil",
+      "Nausées, troubles digestifs",
+      "Candidose buccale ou vaginale",
+      "Hypertension intracrânienne bénigne, rare"
+    ],
+    "contraindications": [
+      "Allergie aux cyclines",
+      "Enfant de moins de 8 ans, grossesse à partir du 2e trimestre",
+      "Association aux rétinoïdes oraux (isotrétinoïne)",
+      "Prudence : fer, calcium, antiacides à prendre à distance"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Doxy, debout et à distance : debout avec un grand verre d'eau pour épargner l'œsophage, à distance du fer, du calcium et des antiacides qui la bloquent dans l'intestin."
+    }
+  },
+  {
+    "dci": "Clindamycine",
+    "family": "autreatb",
+    "rarity": "Occasionnel",
+    "classe": "Antibiotique de la famille des lincosamides",
+    "brands": [
+      "Dalacine"
+    ],
+    "forms": [
+      "gelule",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IM"
+    ],
+    "tagline": "Peau, os et anaérobies, mais gare à la diarrhée",
+    "what": "Lincosamide des infections de la peau, des os et des articulations à staphylocoque ou streptocoque, et des infections à anaérobies. Alternative en cas d'allergie aux pénicillines.",
+    "action": "Bloque la fabrication des protéines bactériennes (ribosome 50S). Freine aussi la production des toxines du staphylocoque et du streptocoque : utile dans les infections graves (fasciite).",
+    "sideEffects": [
+      "Colite à C. difficile : signaler toute diarrhée",
+      "Nausées, douleurs abdominales, goût métallique",
+      "Éruption cutanée, prurit",
+      "Élévation des transaminases",
+      "IV : toujours diluée et perfusée, jamais en bolus"
+    ],
+    "contraindications": [
+      "Allergie à la clindamycine ou à la lincomycine",
+      "Prudence : antécédent de colite à Clostridioides difficile",
+      "Prudence : insuffisance hépatique sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Sa cousine, la lincomycine, vient d'une bactérie du sol découverte près de Lincoln, dans le Nebraska, d'où son nom. La clindamycine en est un dérivé obtenu en laboratoire."
+    }
+  },
+  {
+    "dci": "Rifampicine",
+    "family": "autreatb",
+    "rarity": "Rare",
+    "classe": "Antibiotique antituberculeux (rifamycine)",
+    "brands": [
+      "Rifadine"
+    ],
+    "forms": [
+      "gelule",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Tuberculose et staph sur prothèse : tout devient orange",
+    "what": "Antibiotique majeur de la tuberculose et des infections à staphylocoque sur matériel (prothèse, ostéosynthèse). Toujours en association : seule, elle sélectionne vite des résistances.",
+    "action": "Bloque l'enzyme qui recopie l'ADN de la bactérie en ARN (ARN polymérase) : bactéricide, même sur les bactéries au repos cachées dans les biofilms des prothèses.",
+    "sideEffects": [
+      "Urines, larmes, sueurs orange : prévenir (lentilles)",
+      "Pilule inefficace : contraception non hormonale",
+      "Hépatite : surveiller les transaminases",
+      "Nausées : prendre à jeun, à distance des repas",
+      "Thrombopénie, syndrome pseudo-grippal (rares)"
+    ],
+    "contraindications": [
+      "Allergie aux rifamycines, porphyrie",
+      "Association aux antiprotéases du VIH, au voriconazole",
+      "Prudence : inducteur puissant (AVK, AOD, corticoïdes, opioïdes)",
+      "Prudence : insuffisance hépatique, alcoolisme"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Les rifamycines doivent leur nom au film français « Du rififi chez les hommes » (1955), qu'appréciaient les chercheurs du laboratoire italien Lepetit lors de leur découverte, en 1957."
+    }
+  }
+]

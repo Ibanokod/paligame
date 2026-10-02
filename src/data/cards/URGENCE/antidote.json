@@ -1,0 +1,208 @@
+[
+  {
+    "dci": "N-acétylcystéine",
+    "family": "antidote",
+    "rarity": "Fréquent",
+    "classe": "Antidote du paracétamol",
+    "brands": [
+      "Fluimucil"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote du paracétamol, à débuter sans attendre",
+    "what": "Antidote de l'intoxication au paracétamol, d'autant plus efficace qu'il est débuté tôt (idéalement avant la 8e heure). Indication posée selon la paracétamolémie, dosée dès la 4e heure.",
+    "action": "Reconstitue le glutathion du foie, qui neutralise le métabolite toxique du paracétamol (NAPQI) : les cellules hépatiques sont protégées de la nécrose.",
+    "sideEffects": [
+      "Réaction anaphylactoïde, surtout en début de perfusion",
+      "Rougeur, prurit, urticaire : ralentir, appeler le médecin",
+      "Nausées, vomissements",
+      "Bronchospasme (asthmatique), rare hypotension"
+    ],
+    "contraindications": [
+      "Pas de contre-indication absolue en cas d'intoxication",
+      "Prudence : asthme (bronchospasme)",
+      "Protocole en plusieurs poches : respecter ordre et durées"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Paracétamol, le toxique silencieux : patient bien et bilan normal à l'arrivée, l'atteinte du foie n'apparaît qu'après 24 h. Retiens : NAC tôt, sans attendre les signes."
+    }
+  },
+  {
+    "dci": "Charbon activé",
+    "family": "antidote",
+    "rarity": "Occasionnel",
+    "classe": "Adsorbant digestif (décontamination)",
+    "brands": [
+      "Carbomix"
+    ],
+    "forms": [
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'éponge à toxiques du tube digestif",
+    "what": "Adsorbant donné par la bouche ou par sonde gastrique après ingestion récente (en général moins d'une heure) d'un toxique adsorbable, sur avis médical ou du centre antipoison.",
+    "action": "Sa surface poreuse immense fixe de nombreux toxiques dans l'intestin : ils ne passent plus dans le sang et sont éliminés dans les selles, qui deviennent noires.",
+    "sideEffects": [
+      "Inhalation bronchique si vomissement : patient conscient",
+      "Vomissements, surtout si prise trop rapide",
+      "Selles noires, constipation : prévenir le patient",
+      "Occlusion intestinale si doses répétées (rare)"
+    ],
+    "contraindications": [
+      "Troubles de conscience sans voies aériennes protégées",
+      "Caustiques, hydrocarbures (inhalation, endoscopie gênée)",
+      "Occlusion, perforation ou hémorragie digestive",
+      "Prudence : fixe aussi les médicaments et antidotes oraux"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le charbon ne fixe pas les FLAC : Fer, Lithium, Alcools, Caustiques. Pour eux, inutile de noircir le patient : on voit d'autres solutions avec le centre antipoison."
+    }
+  },
+  {
+    "dci": "Bleu de méthylène",
+    "family": "antidote",
+    "rarity": "Rare",
+    "classe": "Antidote des méthémoglobinémies",
+    "brands": [
+      "Proveblue"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote bleu des méthémoglobinémies",
+    "what": "Antidote des méthémoglobinémies toxiques (poppers, nitrites, dapsone, prilocaïne) : cyanose grise résistante à l'oxygène, sang « chocolat ». Parfois aussi dans le choc vasoplégique réfractaire.",
+    "action": "Accélère le retour de la méthémoglobine en hémoglobine normale, qui transporte de nouveau l'oxygène. Il agit via une enzyme du globule rouge qui dépend de la G6PD.",
+    "sideEffects": [
+      "Urines et peau bleu-vert : prévenir le patient",
+      "Fausse baisse de la SpO2 à l'oxymètre de pouls",
+      "Hémolyse, surtout si déficit en G6PD",
+      "Syndrome sérotoninergique avec ISRS ou IMAO",
+      "Douleur au point d'injection, nausées, vertiges"
+    ],
+    "contraindications": [
+      "Déficit en G6PD : hémolyse et inefficacité",
+      "Méthémoglobinémie due aux chlorates",
+      "Prudence : ISRS, IRSNa, IMAO (syndrome sérotoninergique)",
+      "Voie IV stricte : jamais en SC ni en intrathécal"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Colorant textile créé en 1876 par Heinrich Caro chez BASF, il devient en 1891, avec Paul Ehrlich, l'un des tout premiers médicaments de synthèse, contre le paludisme."
+    }
+  },
+  {
+    "dci": "Hydroxocobalamine",
+    "family": "antidote",
+    "rarity": "Rare",
+    "classe": "Antidote du cyanure (vitamine B12a)",
+    "brands": [
+      "Cyanokit"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote du cyanure des fumées d'incendie",
+    "what": "Antidote de l'intoxication aux cyanures, surtout chez les victimes de fumées d'incendie en lieu clos (coma, convulsions, choc, lactates élevés). Donné dès le SMUR, sans attendre de dosage.",
+    "action": "Le cobalt de la molécule capte le cyanure et forme de la cyanocobalamine (vitamine B12), non toxique, éliminée dans les urines. Les cellules peuvent de nouveau utiliser l'oxygène.",
+    "sideEffects": [
+      "Peau rouge, urines rouge foncé pendant des jours",
+      "Fausse les bilans : prélever le sang avant l'injection",
+      "Poussée d'hypertension artérielle transitoire",
+      "Réaction allergique, éruption de type acné à distance"
+    ],
+    "contraindications": [
+      "Pas de contre-indication en cas d'intoxication grave",
+      "Prudence : allergie à l'hydroxocobalamine ou à la B12",
+      "Voie veineuse dédiée : nombreuses incompatibilités"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Incendie en lieu clos, coma ou lactates élevés : pense cyanure, pas seulement monoxyde de carbone. Le Cyanokit pour l'un, l'oxygène à haut débit pour l'autre, souvent les deux."
+    }
+  },
+  {
+    "dci": "Fomépizole",
+    "family": "antidote",
+    "rarity": "Très rare",
+    "classe": "Antidote de l'éthylène glycol et du méthanol",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote de l'antigel et du méthanol",
+    "what": "Antidote des intoxications à l'éthylène glycol (antigel, liquide de refroidissement) et au méthanol (solvants, alcool frelaté). Souvent associé à l'épuration extrarénale (dialyse).",
+    "action": "Bloque l'alcool déshydrogénase du foie : éthylène glycol et méthanol ne sont plus transformés en acides toxiques pour le rein, le cerveau et les yeux. Ils s'éliminent lentement ou par dialyse.",
+    "sideEffects": [
+      "Céphalées, nausées",
+      "Vertiges, somnolence",
+      "Veinite au point de perfusion (toujours dilué)",
+      "Hausse transitoire des transaminases, éosinophilie",
+      "Bradycardie, hypotension (rares)"
+    ],
+    "contraindications": [
+      "Hypersensibilité au fomépizole ou aux pyrazolés",
+      "Prudence : association à l'éthanol (effets prolongés)",
+      "Ne pas attendre le dosage si la suspicion est forte"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Avant lui, l'antidote était l'alcool éthylique, qui occupe la même enzyme du foie. Efficace, mais le patient finissait ivre. Le fomépizole fait le même travail, l'ivresse en moins."
+    }
+  },
+  {
+    "dci": "Fragments Fab antidigoxine",
+    "family": "antidote",
+    "rarity": "Très rare",
+    "classe": "Anticorps antidigoxine (antidote)",
+    "brands": [
+      "DigiFab"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote de l'intoxication grave à la digoxine",
+    "what": "Antidote de l'intoxication digitalique grave (digoxine) : troubles du rythme ventriculaires, bradycardie résistante à l'atropine, hyperkaliémie, choc. Rare et coûteux.",
+    "action": "Fragments d'anticorps de mouton qui captent la digoxine dans le sang et les tissus : le complexe formé est inactif et éliminé par le rein. Effet en moins d'une heure.",
+    "sideEffects": [
+      "Hypokaliémie rapide : surveiller kaliémie et scope",
+      "Retour de l'insuffisance cardiaque ou d'une FA rapide",
+      "Réaction allergique (protéine de mouton)",
+      "Digoxinémie faussée : prélever avant l'injection"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux protéines ovines ou à la papaïne",
+      "Prudence : insuffisance rénale (élimination ralentie)",
+      "Pas de calcium IV chez l'intoxiqué digitalique"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Fab veut dire fragment antigen binding : on découpe l'anticorps de mouton pour n'en garder que la pince qui attrape la digoxine. Plus petit, il agit vite, passe par le rein et allergise moins."
+    }
+  }
+]

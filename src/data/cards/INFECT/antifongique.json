@@ -1,0 +1,146 @@
+[
+  {
+    "dci": "Ivermectine",
+    "family": "antifongique",
+    "rarity": "Occasionnel",
+    "classe": "Antiparasitaire (gale, anguillulose)",
+    "brands": [
+      "Stromectol"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le comprimé contre la gale et l'anguillulose",
+    "what": "Antiparasitaire oral de la gale (gale profuse, cas groupés en service ou en EHPAD) et de l'anguillulose, à traiter avant une corticothérapie chez un patient exposé.",
+    "action": "Paralyse le parasite en ouvrant des canaux à chlore de ses nerfs et de ses muscles. Ces canaux n'existent pas chez l'humain, d'où une bonne tolérance.",
+    "sideEffects": [
+      "Prurit transitoire en début de traitement de la gale",
+      "Nausées, diarrhée, vertiges",
+      "Élévation des transaminases, rare",
+      "Encéphalopathie si loase associée (Afrique centrale)"
+    ],
+    "contraindications": [
+      "Allergie à l'ivermectine",
+      "Prudence : loase à forte charge parasitaire",
+      "Prudence : grossesse, enfant de moins de 15 kg"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Gale, la règle des 3 T : Traiter le patient, Tous ses contacts le même jour, et le Textile (linge lavé à 60 °C). Sinon, la gale revient."
+    }
+  },
+  {
+    "dci": "Voriconazole",
+    "family": "antifongique",
+    "rarity": "Rare",
+    "classe": "Antifongique azolé (triazolé)",
+    "brands": [
+      "Vfend"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "La référence contre l'aspergillose invasive",
+    "what": "Antifongique azolé de référence de l'aspergillose invasive, surtout en hématologie (neutropénie, greffe de moelle). Dosage sanguin régulier pour ajuster le traitement.",
+    "action": "Bloque une enzyme du champignon nécessaire à la fabrication de l'ergostérol, composant de sa membrane : la membrane se fragilise et le champignon cesse de pousser.",
+    "sideEffects": [
+      "Troubles visuels transitoires (flou, couleurs)",
+      "Hépatite : surveiller le bilan hépatique",
+      "Photosensibilisation : protéger la peau du soleil",
+      "Hallucinations, confusion",
+      "Allongement du QT : ECG, kaliémie"
+    ],
+    "contraindications": [
+      "Allergie au voriconazole",
+      "Association à la rifampicine, la carbamazépine, au millepertuis",
+      "Association au sirolimus, à l'ivabradine, aux dérivés de l'ergot",
+      "Prudence : inhibiteur du CYP3A4 (tacrolimus, ciclosporine)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "VORIconazole, VOIR flou : troubles visuels très fréquents et brefs (flou, couleurs, éblouissement). Prévenir le patient, et éviter la conduite s'ils surviennent."
+    }
+  },
+  {
+    "dci": "Caspofungine",
+    "family": "antifongique",
+    "rarity": "Très rare",
+    "classe": "Antifongique de la famille des échinocandines",
+    "brands": [
+      "Cancidas"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'échinocandine des candidoses invasives en réanimation",
+    "what": "Antifongique IV de première intention des candidoses invasives (candidémie), notamment en réanimation, et du neutropénique fébrile. Recours possible dans l'aspergillose.",
+    "action": "Bloque la fabrication d'un sucre (bêta-glucane) indispensable à la paroi du champignon. Cette paroi n'existe pas chez l'humain, d'où une bonne tolérance.",
+    "sideEffects": [
+      "Réaction à la perfusion (bouffées, rash) : passer lentement",
+      "Phlébite au point de perfusion",
+      "Fièvre, frissons",
+      "Élévation des transaminases",
+      "Hypokaliémie"
+    ],
+    "contraindications": [
+      "Allergie à la caspofungine",
+      "Diluer dans du NaCl 0,9 %, jamais dans du glucosé",
+      "Prudence : insuffisance hépatique (adapter la dose)",
+      "Prudence : ciclosporine associée (transaminases)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "CASPOfungine au SEL, AmBisome au SUCRE : la première se dilue dans le NaCl 0,9 %, la seconde dans le glucosé 5 %. Jamais l'inverse : instabilité ou précipitation."
+    }
+  },
+  {
+    "dci": "Amphotéricine B liposomale",
+    "family": "antifongique",
+    "rarity": "Exceptionnel",
+    "classe": "Antifongique polyène (forme liposomale)",
+    "brands": [
+      "AmBisome"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antifongique de recours, gainé de liposomes",
+    "what": "Antifongique IV à très large spectre, réservé aux infections fongiques graves (mucormycose, cryptococcose méningée, aspergillose) et à la leishmaniose viscérale.",
+    "action": "Se fixe sur l'ergostérol de la membrane du champignon et y perce des pores : le champignon se vide et meurt. L'enveloppe de liposomes la rend bien moins toxique pour le rein.",
+    "sideEffects": [
+      "Réaction à la perfusion : fièvre, frissons, hypotension",
+      "Toxicité rénale : surveiller la créatinine",
+      "Hypokaliémie, hypomagnésémie : ionogramme suivi",
+      "Douleurs lombaires ou thoraciques en perfusion",
+      "Nausées, vomissements"
+    ],
+    "contraindications": [
+      "Allergie à l'amphotéricine B",
+      "Ne jamais substituer une autre forme d'amphotéricine B",
+      "Diluer dans du glucosé 5 % uniquement : précipite dans le NaCl",
+      "Prudence : néphrotoxiques associés (aminosides, ciclosporine)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "L'amphotéricine B a été isolée en 1955 d'une bactérie du sol, Streptomyces nodosus, prélevée près de l'Orénoque, au Venezuela."
+    }
+  }
+]

@@ -1,7 +1,8 @@
 import { ChevronLeft, ChevronRight, GraduationCap, ImageIcon } from 'lucide-react'
-import { useEffect, useRef, useState, type PointerEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react'
 import type { CardData } from '../../data/sets'
 import { cx } from '../../lib/cx'
+import { isMastered } from '../../lib/quiz'
 import { rarityHint } from '../../lib/rarity'
 import { useActions, useAppState } from '../../state/store'
 import { Card } from '../Card/Card'
@@ -17,8 +18,8 @@ type Props = {
   index: number | null
   onChange: (index: number) => void
   onClose: () => void
-  /** Page d'aperçu : toutes les cartes s'affichent comme possédées, sans bouton de fond d'écran. */
-  preview?: boolean
+  /** Ouvre la fiche réponses visibles (correction du quiz), quel que soit le réglage. */
+  revealAnswers?: boolean
 }
 
 /** Glissement latéral minimal (px) pour changer de carte. */
@@ -28,7 +29,7 @@ const SWIPE_MIN = 48
  * Fiche d'une carte dans une fenêtre centrée, avec navigation gauche / droite dans la liste
  * d'origine (flèches, glissement latéral, touches ←/→) sans quitter la fenêtre.
  */
-export function CardViewer({ cards, index, onChange, onClose, preview = false }: Props) {
+export function CardViewer({ cards, index, onChange, onClose, revealAnswers = false }: Props) {
   const state = useAppState()
   const actions = useActions()
   const card = index !== null ? cards[index] : undefined
@@ -37,8 +38,15 @@ export function CardViewer({ cards, index, onChange, onClose, preview = false }:
   const canNext = index !== null && index < count - 1
   const areaRef = useRef<HTMLDivElement>(null)
   const start = useRef<{ x: number; y: number } | null>(null)
-  // Mode révision : gardé d'une carte à l'autre, pour enchaîner les questions.
-  const [quiz, setQuiz] = useState(false)
+  // Mode révision : réglage par défaut (réponses cachées), modifiable ici le temps de la
+  // fenêtre, gardé d'une carte à l'autre pour enchaîner les questions.
+  const defaultQuiz = state.settings.hideAnswers && !revealAnswers
+  const [quiz, setQuiz] = useState(defaultQuiz)
+  const [revealedId, setRevealedId] = useState<string | null>(null)
+  useEffect(() => {
+    if (index === null) setQuiz(defaultQuiz)
+  }, [index, defaultQuiz])
+  const onAllShown = useCallback(() => setRevealedId(card?.id ?? null), [card?.id])
 
   const prev = () => {
     if (canPrev) onChange(index - 1)
@@ -81,7 +89,8 @@ export function CardViewer({ cards, index, onChange, onClose, preview = false }:
 
   const owned = card ? state.collection[card.id] : undefined
   const obtainedAt = owned?.at
-  const visible = preview || obtainedAt !== undefined
+  const visible = obtainedAt !== undefined
+  const stat = card ? state.quiz.stats[card.id] : undefined
   const isBackdrop = card !== undefined && state.settings.backdropCardId === card.id
 
   const footer = (
@@ -119,7 +128,7 @@ export function CardViewer({ cards, index, onChange, onClose, preview = false }:
         >
           <div className={styles.card}>
             {visible ? (
-              <Card card={card} faceUp glow eager />
+              <Card card={card} faceUp glow eager masked={quiz && revealedId !== card.id} />
             ) : (
               <div className={styles.missing}>
                 <span className={cx(styles.number, 'tabular')}>{card.localId}</span>
@@ -146,14 +155,23 @@ export function CardViewer({ cards, index, onChange, onClose, preview = false }:
                 {owned?.foil && <dd className={styles.foil}>Version brillante</dd>}
               </div>
             )}
+            {stat && (
+              <div>
+                <dt>Quiz</dt>
+                <dd className="tabular">
+                  {stat.ok} juste{stat.ok > 1 ? 's' : ''} · {stat.ko} erreur{stat.ko > 1 ? 's' : ''}
+                </dd>
+                {isMastered(stat) && <dd className={styles.mastered}>Maîtrisée</dd>}
+              </div>
+            )}
           </dl>
           {visible && (
             <>
               <button type="button" className={cx('btn btn-secondary btn-sm', styles.quiz)} aria-pressed={quiz} onClick={() => setQuiz((q) => !q)}>
                 <GraduationCap size={16} aria-hidden="true" />
-                {quiz ? 'Mode révision activé' : 'Mode révision : cacher les réponses'}
+                {quiz ? 'Mode révision : réponses cachées' : 'Réponses visibles : passer en révision'}
               </button>
-              <CardInfo card={card} quiz={quiz} />
+              <CardInfo card={card} quiz={quiz} onAllShown={onAllShown} />
               {obtainedAt && (
               <button
                 type="button"

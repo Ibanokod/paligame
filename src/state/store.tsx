@@ -11,7 +11,7 @@ import { defaultRng } from '../lib/random'
 import { dueThresholds } from '../lib/rewards'
 import { loadState, saveState } from './persistence'
 import { reducer, type Action } from './reducer'
-import type { CardStyle, State } from './types'
+import type { State } from './types'
 
 const StateContext = createContext<State | null>(null)
 const DispatchContext = createContext<Dispatch<Action> | null>(null)
@@ -49,6 +49,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         thresholdMl,
         cardIds: result.cardIds,
         rarePack: result.rarePack,
+        setId: set.id,
         foilIds: result.foilIds,
         revealed: 0,
         seen: false,
@@ -86,7 +87,10 @@ export function useActions() {
       revealAll: (rewardId: string) => dispatch({ type: 'revealAll', rewardId }),
       closeReward: (rewardId: string) => dispatch({ type: 'closeReward', rewardId }),
       setBackdrop: (cardId: string | null) => dispatch({ type: 'setBackdrop', cardId }),
-      setCardStyle: (style: CardStyle) => dispatch({ type: 'setCardStyle', style }),
+      setHideAnswers: (hide: boolean) => dispatch({ type: 'setHideAnswers', hide }),
+      setSet: (setId: string) => dispatch({ type: 'setSet', setId }),
+      quizAnswer: (cardId: string, correct: boolean) => dispatch({ type: 'quizAnswer', cardId, correct, at: new Date().toISOString() }),
+      quizDone: (score: number) => dispatch({ type: 'quizDone', score }),
       importState: (state: State) => dispatch({ type: 'importState', state }),
       reset: () => dispatch({ type: 'reset' }),
     }),

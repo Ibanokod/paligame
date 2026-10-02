@@ -182,19 +182,6 @@
   gap: var(--sp-1);
 }
 
-/* Cartes 4 et 5 centrées sous les trois premières, à la même taille (un décalage par
-   position garde la largeur ; une marge l'aurait réduite de moitié). */
-.summary li:nth-child(4) {
-  grid-column: 1 / 2;
-  position: relative;
-  left: calc(50% + var(--sp-3) / 2);
-}
-
-.summary li:nth-child(5) {
-  grid-column: 2 / 3;
-  position: relative;
-  left: calc(50% + var(--sp-3) / 2);
-}
 
 .summaryBadge {
   font-size: var(--fs-sm);

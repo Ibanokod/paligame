@@ -137,11 +137,35 @@ describe('fond d’écran', () => {
   })
 })
 
-describe('style et versions brillantes', () => {
-  it('change le style des cartes, et refuse un style inconnu', () => {
-    const s = reducer(initialState(), { type: 'setCardStyle', style: 'memo' })
-    expect(s.settings.cardStyle).toBe('memo')
-    expect(reducer(s, { type: 'setCardStyle', style: 'pokemon' as never })).toBe(s)
+describe('quiz', () => {
+  it('compte bonnes réponses, erreurs et série en cours par carte', () => {
+    let s = reducer(initialState(), { type: 'quizAnswer', cardId: 'PAL1-001', correct: true, at: at(9) })
+    s = reducer(s, { type: 'quizAnswer', cardId: 'PAL1-001', correct: true, at: at(10) })
+    expect(s.quiz.stats['PAL1-001']).toEqual({ ok: 2, ko: 0, streak: 2, at: at(10) })
+    s = reducer(s, { type: 'quizAnswer', cardId: 'PAL1-001', correct: false, at: at(11) })
+    expect(s.quiz.stats['PAL1-001']).toEqual({ ok: 2, ko: 1, streak: 0, at: at(11) })
+  })
+
+  it('garde le meilleur score et compte les séries', () => {
+    let s = reducer(initialState(), { type: 'quizDone', score: 7 })
+    s = reducer(s, { type: 'quizDone', score: 5 })
+    expect(s.quiz).toMatchObject({ best: 7, sessions: 2 })
+  })
+
+  it('complète le quiz d’une sauvegarde qui n’en avait pas', () => {
+    const { quiz: _quiz, ...old } = initialState()
+    expect(parseImport(JSON.stringify(old))?.quiz).toEqual({ stats: {}, best: 0, sessions: 0 })
+  })
+})
+
+describe('réglages et versions brillantes', () => {
+  it('cache les réponses par défaut, et se règle', () => {
+    expect(initialState().settings.hideAnswers).toBe(true)
+    expect(reducer(initialState(), { type: 'setHideAnswers', hide: false }).settings.hideAnswers).toBe(false)
+  })
+
+  it('change d’extension', () => {
+    expect(reducer(initialState(), { type: 'setSet', setId: 'CARDIO' }).settings.setId).toBe('CARDIO')
   })
 
   it('note dans la collection les cartes sorties en version brillante', () => {

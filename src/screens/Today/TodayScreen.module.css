@@ -222,3 +222,16 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--sp-2);
 }
+
+.setLine {
+  margin-top: calc(-1 * var(--sp-2));
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-shadow: 0 1px 8px rgba(11, 18, 32, 0.9);
+}
+
+.setLine strong {
+  color: var(--text);
+  font-weight: 700;
+}
