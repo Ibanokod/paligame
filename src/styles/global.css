@@ -77,6 +77,7 @@ img {
   font-weight: 700;
   font-size: var(--fs-md);
   line-height: 1.2;
+  text-decoration: none;
   transition:
     background var(--dur-fast) var(--ease),
     color var(--dur-fast) var(--ease),

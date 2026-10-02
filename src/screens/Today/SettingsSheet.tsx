@@ -16,7 +16,7 @@ type Props = { open: boolean; onClose: () => void }
 
 const STYLE_LABELS: Record<CardStyle, { name: string; hint: string }> = {
   classique: { name: 'Classique', hint: 'Carte de jeu : illustration et l’essentiel' },
-  memo: { name: 'Mémo', hint: 'Fiche de révision : les 4 questions sur la carte' },
+  memo: { name: 'Mémo', hint: 'Fiche de révision : les 5 points sur la carte' },
   galerie: { name: 'Galerie', hint: 'Illustration pleine carte, texte dans la fiche' },
 }
 

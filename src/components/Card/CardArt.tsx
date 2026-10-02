@@ -56,6 +56,10 @@ export function CardArt({ card, variant }: { card: CardData; variant: Variant })
   const center = { x: 35 + rng() * 30, y: 32 + rng() * 30 }
   const orb = { x: rng() * 300, y: rng() * 300, r: 70 + rng() * 70, hue: (p.hue + (rng() < 0.5 ? -38 : 38) + 360) % 360 }
   const decor = (['anneaux', 'rayons', 'points'] as const)[Math.floor(rng() * 3)]
+  // Seconde forme galénique (si le médicament en a plusieurs), plus petite, posée en retrait.
+  const second = card.forms[1]
+    ? { form: card.forms[1], x: 150 + (rng() < 0.5 ? -1 : 1) * 72, y: 150 + (rng() < 0.5 ? -1 : 1) * (28 + rng() * 20), rot: Math.round((rng() - 0.5) * 50) }
+    : null
 
   return (
     <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" style={{ display: 'block', width: '100%', height: '100%' }}>
@@ -98,6 +102,12 @@ export function CardArt({ card, variant }: { card: CardData; variant: Variant })
       </g>
 
       <ellipse cx="150" cy="150" rx={orbit.rx} ry={orbit.ry} transform={`rotate(${orbit.rot} 150 150)`} fill="none" stroke={p.accent} strokeOpacity="0.28" strokeWidth="1.5" strokeDasharray="2 7" />
+
+      {second && (
+        <g transform={`translate(${second.x} ${second.y}) rotate(${second.rot}) scale(${full ? 0.62 : 0.52}) translate(-50 -50)`} opacity="0.92">
+          <FormGlyph form={second.form} light={p.light} accent={p.glyph} edge={p.edge} />
+        </g>
+      )}
 
       <circle cx="150" cy="150" r={full ? 105 : 92} fill={`url(#${uid}-halo)`} />
       <ellipse cx="150" cy={150 + 52 * glyphScale} rx={38 * glyphScale} ry={7 * glyphScale} fill="#000" opacity="0.25" />
