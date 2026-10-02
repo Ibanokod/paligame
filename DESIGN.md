@@ -65,7 +65,8 @@ grille 4 × 4, molécule « squelette » imaginaire (1 à 3 cycles, chaînes, h�
 orbite pointillée, halo, ombre, puis au centre la **forme galénique** principale
 (comprimé, gélule, solution, ampoule, patch, spray, bouteille de gaz à ogive blanche,
 suppositoire, tube de crème, collyre, sachet, verre de bain de bouche). Étincelles dorées
-pour les rares. C'est une illustration : les dégradés y sont permis.
+pour les rares. Si le médicament a plusieurs formes, la deuxième est dessinée en petit, en retrait
+(elle distingue deux cartes de la même famille et de même forme principale). C'est une illustration : les dégradés y sont permis.
 
 ## Trois styles de carte (à départager)
 

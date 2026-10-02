@@ -5,8 +5,8 @@
 // l'aperçu des trois styles, l'accueil, l'historique, le Pharmacodex, une fiche et
 // l'ouverture d'un booster. Variable STYLE=classique|memo|galerie pour le style des cartes.
 import { spawn } from 'node:child_process'
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
 
 const EDGE = ['C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe'].find(existsSync)
 const outDir = process.argv[2] ?? '.'
@@ -137,4 +137,6 @@ await shot('31-rare-revelee.png')
 
 ws.close()
 proc.kill()
+// Page de comparaison des trois styles, posée à côté des dossiers de captures.
+copyFileSync(new URL('./comparatif.html', import.meta.url), join(dirname(outDir), 'comparatif.html'))
 console.log('fini')
