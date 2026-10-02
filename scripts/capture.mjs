@@ -120,6 +120,16 @@ await click('Tout révéler', `document.querySelector('[role=dialog]')`)
 await sleep(900)
 await shot('23-booster-bilan.png')
 
+// Carte exceptionnelle (au-delà de 1,5 L) en version brillante : Propofol, PAL1-033.
+await click('Terminer', `document.querySelector('[role=dialog]')`)
+await sleep(600)
+await evaluate(`(() => { const s = JSON.parse(localStorage.getItem('paligame.v1')); const now = new Date().toISOString(); const day = s.rewards[0].day; delete s.collection['PAL1-033']; s.entries.push({ id: 'e5', at: now, ml: 500 }); s.rewards.push({ id: 'r9', at: now, day, kind: 'rare-card', thresholdMl: 2000, cardIds: ['PAL1-033'], foilIds: ['PAL1-033'], revealed: 0, seen: false }); s.collection['PAL1-033'] = { at: now, foil: true }; localStorage.setItem('paligame.v1', JSON.stringify(s)); return 'ok' })()`)
+await go()
+await sleep(800)
+await shot('30-rare-dos.png')
+await evaluate(`(async () => { const top = document.querySelector('[role=dialog] [role=button][tabindex="0"]'); const fire = (type) => top.dispatchEvent(new PointerEvent(type, { bubbles: true, clientX: 200, clientY: 400, pointerId: 1, pointerType: 'touch', isPrimary: true })); fire('pointerdown'); fire('pointerup'); await new Promise(r => setTimeout(r, 1600)); return 'flipped' })()`)
+await shot('31-rare-revelee.png')
+
 ws.close()
 proc.kill()
 console.log('fini')
