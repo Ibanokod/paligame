@@ -1,0 +1,407 @@
+[
+  {
+    "dci": "Midazolam",
+    "family": "sedatif",
+    "rarity": "Courant",
+    "classe": "Benzodiazépine à demi-vie courte",
+    "brands": [
+      "Hypnovel"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "SC",
+      "IV"
+    ],
+    "tagline": "La benzodiazépine de la sédation en soins palliatifs",
+    "what": "Benzodiazépine injectable de référence en soins palliatifs : anxiolyse, crise d'angoisse, convulsions, sédation proportionnée ou profonde et continue (loi Claeys-Leonetti).",
+    "action": "Renforce l'effet du GABA, frein naturel du cerveau : anxiolyse, sédation, effet anticonvulsivant. Action rapide et brève, adaptée à la titration puis au pousse-seringue.",
+    "sideEffects": [
+      "Dépression respiratoire : surveiller FR et vigilance",
+      "Sédation trop profonde : évaluer (échelle de Rudkin)",
+      "Hypotension",
+      "Agitation paradoxale, surtout chez le sujet âgé",
+      "Accoutumance : efficacité qui baisse en continu"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux benzodiazépines",
+      "Insuffisance respiratoire sévère (hors sédation de fin de vie)",
+      "Prudence : sujet âgé, insuffisance hépatique ou rénale, myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "mnemo",
+      "text": "MIdazolam, le « mi-dodo » : une sédation qui se règle comme un variateur, par titration. Son antidote, le flumazénil, agit moins longtemps que lui : surveiller une resédation."
+    }
+  },
+  {
+    "dci": "Lorazépam",
+    "family": "sedatif",
+    "rarity": "Courant",
+    "classe": "Benzodiazépine à demi-vie intermédiaire",
+    "brands": [
+      "Témesta"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO",
+      "SL"
+    ],
+    "tagline": "L'anxiolytique des crises d'angoisse",
+    "what": "Benzodiazépine anxiolytique très utilisée en soins palliatifs : anxiété, crise d'angoisse, dyspnée angoissante. Sans métabolite actif, mieux tolérée chez le sujet âgé.",
+    "action": "Renforce l'action du GABA sur le récepteur GABA-A : anxiolyse rapide, sédation, effet myorelaxant. Pas de métabolite actif, donc moins d'accumulation.",
+    "sideEffects": [
+      "Somnolence, baisse de vigilance",
+      "Chutes chez le sujet âgé : prévenir le risque",
+      "Troubles de la mémoire, confusion",
+      "Dépendance : jamais d'arrêt brutal",
+      "Dépression respiratoire si associée aux opioïdes"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Syndrome d'apnées du sommeil",
+      "Insuffisance hépatique sévère",
+      "Myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Retiens « LOT » : Lorazépam, Oxazépam, Témazépam. Ces benzos n'ont pas de métabolite actif : à privilégier chez le sujet âgé et l'insuffisant hépatique."
+    }
+  },
+  {
+    "dci": "Alprazolam",
+    "family": "sedatif",
+    "rarity": "Fréquent",
+    "classe": "Benzodiazépine anxiolytique",
+    "brands": [
+      "Xanax"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La benzodiazépine anxiolytique d'action rapide",
+    "what": "Benzodiazépine anxiolytique : anxiété sévère, crise d'angoisse. Action rapide, mais risque de dépendance et de rebond d'anxiété entre les prises.",
+    "action": "Se fixe sur le récepteur GABA-A et renforce l'effet du GABA, le frein naturel du cerveau : effet anxiolytique rapide, sédatif et myorelaxant.",
+    "sideEffects": [
+      "Somnolence, baisse de vigilance",
+      "Dépendance rapide, rebond d'anxiété entre les prises",
+      "Troubles de la mémoire, confusion",
+      "Chutes chez le sujet âgé",
+      "Sevrage si arrêt brutal : diminuer progressivement"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Syndrome d'apnées du sommeil",
+      "Insuffisance hépatique sévère",
+      "Myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "humour",
+      "text": "XANAX est un palindrome : il se lit pareil dans les deux sens, comme KAYAK. Le sevrage, lui, ne se fait que dans un sens : progressivement."
+    }
+  },
+  {
+    "dci": "Oxazépam",
+    "family": "sedatif",
+    "rarity": "Fréquent",
+    "classe": "Benzodiazépine à demi-vie courte",
+    "brands": [
+      "Séresta"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "La benzodiazépine courte, sans métabolite actif",
+    "what": "Benzodiazépine anxiolytique : anxiété, sevrage alcoolique. Demi-vie courte et sans métabolite actif : souvent préférée chez le sujet âgé ou insuffisant hépatique.",
+    "action": "Renforce l'effet du GABA sur le récepteur GABA-A : effet anxiolytique et sédatif. Simplement conjuguée par le foie puis éliminée dans les urines, sans métabolite actif.",
+    "sideEffects": [
+      "Somnolence, baisse de vigilance",
+      "Chutes chez le sujet âgé : prévenir le risque",
+      "Troubles de la mémoire",
+      "Dépendance : arrêt toujours progressif"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Syndrome d'apnées du sommeil",
+      "Insuffisance hépatique sévère",
+      "Myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2013, une étude suédoise publiée dans Science a montré que des perches exposées à l'oxazépam rejeté dans les rivières devenaient plus audacieuses et mangeaient plus vite."
+    }
+  },
+  {
+    "dci": "Hydroxyzine",
+    "family": "sedatif",
+    "rarity": "Fréquent",
+    "classe": "Antihistaminique H1 sédatif et anxiolytique",
+    "brands": [
+      "Atarax"
+    ],
+    "forms": [
+      "comprime",
+      "solution",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IM"
+    ],
+    "tagline": "L'anxiolytique sans dépendance, mais attention au QT",
+    "what": "Antihistaminique sédatif : manifestations mineures de l'anxiété, prurit. Alternative aux benzodiazépines sans dépendance, mais déconseillé chez le sujet âgé.",
+    "action": "Bloque les récepteurs H1 de l'histamine dans le cerveau : effet sédatif et anxiolytique. Effet anticholinergique associé (bouche sèche, rétention urinaire).",
+    "sideEffects": [
+      "Somnolence : prudence au lever (chutes)",
+      "Bouche sèche, constipation (effet anticholinergique)",
+      "Allongement du QT : risque de troubles du rythme",
+      "Confusion, rétention urinaire chez le sujet âgé"
+    ],
+    "contraindications": [
+      "Allongement du QT ou facteur de risque (hypokaliémie...)",
+      "Association à d'autres médicaments allongeant le QT",
+      "Porphyrie",
+      "Prudence : glaucome, adénome de prostate, sujet âgé"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Atarax évoque l'ataraxie (du grec ataraxia, « absence de trouble ») : la tranquillité de l'âme recherchée par les philosophes épicuriens et stoïciens."
+    }
+  },
+  {
+    "dci": "Zopiclone",
+    "family": "sedatif",
+    "rarity": "Fréquent",
+    "classe": "Hypnotique apparenté aux benzodiazépines",
+    "brands": [
+      "Imovane"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le somnifère de la famille des « Z »",
+    "what": "Hypnotique de la famille des « Z » (zopiclone, zolpidem) : insomnie occasionnelle ou transitoire. À prendre au moment du coucher, sur une durée la plus courte possible.",
+    "action": "Se fixe sur le récepteur GABA-A, au même site que les benzodiazépines : facilite l'endormissement et le maintien du sommeil. Mêmes risques que les benzos.",
+    "sideEffects": [
+      "Goût amer ou métallique dans la bouche",
+      "Somnolence résiduelle le matin, chutes",
+      "Troubles de la mémoire, comportements nocturnes",
+      "Dépendance, insomnie de rebond à l'arrêt"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Syndrome d'apnées du sommeil",
+      "Insuffisance hépatique sévère",
+      "Myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Zopiclone, « Z » comme Zzz : elle se prend au coucher, une fois au lit. Et si le patient se plaint d'un goût amer au réveil, c'est elle : effet très fréquent."
+    }
+  },
+  {
+    "dci": "Clonazépam",
+    "family": "sedatif",
+    "rarity": "Occasionnel",
+    "classe": "Benzodiazépine antiépileptique",
+    "brands": [
+      "Rivotril"
+    ],
+    "forms": [
+      "solution",
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "La benzodiazépine des convulsions, en gouttes",
+    "what": "Benzodiazépine à visée antiépileptique : épilepsie, crises convulsives, myoclonies. La forme en gouttes permet d'ajuster finement les doses.",
+    "action": "Renforce l'action du GABA sur le récepteur GABA-A : effet anticonvulsivant marqué, mais aussi sédatif, anxiolytique et myorelaxant.",
+    "sideEffects": [
+      "Somnolence, fatigue",
+      "Hypotonie, troubles de l'équilibre, chutes",
+      "Hypersécrétion salivaire et bronchique",
+      "Dépendance : arrêt brutal = risque de convulsions",
+      "Troubles du comportement, irritabilité"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Syndrome d'apnées du sommeil",
+      "Insuffisance hépatique sévère",
+      "Myasthénie"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Détourné comme drogue, le Rivotril oral est soumis en France depuis 2012 à une ordonnance sécurisée et à une prescription initiale par un neurologue ou un pédiatre."
+    }
+  },
+  {
+    "dci": "Diazépam",
+    "family": "sedatif",
+    "rarity": "Occasionnel",
+    "classe": "Benzodiazépine à demi-vie longue",
+    "brands": [
+      "Valium"
+    ],
+    "forms": [
+      "comprime",
+      "solution",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IR"
+    ],
+    "tagline": "La benzodiazépine historique à effet prolongé",
+    "what": "Benzodiazépine anxiolytique et myorelaxante : anxiété, sevrage alcoolique, contractures, crises convulsives (voie rectale ou IV). Effet long, risque d'accumulation.",
+    "action": "Renforce l'effet du GABA sur le récepteur GABA-A : anxiolytique, myorelaxant, anticonvulsivant. Demi-vie très longue avec métabolite actif : effet prolongé.",
+    "sideEffects": [
+      "Somnolence prolongée, accumulation chez le sujet âgé",
+      "Hypotonie musculaire, chutes",
+      "Dépression respiratoire (voie IV, association opioïdes)",
+      "Dépendance : arrêt toujours progressif",
+      "Veinite au point d'injection IV"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Insuffisance hépatique sévère",
+      "Syndrome d'apnées du sommeil, myasthénie",
+      "Prudence : sujet âgé (accumulation, chutes)"
+    ],
+    "antidote": "Flumazénil",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Créé par le chimiste Leo Sternbach chez Roche et commercialisé en 1963, le Valium fut l'un des médicaments les plus vendus au monde dans les années 1970."
+    }
+  },
+  {
+    "dci": "Mirtazapine",
+    "family": "sedatif",
+    "rarity": "Occasionnel",
+    "classe": "Antidépresseur sédatif (NaSSA)",
+    "brands": [
+      "Norset"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antidépresseur qui aide à dormir et ouvre l'appétit",
+    "what": "Antidépresseur intéressant en soins palliatifs quand la dépression s'accompagne d'insomnie et de perte d'appétit. Effet sédatif rapide, antidépresseur en quelques semaines.",
+    "action": "Bloque les récepteurs alpha-2 : augmente la libération de noradrénaline et de sérotonine. Son effet antihistaminique H1 explique sédation et hausse de l'appétit.",
+    "sideEffects": [
+      "Somnolence, surtout en début de traitement",
+      "Augmentation de l'appétit, prise de poids",
+      "Bouche sèche",
+      "Vertiges, hypotension orthostatique",
+      "Rare : agranulocytose (fièvre, angine : alerter)"
+    ],
+    "contraindications": [
+      "Association aux IMAO",
+      "Hypersensibilité à la mirtazapine",
+      "Prudence : épilepsie, insuffisance hépatique ou rénale",
+      "Prudence : idées suicidaires en début de traitement"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Mirtazapine, « mire ton assiette » : elle ouvre l'appétit et aide à dormir. Paradoxe à retenir : elle est souvent plus sédative à faible dose qu'à forte dose."
+    }
+  },
+  {
+    "dci": "Phénobarbital",
+    "family": "sedatif",
+    "rarity": "Très rare",
+    "classe": "Barbiturique antiépileptique",
+    "brands": [
+      "Gardénal"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "IM",
+      "PO"
+    ],
+    "tagline": "Le barbiturique de recours : sédation et convulsions",
+    "what": "Barbiturique antiépileptique : convulsions, état de mal épileptique, et recours en sédation réfractaire quand le midazolam ne suffit pas. Usage encadré, surtout hospitalier.",
+    "action": "Renforce et prolonge l'action du GABA sur son récepteur : freine globalement le système nerveux central. Demi-vie très longue, puissant inducteur enzymatique.",
+    "sideEffects": [
+      "Sédation profonde et prolongée (demi-vie longue)",
+      "Dépression respiratoire, hypotension (voie IV)",
+      "Réactions cutanées graves : surveiller la peau",
+      "Agitation paradoxale, confusion chez le sujet âgé"
+    ],
+    "contraindications": [
+      "Porphyrie",
+      "Insuffisance respiratoire sévère (hors sédation de fin de vie)",
+      "Hypersensibilité aux barbituriques",
+      "Prudence : inducteur enzymatique, nombreuses interactions"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Commercialisé dès 1912 sous le nom de Luminal, le phénobarbital est l'un des plus anciens médicaments encore utilisés : plus d'un siècle de service."
+    }
+  },
+  {
+    "dci": "Propofol",
+    "family": "sedatif",
+    "rarity": "Exceptionnel",
+    "classe": "Anesthésique général intraveineux",
+    "brands": [
+      "Diprivan"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'anesthésique de dernier recours, très encadré",
+    "what": "Anesthésique IV utilisé en dernier recours pour une sédation réfractaire au midazolam. Usage hospitalier, sous surveillance rapprochée, souvent avec l'avis d'un anesthésiste.",
+    "action": "Renforce l'action du GABA dans le cerveau : perte de conscience en quelques dizaines de secondes, réveil rapide à l'arrêt. Administré en continu au pousse-seringue IV.",
+    "sideEffects": [
+      "Dépression respiratoire, apnée : surveillance continue",
+      "Hypotension, bradycardie",
+      "Douleur au point d'injection",
+      "Émulsion lipidique : asepsie stricte (risque infectieux)",
+      "Hypertriglycéridémie en perfusion prolongée"
+    ],
+    "contraindications": [
+      "Hypersensibilité au propofol, au soja ou à l'arachide",
+      "Prudence : hypovolémie, insuffisance cardiaque",
+      "Prudence : troubles du métabolisme des lipides"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Son émulsion d'un blanc laiteux lui vaut le surnom anglo-saxon de « milk of amnesia », clin d'œil au « milk of magnesia », un laxatif célèbre."
+    }
+  }
+]

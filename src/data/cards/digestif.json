@@ -1,0 +1,251 @@
+[
+  {
+    "dci": "Macrogol",
+    "family": "digestif",
+    "rarity": "Courant",
+    "classe": "Laxatif osmotique",
+    "brands": [
+      "Forlax",
+      "Movicol",
+      "Transipeg"
+    ],
+    "forms": [
+      "sachet"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le laxatif de base, dès la mise sous opioïdes",
+    "what": "Laxatif osmotique, souvent en première intention pour prévenir et traiter la constipation, en particulier celle induite par les opioïdes. Bien toléré, sans accoutumance.",
+    "action": "Grosse molécule non absorbée qui retient l'eau dans l'intestin : les selles deviennent plus molles et plus volumineuses, ce qui facilite leur évacuation.",
+    "sideEffects": [
+      "Ballonnements, douleurs abdominales",
+      "Diarrhée si dose trop forte : adapter",
+      "Nausées",
+      "Troubles hydroélectrolytiques si diarrhée prolongée"
+    ],
+    "contraindications": [
+      "Occlusion ou suspicion d'occlusion intestinale",
+      "Perforation digestive ou risque de perforation",
+      "Maladie inflammatoire sévère de l'intestin, mégacôlon toxique",
+      "Douleur abdominale de cause indéterminée"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "MACROgol, comme MACRO-molécule : trop grosse pour traverser la paroi, elle reste dans l'intestin et y garde l'eau. D'où le réflexe : bien diluer le sachet dans un verre d'eau."
+    }
+  },
+  {
+    "dci": "Ésoméprazole",
+    "family": "digestif",
+    "rarity": "Courant",
+    "classe": "Inhibiteur de la pompe à protons (IPP)",
+    "brands": [
+      "Inexium"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Protège l'estomac en freinant la production d'acide",
+    "what": "Inhibiteur de la pompe à protons, utilisé dans le reflux et l'ulcère, et en protection gastrique sous AINS. Existe en IV si la voie orale n'est plus possible.",
+    "action": "Bloque la pompe à protons des cellules de l'estomac, dernière étape de la fabrication de l'acide : la sécrétion acide chute fortement et durablement.",
+    "sideEffects": [
+      "Céphalées",
+      "Diarrhée, douleurs abdominales, nausées",
+      "Infection à Clostridioides difficile au long cours",
+      "Hypomagnésémie, carence en vitamine B12 au long cours"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux IPP (benzimidazolés)",
+      "Association au nelfinavir (antirétroviral)",
+      "Prudence : interactions (clopidogrel, méthotrexate)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom dit tout : « és » vient de S, l'une des deux formes miroir de la molécule d'oméprazole. Isoler cette seule forme donne des taux sanguins plus réguliers."
+    }
+  },
+  {
+    "dci": "Lactulose",
+    "family": "digestif",
+    "rarity": "Fréquent",
+    "classe": "Laxatif osmotique (sucre non absorbé)",
+    "brands": [
+      "Duphalac"
+    ],
+    "forms": [
+      "solution",
+      "sachet"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Sucre laxatif, aussi contre l'encéphalopathie hépatique",
+    "what": "Laxatif osmotique utilisé dans la constipation, notamment sous opioïdes, et dans l'encéphalopathie hépatique (insuffisance hépatique, cirrhose).",
+    "action": "Sucre non absorbé, fermenté par les bactéries du côlon : il attire l'eau et ramollit les selles. Il acidifie aussi le côlon, ce qui limite le passage de l'ammoniac dans le sang.",
+    "sideEffects": [
+      "Ballonnements, flatulences fréquents",
+      "Douleurs abdominales, crampes",
+      "Diarrhée si dose trop forte : adapter",
+      "Goût très sucré, parfois mal accepté"
+    ],
+    "contraindications": [
+      "Occlusion, perforation ou risque de perforation digestive",
+      "Douleur abdominale de cause indéterminée",
+      "Maladie inflammatoire du côlon (RCH, Crohn)",
+      "Galactosémie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Le lactulose est le sucre préféré des bactéries du côlon : elles s'en régalent... et le font savoir. D'où ballonnements et flatulences en début de traitement."
+    }
+  },
+  {
+    "dci": "Bisacodyl",
+    "family": "digestif",
+    "rarity": "Fréquent",
+    "classe": "Laxatif stimulant (de contact)",
+    "brands": [
+      "Dulcolax"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Laxatif stimulant, en renfort de l'osmotique",
+    "what": "Laxatif stimulant, utilisé dans la constipation induite par les opioïdes, souvent en association avec un laxatif osmotique quand celui-ci ne suffit pas.",
+    "action": "Stimule les nerfs de la paroi du côlon : renforce les contractions et la sécrétion d'eau, ce qui fait progresser les selles. Effet en 6 à 12 h par voie orale.",
+    "sideEffects": [
+      "Crampes, douleurs abdominales",
+      "Diarrhée",
+      "Hypokaliémie si usage excessif ou prolongé"
+    ],
+    "contraindications": [
+      "Occlusion, iléus, urgence abdominale (appendicite)",
+      "Maladie inflammatoire aiguë de l'intestin",
+      "Douleur abdominale sévère de cause inconnue",
+      "Déshydratation sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le soir au lit, le matin au petit coin : pris au coucher, il agit au réveil. Comprimé gastro-résistant : ne pas le croquer, ni le prendre avec du lait."
+    }
+  },
+  {
+    "dci": "Naloxégol",
+    "family": "digestif",
+    "rarity": "Occasionnel",
+    "classe": "Antagoniste opioïde périphérique (PAMORA)",
+    "brands": [
+      "Moventig"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Débloque l'intestin sans toucher à l'antalgie opioïde",
+    "what": "Antagoniste opioïde à action périphérique, indiqué dans la constipation induite par les opioïdes quand les laxatifs ne suffisent pas.",
+    "action": "Bloque les récepteurs opioïdes mu de l'intestin. Il ne passe quasiment pas dans le cerveau : il lève la constipation sans diminuer l'effet antalgique.",
+    "sideEffects": [
+      "Douleurs abdominales, crampes",
+      "Diarrhée, nausées, flatulences",
+      "Céphalées",
+      "Syndrome de sevrage opioïde : rare (sueurs, frissons)"
+    ],
+    "contraindications": [
+      "Occlusion digestive connue, suspectée ou à risque de récidive",
+      "Cancer à risque de perforation (tumeur digestive, péritonéale)",
+      "Association aux inhibiteurs puissants du CYP3A4 (clarithromycine)",
+      "Prudence : barrière du cerveau altérée (métastases cérébrales)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "NALOXégol = NALOXone modifiée + PEG : alourdie par une chaîne de polyéthylène glycol, la molécule ne franchit plus la barrière du cerveau et reste dans l'intestin."
+    }
+  },
+  {
+    "dci": "Lopéramide",
+    "family": "digestif",
+    "rarity": "Occasionnel",
+    "classe": "Antidiarrhéique ralentisseur du transit",
+    "brands": [
+      "Imodium"
+    ],
+    "forms": [
+      "gelule",
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Ralentit le transit : l'antidiarrhéique de référence",
+    "what": "Antidiarrhéique des diarrhées non infectieuses (chimiothérapie, radiothérapie, chirurgie digestive) et des stomies à haut débit, après avoir écarté un fécalome ou une infection.",
+    "action": "Opioïde qui agit sur les récepteurs mu de la paroi intestinale sans passer dans le cerveau : il ralentit les contractions et laisse à l'intestin le temps de réabsorber l'eau.",
+    "sideEffects": [
+      "Constipation, ballonnements : arrêter le traitement",
+      "Douleurs abdominales, nausées",
+      "Vertiges, somnolence",
+      "Troubles du rythme cardiaque si surdosage massif"
+    ],
+    "contraindications": [
+      "Diarrhée glairosanglante fébrile (infection invasive)",
+      "Colite pseudomembraneuse sous antibiotiques",
+      "Poussée aiguë de rectocolite hémorragique",
+      "Iléus, occlusion, constipation"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Créé en 1969 dans le laboratoire belge de Paul Janssen, le lopéramide est un vrai opioïde, mais une pompe de la barrière du cerveau le refoule : il n'agit que sur l'intestin."
+    }
+  },
+  {
+    "dci": "Méthylnaltrexone",
+    "family": "digestif",
+    "rarity": "Rare",
+    "classe": "Antagoniste opioïde périphérique (PAMORA)",
+    "brands": [
+      "Relistor"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "SC"
+    ],
+    "tagline": "Injection SC contre la constipation rebelle sous opioïdes",
+    "what": "Antagoniste opioïde périphérique injectable, réservé à la constipation induite par les opioïdes résistante aux laxatifs, notamment en soins palliatifs.",
+    "action": "Bloque les récepteurs opioïdes mu de l'intestin. Sa charge électrique l'empêche d'entrer dans le cerveau : il lève la constipation sans réduire l'antalgie.",
+    "sideEffects": [
+      "Douleurs abdominales, crampes",
+      "Diarrhée, nausées, flatulences",
+      "Vertiges, sueurs",
+      "Réaction au point d'injection"
+    ],
+    "contraindications": [
+      "Occlusion digestive mécanique connue ou suspectée",
+      "Abdomen chirurgical aigu",
+      "Prudence : tumeur digestive, ulcère, diverticulose (perforation)",
+      "Prudence : insuffisance rénale ou hépatique sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Le « méthyl » ajouté à la naltrexone la rend chargée : elle reste hors du cerveau. Effet rapide, parfois en moins d'une heure : bassin ou toilettes à portée de main."
+    }
+  }
+]

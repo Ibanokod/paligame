@@ -1,0 +1,422 @@
+[
+  {
+    "dci": "Morphine",
+    "family": "opioide",
+    "rarity": "Courant",
+    "classe": "Antalgique opioïde fort (palier 3)",
+    "brands": [
+      "Skenan LP",
+      "Actiskenan",
+      "Oramorph"
+    ],
+    "forms": [
+      "gelule",
+      "solution",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "SC",
+      "IV"
+    ],
+    "tagline": "L'opioïde fort de référence : douleur et dyspnée",
+    "what": "Antalgique opioïde fort, référence des douleurs intenses et de la dyspnée en fin de vie. Formes LP pour le traitement de fond, LI pour les interdoses.",
+    "action": "Agoniste des récepteurs opioïdes mu : freine la transmission du message douloureux dans la moelle et le cerveau, et diminue la sensation de manque d'air.",
+    "sideEffects": [
+      "Constipation quasi constante : laxatif d'emblée",
+      "Somnolence, confusion",
+      "Nausées, vomissements en début de traitement",
+      "Rétention urinaire, prurit",
+      "Dépression respiratoire si surdosage"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire décompensée (hors dyspnée de fin de vie)",
+      "Insuffisance hépatocellulaire sévère",
+      "Association aux agonistes-antagonistes (buprénorphine, nalbuphine)",
+      "Prudence : insuffisance rénale (accumulation des métabolites)"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient de Morphée, dieu grec des rêves : le pharmacien allemand Sertürner l'a isolée de l'opium au début du XIXe siècle et baptisée ainsi pour son effet endormant."
+    }
+  },
+  {
+    "dci": "Oxycodone",
+    "family": "opioide",
+    "rarity": "Courant",
+    "classe": "Antalgique opioïde fort (palier 3)",
+    "brands": [
+      "Oxycontin LP",
+      "Oxynorm",
+      "Oxynormoro"
+    ],
+    "forms": [
+      "comprime",
+      "gelule",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "SC",
+      "IV"
+    ],
+    "tagline": "L'alternative à la morphine, en LP comme en LI",
+    "what": "Antalgique opioïde fort, alternative à la morphine dans les douleurs intenses, notamment en rotation des opioïdes. Formes LP pour le fond, LI pour les interdoses, injectable en SC ou IV.",
+    "action": "Agoniste des récepteurs opioïdes mu : freine la transmission du message douloureux dans la moelle et le cerveau. Par voie orale, environ deux fois plus puissante que la morphine.",
+    "sideEffects": [
+      "Constipation quasi constante : laxatif d'emblée",
+      "Somnolence, confusion, vertiges",
+      "Nausées, vomissements en début de traitement",
+      "Prurit, sécheresse buccale",
+      "Dépression respiratoire si surdosage"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère",
+      "Insuffisance hépatique modérée à sévère",
+      "Iléus paralytique",
+      "Prudence : insuffisance rénale, sujet âgé"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisée en 1916 en Allemagne à partir de la thébaïne, un alcaloïde de l'opium. Sa forme LP, l'OxyContin, lancée en 1996 aux États-Unis, est au cœur de la crise américaine des opioïdes."
+    }
+  },
+  {
+    "dci": "Fentanyl transdermique",
+    "family": "opioide",
+    "rarity": "Fréquent",
+    "classe": "Antalgique opioïde fort (palier 3)",
+    "brands": [
+      "Durogesic",
+      "Matrifen"
+    ],
+    "forms": [
+      "patch"
+    ],
+    "routes": [
+      "TD"
+    ],
+    "tagline": "Le patch opioïde fort, à changer toutes les 72 heures",
+    "what": "Antalgique opioïde fort en patch, pour douleurs intenses chroniques et stables, notamment si la voie orale est impossible. Inadapté aux douleurs instables ou à une titration rapide.",
+    "action": "Agoniste puissant des récepteurs mu, très liposoluble : il traverse la peau et passe dans le sang. Effet en 12 à 24 h après la pose, qui persiste plusieurs heures après le retrait.",
+    "sideEffects": [
+      "Constipation : laxatif d'emblée",
+      "Somnolence, nausées en début de traitement",
+      "Absorption accrue par la chaleur (fièvre, bouillotte)",
+      "Rougeur ou irritation cutanée : changer de site",
+      "Dépression respiratoire si surdosage"
+    ],
+    "contraindications": [
+      "Douleur aiguë ou postopératoire (titration impossible)",
+      "Dépression respiratoire sévère",
+      "Association aux agonistes-antagonistes (buprénorphine, nalbuphine)",
+      "Prudence : fièvre, cachexie (absorption imprévisible)"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les 3 R du patch : Retirer l'ancien, Repérer une nouvelle zone de peau saine, Reporter date et heure sur le patch. Et jamais de bouillotte dessus."
+    }
+  },
+  {
+    "dci": "Tramadol",
+    "family": "opioide",
+    "rarity": "Fréquent",
+    "classe": "Antalgique opioïde faible (palier 2)",
+    "brands": [
+      "Topalgic",
+      "Contramal",
+      "Ixprim"
+    ],
+    "forms": [
+      "gelule",
+      "comprime",
+      "solution"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Le palier 2 à double action, opioïde et sérotoninergique",
+    "what": "Antalgique de palier 2 pour douleurs modérées à intenses, seul ou associé au paracétamol. Intérêt possible si la douleur a une composante neuropathique.",
+    "action": "Double action : agoniste faible des récepteurs mu (surtout via un métabolite produit par le foie) et inhibiteur de la recapture de la sérotonine et de la noradrénaline.",
+    "sideEffects": [
+      "Nausées, vomissements, vertiges : fréquents au début",
+      "Somnolence, confusion chez le sujet âgé",
+      "Constipation : à prévenir",
+      "Convulsions (abaisse le seuil épileptogène)",
+      "Syndrome sérotoninergique avec les antidépresseurs"
+    ],
+    "contraindications": [
+      "Épilepsie non contrôlée par un traitement",
+      "Association aux IMAO",
+      "Insuffisance respiratoire ou hépatique sévère",
+      "Prudence : antidépresseurs, sujet âgé, insuffisance rénale"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2013, des chercheurs ont cru découvrir du tramadol naturel dans les racines d'un arbre du Cameroun. Il venait en fait du bétail : des éleveurs lui en donnaient, et il passait dans le sol."
+    }
+  },
+  {
+    "dci": "Fentanyl transmuqueux",
+    "family": "opioide",
+    "rarity": "Occasionnel",
+    "classe": "Antalgique opioïde fort d'action rapide",
+    "brands": [
+      "Abstral",
+      "Effentora",
+      "Instanyl"
+    ],
+    "forms": [
+      "comprime",
+      "spray"
+    ],
+    "routes": [
+      "SL",
+      "TM",
+      "IN"
+    ],
+    "tagline": "Contre les accès douloureux paroxystiques, en minutes",
+    "what": "Fentanyl d'action rapide (sublingual, buccal ou nasal), réservé aux accès douloureux paroxystiques du patient cancéreux déjà sous traitement opioïde de fond.",
+    "action": "Agoniste puissant des récepteurs mu, très liposoluble : passe directement par la muqueuse dans le sang. Effet en 5 à 15 minutes, de courte durée, calqué sur le pic douloureux.",
+    "sideEffects": [
+      "Somnolence, vertiges",
+      "Nausées, vomissements, constipation",
+      "Irritation locale (bouche, nez)",
+      "Dépression respiratoire si non tolérant aux opioïdes"
+    ],
+    "contraindications": [
+      "Patient sans traitement opioïde de fond",
+      "Douleur aiguë autre que les accès paroxystiques",
+      "Dépression respiratoire ou BPCO sévère",
+      "Prudence : formes non interchangeables, titration propre"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Fond d'abord, flash ensuite : jamais de fentanyl rapide sans opioïde de fond bien installé. Et chaque spécialité a sa propre titration : on ne passe pas de l'une à l'autre à dose égale."
+    }
+  },
+  {
+    "dci": "Codéine",
+    "family": "opioide",
+    "rarity": "Occasionnel",
+    "classe": "Antalgique opioïde faible (palier 2)",
+    "brands": [
+      "Dafalgan codéiné",
+      "Codoliprane",
+      "Klipal codéine"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le palier 2 que le foie transforme en morphine",
+    "what": "Antalgique de palier 2, associé au paracétamol, pour douleurs modérées résistant au palier 1. Peu utilisé en soins palliatifs, où l'on passe souvent à un opioïde fort à faible dose.",
+    "action": "Prodrogue : le foie la transforme en partie en morphine (enzyme CYP2D6), qui agit sur les récepteurs mu. Efficacité variable selon la génétique de chacun.",
+    "sideEffects": [
+      "Constipation : à prévenir",
+      "Nausées, vomissements, somnolence, vertiges",
+      "Toxicité hépatique si cumul avec un autre paracétamol",
+      "Dépression respiratoire si métaboliseur ultrarapide"
+    ],
+    "contraindications": [
+      "Insuffisance hépatocellulaire sévère (paracétamol)",
+      "Insuffisance respiratoire",
+      "Métaboliseur ultrarapide connu (CYP2D6)",
+      "Enfant de moins de 12 ans, allaitement"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "anecdote",
+      "text": "Depuis juillet 2017, les médicaments à base de codéine ne sont plus vendus sans ordonnance en France, après des décès d'adolescents liés au purple drank, un cocktail détourné."
+    }
+  },
+  {
+    "dci": "Hydromorphone",
+    "family": "opioide",
+    "rarity": "Rare",
+    "classe": "Antalgique opioïde fort (palier 3)",
+    "brands": [
+      "Sophidone LP"
+    ],
+    "forms": [
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'opioïde fort de relais quand la morphine échoue",
+    "what": "Antalgique opioïde fort, en 2e intention dans les douleurs cancéreuses intenses, en cas de résistance ou d'intolérance à la morphine (rotation des opioïdes). Gélules LP pour le fond.",
+    "action": "Agoniste des récepteurs opioïdes mu, proche cousin chimique de la morphine mais bien plus puissant à poids égal : freine la transmission de la douleur dans la moelle et le cerveau.",
+    "sideEffects": [
+      "Constipation : laxatif d'emblée",
+      "Nausées, vomissements",
+      "Somnolence, confusion, vertiges",
+      "Prurit, sécheresse buccale",
+      "Dépression respiratoire si surdosage"
+    ],
+    "contraindications": [
+      "Douleur aiguë (forme LP non adaptée)",
+      "Insuffisance respiratoire décompensée",
+      "Insuffisance hépatocellulaire sévère",
+      "Association aux agonistes-antagonistes (buprénorphine, nalbuphine)"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom résume sa chimie : hydro pour l'hydrogène ajouté, morph pour la morphine, one pour la fonction cétone. Elle a été mise au point en Allemagne dans les années 1920."
+    }
+  },
+  {
+    "dci": "Buprénorphine",
+    "family": "opioide",
+    "rarity": "Rare",
+    "classe": "Opioïde agoniste partiel (palier 3)",
+    "brands": [
+      "Temgesic",
+      "Subutex"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "SL",
+      "IM",
+      "IV"
+    ],
+    "tagline": "L'agoniste partiel qui ne se mélange pas aux autres",
+    "what": "Opioïde agoniste partiel : antalgique (Temgesic) ou traitement de substitution aux opiacés (Subutex). Rare en soins palliatifs, mais à repérer chez un patient sous substitution.",
+    "action": "Agoniste partiel des récepteurs mu et antagoniste kappa. Se fixe très fort sur les récepteurs : effet plafond, et déplace les autres opioïdes, avec risque de sevrage.",
+    "sideEffects": [
+      "Nausées, vomissements, vertiges",
+      "Somnolence, sueurs",
+      "Constipation",
+      "Sevrage si associée à un agoniste pur (morphine...)",
+      "Dépression respiratoire, majorée par les benzodiazépines"
+    ],
+    "contraindications": [
+      "Ne pas associer aux agonistes purs (morphine, oxycodone...)",
+      "Insuffisance respiratoire sévère",
+      "Insuffisance hépatique sévère",
+      "Prudence : benzodiazépines, alcool (dépression respiratoire)"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Bupré la squatteuse : elle s'accroche aux récepteurs mu, en chasse la morphine et résiste à la naloxone, qu'il faut alors donner à fortes doses."
+    }
+  },
+  {
+    "dci": "Tapentadol",
+    "family": "opioide",
+    "rarity": "Rare",
+    "classe": "Antalgique opioïde fort (palier 3)",
+    "brands": [
+      "Palexia LP"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'opioïde fort à double action, cousin du tramadol",
+    "what": "Antalgique opioïde fort pour douleurs chroniques sévères de l'adulte, avec un intérêt possible si la douleur a une composante neuropathique. Peu utilisé en soins palliatifs.",
+    "action": "Double action : agoniste des récepteurs mu et inhibiteur de la recapture de la noradrénaline, qui renforce les voies nerveuses qui freinent naturellement la douleur.",
+    "sideEffects": [
+      "Nausées, vertiges, somnolence",
+      "Constipation, moindre qu'avec la morphine",
+      "Céphalées, sécheresse buccale",
+      "Convulsions, syndrome sérotoninergique (rares)",
+      "Dépression respiratoire si surdosage"
+    ],
+    "contraindications": [
+      "Insuffisance respiratoire sévère, asthme aigu ou sévère",
+      "Iléus paralytique",
+      "Association aux IMAO",
+      "Prudence : épilepsie, insuffisance hépatique ou rénale sévère"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "TAPEntadol tape deux fois : sur les récepteurs mu et sur la recapture de la noradrénaline. Cousin du tramadol, mais avec très peu d'effet sur la sérotonine."
+    }
+  },
+  {
+    "dci": "Méthadone",
+    "family": "opioide",
+    "rarity": "Très rare",
+    "classe": "Opioïde fort, antagoniste NMDA",
+    "brands": [],
+    "forms": [
+      "gelule",
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'opioïde de recours des douleurs rebelles",
+    "what": "Opioïde fort utilisé hors AMM en antalgie : rotation dans les douleurs cancéreuses rebelles, notamment neuropathiques, toujours initiée par une équipe spécialisée. AMM : substitution aux opiacés.",
+    "action": "Agoniste des récepteurs mu et antagoniste des récepteurs NMDA, impliqués dans les douleurs rebelles. Demi-vie longue et très variable : accumulation possible sur plusieurs jours.",
+    "sideEffects": [
+      "Sédation retardée par accumulation : surveiller",
+      "Allongement du QT, torsades de pointes : ECG",
+      "Constipation : laxatif d'emblée",
+      "Nausées, sueurs",
+      "Dépression respiratoire, parfois différée"
+    ],
+    "contraindications": [
+      "Allongement connu de l'intervalle QT",
+      "Insuffisance respiratoire sévère",
+      "Association aux agonistes-antagonistes (buprénorphine, nalbuphine)",
+      "Prudence : médicaments allongeant le QT, interactions"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "mnemo",
+      "text": "Méthadone la marathonienne : longue demi-vie, effet qui s'accumule en plusieurs jours. La naloxone, sprinteuse, s'essouffle avant elle : il faut la répéter."
+    }
+  },
+  {
+    "dci": "Sufentanil",
+    "family": "opioide",
+    "rarity": "Exceptionnel",
+    "classe": "Opioïde fort de synthèse (anesthésie)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "SC"
+    ],
+    "tagline": "L'opioïde ultra-puissant de l'anesthésie, rare en palliatif",
+    "what": "Opioïde fort de l'anesthésie et de la réanimation. En soins palliatifs, usage exceptionnel et hors AMM, en IV ou SC continue (PCA), par exemple en rotation chez l'insuffisant rénal.",
+    "action": "Agoniste très puissant et sélectif des récepteurs mu, 5 à 10 fois plus que le fentanyl. Très liposoluble : action rapide et brève en bolus.",
+    "sideEffects": [
+      "Dépression respiratoire : surveiller la FR",
+      "Somnolence, sédation",
+      "Rigidité thoracique si bolus IV rapide",
+      "Bradycardie, hypotension",
+      "Nausées, prurit, constipation"
+    ],
+    "contraindications": [
+      "Absence de surveillance ou de moyens de réanimation",
+      "Association aux agonistes-antagonistes (buprénorphine, nalbuphine)",
+      "Prudence : sujet âgé, insuffisance hépatique, benzodiazépines"
+    ],
+    "antidote": "Naloxone",
+    "fun": {
+      "kind": "humour",
+      "text": "SUFentanil, comme SUper-Fentanyl : le premier de la classe des opioïdes, 5 à 10 fois plus fort que son grand frère, et qui ne quitte jamais l'hôpital."
+    }
+  }
+]

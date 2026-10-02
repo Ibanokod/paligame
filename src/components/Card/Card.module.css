@@ -1,0 +1,533 @@
+.card {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--card-ratio);
+  perspective: 1200px;
+  border-radius: var(--r-card);
+  transition: box-shadow var(--dur-slow) var(--ease);
+}
+
+/* Les faces ne reçoivent pas les clics : c'est le bouton (boîte plate, sans 3D) qui les prend,
+   ce qui évite les ratés de détection sur les éléments en perspective. */
+.inner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform var(--dur-slow) var(--ease);
+  pointer-events: none;
+}
+
+.faceUp {
+  transform: rotateY(0deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Le recto est dessiné en unités de conteneur (cqw = 1 % de la largeur de la carte) :
+   la même mise en page reste juste de la vignette de 80 px à la révélation de 290 px. */
+.front {
+  container-type: inline-size;
+  background: hsl(var(--h) 55% 14%);
+  text-align: left;
+  --frame: rgba(201, 214, 232, 0.55);
+}
+
+.rStar {
+  --frame: #f2c14e;
+}
+
+.rCrown {
+  --frame: #ffd166;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: #0b1a3a;
+}
+
+.backArt {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Style Classique : la carte de jeu ---------- */
+
+.classic {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6cqw;
+  padding: 3.6cqw 3.6cqw 2.6cqw;
+  background:
+    linear-gradient(160deg, hsl(var(--h) 52% 32%) 0%, hsl(var(--h) 58% 18%) 55%, hsl(var(--h) 62% 11%) 100%);
+  border: 1.4cqw solid var(--frame);
+  border-radius: var(--r-card);
+  color: #f4f6fb;
+}
+
+.rCrown .classic {
+  border-image: linear-gradient(135deg, #ffd166, #e38bf0, #7fd6f7, #ffd166) 1;
+  border-radius: 0;
+}
+
+.cHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2cqw;
+}
+
+.cName {
+  min-width: 0;
+  font-size: 7.4cqw;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cName[data-len='m'] {
+  font-size: 6.2cqw;
+}
+
+.cName[data-len='l'],
+.mName[data-len='l'] {
+  font-size: 5.4cqw;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.mName[data-len='m'] {
+  font-size: 6cqw;
+}
+
+.gName[data-len='m'] {
+  font-size: 7.6cqw;
+}
+
+.gName[data-len='l'] {
+  font-size: 6.6cqw;
+}
+
+.cRarity {
+  flex: 0 0 auto;
+  font-size: 5cqw;
+  font-weight: 800;
+  color: var(--frame);
+  letter-spacing: 0.05em;
+}
+
+.cClass {
+  margin-top: -1cqw;
+  font-size: 3.3cqw;
+  font-weight: 700;
+  color: hsl(var(--h) 80% 82%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cWindow {
+  flex: 0 0 auto;
+  aspect-ratio: 1.72;
+  border-radius: 2cqw;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 0.8cqw rgba(255, 255, 255, 0.18),
+    0 1cqw 3cqw rgba(0, 0, 0, 0.45);
+}
+
+.cStrip {
+  display: flex;
+  justify-content: space-between;
+  gap: 2cqw;
+  padding: 0.8cqw 2.4cqw;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.28);
+  font-size: 2.9cqw;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: hsl(var(--h) 80% 86%);
+  white-space: nowrap;
+}
+
+.cBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4cqw;
+  overflow: hidden;
+}
+
+.cTagline {
+  font-size: 3.9cqw;
+  font-weight: 800;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cStats {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1cqw;
+  font-size: 3.1cqw;
+  line-height: 1.22;
+}
+
+.cStats div {
+  display: grid;
+  grid-template-columns: 17cqw 1fr;
+  gap: 1.6cqw;
+  padding-top: 1cqw;
+  border-top: 0.3cqw solid rgba(255, 255, 255, 0.12);
+}
+
+.cStats dt {
+  font-weight: 800;
+  font-size: 2.6cqw;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: hsl(var(--h) 80% 80%);
+  padding-top: 0.3cqw;
+}
+
+.cStats dd {
+  margin: 0;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cFun {
+  font-size: 2.9cqw;
+  font-style: italic;
+  line-height: 1.28;
+  color: rgba(244, 246, 251, 0.78);
+  padding-top: 1.2cqw;
+  border-top: 0.3cqw solid rgba(255, 255, 255, 0.12);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cFoot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4cqw;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(244, 246, 251, 0.55);
+}
+
+/* ---------- Style Mémo : la fiche de révision ---------- */
+
+.memo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f7f2e8;
+  color: #1d2230;
+  border: 1.2cqw solid var(--frame);
+  border-radius: var(--r-card);
+}
+
+.rCrown .memo {
+  border-image: linear-gradient(135deg, #ffd166, #e38bf0, #7fd6f7, #ffd166) 1;
+  border-radius: 0;
+}
+
+.mBand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6cqw 4cqw;
+  background: hsl(var(--h) 52% 30%);
+  color: #fff;
+  font-size: 2.8cqw;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mRarity {
+  margin-left: 1cqw;
+  color: var(--frame);
+  letter-spacing: 0.05em;
+}
+
+.rDiamond .mRarity {
+  color: #e6edf7;
+}
+
+.mTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2cqw;
+  padding: 2.6cqw 4cqw 1.6cqw;
+  border-bottom: 0.4cqw dashed hsl(var(--h) 30% 70%);
+}
+
+.mTitle > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mName {
+  font-size: 7cqw;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mClass {
+  margin-top: 0.6cqw;
+  font-size: 3cqw;
+  font-weight: 700;
+  color: hsl(var(--h) 55% 32%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mGlyph {
+  flex: 0 0 auto;
+  width: 14cqw;
+  height: 14cqw;
+}
+
+.mList {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 2cqw 4cqw 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4cqw;
+  font-size: 3.7cqw;
+  line-height: 1.3;
+  overflow: hidden;
+}
+
+.mList li {
+  display: grid;
+  grid-template-columns: 5cqw 1fr;
+  gap: 1.8cqw;
+  align-items: start;
+}
+
+.mList b {
+  display: grid;
+  place-items: center;
+  width: 5cqw;
+  height: 5cqw;
+  border-radius: 50%;
+  background: hsl(var(--h) 52% 30%);
+  color: #fff;
+  font-size: 2.9cqw;
+  font-weight: 800;
+}
+
+.mList span {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mList em,
+.mFun em {
+  font-style: normal;
+  font-weight: 800;
+  color: hsl(var(--h) 55% 30%);
+}
+
+.mFun b {
+  display: inline-grid;
+  place-items: center;
+  width: 4.6cqw;
+  height: 4.6cqw;
+  margin-right: 1cqw;
+  border-radius: 50%;
+  background: hsl(var(--h) 52% 30%);
+  color: #fff;
+  font-size: 2.7cqw;
+  font-weight: 800;
+  vertical-align: 0.2cqw;
+}
+
+.mFun {
+  margin: 2cqw 3cqw 3cqw;
+  padding: 2cqw 2.6cqw;
+  border-radius: 1.6cqw;
+  background: hsl(var(--h) 70% 90%);
+  font-size: 3.2cqw;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---------- Style Galerie : illustration pleine carte ---------- */
+
+.gallery {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  border: 1.2cqw solid var(--frame);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.rCrown .gallery {
+  border-image: linear-gradient(135deg, #ffd166, #e38bf0, #7fd6f7, #ffd166) 1;
+  border-radius: 0;
+}
+
+.gArt {
+  position: absolute;
+  inset: 0;
+}
+
+.gTop {
+  position: absolute;
+  top: 3cqw;
+  left: 3.6cqw;
+  right: 3.6cqw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.4cqw;
+  font-weight: 800;
+  text-shadow: 0 0.4cqw 2cqw rgba(0, 0, 0, 0.6);
+}
+
+.gRarity {
+  padding: 0.6cqw 2.4cqw;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--frame);
+  font-size: 4.4cqw;
+  letter-spacing: 0.05em;
+}
+
+.gBottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8cqw;
+  padding: 16cqw 5cqw 5cqw;
+  background: linear-gradient(180deg, transparent, hsl(var(--h) 60% 8% / 0.88) 45%, hsl(var(--h) 60% 6%));
+}
+
+.gFamily {
+  align-self: flex-start;
+  padding: 0.6cqw 2.4cqw;
+  border-radius: 99px;
+  background: hsl(var(--h) 70% 72%);
+  color: hsl(var(--h) 60% 12%);
+  font-size: 2.8cqw;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.gName {
+  font-size: 9cqw;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+
+.gClass {
+  font-size: 3.5cqw;
+  font-weight: 700;
+  color: hsl(var(--h) 80% 84%);
+}
+
+/* ---------- Version brillante : reflet holographique fixe ---------- */
+
+.foil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 18%, rgba(255, 255, 255, 0.28) 30%, transparent 40%, transparent 58%, rgba(255, 255, 255, 0.18) 68%, transparent 78%),
+    repeating-linear-gradient(
+      125deg,
+      rgba(255, 110, 190, 0.2) 0%,
+      rgba(255, 220, 110, 0.2) 7%,
+      rgba(120, 255, 190, 0.2) 14%,
+      rgba(110, 200, 255, 0.2) 21%,
+      rgba(190, 130, 255, 0.2) 28%,
+      rgba(255, 110, 190, 0.2) 35%
+    );
+  mix-blend-mode: screen;
+  opacity: 0.6;
+}
+
+/* Halos de rareté : seul effet lumineux de l'appli, uniquement carte visible. */
+.glowDiamond {
+  box-shadow: 0 0 28px rgba(201, 214, 232, 0.3);
+}
+
+.glowStar {
+  box-shadow: 0 0 36px rgba(242, 193, 78, 0.55);
+}
+
+.glowCrown {
+  box-shadow:
+    0 0 44px rgba(255, 209, 102, 0.7),
+    0 0 90px rgba(227, 139, 240, 0.35);
+}
+
+/* Balayage lumineux unique à la révélation d'une carte rare ou brillante. */
+.sweep::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.32) 50%, transparent 60%);
+  transform: translateX(-100%);
+  animation: sweep var(--dur-slow) var(--ease) var(--dur-slow) 1 forwards;
+}
+
+@keyframes sweep {
+  to {
+    transform: translateX(100%);
+  }
+}

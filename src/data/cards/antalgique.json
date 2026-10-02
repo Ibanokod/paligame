@@ -1,0 +1,410 @@
+[
+  {
+    "dci": "Paracétamol",
+    "family": "antalgique",
+    "rarity": "Courant",
+    "classe": "Antalgique non opioïde, antipyrétique (palier 1)",
+    "brands": [
+      "Doliprane",
+      "Efferalgan",
+      "Perfalgan"
+    ],
+    "forms": [
+      "comprime",
+      "injectable",
+      "suppositoire"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IR"
+    ],
+    "tagline": "L'antalgique de base, contre la douleur et la fièvre",
+    "what": "Antalgique et antipyrétique de palier 1 OMS : douleurs légères à modérées et fièvre. Souvent associé aux antalgiques des paliers 2 et 3.",
+    "action": "Agit surtout dans le système nerveux central : freine la production de prostaglandines dans le cerveau et renforce les voies qui inhibent la douleur. Effet anti-inflammatoire quasi nul.",
+    "sideEffects": [
+      "Atteinte du foie si surdosage : traquer les doubles prises",
+      "Élévation des transaminases (rare)",
+      "Malaise, hypotension pendant la perfusion IV (rare)",
+      "Allergie cutanée, toxidermie grave très rare",
+      "Thrombopénie, neutropénie (très rares)"
+    ],
+    "contraindications": [
+      "Insuffisance hépatocellulaire sévère",
+      "Allergie au paracétamol",
+      "Prudence : petit poids, dénutrition, alcoolisme, IR sévère"
+    ],
+    "antidote": "N-acétylcystéine",
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom est la contraction de son nom chimique, para-acétyl-amino-phénol. Même molécule, autre nom outre-Atlantique : les Américains l'appellent acetaminophen."
+    }
+  },
+  {
+    "dci": "Néfopam",
+    "family": "antalgique",
+    "rarity": "Fréquent",
+    "classe": "Antalgique non opioïde d'action centrale",
+    "brands": [
+      "Acupan"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "tagline": "Antalgique central non morphinique, en perfusion lente",
+    "what": "Antalgique non morphinique d'action centrale pour les douleurs aiguës, souvent associé à d'autres antalgiques. Injectable seulement : la prise per os sur un sucre est un usage hors AMM.",
+    "action": "Bloque la recapture de la sérotonine, de la noradrénaline et de la dopamine dans le système nerveux central, ce qui renforce les voies qui freinent la douleur. Ce n'est pas un opioïde.",
+    "sideEffects": [
+      "Sueurs, nausées, somnolence : perfuser lentement, allongé",
+      "Tachycardie, palpitations",
+      "Effets atropiniques : bouche sèche, rétention urinaire",
+      "Vertiges, malaise, rares convulsions",
+      "Risque de mésusage et de dépendance"
+    ],
+    "contraindications": [
+      "Convulsions ou antécédents d'épilepsie",
+      "Glaucome à angle fermé",
+      "Risque de rétention urinaire (troubles urétroprostatiques)",
+      "Prudence : sujet âgé, insuffisance rénale ou hépatique, cardiopathie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Ses trois interdits tiennent en œil, vessie, cerveau : glaucome à angle fermé, rétention urinaire, convulsions. Les pièges des atropiniques, plus l'épilepsie."
+    }
+  },
+  {
+    "dci": "Kétoprofène",
+    "family": "antalgique",
+    "rarity": "Fréquent",
+    "classe": "Anti-inflammatoire non stéroïdien (AINS)",
+    "brands": [
+      "Profenid",
+      "Bi-Profenid"
+    ],
+    "forms": [
+      "injectable",
+      "comprime",
+      "gelule"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'AINS des douleurs osseuses et inflammatoires",
+    "what": "AINS utilisé sur une courte durée pour les douleurs inflammatoires, en particulier osseuses (métastases), souvent en association aux opioïdes.",
+    "action": "Bloque les enzymes COX-1 et COX-2, donc la fabrication des prostaglandines qui entretiennent inflammation, douleur et fièvre. Or ces prostaglandines protègent aussi l'estomac et les reins.",
+    "sideEffects": [
+      "Ulcère, hémorragie digestive : IPP souvent associé",
+      "Insuffisance rénale aiguë : surveiller diurèse, créatinine",
+      "Rétention d'eau et de sel, œdèmes, poussée d'HTA",
+      "Saignements (effet antiagrégant plaquettaire)",
+      "Allergie, bronchospasme, photosensibilité (gel)"
+    ],
+    "contraindications": [
+      "Ulcère gastroduodénal évolutif, antécédent d'hémorragie digestive",
+      "Insuffisance rénale, hépatique ou cardiaque sévère",
+      "Asthme ou allergie déclenchés par un AINS ou l'aspirine",
+      "Prudence : sujet âgé, anticoagulant, déshydratation"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "AINS comme Asthme, Insuffisance rénale, Nausées et ulcère, Saignement : les quatre pièges à surveiller sous kétoprofène."
+    }
+  },
+  {
+    "dci": "Gabapentine",
+    "family": "antalgique",
+    "rarity": "Fréquent",
+    "classe": "Antiépileptique, co-antalgique neuropathique",
+    "brands": [
+      "Neurontin"
+    ],
+    "forms": [
+      "gelule",
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le co-antalgique des douleurs neuropathiques",
+    "what": "Antiépileptique indiqué dans les douleurs neuropathiques (brûlures, décharges électriques, fourmillements), en complément des opioïdes. Doses augmentées par paliers, effet non immédiat.",
+    "action": "Se fixe sur la sous-unité alpha-2-delta des canaux calciques des neurones : diminue la libération des messagers excitateurs et calme les nerfs qui s'emballent.",
+    "sideEffects": [
+      "Somnolence, vertiges : prévenir les chutes",
+      "Fatigue, troubles de l'équilibre (ataxie)",
+      "Œdèmes des membres inférieurs, prise de poids",
+      "Dépression respiratoire si associée aux opioïdes",
+      "Arrêt brutal : sevrage, diminuer progressivement"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la gabapentine",
+      "Prudence : insuffisance rénale (élimination rénale, doses adaptées)",
+      "Prudence : sujet âgé, association aux opioïdes",
+      "Prudence : antécédents d'abus ou de dépendance"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Conçue comme une copie du GABA, le frein naturel du cerveau, d'où son nom. Surprise : elle n'agit pas sur les récepteurs du GABA, mais sur les canaux calciques des neurones."
+    }
+  },
+  {
+    "dci": "Prégabaline",
+    "family": "antalgique",
+    "rarity": "Fréquent",
+    "classe": "Antiépileptique, co-antalgique neuropathique",
+    "brands": [
+      "Lyrica"
+    ],
+    "forms": [
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Cousine de la gabapentine contre la douleur neuropathique",
+    "what": "Antiépileptique indiqué dans les douleurs neuropathiques périphériques et centrales, et dans l'anxiété généralisée. Utile pour les douleurs neuropathiques liées au cancer.",
+    "action": "Comme la gabapentine, se fixe sur la sous-unité alpha-2-delta des canaux calciques et réduit la libération des messagers excitateurs. Absorption plus rapide et plus régulière.",
+    "sideEffects": [
+      "Somnolence, vertiges : prévenir les chutes",
+      "Vision trouble, troubles de la concentration",
+      "Prise de poids, œdèmes périphériques",
+      "Euphorie : risque de mésusage et de dépendance",
+      "Dépression respiratoire si associée aux opioïdes"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la prégabaline",
+      "Prudence : insuffisance rénale (élimination rénale, doses adaptées)",
+      "Prudence : sujet âgé, association aux opioïdes",
+      "Prudence : antécédents d'addiction"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "PRÉgabaline comme PRÉcaution : à cause des mésusages, elle se prescrit sur ordonnance sécurisée depuis 2021."
+    }
+  },
+  {
+    "dci": "Amitriptyline",
+    "family": "antalgique",
+    "rarity": "Occasionnel",
+    "classe": "Antidépresseur tricyclique, co-antalgique",
+    "brands": [
+      "Laroxyl"
+    ],
+    "forms": [
+      "solution",
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Tricyclique à faible dose contre la douleur neuropathique",
+    "what": "Antidépresseur tricyclique utilisé à faibles doses comme co-antalgique des douleurs neuropathiques, surtout à type de brûlure. Son effet antalgique ne dépend pas de l'effet sur l'humeur.",
+    "action": "Bloque la recapture de la sérotonine et de la noradrénaline, ce qui renforce les voies de la moelle qui freinent la douleur. Effets atropiniques et sédatifs marqués.",
+    "sideEffects": [
+      "Bouche sèche, constipation, rétention urinaire",
+      "Somnolence : prise le soir",
+      "Hypotension orthostatique : prévenir les chutes",
+      "Confusion chez le sujet âgé",
+      "Troubles du rythme cardiaque, allongement du QT"
+    ],
+    "contraindications": [
+      "Glaucome à angle fermé",
+      "Risque de rétention urinaire (troubles urétroprostatiques)",
+      "Infarctus du myocarde récent",
+      "Association aux IMAO non sélectifs"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Atropinique, donc sec en haut et bloqué en bas : bouche sèche et vision floue, puis constipation et rétention urinaire. On surveille la bouche, le transit et la vessie."
+    }
+  },
+  {
+    "dci": "Lidocaïne topique",
+    "family": "antalgique",
+    "rarity": "Occasionnel",
+    "classe": "Anesthésique local (famille des amides)",
+    "brands": [
+      "Versatis",
+      "Xylocaïne visqueuse"
+    ],
+    "forms": [
+      "patch",
+      "creme"
+    ],
+    "routes": [
+      "Locale"
+    ],
+    "tagline": "Anesthésique local : emplâtre sur la peau, gel en bouche",
+    "what": "Anesthésique local. Emplâtre : douleur après un zona et, hors AMM, autres douleurs neuropathiques localisées. Gel visqueux : douleurs de la bouche et de la gorge (mucite, aphtes).",
+    "action": "Bloque les canaux sodiques des fibres nerveuses : le message douloureux ne part plus de la zone traitée. Passage dans le sang très faible avec l'emplâtre.",
+    "sideEffects": [
+      "Rougeur, démangeaison au site de l'emplâtre",
+      "Fausse route après le gel : ne pas manger juste après",
+      "Engourdissement de la bouche, goût modifié",
+      "Rare toxicité générale si surdosage (cœur, cerveau)"
+    ],
+    "contraindications": [
+      "Allergie aux anesthésiques locaux de type amide",
+      "Emplâtre : jamais sur peau lésée, inflammée ou plaie",
+      "Prudence : troubles de la déglutition (gel visqueux)",
+      "Prudence : insuffisance cardiaque, hépatique ou rénale sévère"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisée en 1943 par les chimistes suédois Nils Löfgren et Bengt Lundqvist, elle est commercialisée en 1948 sous le nom de Xylocaïne, un nom toujours courant à l'hôpital."
+    }
+  },
+  {
+    "dci": "MEOPA",
+    "family": "antalgique",
+    "rarity": "Occasionnel",
+    "classe": "Gaz analgésique : oxygène et protoxyde d'azote",
+    "brands": [
+      "Kalinox",
+      "Entonox"
+    ],
+    "forms": [
+      "gaz"
+    ],
+    "routes": [
+      "Inhalée"
+    ],
+    "tagline": "Le gaz qui aide à passer les soins douloureux",
+    "what": "Mélange équimolaire oxygène / protoxyde d'azote, inhalé au masque. Prévient la douleur et l'anxiété des soins courts : pansement, mobilisation, ponction, pose de sonde.",
+    "action": "Le protoxyde d'azote agit sur le cerveau et la moelle : il émousse la douleur, détend et rend un peu euphorique, sans faire perdre conscience. Effet en quelques minutes, réversible à l'arrêt.",
+    "sideEffects": [
+      "Euphorie, rires, rêves, sensation d'ébriété",
+      "Nausées, vomissements",
+      "Vertiges, fourmillements, perceptions modifiées",
+      "Sédation plus profonde : surveillance continue",
+      "Usage répété : carence en vitamine B12"
+    ],
+    "contraindications": [
+      "Pneumothorax, emphysème, embolie gazeuse, distension abdominale",
+      "Hypertension intracrânienne, trauma crânien, troubles de conscience",
+      "Besoin de ventilation en oxygène pur",
+      "Gaz ophtalmique récent, carence en vitamine B12 non traitée"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Le chimiste anglais Humphry Davy, qui l'inhalait lui-même vers 1800, avait noté son effet antidouleur. En 1844, le dentiste américain Horace Wells se fait arracher une dent sous protoxyde d'azote."
+    }
+  },
+  {
+    "dci": "Kétamine",
+    "family": "antalgique",
+    "rarity": "Rare",
+    "classe": "Anesthésique, antagoniste des récepteurs NMDA",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV",
+      "SC"
+    ],
+    "tagline": "À faible dose, renfort contre les douleurs rebelles",
+    "what": "Anesthésique utilisé hors AMM à faibles doses, non anesthésiantes, contre les douleurs réfractaires aux opioïdes (neuropathiques, hyperalgésie). Mise en route par une équipe spécialisée.",
+    "action": "Bloque les récepteurs NMDA de la moelle, impliqués dans l'emballement de la douleur. Réduit l'hyperalgésie et la tolérance, ce qui redonne de l'efficacité aux opioïdes.",
+    "sideEffects": [
+      "Hallucinations, cauchemars, sensation d'irréalité",
+      "Hypertension artérielle, tachycardie",
+      "Somnolence, vertiges, vision double",
+      "Hypersalivation, nausées",
+      "Usage prolongé : atteinte de la vessie et du foie"
+    ],
+    "contraindications": [
+      "HTA sévère non contrôlée, insuffisance cardiaque grave",
+      "AVC récent, hypertension intracrânienne",
+      "Prudence : troubles psychiatriques, épilepsie, coronaropathie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisée en 1962 par le chimiste américain Calvin Stevens pour remplacer la phencyclidine, aux effets psychiques trop marqués, elle a servi d'anesthésique de terrain pendant la guerre du Vietnam."
+    }
+  },
+  {
+    "dci": "Duloxétine",
+    "family": "antalgique",
+    "rarity": "Rare",
+    "classe": "Antidépresseur IRSNa, co-antalgique",
+    "brands": [
+      "Cymbalta"
+    ],
+    "forms": [
+      "gelule"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Antidépresseur qui apaise aussi la douleur neuropathique",
+    "what": "Antidépresseur IRSNa ayant l'AMM dans la douleur neuropathique du diabétique, utilisé aussi dans les neuropathies dues à la chimiothérapie. Moins atropinique que l'amitriptyline.",
+    "action": "Bloque la recapture de la sérotonine et de la noradrénaline : renforce les voies descendantes qui freinent le message douloureux dans la moelle, en plus de l'effet sur l'humeur.",
+    "sideEffects": [
+      "Nausées, surtout en début de traitement",
+      "Somnolence ou insomnie, vertiges",
+      "Bouche sèche, constipation, sueurs",
+      "Hyponatrémie, surtout chez le sujet âgé",
+      "Arrêt brutal : sevrage, diminuer progressivement"
+    ],
+    "contraindications": [
+      "Association aux IMAO non sélectifs",
+      "Insuffisance hépatique",
+      "Insuffisance rénale sévère",
+      "HTA non contrôlée (ne pas débuter le traitement)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "DUloxétine comme DUO : double recapture bloquée (sérotonine et noradrénaline) et double effet, sur l'humeur et sur la douleur."
+    }
+  },
+  {
+    "dci": "Baclofène",
+    "family": "antalgique",
+    "rarity": "Rare",
+    "classe": "Myorelaxant d'action centrale (agoniste GABA-B)",
+    "brands": [
+      "Liorésal"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Myorelaxant, recours contre le hoquet rebelle",
+    "what": "Myorelaxant d'action centrale indiqué dans la spasticité (sclérose en plaques, atteintes de la moelle). En soins palliatifs, utilisé hors AMM contre le hoquet rebelle.",
+    "action": "Agoniste des récepteurs GABA-B de la moelle épinière : freine les réflexes qui font se contracter les muscles. Calmerait aussi l'arc réflexe du hoquet.",
+    "sideEffects": [
+      "Somnolence, sédation",
+      "Faiblesse musculaire : prévenir les chutes",
+      "Nausées, vertiges, confusion",
+      "Arrêt brutal : sevrage grave, diminuer progressivement",
+      "Abaisse le seuil épileptogène"
+    ],
+    "contraindications": [
+      "Hypersensibilité au baclofène",
+      "Prudence : insuffisance rénale (accumulation, confusion)",
+      "Prudence : épilepsie, troubles psychiatriques",
+      "Prudence : sujet âgé (sédation, chutes)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 2008, le cardiologue Olivier Ameisen raconte dans son livre Le Dernier Verre s'être libéré de l'alcool grâce au baclofène. Le livre a lancé son usage en France contre l'alcoolodépendance."
+    }
+  }
+]

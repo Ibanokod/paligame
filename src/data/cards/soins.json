@@ -1,0 +1,245 @@
+[
+  {
+    "dci": "Bicarbonate de sodium 1,4 %",
+    "family": "soins",
+    "rarity": "Courant",
+    "classe": "Alcalinisant local (soins de bouche)",
+    "brands": [],
+    "forms": [
+      "bain-de-bouche",
+      "solution"
+    ],
+    "routes": [
+      "Locale"
+    ],
+    "tagline": "Le pilier des soins de bouche en soins palliatifs",
+    "what": "Solution alcaline isotonique, base des soins de bouche pluriquotidiens : bouche sèche, sale, croûteuse ou mycosique (avec l'antifongique). En bain de bouche, ou sur compresse si le patient ne peut pas rincer.",
+    "action": "Alcalinise le milieu buccal : neutralise l'acidité, fluidifie et décolle mucus et dépôts, et rend la bouche moins favorable au développement des mycoses (Candida).",
+    "sideEffects": [
+      "Goût salé, parfois mal accepté",
+      "Fausse route si déglutition altérée : soin à la compresse",
+      "Bien toléré : effets indésirables rares"
+    ],
+    "contraindications": [
+      "Pas de contre-indication absolue en usage local",
+      "Prudence : troubles de vigilance ou de déglutition (fausse route)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Retiens « 1,4 = iso » : à 1,4 %, le bicarbonate est isotonique, donc doux pour les muqueuses. Le 8,4 %, lui, est molaire et hypertonique : réservé à la voie IV."
+    }
+  },
+  {
+    "dci": "Nystatine",
+    "family": "soins",
+    "rarity": "Fréquent",
+    "classe": "Antifongique polyène (action locale)",
+    "brands": [
+      "Mycostatine"
+    ],
+    "forms": [
+      "solution"
+    ],
+    "routes": [
+      "PO",
+      "Locale"
+    ],
+    "tagline": "L'antifongique de contact du muguet buccal",
+    "what": "Antifongique quasi non absorbé par le tube digestif. Traite et prévient les candidoses buccales et digestives (muguet), fréquentes en fin de vie : corticoïdes, antibiotiques, bouche sèche.",
+    "action": "Se fixe sur l'ergostérol de la membrane du champignon (Candida) et y crée des pores : le contenu de la cellule fuit et elle meurt. Agit par contact : bien répartir dans la bouche avant d'avaler.",
+    "sideEffects": [
+      "Nausées, vomissements, diarrhée",
+      "Urticaire, angio-œdème (allergie)",
+      "Syndrome de Stevens-Johnson (rare)"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la nystatine ou à un excipient",
+      "Intolérance au fructose, malabsorption du glucose-galactose",
+      "Prudence : suspension riche en saccharose, contient de l'éthanol"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Son nom vient de New York State : elle a été découverte en 1950 au département de santé de l'État de New York par Elizabeth Hazen et Rachel Brown, qui ont reversé leurs royalties à la recherche."
+    }
+  },
+  {
+    "dci": "Fluconazole",
+    "family": "soins",
+    "rarity": "Fréquent",
+    "classe": "Antifongique azolé (triazolé), voie générale",
+    "brands": [
+      "Triflucan"
+    ],
+    "forms": [
+      "gelule",
+      "solution",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Quand le muguet résiste ou descend dans l'œsophage",
+    "what": "Antifongique azolé actif par voie générale. En soins palliatifs : candidose buccale étendue ou résistante au traitement local, candidose œsophagienne (douleur à la déglutition).",
+    "action": "Bloque une enzyme du champignon nécessaire à la fabrication de l'ergostérol, composant de sa membrane : le Candida ne peut plus se multiplier. Bien absorbé, il diffuse dans tout l'organisme.",
+    "sideEffects": [
+      "Nausées, douleurs abdominales, diarrhée",
+      "Céphalées",
+      "Élévation des transaminases, rare atteinte hépatique",
+      "Éruption cutanée (rarement grave)",
+      "Allongement du QT, torsades de pointes (très rare)"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux antifongiques azolés",
+      "Association à certains médicaments allongeant le QT (pimozide...)",
+      "Prudence : interactions (AVK, midazolam, fentanyl, méthadone)",
+      "Prudence : insuffisance hépatique ou rénale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Retiens « azolé = interactions » : le fluconazole freine les enzymes du foie (CYP450) et majore l'effet du midazolam, du fentanyl ou des AVK. Patient plus somnolent sous traitement ? Pense à lui."
+    }
+  },
+  {
+    "dci": "Lidocaïne-prilocaïne",
+    "family": "soins",
+    "rarity": "Fréquent",
+    "classe": "Anesthésique local cutané (type amide)",
+    "brands": [
+      "Emla",
+      "Anesderm"
+    ],
+    "forms": [
+      "creme",
+      "patch"
+    ],
+    "routes": [
+      "Locale"
+    ],
+    "tagline": "La crème qui endort la peau avant le geste",
+    "what": "Anesthésique local en crème ou patch, sous pansement occlusif, environ 1 h avant un geste douloureux : ponction, aiguille de Huber, injection SC, détersion d'ulcère de jambe.",
+    "action": "Les deux anesthésiques traversent la peau et bloquent les canaux sodium des fibres nerveuses : le message douloureux n'est plus transmis depuis la zone traitée. Effet de surface uniquement.",
+    "sideEffects": [
+      "Pâleur, rougeur, œdème local (fréquents, transitoires)",
+      "Brûlure, démangeaisons au site d'application",
+      "Méthémoglobinémie (prilocaïne), rare : grande surface",
+      "Réactions allergiques (rares)"
+    ],
+    "contraindications": [
+      "Allergie aux anesthésiques locaux de type amide",
+      "Pas sur plaie ouverte (sauf ulcère de jambe), ni près des yeux",
+      "Prudence : déficit en G6PD, méthémoglobinémie congénitale",
+      "Prudence : médicaments méthémoglobinisants (sulfamides, dapsone...)"
+    ],
+    "antidote": "Bleu de méthylène (méthémoglobinémie)",
+    "fun": {
+      "kind": "culture",
+      "text": "EMLA signifie Eutectic Mixture of Local Anaesthetics : mélangées à parts égales, la lidocaïne et la prilocaïne, solides seules, deviennent une huile à température ambiante, qui passe mieux la peau."
+    }
+  },
+  {
+    "dci": "Métronidazole topique",
+    "family": "soins",
+    "rarity": "Occasionnel",
+    "classe": "Antibiotique nitro-imidazolé (anti-anaérobies)",
+    "brands": [
+      "Rozex"
+    ],
+    "forms": [
+      "creme"
+    ],
+    "routes": [
+      "Locale"
+    ],
+    "tagline": "Le gel anti-odeur des plaies malodorantes",
+    "what": "Antibiotique en gel appliqué hors AMM sur les plaies malodorantes, notamment tumorales : il réduit l'odeur en quelques jours. La voie orale (Flagyl) peut prendre le relais si besoin.",
+    "action": "Actif sur les bactéries anaérobies qui colonisent les tissus nécrosés et libèrent des molécules malodorantes. Il pénètre la bactérie et altère son ADN : moins de germes, moins d'odeur.",
+    "sideEffects": [
+      "Sécheresse, rougeur, démangeaisons au site",
+      "Brûlure, picotements locaux",
+      "Goût métallique (peu fréquent)",
+      "Effet antabuse avec l'alcool (surtout voie orale)"
+    ],
+    "contraindications": [
+      "Hypersensibilité au métronidazole ou aux nitro-imidazolés",
+      "Éviter le contact avec les yeux et les muqueuses",
+      "Prudence : alcool (effet antabuse) et AVK si voie orale"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Mis au point en France (Rhône-Poulenc) contre un parasite, Trichomonas, il s'est révélé antibactérien par hasard en 1962 : une patiente traitée a vu guérir en même temps sa gingivite."
+    }
+  },
+  {
+    "dci": "Amphotéricine B buvable",
+    "family": "soins",
+    "rarity": "Occasionnel",
+    "classe": "Antifongique polyène (action locale)",
+    "brands": [
+      "Fungizone"
+    ],
+    "forms": [
+      "solution",
+      "bain-de-bouche"
+    ],
+    "routes": [
+      "PO",
+      "Locale"
+    ],
+    "tagline": "L'autre antifongique de contact du muguet",
+    "what": "Suspension buvable non absorbée, d'action locale : candidoses buccales et digestives, en bain de bouche ou gardée en bouche avant d'avaler. Rien à voir avec la toxicité rénale de la forme IV.",
+    "action": "Comme la nystatine, se fixe sur l'ergostérol de la membrane du champignon et la perce : le Candida perd son contenu et meurt. Non absorbée par l'intestin, elle n'agit qu'au contact.",
+    "sideEffects": [
+      "Nausées, vomissements",
+      "Diarrhée",
+      "Glossite (inflammation de la langue)",
+      "Coloration transitoire des dents"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'amphotéricine B ou à un excipient",
+      "Ne traite pas les candidoses systémiques (non absorbée)",
+      "Prudence : contient des sulfites (allergie, bronchospasme rare)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Son nom vient d'« amphotère » : la molécule se comporte à la fois en acide et en base. Elle a été isolée en 1955 d'une bactérie du sol, Streptomyces nodosus, récoltée près de l'Orénoque, au Venezuela."
+    }
+  },
+  {
+    "dci": "Salive artificielle",
+    "family": "soins",
+    "rarity": "Occasionnel",
+    "classe": "Substitut salivaire",
+    "brands": [
+      "Artisial"
+    ],
+    "forms": [
+      "spray"
+    ],
+    "routes": [
+      "Locale"
+    ],
+    "tagline": "Le spray qui humidifie la bouche sèche",
+    "what": "Substitut de salive en pulvérisation buccale : bouche sèche (xérostomie) liée aux médicaments, à la radiothérapie ORL ou à la respiration bouche ouverte. Complète les soins de bouche.",
+    "action": "Électrolytes proches de ceux de la salive et agents épaississants (carmellose, sorbitol) qui tapissent et lubrifient la muqueuse. Effet mécanique et bref : ne stimule pas les glandes salivaires.",
+    "sideEffects": [
+      "Picotements, brûlures buccales (quelques cas)",
+      "Nausées (rares)",
+      "Allergie possible aux parabènes (excipient)"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'un des composants (dont parabènes)",
+      "Prudence : maintenir une hygiène bucco-dentaire rigoureuse"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Xérostomie = xêros (sec) + stoma (bouche), comme la xérographie, ancêtre de la photocopie Xerox. Retiens : bouche sèche, spray souvent, soin de bouche toujours."
+    }
+  }
+]

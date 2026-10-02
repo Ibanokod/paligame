@@ -1,0 +1,156 @@
+[
+  {
+    "dci": "Méthylprednisolone",
+    "family": "cortico",
+    "rarity": "Courant",
+    "classe": "Corticoïde (glucocorticoïde)",
+    "brands": [
+      "Solumédrol",
+      "Médrol"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "SC",
+      "PO"
+    ],
+    "tagline": "Le corticoïde injectable phare des soins palliatifs",
+    "what": "Corticoïde utilisé contre la douleur (compression, métastases osseuses), les nausées, l'asthénie, l'anorexie, la dyspnée et l'occlusion. Injectable (IV, SC hors AMM) ou per os.",
+    "action": "Mime le cortisol naturel : puissant anti-inflammatoire qui réduit l'œdème autour des tumeurs et des nerfs comprimés. Stimule aussi l'appétit et l'humeur.",
+    "sideEffects": [
+      "Hyperglycémie : surveiller la glycémie capillaire",
+      "Mycose buccale (muguet) : soins et surveillance de bouche",
+      "Insomnie, agitation : administrer le matin",
+      "Rétention d'eau et de sel, œdèmes, HTA",
+      "Arrêt brutal : risque d'insuffisance surrénale"
+    ],
+    "contraindications": [
+      "Infection non contrôlée, virose en cours (herpès, zona, varicelle)",
+      "États psychotiques non contrôlés",
+      "Vaccins vivants atténués",
+      "Prudence : diabète, ulcère gastroduodénal, HTA, insuffisance cardiaque"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les 5 S des corticoïdes : Sucre (hyperglycémie), Sel (œdèmes), Sommeil (insomnie), Surinfection (muguet), Surrénale (pas d'arrêt brutal)."
+    }
+  },
+  {
+    "dci": "Prednisolone",
+    "family": "cortico",
+    "rarity": "Courant",
+    "classe": "Corticoïde (glucocorticoïde)",
+    "brands": [
+      "Solupred"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le corticoïde per os, orodispersible ou effervescent",
+    "what": "Corticoïde oral utilisé contre l'asthénie, l'anorexie, la douleur inflammatoire, les nausées et la dyspnée. La forme orodispersible aide quand avaler devient difficile.",
+    "action": "Corticoïde de synthèse proche du cortisol : effet anti-inflammatoire et anti-œdémateux qui soulage les compressions par la tumeur. Stimule l'appétit et l'humeur.",
+    "sideEffects": [
+      "Hyperglycémie : surveiller la glycémie capillaire",
+      "Insomnie, excitation : prise le matin",
+      "Mycose buccale (muguet) : soins de bouche",
+      "Rétention d'eau et de sel, hypokaliémie, HTA",
+      "Arrêt brutal : risque d'insuffisance surrénale"
+    ],
+    "contraindications": [
+      "Infection non contrôlée, virose en cours (herpès, zona, varicelle)",
+      "États psychotiques non contrôlés",
+      "Vaccins vivants atténués",
+      "Prudence : diabète, ulcère gastroduodénal, HTA, insuffisance cardiaque"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Elle descend de la cortisone, dont l'effet spectaculaire sur la polyarthrite rhumatoïde a valu en 1950 le prix Nobel de médecine à Philip Hench, Edward Kendall et Tadeus Reichstein."
+    }
+  },
+  {
+    "dci": "Dexaméthasone",
+    "family": "cortico",
+    "rarity": "Fréquent",
+    "classe": "Corticoïde puissant, de longue durée d'action",
+    "brands": [
+      "Dectancyl"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "tagline": "Corticoïde très puissant : œdème cérébral, moelle comprimée",
+    "what": "Corticoïde puissant à longue durée d'action. En soins palliatifs : œdème cérébral des métastases, compression médullaire, nausées et vomissements, douleur, asthénie.",
+    "action": "Mime le cortisol avec une activité anti-inflammatoire très forte et presque pas de rétention de sel : réduit nettement l'œdème autour des tumeurs, notamment dans le crâne.",
+    "sideEffects": [
+      "Hyperglycémie : surveiller la glycémie capillaire",
+      "Insomnie, agitation, troubles psychiques : le matin",
+      "Mycose buccale (muguet) : soins de bouche",
+      "Brûlure périnéale si IV rapide : injecter lentement",
+      "Arrêt brutal : risque d'insuffisance surrénale"
+    ],
+    "contraindications": [
+      "Infection non contrôlée, virose en cours (herpès, zona, varicelle)",
+      "États psychotiques non contrôlés",
+      "Vaccins vivants atténués",
+      "Prudence : diabète, ulcère gastroduodénal, HTA, insuffisance cardiaque"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Dexa, pense tête et moelle : c'est le corticoïde de l'œdème cérébral des métastases et de la compression médullaire, une urgence."
+    }
+  },
+  {
+    "dci": "Bétaméthasone",
+    "family": "cortico",
+    "rarity": "Occasionnel",
+    "classe": "Corticoïde puissant, de longue durée d'action",
+    "brands": [
+      "Célestène"
+    ],
+    "forms": [
+      "solution",
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IM"
+    ],
+    "tagline": "Corticoïde puissant, pratique en gouttes buvables",
+    "what": "Corticoïde puissant à longue durée d'action, proche de la dexaméthasone : asthénie, anorexie, douleur, nausées, œdème tumoral. Les gouttes aident si avaler est difficile.",
+    "action": "Mime le cortisol avec une forte activité anti-inflammatoire et anti-œdémateuse, et très peu de rétention de sel. Sa longue durée d'action permet souvent une seule prise le matin.",
+    "sideEffects": [
+      "Hyperglycémie : surveiller la glycémie capillaire",
+      "Insomnie, excitation : prise le matin",
+      "Mycose buccale (muguet) : soins de bouche",
+      "Fonte musculaire, peau fragile",
+      "Arrêt brutal : risque d'insuffisance surrénale"
+    ],
+    "contraindications": [
+      "Infection non contrôlée, virose en cours (herpès, zona, varicelle)",
+      "États psychotiques non contrôlés",
+      "Vaccins vivants atténués",
+      "Prudence : diabète, ulcère gastroduodénal, HTA, insuffisance cardiaque"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "En 1972, le Néo-Zélandais Graham Liggins montre qu'une injection de bétaméthasone à la future mère avant un accouchement prématuré aide les poumons du bébé à mûrir."
+    }
+  }
+]

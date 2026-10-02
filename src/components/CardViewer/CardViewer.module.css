@@ -1,0 +1,101 @@
+/* Zone de glissement latéral : le défilement vertical reste au navigateur (pan-y). */
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-4);
+  touch-action: pan-y;
+}
+
+.card {
+  width: min(58vw, 230px);
+}
+
+.missing {
+  aspect-ratio: var(--card-ratio);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  border-radius: var(--r-card);
+  border: 1px dashed var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.number {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+}
+
+.facts {
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: var(--sp-3);
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--sp-3);
+  background: var(--surface);
+  border-radius: var(--r-md);
+}
+
+.facts dt {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.facts dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+}
+
+/* Pied : flèche, Fermer, flèche. Tout à portée du pouce. */
+.nav {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  height: 48px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  transition: background var(--dur-fast) var(--ease), opacity var(--dur-fast) var(--ease);
+}
+
+.arrow:active {
+  background: var(--surface);
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+}
+
+.facts .hint {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.facts .foil {
+  font-size: var(--fs-xs);
+  color: var(--rarity-star);
+}
+
+.quiz {
+  align-self: stretch;
+}

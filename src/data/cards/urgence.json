@@ -1,0 +1,257 @@
+[
+  {
+    "dci": "Furosémide",
+    "family": "urgence",
+    "rarity": "Courant",
+    "classe": "Diurétique de l'anse",
+    "brands": [
+      "Lasilix"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "SC",
+      "PO"
+    ],
+    "tagline": "Le diurétique rapide de l'OAP et de la surcharge",
+    "what": "Diurétique de l'anse puissant et rapide : œdème aigu du poumon, surcharge hydrique, œdèmes. En soins palliatifs : dyspnée ou encombrement liés à une surcharge (cœur, hydratation).",
+    "action": "Bloque la réabsorption du sodium dans l'anse de Henlé du rein : le sodium entraîne l'eau, d'où une diurèse abondante, en quelques minutes par voie IV.",
+    "sideEffects": [
+      "Hypokaliémie : surveiller le ionogramme",
+      "Déshydratation, hypotension, risque de chute",
+      "Hyponatrémie, insuffisance rénale fonctionnelle",
+      "Rétention aiguë d'urine si obstacle (prostate)",
+      "Ototoxicité si injection IV trop rapide"
+    ],
+    "contraindications": [
+      "Hypovolémie, déshydratation",
+      "Obstacle sur les voies urinaires",
+      "Encéphalopathie hépatique",
+      "Prudence : hypokaliémie, association au lithium"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Lasilix vient de Lasix, de l'anglais lasts six : son effet dure environ six heures par voie orale. Urinal à portée de main, et plutôt le matin pour préserver les nuits."
+    }
+  },
+  {
+    "dci": "Oxygène",
+    "family": "urgence",
+    "rarity": "Courant",
+    "classe": "Gaz médical",
+    "brands": [],
+    "forms": [
+      "gaz"
+    ],
+    "routes": [
+      "Inhalée"
+    ],
+    "tagline": "Pour l'hypoxémie, pas pour toutes les dyspnées",
+    "what": "Gaz médical pour corriger une hypoxémie (lunettes, masque). En fin de vie, il ne soulage la dyspnée qu'en cas d'hypoxémie : sinon, morphine, position, air frais (ventilateur).",
+    "action": "Augmente la part d'oxygène dans l'air inspiré, donc l'oxygène transporté par le sang vers les organes. Sans hypoxémie, peu d'effet sur la sensation de manque d'air.",
+    "sideEffects": [
+      "Sécheresse nasale et buccale : soins de bouche",
+      "Hypercapnie, somnolence chez l'insuffisant respiratoire",
+      "Masque gênant : isole, empêche de parler",
+      "Irritation, plaies des oreilles par les lunettes"
+    ],
+    "contraindications": [
+      "Pas de contre-indication absolue en cas d'hypoxémie",
+      "Prudence : BPCO hypercapnique, respecter la saturation cible",
+      "Flamme, tabac, corps gras à proximité : risque d'incendie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "culture",
+      "text": "Lavoisier l'a baptisé oxygène, du grec qui engendre les acides, car il croyait que tous les acides en contenaient. Raté : l'acide chlorhydrique n'en a pas, mais le nom est resté."
+    }
+  },
+  {
+    "dci": "Acide tranexamique",
+    "family": "urgence",
+    "rarity": "Occasionnel",
+    "classe": "Antifibrinolytique",
+    "brands": [
+      "Exacyl",
+      "Spotof"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "IV",
+      "PO",
+      "Locale"
+    ],
+    "tagline": "L'antihémorragique, en IV, per os ou en local",
+    "what": "Antifibrinolytique contre les saignements : hémorragies tumorales, hémoptysies, saignements des muqueuses. En soins palliatifs, aussi appliqué localement (compresse imbibée sur la zone qui saigne).",
+    "action": "Empêche la dissolution du caillot : bloque la transformation du plasminogène en plasmine, l'enzyme qui découpe la fibrine. Le caillot déjà formé tient mieux.",
+    "sideEffects": [
+      "Nausées, vomissements, diarrhée",
+      "Risque de thrombose veineuse ou artérielle",
+      "Hypotension si injection IV trop rapide",
+      "Convulsions (fortes doses, insuffisance rénale)",
+      "Troubles de la vision des couleurs : arrêt"
+    ],
+    "contraindications": [
+      "Thrombose veineuse ou artérielle récente ou en cours",
+      "Antécédent de convulsions",
+      "Insuffisance rénale sévère",
+      "Jamais par voie intrathécale (convulsions graves)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Découvert au Japon dans les années 1960 par Utako Okamoto et son mari. Elle espérait sauver les femmes de l'hémorragie de l'accouchement : un grand essai l'a confirmé en 2017."
+    }
+  },
+  {
+    "dci": "Spironolactone",
+    "family": "urgence",
+    "rarity": "Occasionnel",
+    "classe": "Diurétique épargneur de potassium",
+    "brands": [
+      "Aldactone"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Le diurétique de l'ascite, qui retient le potassium",
+    "what": "Diurétique antialdostérone, épargneur de potassium : ascite (cirrhose, métastases hépatiques), œdèmes, insuffisance cardiaque. Souvent associé au furosémide.",
+    "action": "Bloque l'action de l'aldostérone sur le rein : le sodium et l'eau sont éliminés, le potassium est retenu. Effet progressif, sur plusieurs jours.",
+    "sideEffects": [
+      "Hyperkaliémie : surveiller la kaliémie",
+      "Gynécomastie, seins douloureux",
+      "Troubles digestifs",
+      "Hyponatrémie, insuffisance rénale",
+      "Troubles des règles, baisse de la libido"
+    ],
+    "contraindications": [
+      "Hyperkaliémie",
+      "Insuffisance rénale sévère",
+      "Association au potassium ou à un autre épargneur potassique",
+      "Prudence : IEC, sartans, AINS (risque d'hyperkaliémie)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Spironolactone l'épargnante : elle garde le potassium que le furosémide dépense. Associés, ils limitent les écarts de kaliémie, mais on surveille quand même le ionogramme."
+    }
+  },
+  {
+    "dci": "Naloxone",
+    "family": "urgence",
+    "rarity": "Rare",
+    "classe": "Antagoniste des opioïdes (antidote)",
+    "brands": [
+      "Nyxoid"
+    ],
+    "forms": [
+      "injectable",
+      "spray"
+    ],
+    "routes": [
+      "IV",
+      "SC",
+      "IM",
+      "IN"
+    ],
+    "tagline": "L'antidote des opioïdes, à titrer pour garder l'antalgie",
+    "what": "Antidote du surdosage en opioïdes (dépression respiratoire, sédation profonde). En soins palliatifs, titrée par petites doses pour relancer la respiration sans faire revenir la douleur.",
+    "action": "Antagoniste des récepteurs opioïdes mu : chasse l'opioïde de ses récepteurs et lève ses effets en quelques minutes. Durée d'action courte, souvent plus brève que celle de l'opioïde.",
+    "sideEffects": [
+      "Retour brutal de la douleur si dose trop forte",
+      "Sevrage aigu : agitation, sueurs, tachycardie",
+      "Nausées, vomissements",
+      "Rares : poussée d'HTA, troubles du rythme, OAP",
+      "Effet bref : resédation possible, surveiller la FR"
+    ],
+    "contraindications": [
+      "Hypersensibilité à la naloxone",
+      "Prudence : dépendance aux opioïdes (sevrage brutal)",
+      "Prudence : patient cardiaque (poussée tensionnelle)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Les 3 T de la naloxone : Titrer par petites doses, Tester la respiration et la vigilance, Tenir la surveillance, car elle s'en va avant l'opioïde."
+    }
+  },
+  {
+    "dci": "Acide zolédronique",
+    "family": "urgence",
+    "rarity": "Rare",
+    "classe": "Bisphosphonate",
+    "brands": [
+      "Zometa"
+    ],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "Le bisphosphonate de l'hypercalcémie maligne",
+    "what": "Bisphosphonate en perfusion IV : hypercalcémie maligne et prévention des complications des métastases osseuses (fractures, douleurs). Toujours sur un patient bien hydraté.",
+    "action": "Freine les ostéoclastes, les cellules qui détruisent l'os : moins de calcium passe dans le sang. La calcémie baisse en quelques jours et l'effet dure plusieurs semaines.",
+    "sideEffects": [
+      "Syndrome pseudo-grippal après perfusion (fièvre)",
+      "Hypocalcémie, hypophosphatémie",
+      "Toxicité rénale : hydrater, surveiller la créatinine",
+      "Ostéonécrose de la mâchoire : hygiène dentaire",
+      "Douleurs osseuses et musculaires"
+    ],
+    "contraindications": [
+      "Hypersensibilité aux bisphosphonates",
+      "Grossesse, allaitement",
+      "Prudence : insuffisance rénale, déshydratation",
+      "Prudence : soins dentaires invasifs prévus"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Avant de soigner l'os, les bisphosphonates ont servi d'anticalcaire dans l'industrie, pour empêcher le tartre de boucher les tuyaux. Leur talent : s'accrocher au calcium."
+    }
+  },
+  {
+    "dci": "Flumazénil",
+    "family": "urgence",
+    "rarity": "Très rare",
+    "classe": "Antagoniste des benzodiazépines (antidote)",
+    "brands": [],
+    "forms": [
+      "injectable"
+    ],
+    "routes": [
+      "IV"
+    ],
+    "tagline": "L'antidote des benzodiazépines, rarissime en palliatif",
+    "what": "Antidote du surdosage en benzodiazépines (midazolam...). Exceptionnel en soins palliatifs : une sédation décidée et proportionnée ne se lève pas, sauf erreur ou surdosage.",
+    "action": "Antagoniste compétitif des benzodiazépines sur les récepteurs GABA-A : lève la sédation en quelques minutes. Action courte : la sédation peut revenir.",
+    "sideEffects": [
+      "Resédation : effet plus court que la benzodiazépine",
+      "Convulsions, surtout si benzodiazépine au long cours",
+      "Anxiété, agitation, syndrome de sevrage",
+      "Nausées, vomissements",
+      "Palpitations, troubles du rythme"
+    ],
+    "contraindications": [
+      "Benzodiazépine donnée pour un état grave (état de mal épileptique)",
+      "Intoxication associée aux antidépresseurs tricycliques",
+      "Prudence : dépendance aux benzodiazépines (sevrage, convulsions)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Un antidote par famille : naloxone pour les morphiniques, flumazénil pour les benzodiazépines. Point commun : les deux s'en vont avant le toxique, on surveille la resédation."
+    }
+  }
+]

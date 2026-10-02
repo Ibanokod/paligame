@@ -1,0 +1,423 @@
+[
+  {
+    "dci": "Halopéridol",
+    "family": "neuroleptique",
+    "rarity": "Courant",
+    "classe": "Neuroleptique de la famille des butyrophénones",
+    "brands": [
+      "Haldol"
+    ],
+    "forms": [
+      "injectable",
+      "solution",
+      "comprime"
+    ],
+    "routes": [
+      "SC",
+      "PO",
+      "IV"
+    ],
+    "tagline": "Le neuroleptique pivot : nausées, confusion, agitation",
+    "what": "Neuroleptique utilisé à faible dose en soins palliatifs : nausées et vomissements (opioïdes, causes métaboliques, occlusion), confusion et agitation (delirium).",
+    "action": "Bloque les récepteurs à la dopamine (D2) dans le cerveau, notamment dans la zone gâchette du vomissement : calme les nausées, l'agitation et les hallucinations.",
+    "sideEffects": [
+      "Syndrome extrapyramidal : surveiller raideur, tremblements",
+      "Akathisie : impatiences, besoin de bouger",
+      "Somnolence, hypotension",
+      "Allongement du QT, troubles du rythme",
+      "Syndrome malin des neuroleptiques (fièvre, rigidité) : rare"
+    ],
+    "contraindications": [
+      "Maladie de Parkinson, démence à corps de Lewy",
+      "QT long connu, troubles du rythme, infarctus récent",
+      "Coma, dépression du système nerveux central",
+      "Prudence : hypokaliémie, autres médicaments allongeant le QT"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisé en 1958 en Belgique par l'équipe de Paul Janssen, l'halopéridol figure toujours sur la liste des médicaments essentiels de l'OMS."
+    }
+  },
+  {
+    "dci": "Métoclopramide",
+    "family": "neuroleptique",
+    "rarity": "Courant",
+    "classe": "Antiémétique prokinétique (antidopaminergique)",
+    "brands": [
+      "Primpéran"
+    ],
+    "forms": [
+      "injectable",
+      "comprime"
+    ],
+    "routes": [
+      "SC",
+      "IV",
+      "PO"
+    ],
+    "tagline": "L'antiémétique qui relance la vidange de l'estomac",
+    "what": "Antiémétique prokinétique, utilisé en soins palliatifs pour les nausées liées à une vidange gastrique ralentie (gastroparésie, opioïdes, estomac comprimé par une tumeur).",
+    "action": "Bloque les récepteurs à la dopamine (D2) dans la zone gâchette du vomissement et dans le tube digestif : accélère la vidange de l'estomac et le transit haut.",
+    "sideEffects": [
+      "Syndrome extrapyramidal, mouvements anormaux aigus",
+      "Somnolence, fatigue",
+      "Dyskinésies tardives si traitement prolongé",
+      "Diarrhée, hypotension",
+      "Syndrome malin des neuroleptiques : rare"
+    ],
+    "contraindications": [
+      "Occlusion mécanique, perforation ou hémorragie digestive",
+      "Maladie de Parkinson, association à la lévodopa",
+      "Antécédent de dyskinésie tardive sous neuroleptique",
+      "Épilepsie, phéochromocytome"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Primpéran pousse vers l'avant : il vide l'estomac et accélère le transit. Donc jamais quand la route est barrée : occlusion complète."
+    }
+  },
+  {
+    "dci": "Ondansétron",
+    "family": "neuroleptique",
+    "rarity": "Fréquent",
+    "classe": "Antiémétique sétron (antagoniste 5-HT3)",
+    "brands": [
+      "Zophren"
+    ],
+    "forms": [
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "tagline": "Antiémétique des nausées de chimio et de radiothérapie",
+    "what": "Antiémétique de la famille des sétrons, indiqué dans les nausées et vomissements induits par la chimiothérapie et la radiothérapie, et en postopératoire.",
+    "action": "Bloque les récepteurs à la sérotonine 5-HT3, dans l'intestin et dans la zone gâchette du vomissement : coupe le signal nauséeux déclenché par la chimiothérapie.",
+    "sideEffects": [
+      "Constipation fréquente : surveiller le transit",
+      "Céphalées",
+      "Sensation de chaleur, bouffées vasomotrices",
+      "Allongement du QT"
+    ],
+    "contraindications": [
+      "Hypersensibilité à l'ondansétron ou à un autre sétron",
+      "Association à l'apomorphine (hypotension sévère)",
+      "Prudence : QT long, hypokaliémie, cardiopathie",
+      "Prudence : subocclusion (ralentit le transit)"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "SÉtron comme SÉrotonine : les sétrons bloquent la sérotonine. Et ils constipent, à l'inverse du Primpéran qui accélère le transit."
+    }
+  },
+  {
+    "dci": "Métopimazine",
+    "family": "neuroleptique",
+    "rarity": "Fréquent",
+    "classe": "Antiémétique phénothiazine (antidopaminergique)",
+    "brands": [
+      "Vogalène",
+      "Vogalib"
+    ],
+    "forms": [
+      "gelule",
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IV",
+      "IM"
+    ],
+    "tagline": "Antiémétique qui passe peu dans le cerveau",
+    "what": "Antiémétique antidopaminergique, utilisé pour les nausées et vomissements, notamment ceux liés aux traitements (chimiothérapie, opioïdes). Le lyophilisat Vogalib fond sur la langue.",
+    "action": "Bloque les récepteurs à la dopamine (D2) du tube digestif et de la zone gâchette du vomissement. Passe peu la barrière du cerveau : moins d'effets neurologiques.",
+    "sideEffects": [
+      "Somnolence",
+      "Hypotension orthostatique : lever progressif",
+      "Bouche sèche, constipation, rétention urinaire",
+      "Syndrome extrapyramidal, plus rare qu'avec le Primpéran",
+      "Hyperprolactinémie : galactorrhée, aménorrhée"
+    ],
+    "contraindications": [
+      "Glaucome par fermeture de l'angle",
+      "Rétention urinaire liée à un obstacle prostatique",
+      "Prudence : sujet âgé, maladie de Parkinson"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Vogalène sonne comme « vogue la galère » : un nom bien trouvé pour un antiémétique, quand l'estomac tangue comme un bateau dans la tempête."
+    }
+  },
+  {
+    "dci": "Cyamémazine",
+    "family": "neuroleptique",
+    "rarity": "Fréquent",
+    "classe": "Neuroleptique phénothiazine sédatif",
+    "brands": [
+      "Tercian"
+    ],
+    "forms": [
+      "solution",
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IM"
+    ],
+    "tagline": "Neuroleptique sédatif contre l'anxiété et l'agitation",
+    "what": "Neuroleptique sédatif utilisé pour l'anxiété sévère et l'agitation, en cas d'échec ou de mauvaise tolérance des traitements habituels. Très utilisé en gouttes.",
+    "action": "Bloque surtout les récepteurs à la sérotonine (5-HT2) et à l'histamine, et plus modestement ceux à la dopamine : effet calmant et anxiolytique marqué.",
+    "sideEffects": [
+      "Somnolence, sédation",
+      "Hypotension orthostatique : lever progressif",
+      "Bouche sèche, constipation, rétention urinaire",
+      "Allongement du QT",
+      "Syndrome extrapyramidal (plus rare)"
+    ],
+    "contraindications": [
+      "Glaucome par fermeture de l'angle",
+      "Rétention urinaire liée à un obstacle prostatique",
+      "Prudence : sujet âgé, épilepsie, QT long"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Tercian, comme « t'es serein » : il apaise l'angoisse. Mais gare au lever : la tension peut chuter (hypotension orthostatique)."
+    }
+  },
+  {
+    "dci": "Lévomépromazine",
+    "family": "neuroleptique",
+    "rarity": "Occasionnel",
+    "classe": "Neuroleptique phénothiazine très sédatif",
+    "brands": [
+      "Nozinan"
+    ],
+    "forms": [
+      "injectable",
+      "solution",
+      "comprime"
+    ],
+    "routes": [
+      "SC",
+      "PO",
+      "IM"
+    ],
+    "tagline": "Neuroleptique très sédatif, antiémétique à large spectre",
+    "what": "Neuroleptique très sédatif, utilisé en palliatif pour les nausées rebelles (antiémétique à large spectre) et pour l'agitation ou l'angoisse majeure en fin de vie.",
+    "action": "Bloque de nombreux récepteurs (dopamine, histamine, sérotonine, acétylcholine, adrénaline) : agit sur plusieurs voies du vomissement et entraîne une sédation marquée.",
+    "sideEffects": [
+      "Sédation marquée, somnolence",
+      "Hypotension orthostatique parfois sévère : lever accompagné",
+      "Bouche sèche, constipation, rétention urinaire",
+      "Abaissement du seuil épileptogène",
+      "Syndrome extrapyramidal"
+    ],
+    "contraindications": [
+      "Glaucome par fermeture de l'angle",
+      "Rétention urinaire liée à un obstacle prostatique",
+      "Antécédent d'agranulocytose",
+      "Prudence : sujet âgé, épilepsie, hypotension"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "humour",
+      "text": "Nozinan est si sédatif qu'il aurait pu s'appeler « Snoozinan » : le bouton snooze du réveil, version neuroleptique."
+    }
+  },
+  {
+    "dci": "Dompéridone",
+    "family": "neuroleptique",
+    "rarity": "Occasionnel",
+    "classe": "Antiémétique prokinétique périphérique",
+    "brands": [
+      "Motilium"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "L'antiémétique possible chez le parkinsonien",
+    "what": "Antiémétique prokinétique pour les nausées et vomissements, notamment par vidange gastrique lente. Option de choix chez le parkinsonien. Prescription courte et encadrée (risque cardiaque).",
+    "action": "Bloque les récepteurs à la dopamine (D2) de l'estomac et de la zone gâchette du vomissement, située hors barrière du cerveau : accélère la vidange gastrique sans effet neurologique notable.",
+    "sideEffects": [
+      "Allongement du QT, troubles du rythme : ECG si à risque",
+      "Bouche sèche, céphalées",
+      "Hyperprolactinémie : galactorrhée, gynécomastie",
+      "Crampes abdominales, diarrhée"
+    ],
+    "contraindications": [
+      "QT long, troubles du rythme, insuffisance cardiaque",
+      "Association aux médicaments allongeant le QT ou inhibant le CYP3A4",
+      "Insuffisance hépatique modérée à sévère",
+      "Occlusion, perforation ou hémorragie digestive, prolactinome"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Retiens P et Q : P comme Parkinson, où elle reste possible car elle ne passe pas dans le cerveau, et Q comme QT, son vrai danger, le cœur."
+    }
+  },
+  {
+    "dci": "Olanzapine",
+    "family": "neuroleptique",
+    "rarity": "Occasionnel",
+    "classe": "Antipsychotique atypique (2e génération)",
+    "brands": [
+      "Zyprexa",
+      "Zyprexa Velotab"
+    ],
+    "forms": [
+      "comprime"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Antipsychotique recours des nausées rebelles et du delirium",
+    "what": "Antipsychotique atypique, utilisé hors AMM en palliatif pour les nausées et vomissements rebelles (dont ceux de la chimiothérapie) et pour le delirium. Forme orodispersible pratique.",
+    "action": "Bloque plusieurs récepteurs (dopamine, sérotonine 5-HT2 et 5-HT3, histamine) : agit sur plusieurs voies du vomissement à la fois et calme l'agitation.",
+    "sideEffects": [
+      "Somnolence, sédation",
+      "Prise de poids, augmentation de l'appétit",
+      "Hyperglycémie, hausse du cholestérol",
+      "Hypotension orthostatique",
+      "Bouche sèche, constipation"
+    ],
+    "contraindications": [
+      "Risque connu de glaucome par fermeture de l'angle",
+      "Prudence : démence du sujet âgé (risque accru d'AVC et de décès)",
+      "Prudence : diabète, maladie de Parkinson, épilepsie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "OLanzapine, OLé l'appétit : elle ouvre la faim et fait prendre du poids. Un effet gênant en psychiatrie, parfois utile en palliatif quand l'appétit manque."
+    }
+  },
+  {
+    "dci": "Tiapride",
+    "family": "neuroleptique",
+    "rarity": "Occasionnel",
+    "classe": "Neuroleptique benzamide",
+    "brands": [
+      "Tiapridal"
+    ],
+    "forms": [
+      "solution",
+      "comprime",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IM",
+      "IV"
+    ],
+    "tagline": "Neuroleptique peu sédatif de l'agitation du sujet âgé",
+    "what": "Neuroleptique utilisé en traitement court de l'agitation et de l'agressivité, en particulier chez le sujet âgé et dans le sevrage alcoolique. Peu sédatif.",
+    "action": "Bloque sélectivement les récepteurs à la dopamine D2 et D3, surtout dans les zones du cerveau liées aux émotions : calme l'agitation avec peu de sédation.",
+    "sideEffects": [
+      "Somnolence, fatigue",
+      "Syndrome extrapyramidal : tremblements, raideur",
+      "Hyperprolactinémie : galactorrhée, aménorrhée",
+      "Allongement du QT",
+      "Hypotension orthostatique"
+    ],
+    "contraindications": [
+      "Phéochromocytome",
+      "Tumeur dépendante de la prolactine (prolactinome, cancer du sein)",
+      "Association à la lévodopa ou aux agonistes dopaminergiques",
+      "Prudence : insuffisance rénale, QT long, épilepsie"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "Tiapride, comme « t'apaises » : il apaise l'agitation, chez le sujet âgé comme dans le sevrage alcoolique, sans trop endormir."
+    }
+  },
+  {
+    "dci": "Rispéridone",
+    "family": "neuroleptique",
+    "rarity": "Occasionnel",
+    "classe": "Antipsychotique atypique (2e génération)",
+    "brands": [
+      "Risperdal"
+    ],
+    "forms": [
+      "comprime",
+      "solution"
+    ],
+    "routes": [
+      "PO"
+    ],
+    "tagline": "Antipsychotique oral de la confusion avec agitation",
+    "what": "Antipsychotique atypique, parfois utilisé en palliatif pour la confusion (delirium) avec agitation ou hallucinations, en alternative orale à l'halopéridol.",
+    "action": "Bloque les récepteurs à la sérotonine (5-HT2) et à la dopamine (D2) : réduit hallucinations et agitation, avec moins d'effets neurologiques que l'halopéridol à faible dose.",
+    "sideEffects": [
+      "Syndrome extrapyramidal, dose-dépendant",
+      "Somnolence",
+      "Hypotension orthostatique : lever progressif",
+      "Hyperprolactinémie, prise de poids"
+    ],
+    "contraindications": [
+      "Hypersensibilité (seule contre-indication absolue)",
+      "Prudence : démence du sujet âgé (risque accru d'AVC et de décès)",
+      "Prudence : maladie de Parkinson, démence à corps de Lewy",
+      "Prudence : insuffisance rénale ou hépatique"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "mnemo",
+      "text": "RISpéridone, RISque d'AVC : chez la personne âgée atteinte de démence, les antipsychotiques augmentent ce risque. Surveiller tout signe neurologique."
+    }
+  },
+  {
+    "dci": "Chlorpromazine",
+    "family": "neuroleptique",
+    "rarity": "Rare",
+    "classe": "Neuroleptique phénothiazine sédatif",
+    "brands": [
+      "Largactil"
+    ],
+    "forms": [
+      "comprime",
+      "solution",
+      "injectable"
+    ],
+    "routes": [
+      "PO",
+      "IM",
+      "IV"
+    ],
+    "tagline": "Le tout premier neuroleptique de l'histoire",
+    "what": "Neuroleptique sédatif, rarement utilisé en palliatif : agitation ou angoisse majeure résistante, hoquet rebelle, nausées réfractaires.",
+    "action": "Bloque la dopamine mais aussi l'histamine, l'acétylcholine et l'adrénaline : effet antipsychotique, sédatif et antiémétique, au prix de nombreux effets indésirables.",
+    "sideEffects": [
+      "Sédation, somnolence",
+      "Hypotension orthostatique marquée : lever accompagné",
+      "Bouche sèche, constipation, rétention urinaire",
+      "Syndrome extrapyramidal",
+      "Photosensibilisation : protéger du soleil"
+    ],
+    "contraindications": [
+      "Glaucome par fermeture de l'angle",
+      "Rétention urinaire liée à un obstacle prostatique",
+      "Antécédent d'agranulocytose",
+      "Prudence : sujet âgé, épilepsie, hypotension"
+    ],
+    "antidote": null,
+    "fun": {
+      "kind": "anecdote",
+      "text": "Synthétisée en 1950 chez Rhône-Poulenc, testée par le chirurgien Henri Laborit puis en psychiatrie par Delay et Deniker à Sainte-Anne en 1952 : elle a ouvert l'ère des neuroleptiques."
+    }
+  }
+]

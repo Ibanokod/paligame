@@ -1,0 +1,317 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(62, 193, 243, 0.16), transparent 62%),
+    rgb(5, 9, 20);
+}
+
+.rare {
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(242, 193, 78, 0.22), transparent 62%),
+    rgb(5, 9, 20);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--app-max-width);
+  height: 100dvh;
+  padding: var(--sp-8) var(--sp-4) calc(var(--sp-6) + var(--safe-bottom));
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* La scène défile si son contenu dépasse (fiche détaillée) et reste centrée sinon :
+   c'est la marge automatique de .stageInner qui fait les deux. */
+.stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.stage::-webkit-scrollbar {
+  display: none;
+}
+
+.stageInner {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-5);
+  padding: var(--sp-4) 0;
+}
+
+/* La pile : trois cartes visibles au plus, décalées vers le bas ; la carte du dessus suit le
+   doigt puis sort sur le côté. Les glissements verticaux restent au défilement (pan-y). */
+.stack {
+  position: relative;
+  width: min(70vw, 290px);
+  aspect-ratio: var(--card-ratio);
+  margin-bottom: 20px;
+  flex: 0 0 auto;
+}
+
+.stackCard {
+  position: absolute;
+  inset: 0;
+  touch-action: pan-y;
+  transition: transform var(--dur) var(--ease);
+  will-change: transform;
+  outline: none;
+}
+
+.stackCard:focus-visible {
+  outline: 2px solid var(--water);
+  outline-offset: 4px;
+  border-radius: var(--r-card);
+}
+
+.stackDragging {
+  transition: none;
+}
+
+.stackLeaving {
+  opacity: 0;
+  transition: transform 280ms ease-in, opacity 280ms ease-in;
+  pointer-events: none;
+}
+
+.hint {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: var(--sp-2) 0;
+}
+
+.details {
+  width: 100%;
+  max-width: 420px;
+}
+
+.caption {
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.caption strong {
+  color: var(--text);
+  font-size: var(--fs-lg);
+}
+
+.dots {
+  display: flex;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.dotDone {
+  background: var(--water);
+  border-color: var(--water);
+}
+
+.dotCurrent {
+  box-shadow: 0 0 0 3px var(--water-glow);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.complete {
+  text-align: center;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0 var(--sp-4);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  width: 100%;
+  max-width: 340px;
+}
+
+.summary li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+/* Cartes 4 et 5 centrées sous les trois premières, à la même taille (un décalage par
+   position garde la largeur ; une marge l'aurait réduite de moitié). */
+.summary li:nth-child(4) {
+  grid-column: 1 / 2;
+  position: relative;
+  left: calc(50% + var(--sp-3) / 2);
+}
+
+.summary li:nth-child(5) {
+  grid-column: 2 / 3;
+  position: relative;
+  left: calc(50% + var(--sp-3) / 2);
+}
+
+.summaryBadge {
+  font-size: var(--fs-sm);
+}
+
+/* Le paquet : bande scellée en haut (deux calques : le reste attaché et le morceau arraché,
+   découpés par la progression de la déchirure) et corps. Le doigt déchire le long du haut. */
+.pack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(58vw, 220px);
+  aspect-ratio: 11 / 17;
+  border-radius: var(--r-md);
+  overflow: visible;
+  box-shadow: var(--shadow-2);
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+.pack:focus-visible {
+  outline: 2px solid var(--water);
+  outline-offset: 6px;
+}
+
+.packDragging {
+  cursor: grabbing;
+}
+
+.packTop {
+  display: block;
+  position: relative;
+  height: 13%;
+}
+
+.packLayer {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.packBase {
+  transition: clip-path var(--dur-fast) var(--ease);
+}
+
+/* Le morceau arraché se soulève avec la déchirure, puis s'envole à la fin. */
+.packFlap {
+  transform-origin: 100% 100%;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45));
+  transition: clip-path var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+
+.packDragging .packBase,
+.packDragging .packFlap {
+  transition: none;
+}
+
+/* Point de coupe qui suit le doigt sur la ligne de déchirure. */
+.tearCursor {
+  position: absolute;
+  bottom: 4%;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, rgba(62, 193, 243, 0.7) 35%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+  pointer-events: none;
+}
+
+.tearCursorOn {
+  opacity: 1;
+}
+
+.packBody {
+  display: block;
+  flex: 1;
+  min-height: 0;
+}
+
+.packArt {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.packOpening .packFlap {
+  animation: flapAway 500ms var(--ease) forwards;
+}
+
+.packOpening {
+  animation: packOut var(--dur-slow) var(--ease) 350ms forwards;
+}
+
+@keyframes flapAway {
+  to {
+    transform: translate(-36px, -150px) rotate(-24deg);
+    opacity: 0;
+  }
+}
+
+@keyframes packOut {
+  to {
+    transform: translateY(40px) scale(0.85);
+    opacity: 0;
+  }
+}
+
+.foilTag {
+  padding: 1px 10px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(135deg, rgba(255, 120, 200, 0.25), rgba(120, 220, 255, 0.25), rgba(255, 230, 120, 0.25));
+  color: var(--text);
+  font-size: var(--fs-xs);
+  font-weight: 800;
+}
